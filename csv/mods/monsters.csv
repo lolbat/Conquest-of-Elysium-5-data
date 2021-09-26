@@ -1,0 +1,202 @@
+Monsters,Attacks,meleeweapon,<dmg> 'weapon',,Equips the monster with a melee weapon of this name that has a base damage of <dmg>.
+Monsters,Attacks,meleeweaponbonus,<dmg> 'weapon',,Equips the monster with a melee weapon of this name that has a base damage of <dmg>. This weapon will be used in addition to any other attacks the monster has.
+Monsters,Attacks,meleeweaponspec,<dmg> 'weapon',,Equips the monsters with a special melee weapon. Any normal melee attacks after this one will not be used if this attack was used. Normally used for lances.
+Monsters,Attacks,meleeweaponlong,<dmg> 'weapon',,Equips the monster with a melee weapon of this name that has a base damage of <dmg>. The weapon is long and can be used to attack from the second row.
+Monsters,Attacks,meleeweapon50s,<dmg> 'weapon',,Equips the monster with a melee+skip attack that has 50% chance of being used. If it is used the next attack will be skipped.
+Monsters,Attacks,rangedweapon,<dmg> 'weapon',,Equips the monster with a ranged weapon of this name that has a base damage of <dmg>.
+Monsters,Attacks,rangedweaponbonus,<dmg> 'weapon',,Equips the monster with a ranged weapon of this name that has a base damage of <dmg>. This weapon will be used in addition to any other attacks the monster has.
+Monsters,Attacks,rangedweapon25,<dmg> 'weapon',,Equips the monster with a ranged weapon of this name that has a base damage of <dmg>. This weapon has a 25% chance of being used in melee combat.
+Monsters,Attacks,rangedweapon50,<dmg> 'weapon',,Equips the monster with a ranged weapon of this name that has a base damage of <dmg>. This weapon has a 50% chance of being used in melee combat.
+Monsters,Attacks,rangedweapon50s,<dmg> 'weapon',,Equips the monster with a range+skip weapon that has 50% chance of being used in melee (100% at range). When used the next weapon will be skipped.
+Monsters,Attacks,rangedweapon50x,<dmg> 'weapon',,Equips the monster with a range+skip weapon that has 50% chance of being used in melee or range. When used the next weapon will be skipped.
+Monsters,Attacks,siegeweapon,<dmg> 'weapon',,Equips the monster with a siege weapon of this name that has a base damage of <dmg>. This weapon will be used in locations that allow sieges like cities and castles. Siege weapons are used in the first ten rounds of combat before any normal attacks are made.
+Monsters,Attacks,assassinweapon,<dmg> 'weapon',,Equips the monster with an assassination weapon of this name that has a base damage of <dmg>. This weapon will be used to make an assassination attempt on an enemy before normal combat (including siege weapons) begins. Assassination attempts can only be used by the attacker and cannot be used against summoned creatures the summoner fails to control.
+Monsters,Attacks,prebatweapon,<dmg> 'weapon',,Equips the monster with a prebattle effect weapon of this name that has a base damage of <dmg>. This weapon will be used before any normal combat (including assassination) begins.
+Monsters,Basic,name,monster name,,This command renames an existing monster. It is not needed when creating a new monster.
+Monsters,Basic,spr1,image.tga,,The file name of the normal image for the monster. This command sets the attack sprite to this image as well.The image should be 32x32 or 64x64 for normal sized monsters and 128x128 for huge monsters. A human being should be about 34 pixels tall and there should be 2 pixels of free space between his feet and the bottom of the image.
+Monsters,Basic,spr2,image.tga,,The file name of the attack image for the monster. If this is not set then spr1 will be used for this image too. This command must come after the spr1 command.
+Monsters,Basic,descr,text,,Description of the monster. The ^ character will be replaced with a newline.
+Monsters,Basic,hp,<nbr>,,The maximum number of hit points for the monster. A normal human soldier has 6 hit points and an elite heavily armored soldier has 10 hit points. An ogre has 25 hit points a troll has 56 hit points and giants dragons and other huge monsters can have well over a 100 hit points.
+Monsters,Basic,mr,<nbr>,,The magic resistance of the monster. Animals have a magic resistance of 2 a normal human has 4 and a more susceptible human has 3. Apprentice mages have a magic resistance of 6 full mages have 8 and master mages have 9. Some highly magical beings may have even higher magic resistance and they can almost never be affected by magic that is resistible.
+Monsters,Basic,str,<nbr>,,The strength of the monster. A normal human soldier has a strength of 4 an elite human soldier has 5 a troll has 8 or 9 and giants and dragons have 10 to 12.
+Monsters,Basic,armor,<nbr>,,This command sets the monster’s armor value which represents its natural protection or the armor it is wearing. Normal human troops have an armor value of 0. Medium armored human troops have an armor value of 1. Heavily armored human troops like Heavy Infantry have an armor value of 2 and very heavily armored troops like Knights and High Lords have an armor value of 3. Extremely tough monsters like dragons may have an armor value of 4 or more.
+Monsters,Basic,mor,<nbr>,,The morale of the monster. A normal human soldier has a morale of 4 an elite human soldier has 5 or 6 and powerful monsters can have a morale of 8 or more. Very fearless monsters may have a morale of 15. Setting the morale to 99 makes the monster Mindless and it will be completely unaffected by fear or any other effects that influence morale.
+Monsters,Basic,rank,<nbr>,,Sets the default deployment rank for the monster. -1 = back 0 = mid 1 = front
+Monsters,Behaviour,swamp1,,,Loves swamps.
+Monsters,Behaviour,swamp2,,,Likes swamps.
+Monsters,Behaviour,desert1,,,Loves deserts.
+Monsters,Behaviour,desert2,,,Likes deserts.
+Monsters,Behaviour,desert3,,,Hates deserts.
+Monsters,Behaviour,deadforest1,,,Loves dead forests.
+Monsters,Behaviour,deadforest2,,,Likes dead forests.
+Monsters,Behaviour,mountain1,,,Loves mountains.
+Monsters,Behaviour,mountain2,,,Likes mountains.
+Monsters,Behaviour,jungle1,,,Loves jungles.
+Monsters,Behaviour,jungle2,,,Likes jungles.
+Monsters,Behaviour,money1,,,Loves gold producing squares.
+Monsters,Behaviour,money2,,,Likes gold producing squares.
+Monsters,Behaviour,horror,,,Likes to kill sentient people also isn’t scared of the void.
+Monsters,Behaviour,ancforest1,,,Loves ancient forests.
+Monsters,Behaviour,forest1,,,Loves forests (including ancient forests).
+Monsters,Behaviour,forest2,,,Likes forests (including ancient forests).
+Monsters,Behaviour,temple1,,,Loves temples.
+Monsters,Behaviour,temple2,,,Likes temples.
+Monsters,Behaviour,south1,,,Loves the south.
+Monsters,Behaviour,south2,,,Likes the south.
+Monsters,Behaviour,north1,,,Loves the north.
+Monsters,Behaviour,gates1,,,Loves gateways.
+Monsters,Behaviour,void2,,,Likes the void.
+Monsters,Behaviour,nonruin1,,,Loves stuff that can be turned into ruins but is not yet a ruin.
+Monsters,Behaviour,mines1,,,Loves mines.
+Monsters,Behaviour,stray,,,Can stray away from loved and liked terrains.
+Monsters,Behaviour,stupid,,,Cannot be controlled by players and will move automatically like an independent unit.
+Monsters,Behaviour,semistupid,,,Will move automatically like an independent units unless it is controlled by a player commander.
+Monsters,Behaviour,followstupid,,,Doesn’t move independently but follows other stupid units.
+Monsters,Behaviour,coastal,,,Loves the coast like a giant crab.
+Monsters,Behaviour,lone,,,Moves independently of the player and not in groups.
+Monsters,Behaviour,aggressive,,,Likes to attack enemies.
+Monsters,Behaviour,wander,<objective>,,Will try to fulfill an objective if it is a commander. See table Objectives for possible values.
+Monsters,Behaviour,indwander,<objective>,,Only wander if owned by Independents
+Monsters,Behaviour,infwander,<objective>,,Only wander if owned by Inferno
+Monsters,Behaviour,celwander,<objective>,,Only wander if owned by Celestials
+Monsters,Behaviour,hadeswander,<objective>,,Only wander if owned by Hades
+Monsters,Behaviour,wander2,<objective>,,Try to fulfill this objective if the first one was not possible
+Monsters,Behaviour,infwander2,<objective>,,Try to fulfill this objective if the first one was not possible
+Monsters,Behaviour,celwander2,<objective>,,Try to fulfill this objective if the first one was not possible
+Monsters,Behaviour,hadeswander2,<objective>,,Try to fulfill this objective if the first one was not possible
+Monsters,Behaviour,maxsinners,<value>,,Will gather sinners when owned by Inferno (value=amount before returning)
+Monsters,Behaviour,maptele,,,Can teleport on world map when it is a wandering monster.
+Monsters,Behaviour,wanderrest,<chance>,,A chance for wandering monsters to rest a turn instead of going on a mission. Dragons have about 85 in this ability.
+Monsters,Behaviour,wandermaxdist,<value>,,Maximum distance for raid missions for wanderers. Dragons have about 6 in this ability.
+Monsters,Behaviour,pickupanimals,<0-1>,,Picks up all animals in the same square and brings them along.
+Monsters,Behaviour,wanderattack,<player number>,,Pause wander to attack this faction if adjacent (-1=all factions -2=player factions)
+Monsters,Behaviour,winteridle,,,Monster will not move in the winter if it is in a cold part of the map.
+Monsters,Copy/Clear,copyspr,monster name,,Copy the sprite of another monster.
+Monsters,Copy/Clear,clearspec,,,Removes all special abilities from the active monster. The special abilities are things like Fire Immunity Regeneration etc. This command does not clear movement abilities. Use the clearmove command for that.
+Monsters,Copy/Clear,clearmove,,,Removes all movement attributes from the active monster.
+Monsters,Copy/Clear,clearweapons,,,Removes all weapons from the active monster.
+Monsters,Healing,noheal,,,to be written
+Monsters,Healing,fastheal,,,to be written
+Monsters,Healing,coldheal,<value>,,heals value hp/month when it’s cold
+Monsters,Healing,regeneration,,,to be written
+Monsters,Healing,varregen,<value>,,to be written
+Monsters,Healing,saner,<value>,,regains this amount of sanity per month
+Monsters,Healing,voidsanity,<value>,,reduces insanity gains (like armor)
+Monsters,Healing,eatvillage,<0-1>,,to be written
+Monsters,Healing,minorstartaff,<chance>,,Chance of starting with a minor affliction. Chances >100 can give more than one affliction.
+Monsters,Healing,healonterr,<value>,,to be written
+Monsters,Movement,flying,,,Monster can fly.
+Monsters,Movement,huge,,,Monster is giant sized. This also makes it a 3x3 square monster on the battlefield.
+Monsters,Movement,immobile,,,Monster is immobile (cannot move in battle).
+Monsters,Movement,stationary,,,Monster is stationary (cannot move on world map).
+Monsters,Movement,slow,,,Monster is slow on world map.
+Monsters,Movement,fast,,,Monster is fast.
+Monsters,Movement,battlefast,,,Monster is fast but in battles only.
+Monsters,Movement,swamp,,,Monster has swamp move.
+Monsters,Movement,desert,,,Monster has desert move.
+Monsters,Movement,mountain,,,Monster has mountain move.
+Monsters,Movement,snow,,,Monster has snow move.
+Monsters,Movement,water,,,Monster can enter water squares.
+Monsters,Movement,float,,,Monster is floating.
+Monsters,Movement,noland,,,Monster cannot move on land.
+Monsters,Movement,wateronly,,,Same as water & noland. The monster will be aquatic.
+Monsters,Movement,passwall,,,Monster can move through walls.
+Monsters,Movement,wall,,,Monster has wall climbing.
+Monsters,Movement,teleport,,,Like flying but the monster will teleport around in combat.
+Monsters,Movement,battleslow,,,Monster is slow in battles.
+Monsters,Movement,battleslow2,,,Monster is very slow battles.
+Monsters,Movement,tunnel,,,Monster can tunnel on the world map.
+Monsters,Planes,immortal,,,to be written
+Monsters,Planes,immortalap,<nbr>,,to be written
+Monsters,Planes,reformloc,<value>,,respawn terrain for immortals (-1 = anywhere 1000=home)
+Monsters,Planes,reformdestroy,<value>,,chance to destroy location on immortality respawn
+Monsters,Planes,homeplane,<plane nbr>,,will return to this plane if slain outside it and be indep controlled again
+Monsters,Planes,planeshift,<plane nbr>,,can go to/from other plane 1=hades 2=inferno
+Monsters,Planes,noplanecamo,<plane nbr>,,does not use fx_lookslike when in plane = value
+Monsters,Planes,banishsurv,,,to be written
+Monsters,Planes,hadesres,<value>,,resistance to the effects of hades
+Monsters,Planes,revertowner,<value>,,to be written
+Monsters,Planes,primal,<value>,,to be written
+Monsters,Planes,primable,<value>,,to be written
+Monsters,Planes,primifier,<value>,,to be written
+Monsters,Ritual,power,<pow nbr>,,pow nbr 0 means the last created ritual school -1 = the one before that etc. Positive numbers are existing ritual powers from CoE5 see the pow nbr table.
+Monsters,Ritual,classcost,<nbr>,,to alter cost of all rituals made by this unit 50=50% more expensive
+Monsters,Ritual,mastery,<nbr>,,for monsters that can level up nbr 1=become next monster on leveling -1=previous monster etc.
+Monsters,Ritual,allrit,<value>,,knows all rituals of this school (see the Ritual Schools table -1=all ritual schools)
+Monsters,Ritual,rebate,<value>,,gives rebate on rituals with fx_rebatefx??
+Monsters,Ritual,gatherherbs,,,A commander with this ability will enable the player to gather herbs.
+Monsters,Ritual,gatherfungus,,,A commander with this ability will enable the player to gather fungus.
+Monsters,Ritual,gathersacr,,,A commander with this ability will enable the player to gather sacrifices.
+Monsters,Ritual,gatherhands,,,A commander with this ability will enable the player to gather Hands of Glory.
+Monsters,Ritual,gatherweed,,,A commander with this ability will enable the player to gather weed.
+Monsters,Ritual,gathergems,,,A commander with this ability will enable the player to gather gems of individual types.
+Monsters,Ritual,gatheranygems,,,A commander with this ability will enable the player to gather gems.
+Monsters,Ritual,seegems,,,A commander with this ability will enable the player to see what type of gems mine produce.
+Monsters,Ritual,gatherrelics,,,A commander with this ability will enable the player to gather relics.
+Monsters,Ritual,ctrlchance,<nbr>,,Chance of controlling this monster when it is summoned
+Monsters,Ritual,montag,<nbr>,,Sets the monster tag value referenced by other modding commands.
+Monsters,Shape Changing,growhp,<nbr>,,to be written
+Monsters,Shape Changing,shrinkhp,<nbr>,,to be written
+Monsters,Shape Changing,firstshape,<nbr>,,to be written
+Monsters,Shape Changing,secondshape,<nbr>,,to be written
+Monsters,Shape Changing,growtime,<value>,,will grow into next monster after about value turns
+Monsters,Shape Changing,growoffs,<value>,,to become other than next monster
+Monsters,Shape Changing,landshape,<value>,,will take shape +value when on land
+Monsters,Shape Changing,watershape,<value>,,will take shape +value when in the sea
+Monsters,Spawning,motherspawn,<0-7>,,Spawns as one of a few special spawners in the game. 1 = mother of monsters 2 = teotls of war (spawns d2 jaguars or 1 ozelotls not on homeplane) 3 = teotls of rain (spawns d3 toad warriors not on homeplane) 4 = bloody mother (spawns d2 jaguars or d3 serpents not on homeplane) 5 = teotls of night (spawns d3 bats or 1 ozelotls not on homeplane) 6 = teotls of underworld (spawns 2d3 longdead not on homeplane) 7 = teotls of sky (spawns d3 bats or d3 eagle warriors not on homeplane)
+Monsters,Spawning,spawnmon,<value>,,Spawns next monster. value/100 = monsters per turn
+Monsters,Spawning,spawnoffs,<value>,,To spawn something other than the next monster
+Monsters,Spawning,spawnmonaway,<value>,,Spawns next monster but not on homeplane. value/100 = monsters per turn
+Monsters,Spawning,spawn1d6mon,<value>,,Spawns 1d6 of the next monster. value = chance
+Monsters,Spawning,spawn2d6mon,<value>,,Spawns 2d6 of the next monster. value = chance
+Monsters,Spawning,split,<value>,,Value = dmg required in % for splitting into next monster (like a slime).
+Monsters,Spawning,reform,<value>,,Value = chance in percent of reforming to prev monster each month (like a slime).
+Monsters,Spawning,satyrspawn,<value>,,Bonus for dryad queen auto spawns.
+Monsters,Spawning,harpyspawn,<value>,,Bonus for dryad queen auto spawns.
+Monsters,Spawning,centspawn,<value>,,Bonus for dryad queen auto spawns.
+Monsters,Spawning,minospawn,<value>,,Bonus for dryad queen auto spawns.
+Monsters,Spells,spellweapon,<path> <level>,,Equips the monster with a Cast Spell weapon in the magic path specified. This spell weapon only has a 25% chance of being successfully used in melee combat.
+Monsters,Spells,spellweaponbonus,<path> <level>,,Equips the monster with a bonus Cast Spellweapon in the magic path specified. This spell weapon can be used in melee without penalty.
+Monsters,Spells,spellweapon50,<path> <level>,,Equips the monster with a limited Cast Spell Weapon in the magic path specified. This spell weapon has only a 50% chance of being used on any given combat round.
+Monsters,Spells,spellweapon50s,<path> <level>,,Equips the monster with a limited Cast Spell+skip weapon in the magic path specified. This spell weapon has only a 50% chance of being used on any given combat round. If it is used the next weapon will be skipped.
+Monsters,Spells,spellweaponsingle,<path> <level>,,Equips the monster with a limited Cast Spell Weapon in the magic path specified. Only one of the single spell weapons will be used per combat round if the monster has several
+Monsters,Spells,more1spells,<nbr>,,The monster starts with more or fewer level 1 spells when it spawns.
+Monsters,Spells,more2spells,<nbr>,,The monster starts with more or fewer level 2 spells when it spawns.
+Monsters,Spells,more3spells,<nbr>,,The monster starts with more or fewer level 3 spells when it spawns.
+Monsters,Spells,spellrange,<value>,,Value = +range for battle spells
+Monsters,Start,selectmonster,monster name,0,Selects the monster that will be affected by the following modding commands. The selected monster is referred to as the active monster. The selectmonster command always selects the first monster of that name in the monster list. If there is more than one monster with the same name (e.g. longdead) the offset value can be used to select them. Leave the offset out if you only want to select the first monster. The default value of the offset is 0. The offset used by this command cannot be set to a negative value unlike the offset for the lookslike command. Offset value 1 means the command selects the (first + 1) monster of that name i.e. the second monster. Offset 2 selects the third monster of the same name etc.
+Monsters,Start,newmonster,monster name,,Creates a new monster. This new monster will be affected by the following modding commands until the next active monster is set. The monster can have the same name as another monster.
+Monsters,Stealth,acutesenses,,,to be written
+Monsters,Stealth,spiritsight,,,to be written
+Monsters,Stealth,badsight,,,to be written
+Monsters,Stealth,stealth,,,to be written
+Monsters,Stealth,foreststealth,,,to be written
+Monsters,Stealth,invisible,,,to be written
+Monsters,Stealth,hideanimals,<value>,,animals following this commander gains forest stealth
+Monsters,Stealth,farsight,<value>,,can see further
+Monsters,Stealth,snowstealth,,,to be written
+Monsters,Stealth,desertstealth,,,to be written
+Monsters,Terrain,terraformfrom,<value>,,Changes this terrain into something. Use next two commands to setup that and how often.
+Monsters,Terrain,terraformto,<value>,,Terraforms to this terrain ( plain).
+Monsters,Terrain,terraformch,<value>,100,Chance of terraforming square (default 100).
+Monsters,Terrain,makecolony,<terrain nbr>,,Has a chance of turning a standard terrain into ‘terr’ and then die.
+Monsters,Terrain,colonyterr,<value>,-87,Terrain to build colonies in (default -87).
+Monsters,Terrain,colonymsg,<value>,,1 = everyone will get a message when a colony is created.
+Monsters,Type,human,,,is a human
+Monsters,Type,female,,,is a female
+Monsters,Type,undead,,,is an undead being
+Monsters,Type,animal,,,is an animal
+Monsters,Type,inanimate,,,is an undead being
+Monsters,Type,troll,,,is a troll
+Monsters,Type,coldblood,,,is coldblooded
+Monsters,Type,stonebeing,,,monster is made of stone
+Monsters,Type,setcreator,<0-1>,,used by monsters that get their name from their creator
+Monsters,Type,statue,<0-1>,,statues get part of their name from their creator e.g. Statue of Anselm
+Monsters,Type,expendable,<0-1>,,Is an expendable unit (can be used payment for certain rituals/recruitments).
+Monsters,Type,kobold,<0-1>,,Is an expendable kobold (counts as expendable unit but comes with a different ability description).
+Monsters,Type,goblin,<0-1>,,Is an expendable goblin (can be used payment for certain rituals/recruitments).
+Monsters,Type,dragon,<0-2>,,1=dragon 2=elder dragon.
+Monsters,Type,madcultist,<0-1>,,Mad cultist might decide to open a gate to Inferno.
+Monsters,Type,primalcult,<0-1>,,Primal cultists might decide to open the primal gate.
+Monsters,Type,fungus,<0-2>,,1 = is a fungus 2 = is an animated fungus.
+Monsters,Type,ship,<0-1>,,Is a ship.

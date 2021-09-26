@@ -1,0 +1,122 @@
+[
+ {
+   "name": "fungi",
+   "hint": "<nbr>",
+   "default": "",
+   "description": "Gives extra income per month of this resource."
+ },
+ {
+   "name": "gold",
+   "hint": "<nbr>",
+   "default": "",
+   "description": "Gives extra income per month of this resource."
+ },
+ {
+   "name": "goldbonus",
+   "hint": "<percent>",
+   "default": "",
+   "description": "Percentage bonus to gold income for entire nation."
+ },
+ {
+   "name": "goldcarrier",
+   "hint": "<value>",
+   "default": "",
+   "description": "spoils of war when defeating this monster."
+ },
+ {
+   "name": "hands",
+   "hint": "<nbr>",
+   "default": "",
+   "description": "Gives extra income per month of this resource."
+ },
+ {
+   "name": "herbs",
+   "hint": "<nbr>",
+   "default": "",
+   "description": "Gives extra income per month of this resource."
+ },
+ {
+   "name": "iron",
+   "hint": "<nbr>",
+   "default": "",
+   "description": "Gives extra income per month of this resource."
+ },
+ {
+   "name": "ironbonus",
+   "hint": "<percent>",
+   "default": "",
+   "description": "Percentage bonus to iron income for entire nation."
+ },
+ {
+   "name": "ironcarrier",
+   "hint": "<value>",
+   "default": "",
+   "description": "spoils of war when defeating this monster."
+ },
+ {
+   "name": "lairgoldpen",
+   "hint": "<value>",
+   "default": "",
+   "description": "Gold inc penalty in percent for this monster’s lair."
+ },
+ {
+   "name": "lifeforce",
+   "hint": "<nbr>",
+   "default": "",
+   "description": "Gives extra income per month of this resource."
+ },
+ {
+   "name": "limitgold",
+   "hint": "<value>",
+   "default": "",
+   "description": "value = amount of gold per month but max the value of the square"
+ },
+ {
+   "name": "limitiron",
+   "hint": "<value>",
+   "default": "",
+   "description": "value = amount of iron per month but max the value of the square"
+ },
+ {
+   "name": "limittrade",
+   "hint": "<value>",
+   "default": "",
+   "description": "value = amount of extra trade per month but max the original trade value of the square."
+ },
+ {
+   "name": "localgoldbonus",
+   "hint": "<percent>",
+   "default": "",
+   "description": "att% bonus to gold income in this square (only works in mines)"
+ },
+ {
+   "name": "localironbonus",
+   "hint": "<percent>",
+   "default": "",
+   "description": "att% bonus to iron income in this square (only works in mines)"
+ },
+ {
+   "name": "relics",
+   "hint": "<nbr>",
+   "default": "",
+   "description": "Gives extra income per month of this resource."
+ },
+ {
+   "name": "trade",
+   "hint": "<nbr>",
+   "default": "",
+   "description": "Gives this number of extra trade points"
+ },
+ {
+   "name": "tradebonus",
+   "hint": "<percent>",
+   "default": "",
+   "description": "Percentage bonus to trade income for entire nation."
+ },
+ {
+   "name": "weed",
+   "hint": "<nbr>",
+   "default": "",
+   "description": "Gives extra income per month of this resource."
+ }
+]

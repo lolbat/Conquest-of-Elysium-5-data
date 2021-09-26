@@ -1,0 +1,23 @@
+Resistances,acidres,<value>,,Offers resistance to acid. Value 100 = completely resistant.
+Resistances,affres,<value>,,value = chance of not receiving battle affliction
+Resistances,airshield,<percent>,,Air Shield with this chance of negating incoming missile attacks.
+Resistances,awe,<nbr>,,to be written
+Resistances,bluntres,,,Blunt resistance (half damage).
+Resistances,charmres,,,Charm resistance.
+Resistances,coldres,<value>,,Offers resistance to cold. Value 100 = completely resistant.
+Resistances,diseaseres,,,Disease resistance.
+Resistances,displaced,<value>,,25% chance of missing per rank away from target
+Resistances,ethereal,,,Is ethereal.
+Resistances,fireres,<value>,,Offers resistance to fire. Value 100 = completely resistant.
+Resistances,largeshield,,,Equips the monster with a large shield (0-2 protection).
+Resistances,lucky,,,Lucky units evade 50% of all attacks.
+Resistances,magicshield,,,Equips the monster with a magic shield (0-3 protection).
+Resistances,mirrorimages,<value>,,to be written
+Resistances,nonmaginvul,,,Invulnerable to non-magical weapons.
+Resistances,pierceres,,,Pierce resistance (half damage).
+Resistances,poisonres,<value>,,Offers resistance to poison. Value 100 = completely resistant.
+Resistances,shield,,,Equips the monster with a regular shield (0-1 protection).
+Resistances,shockres,<value>,,Offers resistance to shock. Value 100 = completely resistant.
+Resistances,slashres,,,Slash resistance (half damage).
+Resistances,sleepres,,,Sleep resistance.
+Resistances,twistfate,,,to be written

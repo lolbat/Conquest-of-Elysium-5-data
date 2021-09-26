@@ -1,0 +1,93 @@
+{"parentCategory": "Magic",
+   "subcategories":  [
+   {"subcategory": "Basic", "commands": [
+      {
+         "category": "Magic",
+         "name": "name",
+         "hint": "item name",
+         "default": null,
+         "description": "Set the name of the magic item. Not necessary if you created a new one with newitem."
+      },
+      {
+         "category": "Magic",
+         "name": "descr",
+         "hint": "item description",
+         "default": null,
+         "description": "Not necessary as most magic items don’t have descriptions."
+      },
+      {
+         "category": "Magic",
+         "name": "spr",
+         "hint": "image file",
+         "default": null,
+         "description": "Sets the sprite for the magic item. It should be centered in a 32x32 or 64x64 pixel large image. The drawn item should not be larger than 40x40 pixels however so if put in a 64x64 image it should be surrounded by black."
+      },
+      {
+         "category": "Magic",
+         "name": "rarity",
+         "hint": "<rarity>",
+         "default": 0,
+         "description": "Sets how easy it should be to find this item. 0=common 1=rare 2=rare & unique 3=impossible to find as a random item. Default is 0."
+      },
+      {
+         "category": "Magic",
+         "name": "type",
+         "hint": "<item type>",
+         "default": 7,
+         "description": "Sets the magic item type. Default is 7 = misc item. See table Magic Item Types"
+      },
+      {
+         "category": "Magic",
+         "name": "armor",
+         "hint": "<value>",
+         "default": 0,
+         "description": "Armor value default 0."
+      },
+      {
+         "category": "Magic",
+         "name": "protection",
+         "hint": "<value>",
+         "default": 0,
+         "description": "Protection bonus default 0."
+      },
+      {
+         "category": "Magic",
+         "name": "hp",
+         "hint": "<value>",
+         "default": 0,
+         "description": "Hit Point bonus default 0."
+      }
+   ]},
+   {"subcategory": "Copy Clear", "commands":  [
+      {
+         "category": "Magic",
+         "name": "copyspr",
+         "hint": "item name",
+         "default": null,
+         "description": "Uses the sprite from this magic item."
+      },
+      {
+         "category": "Magic",
+         "name": "copystats",
+         "hint": "item name",
+         "default": null,
+         "description": "Copies all stats except the name from this magic item."
+      }
+   ]},
+   {"subcategory": "Start", "commands": [
+      {
+         "category": "Magic",
+         "name": "newitem",
+         "hint": "item name",
+         "default": null,
+         "description": "This command creates a new magic item."
+      },
+      {
+         "category": "Magic",
+         "name": "selectitem",
+         "hint": "item name",
+         "default": null,
+         "description": "Selects an existing magic item for modification."
+      }
+   ]}
+]}

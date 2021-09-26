@@ -1,0 +1,1446 @@
+{
+   "Attacks": [
+      {
+         "category": "Monsters",
+         "name": "meleeweapon",
+         "hint": "<dmg> 'weapon'",
+         "default": null,
+         "description": "Equips the monster with a melee weapon of this name that has a base damage of <dmg>."
+      },
+      {
+         "category": "Monsters",
+         "name": "meleeweaponbonus",
+         "hint": "<dmg> 'weapon'",
+         "default": null,
+         "description": "Equips the monster with a melee weapon of this name that has a base damage of <dmg>. This weapon will be used in addition to any other attacks the monster has."
+      },
+      {
+         "category": "Monsters",
+         "name": "meleeweaponspec",
+         "hint": "<dmg> 'weapon'",
+         "default": null,
+         "description": "Equips the monsters with a special melee weapon. Any normal melee attacks after this one will not be used if this attack was used. Normally used for lances."
+      },
+      {
+         "category": "Monsters",
+         "name": "meleeweaponlong",
+         "hint": "<dmg> 'weapon'",
+         "default": null,
+         "description": "Equips the monster with a melee weapon of this name that has a base damage of <dmg>. The weapon is long and can be used to attack from the second row."
+      },
+      {
+         "category": "Monsters",
+         "name": "meleeweapon50s",
+         "hint": "<dmg> 'weapon'",
+         "default": null,
+         "description": "Equips the monster with a melee+skip attack that has 50% chance of being used. If it is used the next attack will be skipped."
+      },
+      {
+         "category": "Monsters",
+         "name": "rangedweapon",
+         "hint": "<dmg> 'weapon'",
+         "default": null,
+         "description": "Equips the monster with a ranged weapon of this name that has a base damage of <dmg>."
+      },
+      {
+         "category": "Monsters",
+         "name": "rangedweaponbonus",
+         "hint": "<dmg> 'weapon'",
+         "default": null,
+         "description": "Equips the monster with a ranged weapon of this name that has a base damage of <dmg>. This weapon will be used in addition to any other attacks the monster has."
+      },
+      {
+         "category": "Monsters",
+         "name": "rangedweapon25",
+         "hint": "<dmg> 'weapon'",
+         "default": null,
+         "description": "Equips the monster with a ranged weapon of this name that has a base damage of <dmg>. This weapon has a 25% chance of being used in melee combat."
+      },
+      {
+         "category": "Monsters",
+         "name": "rangedweapon50",
+         "hint": "<dmg> 'weapon'",
+         "default": null,
+         "description": "Equips the monster with a ranged weapon of this name that has a base damage of <dmg>. This weapon has a 50% chance of being used in melee combat."
+      },
+      {
+         "category": "Monsters",
+         "name": "rangedweapon50s",
+         "hint": "<dmg> 'weapon'",
+         "default": null,
+         "description": "Equips the monster with a range+skip weapon that has 50% chance of being used in melee (100% at range). When used the next weapon will be skipped."
+      },
+      {
+         "category": "Monsters",
+         "name": "rangedweapon50x",
+         "hint": "<dmg> 'weapon'",
+         "default": null,
+         "description": "Equips the monster with a range+skip weapon that has 50% chance of being used in melee or range. When used the next weapon will be skipped."
+      },
+      {
+         "category": "Monsters",
+         "name": "siegeweapon",
+         "hint": "<dmg> 'weapon'",
+         "default": null,
+         "description": "Equips the monster with a siege weapon of this name that has a base damage of <dmg>. This weapon will be used in locations that allow sieges like cities and castles. Siege weapons are used in the first ten rounds of combat before any normal attacks are made."
+      },
+      {
+         "category": "Monsters",
+         "name": "assassinweapon",
+         "hint": "<dmg> 'weapon'",
+         "default": null,
+         "description": "Equips the monster with an assassination weapon of this name that has a base damage of <dmg>. This weapon will be used to make an assassination attempt on an enemy before normal combat (including siege weapons) begins. Assassination attempts can only be used by the attacker and cannot be used against summoned creatures the summoner fails to control."
+      },
+      {
+         "category": "Monsters",
+         "name": "prebatweapon",
+         "hint": "<dmg> 'weapon'",
+         "default": null,
+         "description": "Equips the monster with a prebattle effect weapon of this name that has a base damage of <dmg>. This weapon will be used before any normal combat (including assassination) begins."
+      }
+   ],
+   "Basic": [
+      {
+         "category": "Monsters",
+         "name": "name",
+         "hint": "monster name",
+         "default": null,
+         "description": "This command renames an existing monster. It is not needed when creating a new monster."
+      },
+      {
+         "category": "Monsters",
+         "name": "spr1",
+         "hint": "image.tga",
+         "default": null,
+         "description": "The file name of the normal image for the monster. This command sets the attack sprite to this image as well.The image should be 32x32 or 64x64 for normal sized monsters and 128x128 for huge monsters. A human being should be about 34 pixels tall and there should be 2 pixels of free space between his feet and the bottom of the image."
+      },
+      {
+         "category": "Monsters",
+         "name": "spr2",
+         "hint": "image.tga",
+         "default": null,
+         "description": "The file name of the attack image for the monster. If this is not set then spr1 will be used for this image too. This command must come after the spr1 command."
+      },
+      {
+         "category": "Monsters",
+         "name": "descr",
+         "hint": "text",
+         "default": null,
+         "description": "Description of the monster. The ^ character will be replaced with a newline."
+      },
+      {
+         "category": "Monsters",
+         "name": "hp",
+         "hint": "<nbr>",
+         "default": null,
+         "description": "The maximum number of hit points for the monster. A normal human soldier has 6 hit points and an elite heavily armored soldier has 10 hit points. An ogre has 25 hit points a troll has 56 hit points and giants dragons and other huge monsters can have well over a 100 hit points."
+      },
+      {
+         "category": "Monsters",
+         "name": "mr",
+         "hint": "<nbr>",
+         "default": null,
+         "description": "The magic resistance of the monster. Animals have a magic resistance of 2 a normal human has 4 and a more susceptible human has 3. Apprentice mages have a magic resistance of 6 full mages have 8 and master mages have 9. Some highly magical beings may have even higher magic resistance and they can almost never be affected by magic that is resistible."
+      },
+      {
+         "category": "Monsters",
+         "name": "str",
+         "hint": "<nbr>",
+         "default": null,
+         "description": "The strength of the monster. A normal human soldier has a strength of 4 an elite human soldier has 5 a troll has 8 or 9 and giants and dragons have 10 to 12."
+      },
+      {
+         "category": "Monsters",
+         "name": "armor",
+         "hint": "<nbr>",
+         "default": null,
+         "description": "This command sets the monster’s armor value which represents its natural protection or the armor it is wearing. Normal human troops have an armor value of 0. Medium armored human troops have an armor value of 1. Heavily armored human troops like Heavy Infantry have an armor value of 2 and very heavily armored troops like Knights and High Lords have an armor value of 3. Extremely tough monsters like dragons may have an armor value of 4 or more."
+      },
+      {
+         "category": "Monsters",
+         "name": "mor",
+         "hint": "<nbr>",
+         "default": null,
+         "description": "The morale of the monster. A normal human soldier has a morale of 4 an elite human soldier has 5 or 6 and powerful monsters can have a morale of 8 or more. Very fearless monsters may have a morale of 15. Setting the morale to 99 makes the monster Mindless and it will be completely unaffected by fear or any other effects that influence morale."
+      },
+      {
+         "category": "Monsters",
+         "name": "rank",
+         "hint": "<nbr>",
+         "default": null,
+         "description": "Sets the default deployment rank for the monster. -1 = back 0 = mid 1 = front"
+      }
+   ],
+   "Behaviour": [
+      {
+         "category": "Monsters",
+         "name": "swamp1",
+         "hint": "",
+         "default": null,
+         "description": "Loves swamps."
+      },
+      {
+         "category": "Monsters",
+         "name": "swamp2",
+         "hint": "",
+         "default": null,
+         "description": "Likes swamps."
+      },
+      {
+         "category": "Monsters",
+         "name": "desert1",
+         "hint": "",
+         "default": null,
+         "description": "Loves deserts."
+      },
+      {
+         "category": "Monsters",
+         "name": "desert2",
+         "hint": "",
+         "default": null,
+         "description": "Likes deserts."
+      },
+      {
+         "category": "Monsters",
+         "name": "desert3",
+         "hint": "",
+         "default": null,
+         "description": "Hates deserts."
+      },
+      {
+         "category": "Monsters",
+         "name": "deadforest1",
+         "hint": "",
+         "default": null,
+         "description": "Loves dead forests."
+      },
+      {
+         "category": "Monsters",
+         "name": "deadforest2",
+         "hint": "",
+         "default": null,
+         "description": "Likes dead forests."
+      },
+      {
+         "category": "Monsters",
+         "name": "mountain1",
+         "hint": "",
+         "default": null,
+         "description": "Loves mountains."
+      },
+      {
+         "category": "Monsters",
+         "name": "mountain2",
+         "hint": "",
+         "default": null,
+         "description": "Likes mountains."
+      },
+      {
+         "category": "Monsters",
+         "name": "jungle1",
+         "hint": "",
+         "default": null,
+         "description": "Loves jungles."
+      },
+      {
+         "category": "Monsters",
+         "name": "jungle2",
+         "hint": "",
+         "default": null,
+         "description": "Likes jungles."
+      },
+      {
+         "category": "Monsters",
+         "name": "money1",
+         "hint": "",
+         "default": null,
+         "description": "Loves gold producing squares."
+      },
+      {
+         "category": "Monsters",
+         "name": "money2",
+         "hint": "",
+         "default": null,
+         "description": "Likes gold producing squares."
+      },
+      {
+         "category": "Monsters",
+         "name": "horror",
+         "hint": "",
+         "default": null,
+         "description": "Likes to kill sentient people also isn’t scared of the void."
+      },
+      {
+         "category": "Monsters",
+         "name": "ancforest1",
+         "hint": "",
+         "default": null,
+         "description": "Loves ancient forests."
+      },
+      {
+         "category": "Monsters",
+         "name": "forest1",
+         "hint": "",
+         "default": null,
+         "description": "Loves forests (including ancient forests)."
+      },
+      {
+         "category": "Monsters",
+         "name": "forest2",
+         "hint": "",
+         "default": null,
+         "description": "Likes forests (including ancient forests)."
+      },
+      {
+         "category": "Monsters",
+         "name": "temple1",
+         "hint": "",
+         "default": null,
+         "description": "Loves temples."
+      },
+      {
+         "category": "Monsters",
+         "name": "temple2",
+         "hint": "",
+         "default": null,
+         "description": "Likes temples."
+      },
+      {
+         "category": "Monsters",
+         "name": "south1",
+         "hint": "",
+         "default": null,
+         "description": "Loves the south."
+      },
+      {
+         "category": "Monsters",
+         "name": "south2",
+         "hint": "",
+         "default": null,
+         "description": "Likes the south."
+      },
+      {
+         "category": "Monsters",
+         "name": "north1",
+         "hint": "",
+         "default": null,
+         "description": "Loves the north."
+      },
+      {
+         "category": "Monsters",
+         "name": "gates1",
+         "hint": "",
+         "default": null,
+         "description": "Loves gateways."
+      },
+      {
+         "category": "Monsters",
+         "name": "void2",
+         "hint": "",
+         "default": null,
+         "description": "Likes the void."
+      },
+      {
+         "category": "Monsters",
+         "name": "nonruin1",
+         "hint": "",
+         "default": null,
+         "description": "Loves stuff that can be turned into ruins but is not yet a ruin."
+      },
+      {
+         "category": "Monsters",
+         "name": "mines1",
+         "hint": "",
+         "default": null,
+         "description": "Loves mines."
+      },
+      {
+         "category": "Monsters",
+         "name": "stray",
+         "hint": "",
+         "default": null,
+         "description": "Can stray away from loved and liked terrains."
+      },
+      {
+         "category": "Monsters",
+         "name": "stupid",
+         "hint": "",
+         "default": null,
+         "description": "Cannot be controlled by players and will move automatically like an independent unit."
+      },
+      {
+         "category": "Monsters",
+         "name": "semistupid",
+         "hint": "",
+         "default": null,
+         "description": "Will move automatically like an independent units unless it is controlled by a player commander."
+      },
+      {
+         "category": "Monsters",
+         "name": "followstupid",
+         "hint": "",
+         "default": null,
+         "description": "Doesn’t move independently but follows other stupid units."
+      },
+      {
+         "category": "Monsters",
+         "name": "coastal",
+         "hint": "",
+         "default": null,
+         "description": "Loves the coast like a giant crab."
+      },
+      {
+         "category": "Monsters",
+         "name": "lone",
+         "hint": "",
+         "default": null,
+         "description": "Moves independently of the player and not in groups."
+      },
+      {
+         "category": "Monsters",
+         "name": "aggressive",
+         "hint": "",
+         "default": null,
+         "description": "Likes to attack enemies."
+      },
+      {
+         "category": "Monsters",
+         "name": "wander",
+         "hint": "<objective>",
+         "default": null,
+         "description": "Will try to fulfill an objective if it is a commander. See table Objectives for possible values."
+      },
+      {
+         "category": "Monsters",
+         "name": "indwander",
+         "hint": "<objective>",
+         "default": null,
+         "description": "Only wander if owned by Independents"
+      },
+      {
+         "category": "Monsters",
+         "name": "infwander",
+         "hint": "<objective>",
+         "default": null,
+         "description": "Only wander if owned by Inferno"
+      },
+      {
+         "category": "Monsters",
+         "name": "celwander",
+         "hint": "<objective>",
+         "default": null,
+         "description": "Only wander if owned by Celestials"
+      },
+      {
+         "category": "Monsters",
+         "name": "hadeswander",
+         "hint": "<objective>",
+         "default": null,
+         "description": "Only wander if owned by Hades"
+      },
+      {
+         "category": "Monsters",
+         "name": "wander2",
+         "hint": "<objective>",
+         "default": null,
+         "description": "Try to fulfill this objective if the first one was not possible"
+      },
+      {
+         "category": "Monsters",
+         "name": "infwander2",
+         "hint": "<objective>",
+         "default": null,
+         "description": "Try to fulfill this objective if the first one was not possible"
+      },
+      {
+         "category": "Monsters",
+         "name": "celwander2",
+         "hint": "<objective>",
+         "default": null,
+         "description": "Try to fulfill this objective if the first one was not possible"
+      },
+      {
+         "category": "Monsters",
+         "name": "hadeswander2",
+         "hint": "<objective>",
+         "default": null,
+         "description": "Try to fulfill this objective if the first one was not possible"
+      },
+      {
+         "category": "Monsters",
+         "name": "maxsinners",
+         "hint": "<value>",
+         "default": null,
+         "description": "Will gather sinners when owned by Inferno (value=amount before returning)"
+      },
+      {
+         "category": "Monsters",
+         "name": "maptele",
+         "hint": "",
+         "default": null,
+         "description": "Can teleport on world map when it is a wandering monster."
+      },
+      {
+         "category": "Monsters",
+         "name": "wanderrest",
+         "hint": "<chance>",
+         "default": null,
+         "description": "A chance for wandering monsters to rest a turn instead of going on a mission. Dragons have about 85 in this ability."
+      },
+      {
+         "category": "Monsters",
+         "name": "wandermaxdist",
+         "hint": "<value>",
+         "default": null,
+         "description": "Maximum distance for raid missions for wanderers. Dragons have about 6 in this ability."
+      },
+      {
+         "category": "Monsters",
+         "name": "pickupanimals",
+         "hint": "<0-1>",
+         "default": null,
+         "description": "Picks up all animals in the same square and brings them along."
+      },
+      {
+         "category": "Monsters",
+         "name": "wanderattack",
+         "hint": "<player number>",
+         "default": null,
+         "description": "Pause wander to attack this faction if adjacent (-1=all factions -2=player factions)"
+      },
+      {
+         "category": "Monsters",
+         "name": "winteridle",
+         "hint": "",
+         "default": null,
+         "description": "Monster will not move in the winter if it is in a cold part of the map."
+      }
+   ],
+   "Copy/Clear": [
+      {
+         "category": "Monsters",
+         "name": "copyspr",
+         "hint": "monster name",
+         "default": null,
+         "description": "Copy the sprite of another monster."
+      },
+      {
+         "category": "Monsters",
+         "name": "clearspec",
+         "hint": "",
+         "default": null,
+         "description": "Removes all special abilities from the active monster. The special abilities are things like Fire Immunity Regeneration etc. This command does not clear movement abilities. Use the clearmove command for that."
+      },
+      {
+         "category": "Monsters",
+         "name": "clearmove",
+         "hint": "",
+         "default": null,
+         "description": "Removes all movement attributes from the active monster."
+      },
+      {
+         "category": "Monsters",
+         "name": "clearweapons",
+         "hint": "",
+         "default": null,
+         "description": "Removes all weapons from the active monster."
+      }
+   ],
+   "Healing": [
+      {
+         "category": "Monsters",
+         "name": "noheal",
+         "hint": "",
+         "default": null,
+         "description": "to be written"
+      },
+      {
+         "category": "Monsters",
+         "name": "fastheal",
+         "hint": "",
+         "default": null,
+         "description": "to be written"
+      },
+      {
+         "category": "Monsters",
+         "name": "coldheal",
+         "hint": "<value>",
+         "default": null,
+         "description": "heals value hp/month when it’s cold"
+      },
+      {
+         "category": "Monsters",
+         "name": "regeneration",
+         "hint": "",
+         "default": null,
+         "description": "to be written"
+      },
+      {
+         "category": "Monsters",
+         "name": "varregen",
+         "hint": "<value>",
+         "default": null,
+         "description": "to be written"
+      },
+      {
+         "category": "Monsters",
+         "name": "saner",
+         "hint": "<value>",
+         "default": null,
+         "description": "regains this amount of sanity per month"
+      },
+      {
+         "category": "Monsters",
+         "name": "voidsanity",
+         "hint": "<value>",
+         "default": null,
+         "description": "reduces insanity gains (like armor)"
+      },
+      {
+         "category": "Monsters",
+         "name": "eatvillage",
+         "hint": "<0-1>",
+         "default": null,
+         "description": "to be written"
+      },
+      {
+         "category": "Monsters",
+         "name": "minorstartaff",
+         "hint": "<chance>",
+         "default": null,
+         "description": "Chance of starting with a minor affliction. Chances >100 can give more than one affliction."
+      },
+      {
+         "category": "Monsters",
+         "name": "healonterr",
+         "hint": "<value>",
+         "default": null,
+         "description": "to be written"
+      }
+   ],
+   "Movement": [
+      {
+         "category": "Monsters",
+         "name": "flying",
+         "hint": "",
+         "default": null,
+         "description": "Monster can fly."
+      },
+      {
+         "category": "Monsters",
+         "name": "huge",
+         "hint": "",
+         "default": null,
+         "description": "Monster is giant sized. This also makes it a 3x3 square monster on the battlefield."
+      },
+      {
+         "category": "Monsters",
+         "name": "immobile",
+         "hint": "",
+         "default": null,
+         "description": "Monster is immobile (cannot move in battle)."
+      },
+      {
+         "category": "Monsters",
+         "name": "stationary",
+         "hint": "",
+         "default": null,
+         "description": "Monster is stationary (cannot move on world map)."
+      },
+      {
+         "category": "Monsters",
+         "name": "slow",
+         "hint": "",
+         "default": null,
+         "description": "Monster is slow on world map."
+      },
+      {
+         "category": "Monsters",
+         "name": "fast",
+         "hint": "",
+         "default": null,
+         "description": "Monster is fast."
+      },
+      {
+         "category": "Monsters",
+         "name": "battlefast",
+         "hint": "",
+         "default": null,
+         "description": "Monster is fast but in battles only."
+      },
+      {
+         "category": "Monsters",
+         "name": "swamp",
+         "hint": "",
+         "default": null,
+         "description": "Monster has swamp move."
+      },
+      {
+         "category": "Monsters",
+         "name": "desert",
+         "hint": "",
+         "default": null,
+         "description": "Monster has desert move."
+      },
+      {
+         "category": "Monsters",
+         "name": "mountain",
+         "hint": "",
+         "default": null,
+         "description": "Monster has mountain move."
+      },
+      {
+         "category": "Monsters",
+         "name": "snow",
+         "hint": "",
+         "default": null,
+         "description": "Monster has snow move."
+      },
+      {
+         "category": "Monsters",
+         "name": "water",
+         "hint": "",
+         "default": null,
+         "description": "Monster can enter water squares."
+      },
+      {
+         "category": "Monsters",
+         "name": "float",
+         "hint": "",
+         "default": null,
+         "description": "Monster is floating."
+      },
+      {
+         "category": "Monsters",
+         "name": "noland",
+         "hint": "",
+         "default": null,
+         "description": "Monster cannot move on land."
+      },
+      {
+         "category": "Monsters",
+         "name": "wateronly",
+         "hint": "",
+         "default": null,
+         "description": "Same as water & noland. The monster will be aquatic."
+      },
+      {
+         "category": "Monsters",
+         "name": "passwall",
+         "hint": "",
+         "default": null,
+         "description": "Monster can move through walls."
+      },
+      {
+         "category": "Monsters",
+         "name": "wall",
+         "hint": "",
+         "default": null,
+         "description": "Monster has wall climbing."
+      },
+      {
+         "category": "Monsters",
+         "name": "teleport",
+         "hint": "",
+         "default": null,
+         "description": "Like flying but the monster will teleport around in combat."
+      },
+      {
+         "category": "Monsters",
+         "name": "battleslow",
+         "hint": "",
+         "default": null,
+         "description": "Monster is slow in battles."
+      },
+      {
+         "category": "Monsters",
+         "name": "battleslow2",
+         "hint": "",
+         "default": null,
+         "description": "Monster is very slow battles."
+      },
+      {
+         "category": "Monsters",
+         "name": "tunnel",
+         "hint": "",
+         "default": null,
+         "description": "Monster can tunnel on the world map."
+      }
+   ],
+   "Planes": [
+      {
+         "category": "Monsters",
+         "name": "immortal",
+         "hint": "",
+         "default": null,
+         "description": "to be written"
+      },
+      {
+         "category": "Monsters",
+         "name": "immortalap",
+         "hint": "<nbr>",
+         "default": null,
+         "description": "to be written"
+      },
+      {
+         "category": "Monsters",
+         "name": "reformloc",
+         "hint": "<value>",
+         "default": null,
+         "description": "respawn terrain for immortals (-1 = anywhere 1000=home)"
+      },
+      {
+         "category": "Monsters",
+         "name": "reformdestroy",
+         "hint": "<value>",
+         "default": null,
+         "description": "chance to destroy location on immortality respawn"
+      },
+      {
+         "category": "Monsters",
+         "name": "homeplane",
+         "hint": "<plane nbr>",
+         "default": null,
+         "description": "will return to this plane if slain outside it and be indep controlled again"
+      },
+      {
+         "category": "Monsters",
+         "name": "planeshift",
+         "hint": "<plane nbr>",
+         "default": null,
+         "description": "can go to/from other plane 1=hades 2=inferno"
+      },
+      {
+         "category": "Monsters",
+         "name": "noplanecamo",
+         "hint": "<plane nbr>",
+         "default": null,
+         "description": "does not use fx_lookslike when in plane = value"
+      },
+      {
+         "category": "Monsters",
+         "name": "banishsurv",
+         "hint": "",
+         "default": null,
+         "description": "to be written"
+      },
+      {
+         "category": "Monsters",
+         "name": "hadesres",
+         "hint": "<value>",
+         "default": null,
+         "description": "resistance to the effects of hades"
+      },
+      {
+         "category": "Monsters",
+         "name": "revertowner",
+         "hint": "<value>",
+         "default": null,
+         "description": "to be written"
+      },
+      {
+         "category": "Monsters",
+         "name": "primal",
+         "hint": "<value>",
+         "default": null,
+         "description": "to be written"
+      },
+      {
+         "category": "Monsters",
+         "name": "primable",
+         "hint": "<value>",
+         "default": null,
+         "description": "to be written"
+      },
+      {
+         "category": "Monsters",
+         "name": "primifier",
+         "hint": "<value>",
+         "default": null,
+         "description": "to be written"
+      }
+   ],
+   "Ritual": [
+      {
+         "category": "Monsters",
+         "name": "power",
+         "hint": "<pow nbr>",
+         "default": null,
+         "description": "pow nbr 0 means the last created ritual school -1 = the one before that etc. Positive numbers are existing ritual powers from CoE5 see the pow nbr table."
+      },
+      {
+         "category": "Monsters",
+         "name": "classcost",
+         "hint": "<nbr>",
+         "default": null,
+         "description": "to alter cost of all rituals made by this unit 50=50% more expensive"
+      },
+      {
+         "category": "Monsters",
+         "name": "mastery",
+         "hint": "<nbr>",
+         "default": null,
+         "description": "for monsters that can level up nbr 1=become next monster on leveling -1=previous monster etc."
+      },
+      {
+         "category": "Monsters",
+         "name": "allrit",
+         "hint": "<value>",
+         "default": null,
+         "description": "knows all rituals of this school (see the Ritual Schools table -1=all ritual schools)"
+      },
+      {
+         "category": "Monsters",
+         "name": "rebate",
+         "hint": "<value>",
+         "default": null,
+         "description": "gives rebate on rituals with fx_rebatefx??"
+      },
+      {
+         "category": "Monsters",
+         "name": "gatherherbs",
+         "hint": "",
+         "default": null,
+         "description": "A commander with this ability will enable the player to gather herbs."
+      },
+      {
+         "category": "Monsters",
+         "name": "gatherfungus",
+         "hint": "",
+         "default": null,
+         "description": "A commander with this ability will enable the player to gather fungus."
+      },
+      {
+         "category": "Monsters",
+         "name": "gathersacr",
+         "hint": "",
+         "default": null,
+         "description": "A commander with this ability will enable the player to gather sacrifices."
+      },
+      {
+         "category": "Monsters",
+         "name": "gatherhands",
+         "hint": "",
+         "default": null,
+         "description": "A commander with this ability will enable the player to gather Hands of Glory."
+      },
+      {
+         "category": "Monsters",
+         "name": "gatherweed",
+         "hint": "",
+         "default": null,
+         "description": "A commander with this ability will enable the player to gather weed."
+      },
+      {
+         "category": "Monsters",
+         "name": "gathergems",
+         "hint": "",
+         "default": null,
+         "description": "A commander with this ability will enable the player to gather gems of individual types."
+      },
+      {
+         "category": "Monsters",
+         "name": "gatheranygems",
+         "hint": "",
+         "default": null,
+         "description": "A commander with this ability will enable the player to gather gems."
+      },
+      {
+         "category": "Monsters",
+         "name": "seegems",
+         "hint": "",
+         "default": null,
+         "description": "A commander with this ability will enable the player to see what type of gems mine produce."
+      },
+      {
+         "category": "Monsters",
+         "name": "gatherrelics",
+         "hint": "",
+         "default": null,
+         "description": "A commander with this ability will enable the player to gather relics."
+      },
+      {
+         "category": "Monsters",
+         "name": "ctrlchance",
+         "hint": "<nbr>",
+         "default": null,
+         "description": "Chance of controlling this monster when it is summoned"
+      },
+      {
+         "category": "Monsters",
+         "name": "montag",
+         "hint": "<nbr>",
+         "default": null,
+         "description": "Sets the monster tag value referenced by other modding commands."
+      }
+   ],
+   "Shape Changing": [
+      {
+         "category": "Monsters",
+         "name": "growhp",
+         "hint": "<nbr>",
+         "default": null,
+         "description": "to be written"
+      },
+      {
+         "category": "Monsters",
+         "name": "shrinkhp",
+         "hint": "<nbr>",
+         "default": null,
+         "description": "to be written"
+      },
+      {
+         "category": "Monsters",
+         "name": "firstshape",
+         "hint": "<nbr>",
+         "default": null,
+         "description": "to be written"
+      },
+      {
+         "category": "Monsters",
+         "name": "secondshape",
+         "hint": "<nbr>",
+         "default": null,
+         "description": "to be written"
+      },
+      {
+         "category": "Monsters",
+         "name": "growtime",
+         "hint": "<value>",
+         "default": null,
+         "description": "will grow into next monster after about value turns"
+      },
+      {
+         "category": "Monsters",
+         "name": "growoffs",
+         "hint": "<value>",
+         "default": null,
+         "description": "to become other than next monster"
+      },
+      {
+         "category": "Monsters",
+         "name": "landshape",
+         "hint": "<value>",
+         "default": null,
+         "description": "will take shape +value when on land"
+      },
+      {
+         "category": "Monsters",
+         "name": "watershape",
+         "hint": "<value>",
+         "default": null,
+         "description": "will take shape +value when in the sea"
+      }
+   ],
+   "Spawning": [
+      {
+         "category": "Monsters",
+         "name": "motherspawn",
+         "hint": "<0-7>",
+         "default": null,
+         "description": "Spawns as one of a few special spawners in the game. 1 = mother of monsters 2 = teotls of war (spawns d2 jaguars or 1 ozelotls not on homeplane) 3 = teotls of rain (spawns d3 toad warriors not on homeplane) 4 = bloody mother (spawns d2 jaguars or d3 serpents not on homeplane) 5 = teotls of night (spawns d3 bats or 1 ozelotls not on homeplane) 6 = teotls of underworld (spawns 2d3 longdead not on homeplane) 7 = teotls of sky (spawns d3 bats or d3 eagle warriors not on homeplane)"
+      },
+      {
+         "category": "Monsters",
+         "name": "spawnmon",
+         "hint": "<value>",
+         "default": null,
+         "description": "Spawns next monster. value/100 = monsters per turn"
+      },
+      {
+         "category": "Monsters",
+         "name": "spawnoffs",
+         "hint": "<value>",
+         "default": null,
+         "description": "To spawn something other than the next monster"
+      },
+      {
+         "category": "Monsters",
+         "name": "spawnmonaway",
+         "hint": "<value>",
+         "default": null,
+         "description": "Spawns next monster but not on homeplane. value/100 = monsters per turn"
+      },
+      {
+         "category": "Monsters",
+         "name": "spawn1d6mon",
+         "hint": "<value>",
+         "default": null,
+         "description": "Spawns 1d6 of the next monster. value = chance"
+      },
+      {
+         "category": "Monsters",
+         "name": "spawn2d6mon",
+         "hint": "<value>",
+         "default": null,
+         "description": "Spawns 2d6 of the next monster. value = chance"
+      },
+      {
+         "category": "Monsters",
+         "name": "split",
+         "hint": "<value>",
+         "default": null,
+         "description": "Value = dmg required in % for splitting into next monster (like a slime)."
+      },
+      {
+         "category": "Monsters",
+         "name": "reform",
+         "hint": "<value>",
+         "default": null,
+         "description": "Value = chance in percent of reforming to prev monster each month (like a slime)."
+      },
+      {
+         "category": "Monsters",
+         "name": "satyrspawn",
+         "hint": "<value>",
+         "default": null,
+         "description": "Bonus for dryad queen auto spawns."
+      },
+      {
+         "category": "Monsters",
+         "name": "harpyspawn",
+         "hint": "<value>",
+         "default": null,
+         "description": "Bonus for dryad queen auto spawns."
+      },
+      {
+         "category": "Monsters",
+         "name": "centspawn",
+         "hint": "<value>",
+         "default": null,
+         "description": "Bonus for dryad queen auto spawns."
+      },
+      {
+         "category": "Monsters",
+         "name": "minospawn",
+         "hint": "<value>",
+         "default": null,
+         "description": "Bonus for dryad queen auto spawns."
+      }
+   ],
+   "Spells": [
+      {
+         "category": "Monsters",
+         "name": "spellweapon",
+         "hint": "<path> <level>",
+         "default": null,
+         "description": "Equips the monster with a Cast Spell weapon in the magic path specified. This spell weapon only has a 25% chance of being successfully used in melee combat."
+      },
+      {
+         "category": "Monsters",
+         "name": "spellweaponbonus",
+         "hint": "<path> <level>",
+         "default": null,
+         "description": "Equips the monster with a bonus Cast Spellweapon in the magic path specified. This spell weapon can be used in melee without penalty."
+      },
+      {
+         "category": "Monsters",
+         "name": "spellweapon50",
+         "hint": "<path> <level>",
+         "default": null,
+         "description": "Equips the monster with a limited Cast Spell Weapon in the magic path specified. This spell weapon has only a 50% chance of being used on any given combat round."
+      },
+      {
+         "category": "Monsters",
+         "name": "spellweapon50s",
+         "hint": "<path> <level>",
+         "default": null,
+         "description": "Equips the monster with a limited Cast Spell+skip weapon in the magic path specified. This spell weapon has only a 50% chance of being used on any given combat round. If it is used the next weapon will be skipped."
+      },
+      {
+         "category": "Monsters",
+         "name": "spellweaponsingle",
+         "hint": "<path> <level>",
+         "default": null,
+         "description": "Equips the monster with a limited Cast Spell Weapon in the magic path specified. Only one of the single spell weapons will be used per combat round if the monster has several"
+      },
+      {
+         "category": "Monsters",
+         "name": "more1spells",
+         "hint": "<nbr>",
+         "default": null,
+         "description": "The monster starts with more or fewer level 1 spells when it spawns."
+      },
+      {
+         "category": "Monsters",
+         "name": "more2spells",
+         "hint": "<nbr>",
+         "default": null,
+         "description": "The monster starts with more or fewer level 2 spells when it spawns."
+      },
+      {
+         "category": "Monsters",
+         "name": "more3spells",
+         "hint": "<nbr>",
+         "default": null,
+         "description": "The monster starts with more or fewer level 3 spells when it spawns."
+      },
+      {
+         "category": "Monsters",
+         "name": "spellrange",
+         "hint": "<value>",
+         "default": null,
+         "description": "Value = +range for battle spells"
+      }
+   ],
+   "Start": [
+      {
+         "category": "Monsters",
+         "name": "selectmonster",
+         "hint": "monster name",
+         "default": 0,
+         "description": "Selects the monster that will be affected by the following modding commands. The selected monster is referred to as the active monster. The selectmonster command always selects the first monster of that name in the monster list. If there is more than one monster with the same name (e.g. longdead) the offset value can be used to select them. Leave the offset out if you only want to select the first monster. The default value of the offset is 0. The offset used by this command cannot be set to a negative value unlike the offset for the lookslike command. Offset value 1 means the command selects the (first + 1) monster of that name i.e. the second monster. Offset 2 selects the third monster of the same name etc."
+      },
+      {
+         "category": "Monsters",
+         "name": "newmonster",
+         "hint": "monster name",
+         "default": null,
+         "description": "Creates a new monster. This new monster will be affected by the following modding commands until the next active monster is set. The monster can have the same name as another monster."
+      }
+   ],
+   "Stealth": [
+      {
+         "category": "Monsters",
+         "name": "acutesenses",
+         "hint": "",
+         "default": null,
+         "description": "to be written"
+      },
+      {
+         "category": "Monsters",
+         "name": "spiritsight",
+         "hint": "",
+         "default": null,
+         "description": "to be written"
+      },
+      {
+         "category": "Monsters",
+         "name": "badsight",
+         "hint": "",
+         "default": null,
+         "description": "to be written"
+      },
+      {
+         "category": "Monsters",
+         "name": "stealth",
+         "hint": "",
+         "default": null,
+         "description": "to be written"
+      },
+      {
+         "category": "Monsters",
+         "name": "foreststealth",
+         "hint": "",
+         "default": null,
+         "description": "to be written"
+      },
+      {
+         "category": "Monsters",
+         "name": "invisible",
+         "hint": "",
+         "default": null,
+         "description": "to be written"
+      },
+      {
+         "category": "Monsters",
+         "name": "hideanimals",
+         "hint": "<value>",
+         "default": null,
+         "description": "animals following this commander gains forest stealth"
+      },
+      {
+         "category": "Monsters",
+         "name": "farsight",
+         "hint": "<value>",
+         "default": null,
+         "description": "can see further"
+      },
+      {
+         "category": "Monsters",
+         "name": "snowstealth",
+         "hint": "",
+         "default": null,
+         "description": "to be written"
+      },
+      {
+         "category": "Monsters",
+         "name": "desertstealth",
+         "hint": "",
+         "default": null,
+         "description": "to be written"
+      }
+   ],
+   "Terrain": [
+      {
+         "category": "Monsters",
+         "name": "terraformfrom",
+         "hint": "<value>",
+         "default": null,
+         "description": "Changes this terrain into something. Use next two commands to setup that and how often."
+      },
+      {
+         "category": "Monsters",
+         "name": "terraformto",
+         "hint": "<value>",
+         "default": null,
+         "description": "Terraforms to this terrain ( plain)."
+      },
+      {
+         "category": "Monsters",
+         "name": "terraformch",
+         "hint": "<value>",
+         "default": 100,
+         "description": "Chance of terraforming square (default 100)."
+      },
+      {
+         "category": "Monsters",
+         "name": "makecolony",
+         "hint": "<terrain nbr>",
+         "default": null,
+         "description": "Has a chance of turning a standard terrain into ‘terr’ and then die."
+      },
+      {
+         "category": "Monsters",
+         "name": "colonyterr",
+         "hint": "<value>",
+         "default": -87,
+         "description": "Terrain to build colonies in (default -87)."
+      },
+      {
+         "category": "Monsters",
+         "name": "colonymsg",
+         "hint": "<value>",
+         "default": null,
+         "description": "1 = everyone will get a message when a colony is created."
+      }
+   ],
+   "Type": [
+      {
+         "category": "Monsters",
+         "name": "human",
+         "hint": "",
+         "default": null,
+         "description": "is a human"
+      },
+      {
+         "category": "Monsters",
+         "name": "female",
+         "hint": "",
+         "default": null,
+         "description": "is a female"
+      },
+      {
+         "category": "Monsters",
+         "name": "undead",
+         "hint": "",
+         "default": null,
+         "description": "is an undead being"
+      },
+      {
+         "category": "Monsters",
+         "name": "animal",
+         "hint": "",
+         "default": null,
+         "description": "is an animal"
+      },
+      {
+         "category": "Monsters",
+         "name": "inanimate",
+         "hint": "",
+         "default": null,
+         "description": "is an undead being"
+      },
+      {
+         "category": "Monsters",
+         "name": "troll",
+         "hint": "",
+         "default": null,
+         "description": "is a troll"
+      },
+      {
+         "category": "Monsters",
+         "name": "coldblood",
+         "hint": "",
+         "default": null,
+         "description": "is coldblooded"
+      },
+      {
+         "category": "Monsters",
+         "name": "stonebeing",
+         "hint": "",
+         "default": null,
+         "description": "monster is made of stone"
+      },
+      {
+         "category": "Monsters",
+         "name": "setcreator",
+         "hint": "<0-1>",
+         "default": null,
+         "description": "used by monsters that get their name from their creator"
+      },
+      {
+         "category": "Monsters",
+         "name": "statue",
+         "hint": "<0-1>",
+         "default": null,
+         "description": "statues get part of their name from their creator e.g. Statue of Anselm"
+      },
+      {
+         "category": "Monsters",
+         "name": "expendable",
+         "hint": "<0-1>",
+         "default": null,
+         "description": "Is an expendable unit (can be used payment for certain rituals/recruitments)."
+      },
+      {
+         "category": "Monsters",
+         "name": "kobold",
+         "hint": "<0-1>",
+         "default": null,
+         "description": "Is an expendable kobold (counts as expendable unit but comes with a different ability description)."
+      },
+      {
+         "category": "Monsters",
+         "name": "goblin",
+         "hint": "<0-1>",
+         "default": null,
+         "description": "Is an expendable goblin (can be used payment for certain rituals/recruitments)."
+      },
+      {
+         "category": "Monsters",
+         "name": "dragon",
+         "hint": "<0-2>",
+         "default": null,
+         "description": "1=dragon 2=elder dragon."
+      },
+      {
+         "category": "Monsters",
+         "name": "madcultist",
+         "hint": "<0-1>",
+         "default": null,
+         "description": "Mad cultist might decide to open a gate to Inferno."
+      },
+      {
+         "category": "Monsters",
+         "name": "primalcult",
+         "hint": "<0-1>",
+         "default": null,
+         "description": "Primal cultists might decide to open the primal gate."
+      },
+      {
+         "category": "Monsters",
+         "name": "fungus",
+         "hint": "<0-2>",
+         "default": null,
+         "description": "1 = is a fungus 2 = is an animated fungus."
+      },
+      {
+         "category": "Monsters",
+         "name": "ship",
+         "hint": "<0-1>",
+         "default": null,
+         "description": "Is a ship."
+      }
+   ]
+}

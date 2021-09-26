@@ -1,0 +1,1138 @@
+{
+   "AI Hints": [
+      {
+         "category": "Ritual",
+         "name": "aiwhere",
+         "hint": "<terrain nbr>",
+         "default": null,
+         "description": "restricts the AI to only cast ritual in this terrain"
+      },
+      {
+         "category": "Ritual",
+         "name": "aialways",
+         "hint": "<chance>",
+         "default": null,
+         "description": "AI will always (if chance = 100 try to cast this ritual but not make any long time plans for it. chance=999 is special and means the AI will also make plans for the ritual.)"
+      },
+      {
+         "category": "Ritual",
+         "name": "airare",
+         "hint": "<chance>",
+         "default": null,
+         "description": "Reduces the chance of the AI trying to use this ritual. Chance is the chance of casting the ritual and can be from 1-99. -1 is a special value meaning never cast it."
+      },
+      {
+         "category": "Ritual",
+         "name": "aiweakonly",
+         "hint": "<troop strength>",
+         "default": null,
+         "description": "AI commander will only cast this ritual if his troop strength is below this value. One spearman gives 10 troop strength points."
+      },
+      {
+         "category": "Ritual",
+         "name": "aionlyplane",
+         "hint": "<plane nr>",
+         "default": null,
+         "description": "AI will only cast ritual when on this plane"
+      },
+      {
+         "category": "Ritual",
+         "name": "aitarg",
+         "hint": "<value>",
+         "default": null,
+         "description": "For long range rituals. 1=try to target squares with enemy commanders 2=try to target valuable squares with corpses in"
+      },
+      {
+         "category": "Ritual",
+         "name": "ainothere",
+         "hint": "<terrain nbr>",
+         "default": null,
+         "description": "AI will not cast ritual in this terrain"
+      },
+      {
+         "category": "Ritual",
+         "name": "ainotclose1",
+         "hint": "<terrain nbr>",
+         "default": null,
+         "description": "AI will not cast ritual if close to this terrain radius=1"
+      },
+      {
+         "category": "Ritual",
+         "name": "ainotclose2",
+         "hint": "<terrain nbr>",
+         "default": null,
+         "description": "AI will not cast ritual if close to this terrain radius=2"
+      },
+      {
+         "category": "Ritual",
+         "name": "ainotclose3",
+         "hint": "<terrain nbr>",
+         "default": null,
+         "description": "AI will not cast ritual if close to this terrain radius=3"
+      },
+      {
+         "category": "Ritual",
+         "name": "ainotnearhome",
+         "hint": "<mindist>",
+         "default": null,
+         "description": "AI should not cast this ritual close to home (mindist = nbr of squares away)"
+      },
+      {
+         "category": "Ritual",
+         "name": "aiapprspam",
+         "hint": "<chance>",
+         "default": null,
+         "description": "AI will dedicate apprentices to stay at home and only spam this ritual. Chance is 0-100"
+      },
+      {
+         "category": "Ritual",
+         "name": "ainosimul",
+         "hint": "",
+         "default": null,
+         "description": "No more than one commander may plan to cast this ritual at once"
+      },
+      {
+         "category": "Ritual",
+         "name": "airestrig",
+         "hint": "<value>",
+         "default": null,
+         "description": "AI will always try to cast this ritual if it has at least this many of the primary resource for the ritual"
+      },
+      {
+         "category": "Ritual",
+         "name": "aimaxcast",
+         "hint": "<value>",
+         "default": null,
+         "description": "An AI player will never cast this ritual more than this number of times in a game"
+      }
+   ],
+   "Affect Unit": [
+      {
+         "category": "Ritual",
+         "name": "teleportloc",
+         "hint": "<1-2>",
+         "default": null,
+         "description": "Teleport target unit to target location. Attribute value 2 means the caster’s entire army is teleported to the target location."
+      },
+      {
+         "category": "Ritual",
+         "name": "selectfx",
+         "hint": "<fx nbr>",
+         "default": null,
+         "description": "Sets mod-fx-nbr to this value. Used by next command."
+      },
+      {
+         "category": "Ritual",
+         "name": "setfx",
+         "hint": "<value>",
+         "default": null,
+         "description": "Gives target unit a fx of type mod-fx-nbr and sets it to this value."
+      },
+      {
+         "category": "Ritual",
+         "name": "fillmirror",
+         "hint": "<images>",
+         "default": null,
+         "description": "Puts a number of images into a mirror -1 = fill to default value (mirrorammo)"
+      },
+      {
+         "category": "Ritual",
+         "name": "killtarg",
+         "hint": "<dmg>",
+         "default": null,
+         "description": "Gives between 1 and"
+      },
+      {
+         "category": "Ritual",
+         "name": "updatehome",
+         "hint": "",
+         "default": null,
+         "description": "Updates home for target unit to where he stands. This is used to make some immortals resurrect in the correct place."
+      },
+      {
+         "category": "Ritual",
+         "name": "bentarg",
+         "hint": "<ben nbr>",
+         "default": null,
+         "description": "Gives a beneficial bitmask to the target unit. Particularly useful values for rituals are 2^26 to get the twiceborn effect and 2^22 to get a permanent invulnerability."
+      },
+      {
+         "category": "Ritual",
+         "name": "bentargall",
+         "hint": "<ben nbr>",
+         "default": null,
+         "description": "Like bentarg but also affects all the target’s followers."
+      },
+      {
+         "category": "Ritual",
+         "name": "setvar",
+         "hint": "<nbr>",
+         "default": null,
+         "description": "Set the generic modding variable to this value."
+      },
+      {
+         "category": "Ritual",
+         "name": "bentargvar",
+         "hint": "<ben nbr>",
+         "default": null,
+         "description": "Like bentarg but terrain is restricted to the number in the generic modding variable."
+      }
+   ],
+   "Basic": [
+      {
+         "category": "Ritual",
+         "name": "ritpow",
+         "hint": "<pow nbr>",
+         "default": null,
+         "description": "Sets the ritpow used. If command is not used the latest created newritpow will be used. Existing ritpow numbers can be found in the Ritual Schools table."
+      },
+      {
+         "category": "Ritual",
+         "name": "level",
+         "hint": "<1-9>",
+         "default": null,
+         "description": "The level of the ritual. Usually the level is between 1 (apprentice level) and 3 (master level)."
+      },
+      {
+         "category": "Ritual",
+         "name": "cost",
+         "hint": "<resource type> <amount>",
+         "default": null,
+         "description": "Adds a resource cost to the ritual. E.g. cost 4 10 to add a cost of 10 sacrifices. A single ritual can have at most 4 different costs. See table Resource Types for resource types."
+      },
+      {
+         "category": "Ritual",
+         "name": "terr",
+         "hint": "<terrain nbr>",
+         "default": null,
+         "description": "Restrict ritual to this terrain only. Negative numbers can be used for special terrain combinations."
+      }
+   ],
+   "Boosts": [
+      {
+         "category": "Ritual",
+         "name": "apcost",
+         "hint": "<nbr>",
+         "default": null,
+         "description": "Extra Action Points cost for the rituals."
+      },
+      {
+         "category": "Ritual",
+         "name": "rebatefx25",
+         "hint": "<fx nbr>",
+         "default": null,
+         "description": "Units with this fx nbr get 25% rebate"
+      },
+      {
+         "category": "Ritual",
+         "name": "rebatefx50",
+         "hint": "<fx nbr>",
+         "default": null,
+         "description": "Units with this fx nbr get 50% rebate"
+      },
+      {
+         "category": "Ritual",
+         "name": "rebateterr20",
+         "hint": "<terrain nbr>",
+         "default": null,
+         "description": "Ritual cost is 20% cheaper in this terrain"
+      },
+      {
+         "category": "Ritual",
+         "name": "rebateterr50",
+         "hint": "<terrain nbr>",
+         "default": null,
+         "description": "Ritual cost is 20% cheaper in this terrain"
+      },
+      {
+         "category": "Ritual",
+         "name": "terrboost",
+         "hint": "<terrain nbr>",
+         "default": null,
+         "description": "Adds 1 to number of summoned monsters when done in this terrain"
+      },
+      {
+         "category": "Ritual",
+         "name": "terrscale50",
+         "hint": "<terrain nbr>",
+         "default": null,
+         "description": "+50% number of summoned monster when done in this terrain"
+      },
+      {
+         "category": "Ritual",
+         "name": "sacrscale",
+         "hint": "",
+         "default": null,
+         "description": "Summoning amount scales with sacrifice production of target square"
+      }
+   ],
+   "Casting Restrictions": [
+      {
+         "category": "Ritual",
+         "name": "levelreq",
+         "hint": "<1-9>",
+         "default": null,
+         "description": "Caster must be exactly this level to use this ritual and cannot have another power at higher level."
+      },
+      {
+         "category": "Ritual",
+         "name": "resrestrict",
+         "hint": "<res nbr>",
+         "default": null,
+         "description": "Caster cannot have this resistance bitmask. Useful values are 2^4 for undead 2^20 for immortal and 2^26 for ethereal."
+      },
+      {
+         "category": "Ritual",
+         "name": "resreq",
+         "hint": "<res nbr>",
+         "default": null,
+         "description": "Caster must have this resistance bitmask."
+      },
+      {
+         "category": "Ritual",
+         "name": "benrestrict",
+         "hint": "<ben nbr>",
+         "default": null,
+         "description": "Caster cannot have this beneficial bitmask"
+      },
+      {
+         "category": "Ritual",
+         "name": "fxreq",
+         "hint": "<fx nbr>",
+         "default": null,
+         "description": "Unit must have 1+ in this fx to learn and cast this ritual. This command is probably not useful for modding."
+      },
+      {
+         "category": "Ritual",
+         "name": "nomonworldreq",
+         "hint": "",
+         "default": null,
+         "description": "Monsters in addstring '(-)…​' must not be in the world"
+      },
+      {
+         "category": "Ritual",
+         "name": "nomonplayerreq",
+         "hint": "",
+         "default": null,
+         "description": "Monsters in addstring '(-)…​' must not be in the world and owned by the current player"
+      },
+      {
+         "category": "Ritual",
+         "name": "nomonmasteryreq",
+         "hint": "",
+         "default": null,
+         "description": "Monsters in addstring '(-)…​' must not be in the world and owned by the current player unless level is higher than ritual requires"
+      },
+      {
+         "category": "Ritual",
+         "name": "nomonelysiumreq",
+         "hint": "",
+         "default": null,
+         "description": "Monsters in addstring '(-)…​' must not be in elysium/sky/agartha. Monster in addstring '(+)…​' will disable following minuses if monster fulfils same requirement. This applies for all nomon… commands."
+      },
+      {
+         "category": "Ritual",
+         "name": "nomonreq",
+         "hint": "",
+         "default": null,
+         "description": "Monsters in addstring '(-)…​' must not be at target location."
+      },
+      {
+         "category": "Ritual",
+         "name": "nomonhomereq",
+         "hint": "",
+         "default": null,
+         "description": "Monsters in addstring '(-)…​' must not have their home at target location."
+      },
+      {
+         "category": "Ritual",
+         "name": "fewmonreq",
+         "hint": "<max>",
+         "default": null,
+         "description": "The monsters in addstring '(-)…​' must not be more than max."
+      },
+      {
+         "category": "Ritual",
+         "name": "minmonreq",
+         "hint": "<min>",
+         "default": null,
+         "description": "The monsters in addstring '(-)…​' must be at least 'min' in number."
+      },
+      {
+         "category": "Ritual",
+         "name": "monworldreq",
+         "hint": "[<min>]",
+         "default": 1,
+         "description": "At least min number (default 1) of the monsters in addstring '(&)…​' must be in the world. The min attribute is optional and can be omitted."
+      },
+      {
+         "category": "Ritual",
+         "name": "monplayerreq",
+         "hint": "[<min>]",
+         "default": 1,
+         "description": "At least min number (default 1) of the monsters in addstring '(&)…​' must be in the world and owned by the current player. The min attribute is optional and can be omitted."
+      },
+      {
+         "category": "Ritual",
+         "name": "enchherereq",
+         "hint": "<ench nbr>",
+         "default": null,
+         "description": "This type of Enchantment must be active where there ritual is cast."
+      },
+      {
+         "category": "Ritual",
+         "name": "nonearby1req",
+         "hint": "<terrain nbr>",
+         "default": null,
+         "description": "this terrain cannot be within 1 square when casting the ritual (a 3x3 square area)."
+      },
+      {
+         "category": "Ritual",
+         "name": "nonearby3req",
+         "hint": "<terrain nbr>",
+         "default": null,
+         "description": "this terrain cannot be within 3 squares when casting the ritual (a 7x7 square area)."
+      },
+      {
+         "category": "Ritual",
+         "name": "nonearby5req",
+         "hint": "<terrain nbr>",
+         "default": null,
+         "description": "this terrain cannot be within 5 squares when casting the ritual (a 11x11 square area)."
+      },
+      {
+         "category": "Ritual",
+         "name": "nonearby7req",
+         "hint": "<terrain nbr>",
+         "default": null,
+         "description": "this terrain cannot be within 7 squares when casting the ritual (a 15x15 square area)."
+      },
+      {
+         "category": "Ritual",
+         "name": "nonearby99req",
+         "hint": "<terrain nbr>",
+         "default": null,
+         "description": "this terrain cannot be anywhere on the same plane when casting the ritual"
+      },
+      {
+         "category": "Ritual",
+         "name": "nearby1req",
+         "hint": "<terrain nbr>",
+         "default": null,
+         "description": "this terrain must be within 1 square when casting the ritual (a 3x3 square area)."
+      },
+      {
+         "category": "Ritual",
+         "name": "nearby3req",
+         "hint": "<terrain nbr>",
+         "default": null,
+         "description": "this terrain must be within 3 squares when casting the ritual (a 7x7 square area)."
+      },
+      {
+         "category": "Ritual",
+         "name": "nearby5req",
+         "hint": "<terrain nbr>",
+         "default": null,
+         "description": "this terrain must be within 5 squares when casting the ritual (a 11x11 square area)."
+      },
+      {
+         "category": "Ritual",
+         "name": "nearby7req",
+         "hint": "<terrain nbr>",
+         "default": null,
+         "description": "this terrain must be within 7 squares when casting the ritual (a 15x15 square area)."
+      },
+      {
+         "category": "Ritual",
+         "name": "nearby99req",
+         "hint": "<terrain nbr>",
+         "default": null,
+         "description": "this terrain must be somewhere on the same plane when casting the ritual"
+      },
+      {
+         "category": "Ritual",
+         "name": "noportalreq",
+         "hint": "<0-1>",
+         "default": null,
+         "description": "location where ritual is cast mustn’t contain a portal"
+      },
+      {
+         "category": "Ritual",
+         "name": "maxcast",
+         "hint": "<value>",
+         "default": null,
+         "description": "ritual cannot be cast more than this number of times per player"
+      },
+      {
+         "category": "Ritual",
+         "name": "planereq",
+         "hint": "<plane nbr>",
+         "default": null,
+         "description": "Can only be cast on this plane. See table Plane Numbers."
+      },
+      {
+         "category": "Ritual",
+         "name": "nofxherereq",
+         "hint": "<fx nbr>",
+         "default": null,
+         "description": "to be written"
+      },
+      {
+         "category": "Ritual",
+         "name": "nofortreq",
+         "hint": "",
+         "default": null,
+         "description": "to be written"
+      },
+      {
+         "category": "Ritual",
+         "name": "fortreq",
+         "hint": "",
+         "default": null,
+         "description": "to be written"
+      },
+      {
+         "category": "Ritual",
+         "name": "hasportalreq",
+         "hint": "<portal nbr>",
+         "default": null,
+         "description": "to be written"
+      }
+   ],
+   "Copy/Clear": [
+      {
+         "category": "Ritual",
+         "name": "copyritual",
+         "hint": "name",
+         "default": null,
+         "description": "Copies all stats and abilities (except pow nbr and name) from another ritual to the current one."
+      },
+      {
+         "category": "Ritual",
+         "name": "clearritspec",
+         "hint": "",
+         "default": null,
+         "description": "Removes all special attributes from a ritual. This is only useful when modifying existing rituals."
+      }
+   ],
+   "Difficulty": [
+      {
+         "category": "Ritual",
+         "name": "free",
+         "hint": "",
+         "default": null,
+         "description": "always start with this ritual in addition the others"
+      },
+      {
+         "category": "Ritual",
+         "name": "start",
+         "hint": "",
+         "default": null,
+         "description": "will start with this ritual(s) no others"
+      },
+      {
+         "category": "Ritual",
+         "name": "nostart",
+         "hint": "",
+         "default": null,
+         "description": "never start with this ritual (or learn from mastery)"
+      },
+      {
+         "category": "Ritual",
+         "name": "rarestart",
+         "hint": "",
+         "default": null,
+         "description": "reduced chance of starting with this ritual"
+      },
+      {
+         "category": "Ritual",
+         "name": "notforpoor",
+         "hint": "",
+         "default": null,
+         "description": "units with more expensive rituals can’t get this one"
+      },
+      {
+         "category": "Ritual",
+         "name": "nexttoo",
+         "hint": "",
+         "default": null,
+         "description": "recives next ritual too when receiving this one"
+      },
+      {
+         "category": "Ritual",
+         "name": "afterprev",
+         "hint": "",
+         "default": null,
+         "description": "must know previous ritual before learning this one"
+      },
+      {
+         "category": "Ritual",
+         "name": "noundead",
+         "hint": "",
+         "default": null,
+         "description": "undeads never know this ritual"
+      },
+      {
+         "category": "Ritual",
+         "name": "nodemon",
+         "hint": "",
+         "default": null,
+         "description": "demons never know this ritual"
+      },
+      {
+         "category": "Ritual",
+         "name": "nofemale",
+         "hint": "",
+         "default": null,
+         "description": "females never know this ritual"
+      },
+      {
+         "category": "Ritual",
+         "name": "gathergems",
+         "hint": "",
+         "default": null,
+         "description": "will start gathering gems when knowing this ritual"
+      }
+   ],
+   "Event Interaction": [
+      {
+         "category": "Ritual",
+         "name": "setvar",
+         "hint": "<var>",
+         "default": null,
+         "description": "set this event variable to 1"
+      },
+      {
+         "category": "Ritual",
+         "name": "clearvar",
+         "hint": "<var>",
+         "default": null,
+         "description": "set this event variable to 0"
+      },
+      {
+         "category": "Ritual",
+         "name": "addvar",
+         "hint": "<var>",
+         "default": null,
+         "description": "increases the value of this event variable by 1"
+      },
+      {
+         "category": "Ritual",
+         "name": "subvar",
+         "hint": "<var>",
+         "default": null,
+         "description": "decreases the value of this event variable by 1"
+      }
+   ],
+   "Mastery": [
+      {
+         "category": "Ritual",
+         "name": "newrit",
+         "hint": "<1-9>",
+         "default": null,
+         "description": "Grants a new ritual of this level."
+      },
+      {
+         "category": "Ritual",
+         "name": "gainrit",
+         "hint": "<offset>",
+         "default": null,
+         "description": "Learns the ritual that is offset numbers away. E.g. offset 1 = learn the following ritual when casting this one."
+      },
+      {
+         "category": "Ritual",
+         "name": "rebatelvl",
+         "hint": "<1-9>",
+         "default": null,
+         "description": "This ritual will be half price if caster is this level or higher."
+      },
+      {
+         "category": "Ritual",
+         "name": "levelup",
+         "hint": "<1-9>",
+         "default": null,
+         "description": "Will level up if caster is below this level. Leveling up means becoming a new monster determined by the mastery monster command."
+      },
+      {
+         "category": "Ritual",
+         "name": "levelupmon",
+         "hint": "<1-9>",
+         "default": null,
+         "description": "Like levelup but the new monster type is set by the addstring command. Set the new monster type in the addstring command."
+      },
+      {
+         "category": "Ritual",
+         "name": "newspell1",
+         "hint": "<path nbr>",
+         "default": null,
+         "description": "to be written"
+      },
+      {
+         "category": "Ritual",
+         "name": "newspell2",
+         "hint": "<path nbr>",
+         "default": null,
+         "description": "to be written"
+      },
+      {
+         "category": "Ritual",
+         "name": "newspell3",
+         "hint": "<path nbr>",
+         "default": null,
+         "description": "to be written"
+      },
+      {
+         "category": "Ritual",
+         "name": "forgetrits",
+         "hint": "",
+         "default": null,
+         "description": "to be written"
+      }
+   ],
+   "Special": [
+      {
+         "category": "Ritual",
+         "name": "soundfx",
+         "hint": "<sound>",
+         "default": null,
+         "description": "Play this sound effect."
+      },
+      {
+         "category": "Ritual",
+         "name": "transformtarg",
+         "hint": "<1-2>",
+         "default": null,
+         "description": "to be written"
+      },
+      {
+         "category": "Ritual",
+         "name": "gainbless",
+         "hint": "<percent>",
+         "default": null,
+         "description": "Percent chance of gaining a bless effect."
+      },
+      {
+         "category": "Ritual",
+         "name": "gaindarkbless",
+         "hint": "<percent>",
+         "default": null,
+         "description": "Percent chance of gaining a dark bless effect."
+      },
+      {
+         "category": "Ritual",
+         "name": "ornext",
+         "hint": "<percent>",
+         "default": null,
+         "description": "This ritual will have one of two possible effects. The first effect will consist of the following command the next effect will consist of the remaining commands. Percent is the chance of the first effect happening."
+      },
+      {
+         "category": "Ritual",
+         "name": "ornext2",
+         "hint": "<percent>",
+         "default": null,
+         "description": "This ritual will have one of two possible effects. The first effect will consist of the two following commands the next effect will consist of the remaining commands. Percent is the chance of the first effect happening."
+      },
+      {
+         "category": "Ritual",
+         "name": "ornext3",
+         "hint": "<percent>",
+         "default": null,
+         "description": "This ritual will have one of two possible effects. The first effect will consist of the three following commands the next effect will consist of the remaining commands. Percent is the chance of the first effect happening."
+      },
+      {
+         "category": "Ritual",
+         "name": "ornext4",
+         "hint": "<percent>",
+         "default": null,
+         "description": "Like the other ornext commands."
+      },
+      {
+         "category": "Ritual",
+         "name": "ornext5",
+         "hint": "<percent>",
+         "default": null,
+         "description": "Like the other ornext commands."
+      },
+      {
+         "category": "Ritual",
+         "name": "castertarg",
+         "hint": "",
+         "default": null,
+         "description": "Sets target unit to caster."
+      },
+      {
+         "category": "Ritual",
+         "name": "closewin",
+         "hint": "",
+         "default": null,
+         "description": "Closes the ritual window after the ritual has completed."
+      },
+      {
+         "category": "Ritual",
+         "name": "failplayer",
+         "hint": "<player nbr>",
+         "default": null,
+         "description": "to be written"
+      },
+      {
+         "category": "Ritual",
+         "name": "centercaster",
+         "hint": "",
+         "default": null,
+         "description": "Center map on caster."
+      },
+      {
+         "category": "Ritual",
+         "name": "unfollowtarg",
+         "hint": "",
+         "default": null,
+         "description": "Removes all followers from the target should he be a commander that is commanding any units."
+      },
+      {
+         "category": "Ritual",
+         "name": "simulacrum",
+         "hint": "",
+         "default": null,
+         "description": "to be written"
+      },
+      {
+         "category": "Ritual",
+         "name": "enchreqterr",
+         "hint": "<terrain nbr>",
+         "default": null,
+         "description": "Enchantment will be auto dispelled if it is outside this terrain."
+      },
+      {
+         "category": "Ritual",
+         "name": "forgetcurrit",
+         "hint": "",
+         "default": null,
+         "description": "Caster will forget this ritual after casting it."
+      }
+   ],
+   "Start": [
+      {
+         "category": "Ritual",
+         "name": "newritpow",
+         "hint": "",
+         "default": null,
+         "description": "Creates an entire new school of rituals called a ritpow. This should be the first command when creating a new batch of rituals."
+      },
+      {
+         "category": "Ritual",
+         "name": "newritual",
+         "hint": "name",
+         "default": null,
+         "description": "Create a new ritual with this name. This should be the first command for each new ritual."
+      },
+      {
+         "category": "Ritual",
+         "name": "selectritual",
+         "hint": "name [<offs>]",
+         "default": null,
+         "description": "The optional value offs can be used to select a ritual other than the first one with this name. 0=the first one 1=the second ritual with this name."
+      }
+   ],
+   "Summoning": [
+      {
+         "category": "Ritual",
+         "name": "addstring",
+         "hint": "string",
+         "default": null,
+         "description": "Adds some text data to a ritual. Most often used to set what is summoned by a summoning ritual but it depends on what effects are in the ritual."
+      },
+      {
+         "category": "Ritual",
+         "name": "summoning",
+         "hint": "",
+         "default": null,
+         "description": "The ritual will summon the monsters specified in a random 'string'. Use addstring to add up to 15 strings with monsters. The string should be written like these examples:'1d6*Goblin' 'c*Captain & 2d6*spearman & 2d4+2*Archer' 'Purple Worm'. The c* indicates a commander and 2d6 means two 6-sided dice will determine the number of monsters summoned. Dice cannot be combined with commanders."
+      },
+      {
+         "category": "Ritual",
+         "name": "farsummon",
+         "hint": "",
+         "default": null,
+         "description": "Like summoning but it will occur at target location instead of at the caster’s location."
+      },
+      {
+         "category": "Ritual",
+         "name": "sum0chance",
+         "hint": "<percent>",
+         "default": null,
+         "description": "Use with summonings. Percent = chance of first 'string' to be used instead of a random string among the others."
+      },
+      {
+         "category": "Ritual",
+         "name": "sum1chance",
+         "hint": "<percent>",
+         "default": null,
+         "description": "Use with summonings. Percent = chance of second 'string' to be used instead of a random string among the third and later."
+      },
+      {
+         "category": "Ritual",
+         "name": "sum2chance",
+         "hint": "<percent>",
+         "default": null,
+         "description": "Same but one higher."
+      },
+      {
+         "category": "Ritual",
+         "name": "sum3chance",
+         "hint": "<percent>",
+         "default": null,
+         "description": "Same but one higher."
+      },
+      {
+         "category": "Ritual",
+         "name": "sum4chance",
+         "hint": "<percent>",
+         "default": null,
+         "description": "Same but one higher."
+      },
+      {
+         "category": "Ritual",
+         "name": "sum0snow",
+         "hint": "<percent>",
+         "default": null,
+         "description": "Works like sum0chance but it can only succeed if there is snow at the target location."
+      },
+      {
+         "category": "Ritual",
+         "name": "defctrl",
+         "hint": "<percent>",
+         "default": null,
+         "description": "Default control chance for summonings. Can be overridden by monster’s own ctrlchance."
+      },
+      {
+         "category": "Ritual",
+         "name": "varcost",
+         "hint": "<percent>",
+         "default": null,
+         "description": "Set variable sacrifice amount (50=50-150% 100=0-150%)"
+      },
+      {
+         "category": "Ritual",
+         "name": "raisedead",
+         "hint": "",
+         "default": null,
+         "description": "Raises humanoid corpses from the dead."
+      },
+      {
+         "category": "Ritual",
+         "name": "raiseanimals",
+         "hint": "",
+         "default": null,
+         "description": "Raises animal corpses from the dead."
+      },
+      {
+         "category": "Ritual",
+         "name": "specpow",
+         "hint": "<value>",
+         "default": null,
+         "description": "Makes a druid summoning 1=minor 2=major"
+      },
+      {
+         "category": "Ritual",
+         "name": "setplayer",
+         "hint": "<player nbr>",
+         "default": null,
+         "description": "Following summons will be owned by this player. Default owner is the current player. Player -1 resets the owner to the default"
+      }
+   ],
+   "Target Location Effects": [
+      {
+         "category": "Ritual",
+         "name": "scryloc",
+         "hint": "<radius *10>",
+         "default": null,
+         "description": "to be written"
+      },
+      {
+         "category": "Ritual",
+         "name": "scatterscry",
+         "hint": "<nbr of squares>",
+         "default": null,
+         "description": "to be written"
+      },
+      {
+         "category": "Ritual",
+         "name": "squarespec",
+         "hint": "<ss nbr>",
+         "default": null,
+         "description": "to be written"
+      },
+      {
+         "category": "Ritual",
+         "name": "reducetown",
+         "hint": "",
+         "default": null,
+         "description": "Reduces settlement at target location one step in size."
+      },
+      {
+         "category": "Ritual",
+         "name": "destroyterr",
+         "hint": "",
+         "default": null,
+         "description": "Destroys any valuable terrain at target location."
+      },
+      {
+         "category": "Ritual",
+         "name": "alterloc",
+         "hint": "<terrain nbr>",
+         "default": null,
+         "description": "Changes target square to this terrain."
+      },
+      {
+         "category": "Ritual",
+         "name": "makeportal",
+         "hint": "<portal nbr>",
+         "default": null,
+         "description": "Connect this square to other portals of the same number. Portal nbr 1000 is special and will create a unique number."
+      },
+      {
+         "category": "Ritual",
+         "name": "centerloc",
+         "hint": "",
+         "default": null,
+         "description": "Center map on target location."
+      },
+      {
+         "category": "Ritual",
+         "name": "trollifyloc",
+         "hint": "",
+         "default": null,
+         "description": "Transform forest at target location into a troll forest."
+      },
+      {
+         "category": "Ritual",
+         "name": "squareench",
+         "hint": "<ench nbr>",
+         "default": null,
+         "description": "to be written"
+      },
+      {
+         "category": "Ritual",
+         "name": "planeswap",
+         "hint": "<plane nbr>",
+         "default": null,
+         "description": "to be written"
+      },
+      {
+         "category": "Ritual",
+         "name": "portalroom",
+         "hint": "<terrain nbr>",
+         "default": null,
+         "description": "Creates a portal to a location around this terrain."
+      },
+      {
+         "category": "Ritual",
+         "name": "movehome",
+         "hint": "",
+         "default": null,
+         "description": "Moves home citadel location to target square."
+      },
+      {
+         "category": "Ritual",
+         "name": "putcorpses",
+         "hint": "<nbr>",
+         "default": null,
+         "description": "Creates a number of human corpses in the target square (as if a fight involving humans had taken place there)."
+      }
+   ],
+   "Targetting": [
+      {
+         "category": "Ritual",
+         "name": "chooseterrloc",
+         "hint": "<terrain nbr>",
+         "default": null,
+         "description": "Player will choose target location for ritual."
+      },
+      {
+         "category": "Ritual",
+         "name": "randterrloc",
+         "hint": "<terrain nbr>",
+         "default": null,
+         "description": "Sets loc to a random terrain of this type on active plane."
+      },
+      {
+         "category": "Ritual",
+         "name": "randomloc",
+         "hint": "<1-5>",
+         "default": null,
+         "description": "1=random land loc 2=many dead (excluding present) 3=rand enemy com 4=rand enemy citadel 5=home citadel"
+      },
+      {
+         "category": "Ritual",
+         "name": "randnewloc",
+         "hint": "<terrain nbr>",
+         "default": null,
+         "description": "Like previous but try to find an unknown location first."
+      },
+      {
+         "category": "Ritual",
+         "name": "newlocplanes",
+         "hint": "<terrain nbr>",
+         "default": null,
+         "description": "Like randnewloc but will go to other planes if necessary (but not hades)"
+      },
+      {
+         "category": "Ritual",
+         "name": "chooseloc",
+         "hint": "<1-5>",
+         "default": null,
+         "description": "Player choose target location. 2=deviate to many dead 3=empty mirror req 4=empty gold mirror 5=horror mark deviation"
+      },
+      {
+         "category": "Ritual",
+         "name": "planeloc",
+         "hint": "<plane nbr>",
+         "default": null,
+         "description": "Shift target loc to same position but on another plane (neg = toggle between this plane and elysium)."
+      },
+      {
+         "category": "Ritual",
+         "name": "setplane",
+         "hint": "<plane nbr>",
+         "default": null,
+         "description": "Following randomloc etc. commands will be restricted to this plane"
+      },
+      {
+         "category": "Ritual",
+         "name": "choosefxtarg",
+         "hint": "<fx nbr>",
+         "default": null,
+         "description": "Player will choose a target unit that has this fx nbr."
+      },
+      {
+         "category": "Ritual",
+         "name": "mirrortarg",
+         "hint": "<mirror size>",
+         "default": null,
+         "description": "Set targ to an empty mirror unit attr = size for mirror -1=any size"
+      },
+      {
+         "category": "Ritual",
+         "name": "montarg",
+         "hint": "<1>",
+         "default": null,
+         "description": "Sets targ unit to a random unit at target location among the type added by addstring."
+      }
+   ],
+   "Transformation": [
+      {
+         "category": "Ritual",
+         "name": "promotion",
+         "hint": "<nbr of units>",
+         "default": null,
+         "description": "Promote existing units to another monster type. Use addstring to add promotion pairs the first string sets a source unit and the second one the destination units. Multiple of these pairs can be added to a single ritual."
+      },
+      {
+         "category": "Ritual",
+         "name": "transformtarg",
+         "hint": "<1-2>",
+         "default": null,
+         "description": "Will transform target into the unit type set by addstring. Value 1 = standard (use this) 2 = transform into following unit if level is high enough."
+      }
+   ]
+}

@@ -1,0 +1,577 @@
+{
+   "Basic": [
+      {
+         "category": "Terrain",
+         "name": "spr",
+         "hint": "image.tga",
+         "default": "",
+         "description": "Sets the image file for the terrain square."
+      },
+      {
+         "category": "Terrain",
+         "name": "name",
+         "hint": "name",
+         "default": "",
+         "description": "Name of the terrain type."
+      },
+      {
+         "category": "Terrain",
+         "name": "gold",
+         "hint": "<nbr>",
+         "default": "",
+         "description": "Gold income for the terrain when owned."
+      },
+      {
+         "category": "Terrain",
+         "name": "iron",
+         "hint": "<nbr>",
+         "default": "",
+         "description": "Iron income for the terrain when owned."
+      },
+      {
+         "category": "Terrain",
+         "name": "trade",
+         "hint": "<nbr>",
+         "default": "",
+         "description": "Trade value of the terrain when owned."
+      },
+      {
+         "category": "Terrain",
+         "name": "herbs",
+         "hint": "<nbr>",
+         "default": "",
+         "description": "Herb income for the terrain when owned."
+      },
+      {
+         "category": "Terrain",
+         "name": "fungus",
+         "hint": "<nbr>",
+         "default": "",
+         "description": "Fungus income for the terrain when owned."
+      },
+      {
+         "category": "Terrain",
+         "name": "weed",
+         "hint": "<nbr>",
+         "default": "",
+         "description": "Weed income for the terrain when owned."
+      },
+      {
+         "category": "Terrain",
+         "name": "sacr",
+         "hint": "<nbr>",
+         "default": "",
+         "description": "Sacrifice income for the terrain when owned."
+      },
+      {
+         "category": "Terrain",
+         "name": "dead",
+         "hint": "<nbr>",
+         "default": "",
+         "description": "The location starts with <nbr> * d6 corpses in it."
+      },
+      {
+         "category": "Terrain",
+         "name": "hands",
+         "hint": "<nbr>",
+         "default": "",
+         "description": "Hands of Glory income for the terrain when owned."
+      },
+      {
+         "category": "Terrain",
+         "name": "gems",
+         "hint": "<nbr>",
+         "default": "",
+         "description": "A bitmask value that determines the gem income of the location. See the Gem Income Bitmask table. Note that you can add multiple 1 income values together to create a higher income value of a certain type of gem. Maximum income for a single gem type is 7."
+      },
+      {
+         "category": "Terrain",
+         "name": "pop",
+         "hint": "<nbr>",
+         "default": "",
+         "description": "A value indicating the size of humanlike population. Farm = 5 City = 50."
+      },
+      {
+         "category": "Terrain",
+         "name": "lifeforce",
+         "hint": "<nbr>",
+         "default": "",
+         "description": "Sets amount of lifeforce that can be drained from the square * 10. A plain has 10 and a forest 30. Negative values means square drain lifeforce with this radius (Pillar of Power has a value of -1)."
+      },
+      {
+         "category": "Terrain",
+         "name": "apcost",
+         "hint": "<nbr>",
+         "default": "",
+         "description": "Action Point cost for moving through the terrain."
+      }
+   ],
+   "Copy/Clear": [
+      {
+         "category": "Terrain",
+         "name": "clearspec",
+         "hint": "",
+         "default": "",
+         "description": "Clears the special attributes of the selected terrain."
+      },
+      {
+         "category": "Terrain",
+         "name": "clearfort",
+         "hint": "",
+         "default": "",
+         "description": "Clears the fort attributes of the selected terrain."
+      }
+   ],
+   "Special": [
+      {
+         "category": "Terrain",
+         "name": "citadel",
+         "hint": "",
+         "default": "",
+         "description": "The terrain functions as a citadel when owned."
+      },
+      {
+         "category": "Terrain",
+         "name": "batmap",
+         "hint": "<batmap nbr>",
+         "default": "",
+         "description": "Associates the terrain with a certain battle map. See table Battle Maps. This is usually used for fortified locations but villages also have a battle map."
+      },
+      {
+         "category": "Terrain",
+         "name": "walls",
+         "hint": "",
+         "default": "",
+         "description": "The location has walls in battle and is a siegable location."
+      },
+      {
+         "category": "Terrain",
+         "name": "woodengate",
+         "hint": "",
+         "default": "",
+         "description": "The fort has a wooden gate"
+      },
+      {
+         "category": "Terrain",
+         "name": "irongate",
+         "hint": "",
+         "default": "",
+         "description": "The fort has an iron gate"
+      },
+      {
+         "category": "Terrain",
+         "name": "enchantedgate",
+         "hint": "",
+         "default": "",
+         "description": "The fort has an enchanted gate"
+      },
+      {
+         "category": "Terrain",
+         "name": "bramblegate",
+         "hint": "",
+         "default": "",
+         "description": "Bramble gate"
+      },
+      {
+         "category": "Terrain",
+         "name": "barricade",
+         "hint": "",
+         "default": "",
+         "description": "Wooden barricade gate"
+      },
+      {
+         "category": "Terrain",
+         "name": "earthbarricade",
+         "hint": "",
+         "default": "",
+         "description": "Earth barricade gate"
+      },
+      {
+         "category": "Terrain",
+         "name": "cloudgate",
+         "hint": "",
+         "default": "",
+         "description": "Cloud gate"
+      },
+      {
+         "category": "Terrain",
+         "name": "magicwalls",
+         "hint": "",
+         "default": "",
+         "description": "Ethereal units cannot pass through walls at this fort"
+      },
+      {
+         "category": "Terrain",
+         "name": "burnable",
+         "hint": "",
+         "default": "",
+         "description": "The terran can be burned like forest."
+      },
+      {
+         "category": "Terrain",
+         "name": "water",
+         "hint": "",
+         "default": "",
+         "description": "The terrain is water and cannot be passed unless it is frozen or the monsters moving through it are amphibian or aquatic."
+      },
+      {
+         "category": "Terrain",
+         "name": "cave",
+         "hint": "",
+         "default": "",
+         "description": "The terrain counts as a cave."
+      },
+      {
+         "category": "Terrain",
+         "name": "nostdrec",
+         "hint": "",
+         "default": "",
+         "description": "Standard class based recruitment lists are not available in this terrain. Instead there are other units available for recruitment specific to the terrain."
+      },
+      {
+         "category": "Terrain",
+         "name": "ownable",
+         "hint": "",
+         "default": "",
+         "description": "The terrain can be claimed for ownership if it provides income the player can use."
+      },
+      {
+         "category": "Terrain",
+         "name": "smoke",
+         "hint": "",
+         "default": "",
+         "description": "Pixels with a certain pink color (2450255) will produce smoke. Pixels with color (2350255) will produce flames and smoke."
+      },
+      {
+         "category": "Terrain",
+         "name": "goldboost",
+         "hint": "",
+         "default": "",
+         "description": "The terrain provides a global boost to gold income when owned."
+      },
+      {
+         "category": "Terrain",
+         "name": "ironboost",
+         "hint": "",
+         "default": "",
+         "description": "The terrain provides a global boost to iron incomewhen owned."
+      },
+      {
+         "category": "Terrain",
+         "name": "tradeboost",
+         "hint": "",
+         "default": "",
+         "description": "The terrain provides a global boost to trade points when owned."
+      },
+      {
+         "category": "Terrain",
+         "name": "harvest",
+         "hint": "",
+         "default": "",
+         "description": "Structures with this command get double gold income during bumper harvest events. Farms have this attribute."
+      },
+      {
+         "category": "Terrain",
+         "name": "invisible",
+         "hint": "",
+         "default": "",
+         "description": "Terrain on top of the background (like the tower) is not drawn but the grass will still be drawn. Not a useful command for modding."
+      },
+      {
+         "category": "Terrain",
+         "name": "forest",
+         "hint": "",
+         "default": "",
+         "description": "The terrain counts as forest for the purposes of abilities like Forest Stealth."
+      },
+      {
+         "category": "Terrain",
+         "name": "mountain",
+         "hint": "",
+         "default": "",
+         "description": "The terrain counts as a mountain for the purposes of abilities like Mountain Move."
+      },
+      {
+         "category": "Terrain",
+         "name": "desert",
+         "hint": "",
+         "default": "",
+         "description": "The terrain counts as a desert for the purposes of abilities like Desert Move."
+      },
+      {
+         "category": "Terrain",
+         "name": "deepspawn",
+         "hint": "",
+         "default": "",
+         "description": "Hybrid fishermen can appear here."
+      },
+      {
+         "category": "Terrain",
+         "name": "melts",
+         "hint": "",
+         "default": "",
+         "description": "A hint to the AI that the terrain melts after the winter. Frozen lakes and rivers have this attribute. Not a useful command for modding."
+      },
+      {
+         "category": "Terrain",
+         "name": "nostart",
+         "hint": "",
+         "default": "",
+         "description": "Players cannot start in this type of terrain. Other squares can be overwritten by a start citadel from a player."
+      },
+      {
+         "category": "Terrain",
+         "name": "woodencitadel",
+         "hint": "",
+         "default": "",
+         "description": "Can be used as citadel by the Senator"
+      },
+      {
+         "category": "Terrain",
+         "name": "forestcitadel",
+         "hint": "",
+         "default": "",
+         "description": "Can be used as citadel by the Troll King."
+      },
+      {
+         "category": "Terrain",
+         "name": "useable",
+         "hint": "",
+         "default": "",
+         "description": "There is a special power inherent to the terrain that can be activated by commander actions."
+      },
+      {
+         "category": "Terrain",
+         "name": "rare",
+         "hint": "",
+         "default": "",
+         "description": "The terrain is a rare special terrain. It is sometimes deployed at a random place in Elysium by the random map generator."
+      },
+      {
+         "category": "Terrain",
+         "name": "unqiue",
+         "hint": "",
+         "default": "",
+         "description": "This terrain is unique and can only be placed once by the random map generator."
+      },
+      {
+         "category": "Terrain",
+         "name": "mine",
+         "hint": "",
+         "default": "",
+         "description": "The terrain counts as a mine."
+      },
+      {
+         "category": "Terrain",
+         "name": "farsight",
+         "hint": "",
+         "default": "",
+         "description": "The terrain gives increased vision range when there are units present there. Watchtowers and some citadels have this attribute."
+      },
+      {
+         "category": "Terrain",
+         "name": "nosight",
+         "hint": "",
+         "default": "",
+         "description": "The terrain does not provide vision into adjacent squares when owned. Forests and swamps have this attribute."
+      },
+      {
+         "category": "Terrain",
+         "name": "temple",
+         "hint": "",
+         "default": "",
+         "description": "The terrain counts as a temple."
+      },
+      {
+         "category": "Terrain",
+         "name": "el",
+         "hint": "",
+         "default": "",
+         "description": "Terrain starts as converted to the worship of El."
+      },
+      {
+         "category": "Terrain",
+         "name": "settlement",
+         "hint": "",
+         "default": "",
+         "description": "Defines the terrain as a human settlement. Hamlets villages towns etc have this attribute."
+      },
+      {
+         "category": "Terrain",
+         "name": "voidret",
+         "hint": "",
+         "default": "",
+         "description": "The terrain is connected to the Void. Use for Pyramids and other such structures."
+      },
+      {
+         "category": "Terrain",
+         "name": "library1",
+         "hint": "",
+         "default": "",
+         "description": "Library level +1."
+      },
+      {
+         "category": "Terrain",
+         "name": "library2",
+         "hint": "",
+         "default": "",
+         "description": "Library level +2."
+      },
+      {
+         "category": "Terrain",
+         "name": "hoburg",
+         "hint": "",
+         "default": "",
+         "description": "All starting corpses here will be small size."
+      },
+      {
+         "category": "Terrain",
+         "name": "snowok",
+         "hint": "",
+         "default": "",
+         "description": "The terrain can appear in the northern portion of the map and can be snowy."
+      },
+      {
+         "category": "Terrain",
+         "name": "desertok",
+         "hint": "",
+         "default": "",
+         "description": "The terrain can appear in the southern portion of the map."
+      },
+      {
+         "category": "Terrain",
+         "name": "invseason",
+         "hint": "",
+         "default": "",
+         "description": "Seasons are reversed in this terrain."
+      },
+      {
+         "category": "Terrain",
+         "name": "spreadcold",
+         "hint": "",
+         "default": "",
+         "description": "The terrain square spreads cold around it turning nearby squares snowy."
+      },
+      {
+         "category": "Terrain",
+         "name": "tempimmune",
+         "hint": "",
+         "default": "",
+         "description": "The terrain will not be transformed into a wasteland when it gets too hot"
+      },
+      {
+         "category": "Terrain",
+         "name": "ritrebate",
+         "hint": "<percent>",
+         "default": "",
+         "description": "All rituals cast on this location will be cheaper."
+      },
+      {
+         "category": "Terrain",
+         "name": "bonusrelics",
+         "hint": "<value>",
+         "default": "",
+         "description": "Get this number of extra relics from this location. By default the amount of relics is one less than the amount of sacrifices earned."
+      },
+      {
+         "category": "Terrain",
+         "name": "nosnowpen",
+         "hint": "",
+         "default": "",
+         "description": "No income penalty from snow."
+      },
+      {
+         "category": "Terrain",
+         "name": "farvis",
+         "hint": "",
+         "default": "",
+         "description": "Can be seen from far away."
+      },
+      {
+         "category": "Terrain",
+         "name": "seepast",
+         "hint": "",
+         "default": "",
+         "description": "Far horizon (like sea)."
+      },
+      {
+         "category": "Terrain",
+         "name": "port",
+         "hint": "",
+         "default": "",
+         "description": "Ships can enter this terrain."
+      },
+      {
+         "category": "Terrain",
+         "name": "realport",
+         "hint": "",
+         "default": "",
+         "description": "Ships can be recruited here."
+      },
+      {
+         "category": "Terrain",
+         "name": "misty",
+         "hint": "",
+         "default": "",
+         "description": "Mist emanates from here."
+      },
+      {
+         "category": "Terrain",
+         "name": "anchored",
+         "hint": "",
+         "default": "",
+         "description": "Dimensionally anchored location."
+      },
+      {
+         "category": "Terrain",
+         "name": "hardfly",
+         "hint": "",
+         "default": "",
+         "description": "Difficult to fly here costs 2 AP."
+      },
+      {
+         "category": "Terrain",
+         "name": "nevercold",
+         "hint": "",
+         "default": "",
+         "description": "This square will never get cold."
+      },
+      {
+         "category": "Terrain",
+         "name": "ug",
+         "hint": "",
+         "default": "",
+         "description": "This is an underground terrain."
+      },
+      {
+         "category": "Terrain",
+         "name": "town1",
+         "hint": "",
+         "default": "",
+         "description": "One town point."
+      },
+      {
+         "category": "Terrain",
+         "name": "town2",
+         "hint": "",
+         "default": "",
+         "description": "Two town points."
+      },
+      {
+         "category": "Terrain",
+         "name": "cityname",
+         "hint": "",
+         "default": "",
+         "description": "This terrain should start with a random city name."
+      }
+   ],
+   "Start": [
+      {
+         "category": "Terrain",
+         "name": "selectterr",
+         "hint": "<terrain nbr>",
+         "default": "",
+         "description": "Select the terrain to be modified. Select a low number to alter an existing terrain or select a number between 500 - 999 to create a new terrain."
+      }
+   ]
+}

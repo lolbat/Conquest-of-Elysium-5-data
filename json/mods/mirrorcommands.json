@@ -1,0 +1,44 @@
+[
+ {
+   "name": "mirror",
+   "hint": "<value>",
+   "default": "",
+   "description": "1=is small mirror 2=is large mirror 3=silver 4=gold"
+ },
+ {
+   "name": "mirrorammo",
+   "hint": "<value>",
+   "default": "",
+   "description": "default number of images for this type of mirror (def 20)"
+ },
+ {
+   "name": "phantasm",
+   "hint": "<value>",
+   "default": "",
+   "description": "1=phantasmal warrior 2=phantasmal animal etc."
+ },
+ {
+   "name": "releasephant",
+   "hint": "<value>",
+   "default": "",
+   "description": "mirror releases this type of phantasms (has phantasm = value)"
+ },
+ {
+   "name": "releaserate",
+   "hint": "<value>",
+   "default": "",
+   "description": "bonus to the number of phantasms released"
+ },
+ {
+   "name": "releasespell",
+   "hint": "<value>",
+   "default": "",
+   "description": "making an attack drains one mirror charge (fx_mirror)"
+ },
+ {
+   "name": "revertmirror",
+   "hint": "<value>",
+   "default": "",
+   "description": "revert to mirror when empty. 1=small mirror 2=large mirror 3=silver 4=gold"
+ }
+]
