@@ -1,0 +1,4 @@
+
+.DS_Store
+.nova/Configuration.json
+node_modules/
