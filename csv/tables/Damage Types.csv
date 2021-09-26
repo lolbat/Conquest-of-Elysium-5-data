@@ -1,0 +1,26 @@
+number,damagetype
+1,slash
+2,blunt
+3,pierce
+4,fire
+5,cold
+6,shock
+7,magic
+8,fear
+9,poison
+10,acid
+11,release (for magic mirrors)
+12,special affliction
+13,special benefit
+14,charm
+15,polymorph
+16,sleep
+17,paralyze
+18,summon
+19,enslave (like charm but decommanderized)
+20,swallow
+21,mirror image
+22,corrupt (charm vs morale)
+23,banish
+24,petrify
+25,animate (dmg: 1=tree, 2=fungus)

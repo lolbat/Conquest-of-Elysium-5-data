@@ -1,0 +1,29 @@
+power,value,afflication
+2^0,1,Disease
+2^1,2,Curse
+2^2,4,Decay
+2^3,8,Sleep
+2^4,16,Paralyzation
+2^5,32,Burn
+2^6,64,Stun
+2^7,128,Bleeding
+2^8,256,Earth Grip
+2^9,512,Entanglement
+2^10,1024,Imprison in Ice
+2^11,2048,Weakness
+2^12,4096,Transform into Tree
+2^13,8192,Insanity
+2^14,16384,Horrormark
+2^15,32768,Horrormark – Great
+2^16,65536,Summoning Sickness
+2^17,131072,Cannot be used
+2^18,262144,Confusion
+2^19,524288,Turn into Gold
+2^20,1048576,Lost an Eye
+2^21,2097152,Lost the Other Eye
+2^22,4194304,Chest Wound
+2^23,8388608,Never Healing Wound
+2^24,16777216,Battle Fright
+2^25,33554432,Feeblemind
+2^26,67108864,Blindness
+2^27,134217728,Temporary Insanity

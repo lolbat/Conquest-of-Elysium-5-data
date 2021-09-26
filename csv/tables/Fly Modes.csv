@@ -1,0 +1,10 @@
+number,mode
+1,use a sprite instead of particles
+2,standard
+3,fast
+4,faster
+5,line
+6,standard*
+7,line*
+8,slow line
+9,meteor

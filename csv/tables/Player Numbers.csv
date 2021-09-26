@@ -1,0 +1,13 @@
+number,player
+0-23,player number
+24,Independends
+25,Special monsters
+26,Horrors
+27,Hades
+28,Inferno
+29,Celestial
+30,Kingdom/Empire
+-1,everyone (only for messages and a few triggers)
+-2,event player (current player)
+-3,square owner
+-4,army owner
