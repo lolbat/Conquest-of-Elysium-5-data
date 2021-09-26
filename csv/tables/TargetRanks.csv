@@ -2,7 +2,7 @@ number,target
 0,self
  1,front row enemy
  5,border square (for summoning)
- 6,border square, but not behind walls (for summoning)
+ 6,border square but not behind walls (for summoning)
  7,target a square (for summoning)
  8,a rear enemy
  9,any enemy

@@ -1,7 +1,7 @@
-// convert the mods csv file into a JSON file while creating a tree of commands to make
+// convert the mods json file into a nested JSON file while creating a tree of commands to make
 // it easier to traverse and display the data
 
-// uses node.js, d3 and csvtojson
+// uses node.js and d3
 
 function arraysEqual(a, b) {
   
@@ -18,7 +18,6 @@ function arraysEqual(a, b) {
 
 const fs = require('fs');
 const d3 = require('d3-collection'); 
-const csv = require('csvtojson');
 
 let jsonFilePath = "../json/mods/modcommands.json";
 let jsonWritePath = "../json/mods/modcommands_nested.json";

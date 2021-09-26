@@ -1,0 +1,17 @@
+value,area
+0,Single target
+xx,Nbr of nearby squares
+-xx,Nbr of random squares
+997,Circle around unit
+998,All friendly units
+999,All enemy units
+10xx,Beam xx squares
+20xx,Narrow cone xx squares
+30xx,Cone xx squares
+40xx,Wide cone xx squares
+50xx,Far beam xx squares
+70xx,Far crack xx squares
+9rxx,Chain lightning xx targets r = max distance
+9997,25% of all squares
+9998,All units
+9999,All squares

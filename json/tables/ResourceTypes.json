@@ -1,0 +1,21 @@
+[
+{"value":"0","resourcetype":"gold"},
+{"value":"1","resourcetype":"iron"},
+{"value":"2","resourcetype":"herbs"},
+{"value":"3","resourcetype":"fungus"},
+{"value":"4","resourcetype":"sacr"},
+{"value":"5","resourcetype":"hands"},
+{"value":"6","resourcetype":"weed"},
+{"value":"7","resourcetype":"fire"},
+{"value":"8","resourcetype":"water"},
+{"value":"9","resourcetype":"air"},
+{"value":"10","resourcetype":"earth"},
+{"value":"11","resourcetype":"trade"},
+{"value":"12","resourcetype":"relics"},
+{"value":"13","resourcetype":"lifeforce"},
+{"value":"14","resourcetype":"human corpses"},
+{"value":"15","resourcetype":"gems"},
+{"value":"16","resourcetype":"expendable units"},
+{"value":"17","resourcetype":"corpses"},
+{"value":"18","resourcetype":"goblins"}
+]

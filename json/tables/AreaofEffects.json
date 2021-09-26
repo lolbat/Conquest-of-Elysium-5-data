@@ -1,0 +1,18 @@
+[
+{"value":"0","area":"Single target"},
+{"value":"xx","area":"Nbr of nearby squares"},
+{"value":"-xx","area":"Nbr of random squares"},
+{"value":"997","area":"Circle around unit"},
+{"value":"998","area":"All friendly units"},
+{"value":"999","area":"All enemy units"},
+{"value":"10xx","area":"Beam xx squares"},
+{"value":"20xx","area":"Narrow cone xx squares"},
+{"value":"30xx","area":"Cone xx squares"},
+{"value":"40xx","area":"Wide cone xx squares"},
+{"value":"50xx","area":"Far beam xx squares"},
+{"value":"70xx","area":"Far crack xx squares"},
+{"value":"9rxx","area":"Chain lightning xx targets r = max distance"},
+{"value":"9997","area":"25% of all squares"},
+{"value":"9998","area":"All units"},
+{"value":"9999","area":"All squares"}
+]

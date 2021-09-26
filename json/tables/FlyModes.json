@@ -1,0 +1,11 @@
+[
+{"number":"1","mode":"use a sprite instead of particles"},
+{"number":"2","mode":"standard"},
+{"number":"3","mode":"fast"},
+{"number":"4","mode":"faster"},
+{"number":"5","mode":"line"},
+{"number":"6","mode":"standard*"},
+{"number":"7","mode":"line*"},
+{"number":"8","mode":"slow line"},
+{"number":"9","mode":"meteor"}
+]

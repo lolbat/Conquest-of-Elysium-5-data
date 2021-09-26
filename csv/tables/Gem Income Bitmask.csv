@@ -1,8 +1,0 @@
-power,value,gemincome
-2^0,1,Ruby, income 1 (fire)
-2^3,8,Sapphire, income 1 (water)
-2^6,64,Diamond, income 1 (air)
-2^9,512,Emerald, income 1 (earth)
-2^12,4096,Random gem, income 1
-2^15,32768,Random gem B, income 1
-2^18,262144,Use dice for income

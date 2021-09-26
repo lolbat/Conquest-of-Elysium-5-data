@@ -1,0 +1,14 @@
+[
+{"number":"0-23","player":"player number"},
+{"number":"24","player":"Independends"},
+{"number":"25","player":"Special monsters"},
+{"number":"26","player":"Horrors"},
+{"number":"27","player":"Hades"},
+{"number":"28","player":"Inferno"},
+{"number":"29","player":"Celestial"},
+{"number":"30","player":"Kingdom/Empire"},
+{"number":"-1","player":"everyone (only for messages and a few triggers)"},
+{"number":"-2","player":"event player (current player)"},
+{"number":"-3","player":"square owner"},
+{"number":"-4","player":"army owner"}
+]

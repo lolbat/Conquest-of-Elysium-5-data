@@ -1,0 +1,9 @@
+[
+{"power":"2^0","value":"1","gemincome":"Ruby income 1 (fire)"},
+{"power":"2^3","value":"8","gemincome":"Sapphire income 1 (water)"},
+{"power":"2^6","value":"64","gemincome":"Diamond income 1 (air)"},
+{"power":"2^9","value":"512","gemincome":"Emerald income 1 (earth)"},
+{"power":"2^12","value":"4096","gemincome":"Random gem income 1"},
+{"power":"2^15","value":"32768","gemincome":"Random gem B income 1"},
+{"power":"2^18","value":"262144","gemincome":"Use dice for income"}
+]

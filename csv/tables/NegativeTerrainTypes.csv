@@ -5,10 +5,10 @@ value,terraintype
 -4,mines
 -5,mountains
 -6,forests and jungles
--7,mountains, forests and jungles
+-7,mountains forests and jungles
 -8,villages and smaller human settlements
 -9,fortified citadels
--10,forests, jungles and swamps
+-10,forests jungles and swamps
 -11,forests
 -12,greater mines
 -13,farms
@@ -39,7 +39,7 @@ value,terraintype
 -38,forests and jungles
 -39,magic locations
 -40,hamlets
--41,hamlets, tent villages and villages
+-41,hamlets tent villages and villages
 -42,land locations
 -43,underwater locations
 -44,elemental plane of fire
@@ -83,7 +83,7 @@ value,terraintype
 -82,sapphire locations
 -83,diamond locations
 -84,emerald locations
--85,forests, jungles, swamps and caves
+-85,forests jungles swamps and caves
 -86,not on sky plane
 -87,ant hill terrains
 -88,ruby locations and towers

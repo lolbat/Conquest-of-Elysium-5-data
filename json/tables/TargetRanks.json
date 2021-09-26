@@ -1,0 +1,10 @@
+[
+{"number":"0","target":"self"},
+{"number":"1","target":"front row enemy"},
+{"number":"5","target":"border square (for summoning)"},
+{"number":"6","target":"border square but not behind walls (for summoning)"},
+{"number":"7","target":"target a square (for summoning)"},
+{"number":"8","target":"a rear enemy"},
+{"number":"9","target":"any enemy"},
+{"number":"-9","target":"a friendly unit"}
+]
