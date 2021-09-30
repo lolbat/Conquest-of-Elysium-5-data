@@ -1,0 +1,947 @@
+SCHOOL,SPELL,LEVEL,RANGE,MAGIC,AFFECTS,NO AFFECT,IGNORE AR,PRIMARY,AOE,NEGATION,xEFFECT,xAOE,xNEGATION,SPECIAL,SLOW,SCATTER,DESCRIPTION
+Alchemy,Cold Resistance,1,6,Y,-,-,-,Cold Resistance (100),Burst 5,-,-,-,-,-,-,-,Cold Damage reduced by 100%
+Alchemy,Fire Resistance,1,6,Y,-,-,-,Fire Resistance (100),Burst 5,-,-,-,-,-,-,-,Fire Damage reduced by 100%
+Alchemy,Strength,1,8,Y,-,-,-,Strength +2,Burst 3,-,-,-,-,-,-,-,
+Alchemy,Acid Cloud,2,6,Y,-,-,Y,Acid 1-2,Burst 9,-,-,-,-,-,-,-,
+Alchemy,Ironskin,2,8,Y,-,Ethereal,-,Armor +2,Single,-,-,-,-,-,-,-,
+Alchemy,Regeneration,2,8,Y,-,Lifeless,-,Regeneration,Single,-,-,-,-,-,-,-,The unit heals roughly 10% of its HP every combat round
+Alchemy,Toughness,2,8,Y,-,Ethereal,-,Slash/Blunt/ Pierce Resistance,Single,-,-,-,-,-,-,-,"Half Damage from Slashing, Blunt, and Piercing weapons"
+Alchemy,Acid Mist,3,8,Y,-,-,Y,Acid 1-2,Burst 25,-,-,-,-,-,-,-,
+Alchemy,Flesh is Stronger,3,8,Y,-,Ethereal,-,"Fire Resistance (100), Regeneration, Armor +2, Slash/Blunt/ Pierce Resistance",-,-,-,-,-,-,-,-,"All Friendly Units have Fire Damage reduced by 100%; The unit heals roughly 10% of its HP every combat round; Half Damage from Slashing, Blunt, and Piercing weapons"
+Astrology,Confusion,1,8,Y,-,Mindless,-,Confusion,Single,MR 2d4,-,-,-,-,-,-,Confused units do nothing (50% chance) or switch sides (10% chance) or move in a random direction instead of advancing (75%)
+Astrology,Mind Burn,1,10,Y,-,Mindless,Y,Magic 1-11,Single,(gd) MR 2d6,-,-,-,-,-,-,
+Astrology,Moonlight,1,10,Y,Only Enemy,Mindless (xEffect only),Y,Magic 1-3,Single,-,Confusion,Single,MR 2d4 (reg),-,-,-,Confused units do nothing (50% chance) or switch sides (10% chance) or move in a random direction instead of advancing (75%)
+Astrology,Paralyze,1,10,Y,-,-,-,Paralyzation,Single,MR 2d4,-,-,-,-,-,-,Paralyzed units are immobilized and cannot do anything until the effect wears off. (10% chance each combat round)
+Astrology,Reading the Stars,1,8,Y,Only Friendly,-,-,Luck,2 strikes,-,-,-,-,-,-,-,50% chance of not taking any Damage from an attack
+Astrology,Starlight,1,10,Y,-,-,Y,Magic 1-5,Single,-,Paralyzation,-,(ez) MR 1d5,-,-,-,Paralyzed units are immobilized and cannot do anything until the effect wears off. (10% chance each combat round)
+Astrology,Twist Fate,1,8,Y,Only Friends,-,-,Twist Fate,Single,-,-,-,-,-,-,-,The Twist Fate effect will prevent the first successful attack against the unit
+Astrology,Words of the Void,1,4,Y,-,Mindless,-,Stun,3 strikes,MR 2d4,-,-,-,-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Astrology,Foresight,2,8,Y,Only Friendly,-,-,Luck,5 strikes,-,-,-,-,-,-,-,50% chance of not taking any Damage from an attack
+Astrology,Invade Mind,2,10,Y,-,Mindless,-,Enslave,Single,MR 2d4,-,-,-,-,-,-,Enslaved units immediately switch sides and attack their former comrades
+Astrology,Mental Overload,2,8,Y,Only Enemy,Mindless,-,Confusion,4 strikes,MR 2d4,-,-,-,-,-,-,Confused units do nothing (50% chance) or switch sides (10% chance) or move in a random direction instead of advancing (75%)
+Astrology,Meteor,2,15,Y,-,-,-,Blunt 1-50,Single,-,Fire 1-8,Burst 5,-,x5 damage vs Walls (Primary only),Y,Y,
+Astrology,Moonbeams,2,10,Y,Only Enemy,Mindless (xEffect only),Y,Magic 1-3,Burst 9,-,Confusion,Single,MR 2d4 (reg),-,-,-,Confused units do nothing (50% chance) or switch sides (10% chance) or move in a random direction instead of advancing (75%)
+Astrology,Rewrite Fate,2,8,Y,Only Friends,-,-,Twist Fate,Burst 9,-,-,-,-,-,-,-,The Twist Fate effect will prevent the first successful attack against the unit
+Astrology,Soul Slay,2,10,Y,-,Mindless,Y,Magic 1-999,Single,(gd) MR 2d6,Paralyzation,-,MR 2d4 (reg),-,-,-,Paralyzed units are immobilized and cannot do anything until the effect wears off. (10% chance each combat round)
+Astrology,Star Showers,2,10,Y,-,-,Y,Magic 1-10,5 strikes,-,Paralyzation,-,MR 2d4,-,-,-,Paralyzed units are immobilized and cannot do anything until the effect wears off. (10% chance each combat round)
+Astrology,Great Foretelling,3,8,Y,Only Friendly,-,-,Luck,Burst 25,-,-,-,-,-,-,-,50% chance of not taking any Damage from an attack
+Astrology,Lunar Brilliance,3,10,Y,Only Enemy,Mindless (xEffect only),Y,Magic 1-3,Burst 25,-,Confusion,Single,MR 2d4 (reg),-,-,-,Confused units do nothing (50% chance) or switch sides (10% chance) or move in a random direction instead of advancing (75%)
+Astrology,Mental Hold,3,6,Y,-,-,-,Paralyzation,Burst 25,(ez) MR 1d5,-,-,-,-,-,-,Paralyzed units are immobilized and cannot do anything until the effect wears off. (10% chance each combat round)
+Astrology,Meteor Showers,3,0,Y,-,-,-,Blunt 1-40,15% of battlefield,-,Fire 1-8,Burst 5,-,x5 damage vs Walls (Primary only),Y,-,
+Astrology,Mind Vortex,3,0,Y,-,-,-,Paralyzation,Entire Battlefield,(ez) MR 1d5,-,-,-,-,-,-,Paralyzed units are immobilized and cannot do anything until the effect wears off. (10% chance each combat round)
+Beast Wards,Befriend Animal,1,5,Y,Only Animals; Only Enemy,Mindless,-,Charm,Single,(ez) MR 1d5,-,-,-,-,-,-,Charmed units immediately switch sides and attack their former comrades
+Beast Wards,Summon Crows,1,10,Y,-,-,-,Summon,-,-,-,-,-,1 Murder of Crows,-,-,A maximum of about 200 Murder of Crows can be summoned in a single battle
+Beast Wards,Summon Snake,1,3,Y,-,-,-,Summon,-,-,-,-,-,1 Snake,-,-,A maximum of about 50 Snakes can be summoned in a single battle
+Beast Wards,Summon Wolf,1,E,Y,-,-,-,Summon,-,-,-,-,-,1 Wolf,-,-,A maximum of about 40 Wolves can be summoned in a single battle
+Beast Wards,Command Beasts,2,6,Y,Only Animals; Only Enemy,Mindless,-,Charm,Burst 9,(ez) MR 1d5,-,-,-,-,-,-,Charmed units immediately switch sides and attack their former comrades
+Beast Wards,Summon Great Boar,2,E,Y,-,-,-,Summon,-,-,-,-,-,1 Great Boar,-,-,A maximum of about 25 Great Boars can be summoned in a single battle; CANNOT be cast at sea
+Beast Wards,Summon Murder of Crows,2,10,Y,-,-,-,Summon,-,-,-,-,-,1-3 Murder of Crows,-,-,A maximum of about 200 Murder of Crows can be summoned in a single battle
+Beast Wards,Summon Serpent,2,E,Y,-,-,-,Summon,-,-,-,-,-,1 Serpent,-,-,A maximum of about 25 Serpents can be summoned in a single battle; CANNOT be cast at sea
+Beast Wards,Summon Wolves,2,E,Y,-,-,-,Summon,-,-,-,-,-,1-3 Wolves,-,-,A maximum of about 40 Wolves can be summoned in a single battle
+Beast Wards,Army of Boars,3,E,Y,-,-,-,Summon,-,-,-,-,-,1-4 Great Boars,-,-,A maximum of about 25 Great Boars can be summoned in a single battle; CANNOT be cast at sea
+Beast Wards,Army of Crows,3,10,Y,-,-,-,Summon,-,-,-,-,-,1-13 Murder of Crows,-,-,A maximum of about 200 Murder of Crows can be summoned in a single battle
+Beast Wards,Army of Wolves,3,E,Y,-,-,-,Summon,-,-,-,-,-,1-10 Wolves,-,-,A maximum of about 40 Wolves can be summoned in a single battle
+Bile Magic,Animate Mushroom,1,6,Y,-,-,-,Animate Mushroom,Single,-,-,-,-,-,-,-,
+Bile Magic,Poison Bolt,1,6,Y,-,-,Y,Poison 1-8,3 strikes,-,-,-,-,-,-,-,
+Bile Magic,Poison Cloud,1,6,Y,-,-,Y,Poison 1-5,Burst 5,-,-,-,-,-,-,-,
+Bile Magic,Poison Goo,1,6,Y,-,-,Y,Poison 1-6,2 strikes,-,Slime,-,STR 2d4,-,-,-,*
+Bile Magic,Summon Frog,1,3,Y,-,-,-,Summon,-,-,-,-,-,1-3 Frogs,-,-,A maximum of about 200 Frogs can be summoned in a single battle
+Bile Magic,Summon Snake,1,3,Y,-,-,-,Summon,-,-,-,-,-,1 Snake,-,-,A maximum of about 50 Snakes can be summoned in a single battle
+Bile Magic,Venom,1,6,Y,-,-,Y,Poison 1-26,Single,-,-,-,-,-,-,-,
+Bile Magic,Pit of Snakes,2,3,Y,-,-,-,Summon,-,-,-,-,-,1-3 Snakes,-,-,A maximum of about 50 Snakes can be summoned in a single battle
+Bile Magic,Poison Darts,2,6,Y,-,-,Y,Poison 1-6,9 strikes,-,-,-,-,-,-,-,
+Bile Magic,Poison Mist,2,8,Y,-,-,Y,Poison 1-8,Burst 25,-,-,-,-,-,-,-,
+Bile Magic,Summon Giant Toad,2,E,Y,-,-,-,Summon,-,-,-,-,-,1 Giant Toad,-,-,A maximum of about 15 Giant Toads can be summoned in a single battle
+Bile Magic,Summon Serpent,2,E,Y,-,-,-,Summon,-,-,-,-,-,1 Serpent,-,-,A maximum of about 25 Serpents can be summoned in a single battle; CANNOT be cast at sea
+Bile Magic,Venomous Death,2,6,Y,-,-,Y,Poison 1-60,Single,-,-,-,-,-,-,-,
+Bile Magic,Animate Swamp,3,0,Y,-,-,-,Animate Swamp,Entire Battlefield,-,-,-,-,-,-,-,
+Bile Magic,Deadly Fumes,3,10,Y,-,-,Y,Poison 1-6,Burst 100,-,-,-,-,-,-,-,
+Bile Magic,Green Death,3,8,Y,-,-,Y,Poison 1-22,Burst 25,-,-,-,-,-,-,-,
+Bile Magic,Summon Giant Toads,3,E,Y,-,-,-,Summon,-,-,-,-,-,1-6 Giant Toads,-,-,A maximum of about 15 Giant Toads can be summoned in a single battle
+Bile Magic,Summon Serpents,3,E,Y,-,-,-,Summon,-,-,-,-,-,1-5 Serpents,-,-,A maximum of about 25 Serpents can be summoned in a single battle; CANNOT be cast at sea
+Black Magic,Confusion,1,8,Y,-,Mindless,-,Confusion,Single,MR 2d4,-,-,-,-,-,-,Confused units do nothing (50% chance) or switch sides (10% chance) or move in a random direction instead of advancing (75%)
+Black Magic,Decay,1,8,Y,-,-,-,Decay,Single,MR 2d4,-,-,-,-,-,-,"Units suffering from Decay take 1 point of Damage per combat round until they die. Decay can usually not be survived, but after the battle has ended the effect will run out eventually"
+Black Magic,Paralyze,1,10,Y,-,-,-,Paralyzation,Single,MR 2d4,-,-,-,-,-,-,Paralyzed units are immobilized and cannot do anything until the effect wears off. (10% chance each combat round)
+Black Magic,Cloud of Death,2,10,Y,-,-,-,Decay,Burst 25,MR 2d4,-,-,-,-,-,-,"Units suffering from Decay take 1 point of Damage per combat round until they die. Decay can usually not be survived, but after the battle has ended the effect will run out eventually"
+Black Magic,Disintegrate,2,8,Y,-,-,Y,Magic 1-20,Single,MR 2d4,Magic 1-999,-,(gd) MR 2d6,-,-,-,
+Black Magic,Terror,2,10,Y,Only Enemy,-,Y,Fear 1-8,Burst 25,(gd) MR 2d6,-,-,-,-,-,-,"Fear Damage is applied against Morale. If the damage roll from fear exceeds the morale of the target, the target panics and runs away"
+Black Magic,Arcane Tempest,3,0,Y,Only Enemy,-,-,Blunt 1-3,All Enemies,-,Stun,-,STR 2d4,-,Y,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Black Magic,Death Spell,3,10,Y,-,-,Y,Magic 1-20,Burst 25,-,-,-,-,-,-,-,
+Black Magic,Wind of Death,3,10,Y,Only Enemy,-,-,Decay,Burst 100,MR 2d4,-,-,-,-,Y,-,"Units suffering from Decay take 1 point of Damage per combat round until they die. Decay can usually not be survived, but after the battle has ended the effect will run out eventually"
+Blood Magic,Blood Boil,1,6,Y,-,Lifeless,Y,Fire 1-15,Single,MR 2d4,-,-,-,-,-,-,
+Blood Magic,Leech,1,5,Y,-,Lifeless,Y,Magic 1-6,Single,-,-,-,-,Drain,-,-,"In addition to causing Damage to their targets, life draining attacks add an equal amount of Hit Points to the attacker, healing them of Damage already suffered or augmenting their Hit Points beyond the normal maximum."
+Blood Magic,Strength,1,8,Y,-,-,-,Strength +2,Burst 3,-,-,-,-,-,-,-,
+Blood Magic,Blood Burst,2,6,Y,-,Lifeless,-,Magic 1-20,Burst 5,(ez) MR 1d5,-,-,-,-,-,-,
+Blood Magic,Blood Rush,2,8,Y,-,-,-,Strength +2,Burst 25,-,-,-,-,-,-,-,
+Blood Magic,Harm,2,8,Y,-,Lifeless,Y,Magic 1-33,Single,MR 2d4,-,-,-,-,-,-,
+Blood Magic,Hellbind Heart,2,6,Y,-,Mindless,-,Enslave,Single,MR 2d4,-,-,-,-,Y,-,Enslaved units immediately switch sides and attack their former comrades
+Blood Magic,Lashes of Blood,2,8,Y,-,Lifeless (xEffect only),-,Magic 1-11,3 strikes,-,Profuse Bleeding,-,(gd) MR 2d6,-,-,-,"Bleeding units will take 1 point of Damage per combat round until bleeding stops. Regenerating units will stop bleeding almost immediately, Fast healing units have an increased chance of stopping bleeding"
+Blood Magic,Bloodletting,3,0,Y,-,Lifeless,-,Magic 1-6,Entire Battlefield,-,-,-,-,Drain,Y,-,"In addition to causing Damage to their targets, life draining attacks add an equal amount of Hit Points to the attacker, healing them of Damage already suffered or augmenting their Hit Points beyond the normal maximum."
+Blood Magic,Rain of Blood,3,0,Y,Only Enemy,-,Y,Fear 1-7,Entire Battlefield,MR 2d4,-,-,-,-,Y,-,"Fear Damage is applied against Morale. If the damage roll from fear exceeds the morale of the target, the target panics and runs away"
+Blood Magic,Rupture,3,10,Y,Only Enemy,Lifeless,Y,Magic 1-7,Burst 100,-,-,-,-,-,Y,-,
+Bloody Mother,Blessing,1,8,Y,Only Friendly,-,-,Blessing,Burst 9,-,-,-,-,-,-,-,*
+Bloody Mother,Leech,1,5,Y,-,Lifeless,Y,Magic 1-6,Single,-,-,-,-,Drain,-,-,"In addition to causing Damage to their targets, life draining attacks add an equal amount of Hit Points to the attacker, healing them of Damage already suffered or augmenting their Hit Points beyond the normal maximum."
+Bloody Mother,Regeneration,1,8,Y,Only Friendly,-,-,Regeneration,Single,-,-,-,-,-,-,-,The unit heals roughly 10% of its HP every combat round
+Bloody Mother,Strength,1,8,Y,-,-,-,Strength +2,Burst 3,-,-,-,-,-,-,-,
+Bloody Mother,Blood Burst,2,6,Y,-,Lifeless,-,Magic 1-20,Burst 5,(ez) MR 1d5,-,-,-,-,-,-,
+Bloody Mother,Blood Rush,2,8,Y,-,-,-,Strength +2,Burst 25,-,-,-,-,-,-,-,
+Bloody Mother,Greater Blessing,2,8,Y,Only Friendly,-,-,Blessing,Burst 25,-,-,-,-,-,-,-,*
+Bloody Mother,Harm,2,8,Y,-,Lifeless,Y,Magic 1-33,Single,MR 2d4,-,-,-,-,-,-,
+Bloody Mother,Word of Power,2,4,Y,-,-,-,Paralyzation,Single,(gd) MR 2d6,-,-,-,-,-,-,Paralyzed units are immobilized and cannot do anything until the effect wears off. (10% chance each combat round)
+Bloody Mother,Army of Jaguars,3,8,Y,-,Lifeless,Y,Regeneration,Burst 25,-,-,-,-,-,-,-,The unit heals roughly 10% of its HP every combat round
+Bloody Mother,Rain of Blood,3,0,Y,Only Enemy,-,Y,Fear 1-7,Entire Battlefield,MR 2d4,-,-,-,-,Y,-,"Fear Damage is applied against Morale. If the damage roll from fear exceeds the morale of the target, the target panics and runs away"
+Bloody Mother,Smite,3,5,Y,-,-,Y,Fire 1-50,Single,(gd) MR 2d6,-,-,-,-,-,-,
+Command,Confusion,1,8,Y,-,Mindless,-,Confusion,Single,MR 2d4,-,-,-,-,-,-,Confused units do nothing (50% chance) or switch sides (10% chance) or move in a random direction instead of advancing (75%)
+Command,Hold,1,6,Y,-,-,-,Stun,3 strikes,(gd) MR 2d6,-,-,-,-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Command,Sleep,1,8,Y,Only Enemy,Mindless,-,Sleep,2 strikes,(gd) MR 2d6,-,-,-,-,-,-,Sleeping units are immobilized. The unit sleeps until it is hit or awakens on its own. (5% chance each combat round)
+Command,Bewilderment,2,8,Y,-,Mindless,-,Confusion,6 strikes,MR 2d4,-,-,-,-,-,-,Confused units do nothing (50% chance) or switch sides (10% chance) or move in a random direction instead of advancing (75%)
+Command,Enchanted Sleep,2,10,Y,Only Enemy,Mindless,-,Sleep,Burst 25,MR 2d4,-,-,-,-,-,-,Sleeping units are immobilized. The unit sleeps until it is hit or awakens on its own. (5% chance each combat round)
+Command,Enslave,2,8,Y,-,Mindless,-,Enslave,Single,MR 2d4,-,-,-,-,-,-,Enslaved units immediately switch sides and attack their former comrades
+Command,Mass Command,3,0,Y,-,-,-,Stun,All Enemies,(gd) MR 2d6,-,-,-,-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Command,Mass Confusion,3,10,Y,Only Enemy,Mindless,-,Confusion,Burst 100,MR 2d4,-,-,-,-,-,-,Confused units do nothing (50% chance) or switch sides (10% chance) or move in a random direction instead of advancing (75%)
+Command,Mass Control,3,10,Y,-,Mindless,-,Enslave,Burst 25,MR 2d4,-,-,-,-,-,-,Enslaved units immediately switch sides and attack their former comrades
+Crystal Sorcery,Air Shield,1,8,Y,Only Friendly,-,-,Air Shield*,Burst 5,-,-,-,-,-,-,-,x%* chance of taking no Damage from normal non-magical missile attacks
+Crystal Sorcery,Guide Arrows,1,8,Y,Only Friendly,-,-,Wind Guide,Burst 5,-,-,-,-,-,-,-,"+1 Range, +1 Damage for missiles; Arrows and Javelins will hit target more easily"
+Crystal Sorcery,Gust of Wind,1,8,-,-,-,-,Blunt 1-3,Burst 5,-,Stun,-,STR 2d4,-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Crystal Sorcery,Luck,1,8,Y,Only Friendly,-,-,Luck,Single,-,-,-,-,-,-,-,50% chance of not taking any Damage from an attack
+Crystal Sorcery,Seeking Arrow,1,6,-,-,-,-,Pierce 1-7,Single,-,-,-,-,-,-,-,
+Crystal Sorcery,Swiftness,1,8,Y,-,Lifeless,-,Quickness,Single,-,-,-,-,-,-,-,A unit with quickness will move fast in combat and also avoide about 1/4 of all attacks made against it
+Crystal Sorcery,Fortune,2,8,Y,Only Friendly,-,-,Luck,Burst 5,-,-,-,-,-,-,-,50% chance of not taking any Damage from an attack
+Crystal Sorcery,Quickening,2,8,Y,-,Lifeless,-,Quickness,Burst 9,-,-,-,-,-,-,-,A unit with quickness will move fast in combat and also avoide about 1/4 of all attacks made against it
+Crystal Sorcery,Wind Guide,2,8,Y,Only Friendly,-,-,Wind Guide,Burst 5,-,-,-,-,-,-,-,"+1 Range, +1 Damage for missiles; Arrows and Javelins will hit target more easily"
+Crystal Sorcery,Winds,2,8,-,-,-,-,Blunt 1-3,Burst 9,-,Stun,-,STR 2d4,-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Crystal Sorcery,Chain Lightning,3,6,Y,-,-,Y,Shock 1-5,8 bounces range 2,-,-,-,-,-,-,-,
+Crystal Sorcery,Haste,3,8,Y,-,Lifeless,-,Quickness,Burst 25,-,-,-,-,-,-,-,A unit with quickness will move fast in combat and also avoide about 1/4 of all attacks made against it
+Crystal Sorcery,Protective Winds,3,8,Y,Only Friendly,-,-,Air Shield*,Burst 20,-,-,-,-,-,-,-,x%* chance of taking no Damage from normal non-magical missile attacks
+Dark Magic,Dark Cloud,1,6,Y,-,-,Y,Magic 1-4,Burst 4,MR 2d4,-,-,-,-,-,-,
+Dark Magic,Fear,1,8,Y,-,-,Y,Fear 1-12,Single,(gd) MR 2d6,-,-,-,-,-,-,"Fear Damage is applied against Morale. If the damage roll from fear exceeds the morale of the target, the target panics and runs away"
+Dark Magic,Shadowform,1,6,Y,-,-,-,Etherealness,Single,-,-,-,-,-,-,-,75% chance of taking no Damage from non-magical attacks
+Dark Magic,Summon Shade,1,6,Y,-,-,-,Summon,-,-,-,-,-,1 Shade,Y,-,A maximum of about 25 Shades can be summoned in a single battle
+Dark Magic,Tendril of Darkness,1,6,Y,-,-,Y,Magic 1-5,Single,(gd) MR 2d6,Weakness,-,MR 2d4 (reg),-,-,-,Weakened units have their Strength and Damage reduced by 2
+Dark Magic,Lashes of Darkness,2,6,Y,-,-,Y,Magic 1-5,5 strikes,(gd) MR 2d6,Weakness,-,MR 2d4 (reg),-,-,-,Weakened units have their Strength and Damage reduced by 2
+Dark Magic,Shade Warriors,2,8,Y,-,-,-,Etherealness,Burst 9,-,-,-,-,-,-,-,75% chance of taking no Damage from non-magical attacks
+Dark Magic,Summon Shade Assassin,2,15,Y,-,-,-,Summon,-,-,-,-,-,1 Shade; Targets rear Enemy,Y,-,A maximum of about 25 Shades can be summoned in a single battle
+Dark Magic,Summon Shades,2,6,Y,-,-,-,Summon,-,-,-,-,-,1-3 Shades,Y,-,A maximum of about 25 Shades can be summoned in a single battle
+Dark Magic,Terror,2,10,Y,Only Enemy,-,Y,Fear 1-8,Burst 25,(gd) MR 2d6,-,-,-,-,-,-,"Fear Damage is applied against Morale. If the damage roll from fear exceeds the morale of the target, the target panics and runs away"
+Dark Magic,Weakness,2,8,Y,-,Undead; Lifeless,-,Weakness,Burst 25,(gd) MR 2d6,-,-,-,-,-,-,Weakened units have their Strength and Damage reduced by 2
+Dark Magic,Army of Darkness,3,8,Y,-,-,-,Etherealness,Burst 25,-,-,-,-,-,-,-,75% chance of taking no Damage from non-magical attacks
+Dark Magic,Horde of the Night,3,6,Y,-,-,-,Summon,-,-,-,-,-,1-8 Shades,Y,-,A maximum of about 25 Shades can be summoned in a single battle
+Dark Magic,Shade of Death,3,0,Y,-,Undead; Lifeless,-,Weakness,Entire Battlefield,(gd) MR 2d6,-,-,-,-,Y,-,Weakened units have their Strength and Damage reduced by 2
+Dark Magic,Symbol of Dread,3,10,Y,Only Enemy,-,Y,Magic 1-2,Burst 100,MR 2d4,Fear 1-8,-,(gd) MR 2d6,-,-,-,"Fear Damage is applied against Morale. If the damage roll from fear exceeds the morale of the target, the target panics and runs away"
+Dark Prayers,Bleed,1,6,Y,-,Lifeless,-,Profuse Bleeding,3 strikes,(gd) MR 2d6,-,-,-,-,-,-,"Bleeding units will take 1 point of Damage per combat round until bleeding stops. Regenerating units will stop bleeding almost immediately, Fast healing units have an increased chance of stopping bleeding"
+Dark Prayers,Blood Boil,1,6,Y,-,Lifeless,Y,Fire 1-15,Single,MR 2d4,-,-,-,-,-,-,
+Dark Prayers,Call Scorpion,1,8,Y,-,-,-,Summon,-,-,-,-,-,1 Scorpion,-,-,A maximum of about 50 Scorpions can be summoned in a single battle
+Dark Prayers,Call Spider,1,10,Y,-,-,-,Summon,-,-,-,-,-,1 Small Spider,-,-,A maximum of about 50 Small Spiders can be summoned in a single battle
+Dark Prayers,Leech,1,5,Y,-,Lifeless,Y,Magic 1-6,Single,-,-,-,-,Drain,-,-,"In addition to causing Damage to their targets, life draining attacks add an equal amount of Hit Points to the attacker, healing them of Damage already suffered or augmenting their Hit Points beyond the normal maximum."
+Dark Prayers,Pain,1,6,Y,-,Lifeless,Y,Magic 1-10,Single,MR 2d4,-,-,-,-,-,-,
+Dark Prayers,Poison Web,1,6,Y,-,-,Y,Poison 1-5,Single,-,Net,-,-,-,-,-,Net victim cannot do anything until it breaks free by making a successful STR 1d12
+Dark Prayers,Call Large Spiders,2,8,Y,-,-,-,Summon,-,-,-,-,-,1-2 Large Spiders,-,-,A maximum of about 25 Large Spiders can be summoned in a single battle; CANNOT be cast at sea
+Dark Prayers,Hellbind Heart,2,6,Y,-,Mindless,-,Enslave,Single,MR 2d4,-,-,-,-,Y,-,Enslaved units immediately switch sides and attack their former comrades
+Dark Prayers,Lashes of Fire,2,6,Y,-,-,-,Fire 1-11,3 strikes,-,Stun,-,MR 2d4 (reg),-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round.
+Dark Prayers,Terror,2,10,Y,Only Enemy,-,Y,Fear 1-8,Burst 25,(gd) MR 2d6,-,-,-,-,-,-,"Fear Damage is applied against Morale. If the damage roll from fear exceeds the morale of the target, the target panics and runs away"
+Dark Prayers,Vengeance,2,8,Y,-,-,-,Magic 1-13,2 strikes,-,Curse,-,-,-,-,-,Cursed units have a greatly increased chance of receiving battle afflictions when they are hit
+Dark Prayers,Word of Power,2,4,Y,-,-,-,Paralyzation,Single,(gd) MR 2d6,-,-,-,-,-,-,Paralyzed units are immobilized and cannot do anything until the effect wears off. (10% chance each combat round)
+Dark Prayers,Bloodletting,3,0,Y,-,Lifeless,-,Magic 1-6,Entire Battlefield,-,-,-,-,Drain,Y,-,"In addition to causing Damage to their targets, life draining attacks add an equal amount of Hit Points to the attacker, healing them of Damage already suffered or augmenting their Hit Points beyond the normal maximum."
+Dark Prayers,Lashes of Death,3,6,Y,-,Lifeless (xEffect only),xEffect only,Magic 1-15,3 strikes,-,Magic 1-999,-,MR 2d4 (reg),-,-,-,
+Dark Prayers,Rupture,3,10,Y,Only Enemy,Lifeless,Y,Magic 1-7,Burst 100,MR 2d4,-,-,-,-,Y,-,
+Dark Prayers,Spider Swarm,3,8,Y,-,-,-,Summon,-,-,-,-,-,1-11 Large Spiders,-,-,A maximum of about 25 Large Spiders can be summoned in a single battle; CANNOT be cast at sea
+Death,Blessing,1,8,Y,Only Friendly,-,-,Blessing,Burst 9,-,-,-,-,-,-,-,*
+Death,Decay,1,8,Y,-,-,-,Decay,Single,MR 2d4,-,-,-,-,-,-,"Units suffering from Decay take 1 point of Damage per combat round until they die. Decay can usually not be survived, but after the battle has ended the effect will run out eventually"
+Death,Disease,1,8,Y,-,Lifeless,-,Disease,Single,(gd) MR 2d6,-,-,-,-,-,-,"Diseased units have their Strength lowered by one point immediately, but take no extra Damage in combat. After combat, they have a 50% chance of taking 1 point of Damage every month until they die."
+Death,Strength Sap,1,8,Y,-,Undead,-,Weakness,Burst 3,(gd) MR 2d6,-,-,-,-,-,-,Weakened units have their Strength and Damage reduced by 2
+Death,Dance Macabre,2,3,Y,-,-,-,Summon,-,-,-,-,-,1-5 Longdeads,-,-,
+Death,Greater Blessing,2,8,Y,Only Friendly,-,-,Blessing,Burst 25,-,-,-,-,-,-,-,*
+Death,Plague,2,10,Y,Only Enemy,Lifeless,-,Disease,Burst 25,MR 2d4,-,-,-,-,-,-,"Diseased units have their Strength lowered by one point immediately, but take no extra Damage in combat. After combat, they have a 50% chance of taking 1 point of Damage every month until they die."
+Death,Weakness,2,8,Y,-,Undead; Lifeless,-,Weakness,Burst 25,(gd) MR 2d6,-,-,-,-,-,-,Weakened units have their Strength and Damage reduced by 2
+Death,Wither,2,8,Y,-,-,-,Decay,Burst 5,(gd) MR 2d6,-,-,-,-,-,-,"Units suffering from Decay take 1 point of Damage per combat round until they die. Decay can usually not be survived, but after the battle has ended the effect will run out eventually"
+Death,Word of Power,2,4,Y,-,-,-,Paralyzation,Single,(gd) MR 2d6,-,-,-,-,-,-,Paralyzed units are immobilized and cannot do anything until the effect wears off. (10% chance each combat round)
+Death,Shade of Death,3,0,Y,-,Undead; Lifeless,-,Weakness,Entire Battlefield,(gd) MR 2d6,-,-,-,-,Y,-,Weakened units have their Strength and Damage reduced by 2
+Death,Smite,3,5,Y,-,-,Y,Fire 1-50,Single,(gd) MR 2d6,-,-,-,-,-,-,
+Defilement,Bolt of Unlife,1,6,Y,-,Lifeless,Y,Magic 1-6,Single,(gd) MR 2d6,-,-,-,Reanimates victim,-,-,"Turns unit into Soulless, if killed"
+Defilement,Dehydration,1,8,Y,-,Undead; Lifeless,-,Exhaustion,Single,STR 2d4,-,-,-,-,-,-,Exhausted units get -1 to Strength and has a chance of not moving.  Exhausted units that attack have a 50% chance of taking 1 point of damage.  Disappears after battle.
+Defilement,Fear,1,8,Y,-,-,Y,Fear 1-12,Single,(gd) MR 2d6,-,-,-,-,-,-,"Fear Damage is applied against Morale. If the damage roll from fear exceeds the morale of the target, the target panics and runs away"
+Defilement,Shadowform,1,6,Y,-,-,-,Etherealness,Single,-,-,-,-,-,-,-,75% chance of taking no Damage from non-magical attacks
+Defilement,Strength Sap,1,8,Y,-,Undead,-,Weakness,Burst 3,(gd) MR 2d6,-,-,-,-,-,-,Weakened units have their Strength and Damage reduced by 2
+Defilement,Finger of Death,2,8,Y,-,Lifeless,Y,Magic 1-999,Single,-,Paralyzation,-,STR 2d4,-,-,-,Paralyzed units are immobilized and cannot do anything until the effect wears off. (10% chance each combat round)
+Defilement,Lashes of Darkness,2,6,Y,-,-,Y,Magic 1-5,5 strikes,(gd) MR 2d6,Weakness,-,MR 2d4 (reg),-,-,-,Weakened units have their Strength and Damage reduced by 2
+Defilement,Scourging Wind,2,8,Y,-,Undead; Lifeless,-,Exhaustion,Burst 25,STR 2d4,-,-,-,-,-,-,Exhausted units get -1 to Strength and has a chance of not moving.  Exhausted units that attack have a 50% chance of taking 1 point of damage.  Disappears after battle.
+Defilement,Terror,2,10,Y,Only Enemy,-,Y,Fear 1-8,Burst 25,(gd) MR 2d6,-,-,-,-,-,-,"Fear Damage is applied against Morale. If the damage roll from fear exceeds the morale of the target, the target panics and runs away"
+Defilement,Weakness,2,8,Y,-,Undead; Lifeless,-,Weakness,Burst 25,(gd) MR 2d6,-,-,-,-,-,-,Weakened units have their Strength and Damage reduced by 2
+Defilement,Chill of the Dead,3,10,Y,-,Undead (xEffect only); Lifeless (xEffect only),Y,Cold 1-13,Burst 25,-,Weakness,-,(gd) MR 2d6,-,-,-,Weakened units have their Strength and Damage reduced by 2
+Defilement,Desert Storm,3,0,Y,-,Undead; Lifeless,-,Exhaustion,Entire Battlefield,STR 2d4,-,-,-,-,-,-,Exhausted units get -1 to Strength and has a chance of not moving.  Exhausted units that attack have a 50% chance of taking 1 point of damage.  Disappears after battle.
+Defilement,Symbol of Dread,3,10,Y,Only Enemy,-,Y,Magic 1-2,Burst 100,MR 2d4,Fear 1-8,-,(gd) MR 2d6,-,-,-,"Fear Damage is applied against Morale. If the damage roll from fear exceeds the morale of the target, the target panics and runs away"
+Defilement,Symbol of Unlife,3,10,Y,Only Enemy,-,Y,Magic 1-2,Burst 100,MR 2d4,-,-,-,Reanimates victim,-,-,"Turns unit into Soulless, if killed"
+Divine Magic,Banish,1,6,Y,-,-,-,Banish,-,MR 2d4,-,-,-,-,-,-,
+Divine Magic,Conversion,1,5,Y,Humans; Hoburghers,Mindless,-,Charm,Single,MR 2d4; MRL 2d4,-,-,-,-,-,-,Charmed units immediately switch sides and attack their former comrades
+Divine Magic,Lesser Smite,1,5,Y,-,-,Y,Fire 1-13,Single,MR 2d4,-,-,-,-,-,-,
+Divine Magic,Resist Magic,1,8,Y,Only Friendly,-,-,Magic Resistance +2,Single,-,-,-,-,-,-,-,
+Divine Magic,Saving Grace,1,8,Y,Only Friendly,-,-,Twist Fate,Single,-,-,-,-,-,-,-,The Twist Fate effect will prevent the first successful attack against the unit
+Divine Magic,Greater Banishment,2,6,Y,-,-,-,Banish,3 strikes,(gd) MR 2d6,-,-,-,-,-,-,
+Divine Magic,Mass Conversion,2,5,Y,Humans; Hoburghers,Mindless,-,Charm,Burst 9,MR 2d4; MRL 2d4,-,-,-,-,-,-,Charmed units immediately switch sides and attack their former comrades
+Divine Magic,Mercy,2,8,Y,Only Friendly,-,-,Twist Fate,Burst 9,-,-,-,-,-,Y,-,The Twist Fate effect will prevent the first successful attack against the unit
+Divine Magic,Smite,2,5,Y,-,-,Y,Fire 1-50,Single,(gd) MR 2d6,-,-,-,-,-,-,
+Divine Magic,Divine Intervention,3,8,Y,Only Friendly,-,-,Twist Fate,All Friends,-,-,-,-,-,Y,-,The Twist Fate effect will prevent the first successful attack against the unit
+Divine Magic,Divine Word,3,8,Y,-,-,-,Banish,Burst 9,(gd) MR 2d6,-,-,-,-,-,-,
+Divine Magic,Heavenly Strike,3,10,Y,-,-,Y,Fire 1-999,Single,(gd) MR 2d6,-,-,-,-,-,-,
+Divine Magic,True Faith,3,5,Y,Humans; Hoburghers,Mindless,-,Charm,Burst 25,MR 2d4; MRL 2d4,-,-,-,-,-,-,Charmed units immediately switch sides and attack their former comrades
+Druidism,Barkskin,1,8,Y,-,Ethereal,-,Armor +1,Burst 5,-,-,-,-,-,-,-,
+Druidism,Befriend Animal,1,5,Y,Only Animals; Only Enemy,Mindless,-,Charm,Single,(ez) MR 1d5,-,-,-,-,-,-,Charmed units immediately switch sides and attack their former comrades
+Druidism,Poison Arrow,1,5,-,-,-,xEffect only,Pierce 1-6,Single,-,Poison 1-10,Single,-,-,-,-,
+Druidism,Poison Vine,1,6,-,-,-,xEffect only,Entanglement,Single,-,Poison 1-5,Single,-,-,-,-,Entangled units are immobilized until they pass a strength check vs 1d8. Passing a strength check vs 1d5+5 will have the unit break free and attack in the same round.
+Druidism,Tangle Vine,1,6,-,-,Flying/Floating,-,Entanglement,Single,-,-,-,-,-,-,-,Entangled units are immobilized until they pass a strength check vs 1d8. Passing a strength check vs 1d5+5 will have the unit break free and attack in the same round.
+Druidism,Vine Arrow,1,5,-,-,Flying/Floating (xEffect Only),-,Pierce 1-6,Single,-,Entanglement,-,-,-,-,-,Entangled units are immobilized until they pass a strength check vs 1d8. Passing a strength check vs 1d5+5 will have the unit break free and attack in the same round.
+Druidism,Animate Tree,2,6,Y,-,-,-,Animate Tree,Single,-,-,-,-,-,-,-,
+Druidism,Briar Cage,2,6,Y,-,-,-,Entanglement,Burst 9,-,-,-,-,-,-,-,Entangled units are immobilized until they pass a strength check vs 1d8. Passing a strength check vs 1d5+5 will have the unit break free and attack in the same round.
+Druidism,Command Beasts,2,6,Y,Only Animals; Only Enemy,Mindless,-,Charm,Burst 9,(ez) MR 1d5,-,-,-,-,-,-,Charmed units immediately switch sides and attack their former comrades
+Druidism,Curse of Wood,2,10,Y,-,Lifeless,-,-,Burst 25,MR 2d4,-,-,-,Change into Tree,-,-,Unit turns into Tree
+Druidism,Domestication,2,5,Y,Only Animals,Mindless,-,Charm,3 strikes,(ez) MR 1d5,-,-,-,-,-,-,Charmed units immediately switch sides and attack their former comrades
+Druidism,Oak Army,2,8,Y,Only Friendly,Ethereal,-,Armor +1,Burst 25,-,-,-,-,-,-,-,
+Druidism,Poison Vines,2,6,-,Only Enemy,-,xEffect only,Entanglement,Burst 3,-,Poison 1-5,Single,-,-,-,-,Entangled victim cannot do anything until it breaks free by making a successful Strenght test vs 1d14
+Druidism,Shooting Thorns,2,6,-,-,-,xEffect only,Pierce 1-2,7 strikes,-,Poison 1-10,Single,-,-,-,-,
+Druidism,Animate Forest,3,0,Y,-,-,-,Animate Forest,Entire Battlefield,-,-,-,-,-,Y,-,
+Druidism,Earthquake,3,0,-,-,Flying/Floating,-,Blunt 1-5,Entire Battlefield,-,Stun,-,STR 2d4,x5 damage vs Walls (Primary only),Y,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Druidism,Lord of the Wild,3,10,Y,Only Animals; Only Enemy,Mindless,-,Charm,Burst 25,(ez) MR 1d5,-,-,-,-,-,-,Charmed units immediately switch sides and attack their former comrades
+Druidism,Poison Vine Growth,3,8,-,Only Enemy,-,xEffect only,Entanglement,Burst 25,-,Poison 1-5,Single,-,-,Y,-,Entangled victim cannot do anything until it breaks free by making a successful Strenght test vs 1d14
+Druidism,Wild Growth,3,10,Y,Only Enemy,-,-,Entanglement,Burst 100,STR 2d4,-,-,-,-,Y,-,Entangled victim cannot do anything until it breaks free by making a successful Strenght test vs 1d14
+Dwarf Magic,Cold Resistance,1,6,Y,-,-,-,Cold Resistance (100),Burst 5,-,-,-,-,-,-,-,Cold Damage reduced by 100%
+Dwarf Magic,Confusion,1,8,Y,-,Mindless,-,Confusion,Single,MR 2d4,-,-,-,-,-,-,Confused units do nothing (50% chance) or switch sides (10% chance) or move in a random direction instead of advancing (75%)
+Dwarf Magic,Earth Grip,1,6,Y,-,Flying/Floating,-,Earth Grip,Single,-,-,-,-,-,-,-,Earth gripped units are immobilized until they pass a strength check vs 2d6. Passing a strength check vs 1d5+7 will have the unit break free and attack in the same round
+Dwarf Magic,Fire Resistance,1,6,Y,-,-,-,Fire Resistance (100),Burst 5,-,-,-,-,-,-,-,Fire Damage reduced by 100%
+Dwarf Magic,Flame Burst,1,6,Y,-,-,-,Fire 1-8,Single,-,-,-,-,-,-,-,
+Dwarf Magic,Fortitude,1,8,Y,Only Friendly,Ethereal,-,Armor +1,Burst 5,-,-,-,-,-,-,-,
+Dwarf Magic,Iron Skin,1,8,Y,-,Ethereal,-,Armor +2,Single,-,-,-,-,-,-,-,
+Dwarf Magic,Magic Stones,1,6,Y,-,-,-,Blunt 1-6,2 strikes,-,-,-,-,-,-,-,
+Dwarf Magic,Tremor,1,6,-,-,Flying/Floating,-,Blunt 1-2,Burst 5,-,Stun,-,STR 2d4,x5 damage vs Walls (Primary only),-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Dwarf Magic,Army of Stone,2,8,Y,Only Friendly,Ethereal,-,Armor +1,Burst 25,-,-,-,-,-,-,-,
+Dwarf Magic,Earth Meld,2,6,Y,-,-,-,Earth Grip,Burst 9,-,-,-,-,-,-,-,Earth gripped units are immobilized until they pass a strength check vs 2d6. Passing a strength check vs 1d5+7 will have the unit break free and attack in the same round
+Dwarf Magic,Eruption,2,6,-,-,Flying/Floating,-,Blunt 1-9,Burst 5,-,Stun,-,STR 2d4,x5 damage vs Walls (Primary only),-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Dwarf Magic,Fire Ward,2,6,Y,-,-,-,Fire Resistance (100),Burst 25,-,-,-,-,-,-,-,Fire Damage reduced by 100%
+Dwarf Magic,Runes of Confusion,2,8,Y,-,Mindless,-,Confusion,Burst 9,-,-,-,-,-,-,-,Confused units do nothing (50% chance) or switch sides (10% chance) or move in a random direction instead of advancing (75%)
+Dwarf Magic,Smokeless Flame,2,8,Y,-,-,-,Fire 1-25,Single,-,-,-,-,-,-,-,
+Dwarf Magic,Soldiers of Steel,2,8,Y,Only Friendly,Ethereal,-,Armor +2,Burst 5,-,-,-,-,-,-,-,
+Dwarf Magic,Winter Ward,2,6,Y,-,-,-,Cold Resistance (100),Burst 25,-,-,-,-,-,-,-,Cold Damage reduced by 100%
+Dwarf Magic,Army of Steel,3,8,Y,Only Friendly,Ethereal,-,Armor +2,Burst 25,-,-,-,-,-,-,-,
+Dwarf Magic,Chasm,3,6,Y,-,Flying/Floating; Giant sized,Y,Blunt 1-100,Crack 15,-,Earth Grip,-,-,-,-,-,Earth gripped units are immobilized until they pass a strength check vs 2d6. Passing a strength check vs 1d5+7 will have the unit break free and attack in the same round
+Dwarf Magic,Earthquake,3,0,-,-,Flying/Floating,-,Blunt 1-5,Entire Battlefield,-,Stun,-,STR 2d4,x5 damage vs Walls (Primary only),Y,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Dwarf Magic,Flame Pillars,3,6,Y,-,-,-,Fire 1-25,3 strikes,-,-,-,-,-,-,-,
+Dwarf Magic,Legion of Stone,3,8,Y,Only Friendly,Ethereal,-,Armor +1,All Friends,-,-,-,-,-,-,-,
+Dwarf Magic,Maws of the Earth,3,6,Y,-,Flying/Floating; Giant sized,Y,Blunt 1-100,Crack 5,-,Earth Grip; Fire 1-8,-,-,x5 damage vs Walls (Primary only),-,-,Earth gripped units are immobilized until they pass a strength check vs 2d6. Passing a strength check vs 1d5+7 will have the unit break free and attack in the same round
+Dwarf Magic,Soldiers of Gold,3,8,Y,Only Friendly,Ethereal,-,"Fire Resistance (100), Armor +2",Burst 10,-,-,-,-,-,-,-,Fire Damage reduced by 100%
+Elemental Magic,Combustion,1,6,Y,-,-,-,Burn,4 strikes,-,-,-,-,Burn Forest,-,-,"Burning units will take fire damage each round. Large units take more damage than small units. Chance to put out fire each round, greater chance with Fire Resist; Grants Burn Forest ability"
+Elemental Magic,Dehydration,1,8,Y,-,Undead; Lifeless,-,Exhaustion,Single,STR 2d4,-,-,-,-,-,-,Exhausted units get -1 to Strength and has a chance of not moving.  Exhausted units that attack have a 50% chance of taking 1 point of damage.  Disappears after battle.
+Elemental Magic,Earth Grip,1,6,Y,-,Flying/Floating,-,Earth Grip,Single,-,-,-,-,-,-,-,Earth gripped units are immobilized until they pass a strength check vs 2d6. Passing a strength check vs 1d5+7 will have the unit break free and attack in the same round
+Elemental Magic,Gust of Wind,1,8,-,-,-,-,Blunt 1-3,Burst 5,-,Stun,-,STR 2d4,-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Elemental Magic,Earth Meld,2,6,Y,-,-,-,Earth Grip,Burst 9,-,-,-,-,-,-,-,Earth gripped units are immobilized until they pass a strength check vs 2d6. Passing a strength check vs 1d5+7 will have the unit break free and attack in the same round
+Elemental Magic,Fireball,2,6,Y,-,-,-,Fire 1-15,Burst 5,-,-,-,-,Burn Forest,-,-,Grants Burn Forest ability
+Elemental Magic,Orb Lightning,2,6,Y,-,-,Y,Shock 1-8,Burst 15,-,Stun,-,MR 2d4 (reg),-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Elemental Magic,Sailor's Death,2,6,Y,-,Lifeless; Water Breathers,xEffect only,Stun,Single,(gd) MR 2d6,Magic 1-999,Single,(ez) MR 1d5,-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Elemental Magic,Storm Wind,2,10,-,-,-,-,Blunt 1-4,Burst 25,-,Stun,-,STR 2d4,-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Elemental Magic,Torrent of Water,2,6,Y,-,-,-,Blunt 1-6,Burst 5,-,Stun,-,STR 2d4,-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Elemental Magic,Army of Waves,3,3,Y,-,-,-,Summon,-,-,-,-,-,1-9 Lesser Waters,Y,-,A maximum of about 25 Lesser Waters can be summoned in a single battle
+Elemental Magic,Call Lightning,3,10,Y,-,-,Y,Shock 1-8,12 strikes,-,Stun,-,MR 2d4 (reg),-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Elemental Magic,Earthquake,3,0,-,-,Flying/Floating,-,Blunt 1-5,Entire Battlefield,-,Stun,-,STR 2d4,x5 damage vs Walls (Primary only),Y,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Elemental Magic,Flame Storm,3,10,Y,-,-,-,Fire 1-7,Burst 50,-,-,-,-,Burn Forest,-,-,Grants Burn Forest ability
+Enchantment,Fire Resistance,1,6,Y,-,-,-,Fire Resistance (100),Burst 5,-,-,-,-,-,-,-,Fire Damage reduced by 100%
+Enchantment,Fire Shield,1,6,Y,-,-,-,Fire Shield (3),Single,-,-,-,-,-,-,-,"Any enemy attacking this unit in melee will take some fire Damage; They may also be set on fire, suffering more fire Damage every turn until the fire goes out; Units with Fire Aura (6) or greater will automatically set forest and jungle squares on fire upon entering them"
+Enchantment,Fortitude,1,8,Y,Only Friendly,Ethereal,-,Armor +1,Burst 5,-,-,-,-,-,-,-,
+Enchantment,Ironskin,1,8,Y,-,Ethereal,-,Armor +2,Single,-,-,-,-,-,-,-,
+Enchantment,Luck,1,8,Y,Only Friendly,-,-,Luck,Single,-,-,-,-,-,-,-,50% chance of not taking any Damage from an attack
+Enchantment,Sleep,1,8,Y,Only Enemy,Mindless,-,Sleep,2 strikes,(gd) MR 2d6,-,-,-,-,-,-,Sleeping units are immobilized. The unit sleeps until it is hit or awakens on its own. (5% chance each combat round)
+Enchantment,Strength,1,8,Y,-,-,-,Strength +2,Burst 3,-,-,-,-,-,-,-,
+Enchantment,Toughness,1,8,Y,-,Ethereal,-,Slash/Blunt/ Pierce Resistance,Single,-,-,-,-,-,-,-,"Half Damage from Slashing, Blunt, and Piercing weapons"
+Enchantment,Army of Stone,2,8,Y,Only Friendly,Ethereal,-,Armor +1,Burst 25,-,-,-,-,-,-,-,
+Enchantment,Enchanted Sleep,2,10,Y,Only Enemy,Mindless,-,Sleep,Burst 25,MR 2d4,-,-,-,-,-,-,Sleeping units are immobilized. The unit sleeps until it is hit or awakens on its own. (5% chance each combat round)
+Enchantment,Fire Ward,2,6,Y,-,-,-,Fire Resistance (100),Burst 25,-,-,-,-,-,-,-,Fire Damage reduced by 100%
+Enchantment,Fortune,2,8,Y,Only Friendly,-,-,Luck,Burst 9,-,-,-,-,-,-,-,50% chance of not taking any Damage from an attack
+Enchantment,Herculean Soldiers,2,8,Y,Only Friendly,Ethereal,-,Strength +2,Burst 25,-,-,-,-,-,-,-,
+Enchantment,Indomitability,2,8,Y,Only Friendly,Ethereal,-,Slash/Blunt/ Pierce Resistance,Burst 5,-,-,-,-,-,-,-,"Half Damage from Slashing, Blunt, and Piercing weapons"
+Enchantment,Soldiers of Flame,2,6,Y,-,-,-,Fire Shield (3),Burst 5,-,-,-,-,-,-,-,"Any enemy attacking this unit in melee will take some fire Damage; They may also be set on fire, suffering more fire Damage every turn until the fire goes out; Units with Fire Aura (6) or greater will automatically set forest and jungle squares on fire upon entering them"
+Enchantment,Soldiers of Steel,2,8,Y,Only Friendly,Ethereal,-,Armor +2,Burst 5,-,-,-,-,-,-,-,
+Enchantment,Thunder Ward,2,6,Y,-,-,-,Shock Resistance*,Burst 25,-,-,-,-,-,-,-,Shock Damage reduced by (x)%*
+Enchantment,Venom Ward,2,6,Y,-,-,-,Poison Resistance*,Burst 25,-,-,-,-,-,-,-,Poison Damage reduced by x%*
+Enchantment,Weakness,2,8,Y,-,Undead; Lifeless,-,Weakness,Burst 25,(gd) MR 2d6,-,-,-,-,-,-,Weakened units have their Strength and Damage reduced by 2
+Enchantment,Winter Ward,2,6,Y,-,-,-,Cold Resistance (100),Burst 25,-,-,-,-,-,-,-,Cold Damage reduced by 100%
+Enchantment,Army of Flames,3,8,Y,-,-,-,Fire Shield (3),Burst 25,-,-,-,-,-,-,-,"Any enemy attacking this unit in melee will take some fire Damage; They may also be set on fire, suffering more fire Damage every turn until the fire goes out; Units with Fire Aura (6) or greater will automatically set forest and jungle squares on fire upon entering them"
+Enchantment,Army of Steel,3,8,Y,Only Friendly,Ethereal,-,Armor +2,Burst 25,-,-,-,-,-,-,-,
+Enchantment,Battle Fortune,3,8,Y,Only Friendly,-,-,Luck,Burst 25,-,-,-,-,-,-,-,50% chance of not taking any Damage from an attack
+Enchantment,Invulnerability,3,0,Y,-,-,-,Non-Magical Invulnerability,Single,-,-,-,-,-,-,-,"A unit with this ability cannot be harmed by Slash, Pierce, or Blunt damage unless it is magical"
+Enchantment,Legion of Stone,3,8,Y,Only Friendly,Ethereal,-,Armor +1,All Friends,-,-,-,-,-,-,-,
+Enchantment,Slumbering Army,3,0,Y,Only Enemy,Mindless,-,Sleep,Entire Battlefield,MR 2d4,-,-,-,-,Y,-,Sleeping units are immobilized. The unit sleeps until it is hit or awakens on its own. (5% chance each combat round)
+Famine Magic,Summon Crows,1,10,Y,-,-,-,Summon,-,-,-,-,-,1-5 Murder of Crows,-,-,A maximum of about 200 Murder of Crows can be summoned in a single battle
+Famine Magic,Summon Mantis,2,E,Y,-,-,-,Summon,-,-,-,-,-,1-5 Giant Mantis,-,-,A maximum of about 25 Giant Mantis can be summoned in a single battle; CANNOT be cast at sea
+Famine Magic,Starvation,3,8,Y,-,Lifeless,-,"Weakness, Decay",Burst 25,MR 2d4,-,-,-,-,-,-,"Weakened units have their Strength and Damage reduced by 2; Units suffering from Decay take 1 point of Damage per combat round until they die. Decay can usually not be survived, but after the battle has ended the effect will run out eventually"
+Forest Magic,Befriend Animal,1,5,Y,Only Animals; Only Enemy,Mindless,-,Charm,Single,(ez) MR 1d5,-,-,-,-,-,-,Charmed units immediately switch sides and attack their former comrades
+Forest Magic,Confusion,1,8,Y,-,Mindless,-,Confusion,Single,MR 2d4,-,-,-,-,-,-,Confused units do nothing (50% chance) or switch sides (10% chance) or move in a random direction instead of advancing (75%)
+Forest Magic,Fortitude,1,8,Y,Only Friendly,Ethereal,-,Armor +1,Burst 5,-,-,-,-,-,-,-,
+Forest Magic,Heal,1,8,Y,Only Friendly,Lifeless,Y,Heal 1-5,Single,-,-,-,-,Increased Healing,-,-,CANNOT heal above half of full HP. Grants increased healing rate for all non-inanimate beings in army
+Forest Magic,Magic Stones,1,6,Y,-,-,-,Blunt 1-6,2 strikes,-,-,-,-,-,-,-,
+Forest Magic,Sleep,1,8,Y,Only Enemy,Mindless,-,Sleep,2 strikes,(gd) MR 2d6,-,-,-,-,-,-,Sleeping units are immobilized. The unit sleeps until it is hit or awakens on its own. (5% chance each combat round)
+Forest Magic,Strength,1,8,Y,-,-,-,Strength +2,Burst 3,-,-,-,-,-,-,-,
+Forest Magic,Summon Wolf,1,E,Y,-,-,-,Summon,-,-,-,-,-,1 Wolf,-,-,A maximum of about 40 Wolves can be summoned in a single battle
+Forest Magic,Tangle Vine,1,6,-,-,Flying/Floating,-,Entanglement,Single,-,-,-,-,-,-,-,Entangled victim cannot do anything until it breaks free by making a successful Strenght test vs 1d14
+Forest Magic,Charm,2,5,Y,-,Mindless,-,Charm,Single,MR 2d4,-,-,-,-,-,-,Charmed units immediately switch sides and attack their former comrades
+Forest Magic,Cloud of Confusion,2,8,Y,-,Mindless,-,Confusion,Burst 9,MR 2d4,-,-,-,-,-,-,Confused units do nothing (50% chance) or switch sides (10% chance) or move in a random direction instead of advancing (75%)
+Forest Magic,Command Beasts,2,6,Y,Only Animals; Only Enemy,Mindless,-,Charm,Burst 9,(ez) MR 1d5,-,-,-,-,-,-,Charmed units immediately switch sides and attack their former comrades
+Forest Magic,Curse of the Frog Prince,2,4,Y,Only Enemy,Lifeless,-,Polymorph,Single,MR 2d4,-,-,-,Change into Frog,-,-,Unit turns into a Frog
+Forest Magic,Enchanted Sleep,2,10,Y,Only Enemy,Mindless,-,Sleep,Burst 25,MR 2d4,-,-,-,-,-,-,Sleeping units are immobilized. The unit sleeps until it is hit or awakens on its own. (5% chance each combat round)
+Forest Magic,Greater Healing,2,8,Y,Only Friendly,Lifeless,Y,Heal 1-3,Burst 9,-,-,-,-,Increased Healing,-,-,CANNOT heal above half of full HP. Grants increased healing rate for all non-inanimate beings in army
+Forest Magic,Summon Murder of Crows,2,10,Y,-,-,-,Summon,-,-,-,-,-,1-3 Murder of Crows,-,-,A maximum of about 200 Murder of Crows can be summoned in a single battle
+Forest Magic,Summon Wolves,2,E,Y,-,-,-,Summon,-,-,-,-,-,1-3 Wolves,-,-,A maximum of about 40 Wolves can be summoned in a single battle
+Forest Magic,Animate Forest,3,0,Y,-,-,-,Animate Forest,Entire Battlefield,-,-,-,-,-,Y,-,
+Forest Magic,Animate Tree,3,6,Y,-,-,-,Animate Tree,Single,-,-,-,-,-,-,-,
+Forest Magic,Army of Crows,3,10,Y,-,-,-,Summon,-,-,-,-,-,1-13 Murder of Crows,-,-,A maximum of about 200 Murder of Crows can be summoned in a single battle
+Forest Magic,Army of Wolves,3,E,Y,-,-,-,Summon,-,-,-,-,-,1-10 Wolves,-,-,A maximum of about 40 Wolves can be summoned in a single battle
+Forest Magic,Enchanting Voice,3,10,Y,Only Enemy,Mindless,-,Sleep,Burst 100,MR 2d4,-,-,-,-,-,-,Sleeping units are immobilized. The unit sleeps until it is hit or awakens on its own. (5% chance each combat round)
+Forest Magic,Mist of Confusion,3,10,Y,-,Mindless,-,Confusion,Burst 25,MR 2d4,-,-,-,-,-,-,Confused units do nothing (50% chance) or switch sides (10% chance) or move in a random direction instead of advancing (75%)
+Forest Magic,Wild Growth,3,10,Y,Only Enemy,-,-,Entanglement,Burst 100,STR 2d4,-,-,-,-,Y,-,Entangled victim cannot do anything until it breaks free by making a successful Strenght test vs 1d14
+Fortune Magic,Lucky Strike,1,8,Y,Only Friendly,-,-,Lucky Strike,Single,-,-,-,-,-,-,-,x2 Damage on next strike
+Fortune Magic,Promise of Fortune,2,8,Y,Only Friendly,-,-,Twist Fate,Burst 9,-,-,-,-,-,Y,-,The Twist Fate effect will prevent the first successful attack against the unit
+Fortune Magic,Guided by Fate,3,8,Y,Only Friendly,-,-,Lucky Strike,All Friends,-,-,-,-,-,Y,-,x2 Damage on next strike
+Foul Magic,Black Cloud,1,8,Y,-,Lifeless,-,Disease,Burst 5,MR 2d4,-,-,-,-,-,-,"Diseased units have their Strength lowered by one point immediately, but take no extra Damage in combat. After combat, they have a 50% chance of taking 1 point of Damage every month until they die."
+Foul Magic,Decay,1,8,Y,-,-,-,Decay,Single,MR 2d4,-,-,-,-,-,-,"Units suffering from Decay take 1 point of Damage per combat round until they die. Decay can usually not be survived, but after the battle has ended the effect will run out eventually"
+Foul Magic,Disease,1,8,Y,-,Lifeless,-,Disease,Single,(gd) MR 2d6,-,-,-,-,-,-,"Diseased units have their Strength lowered by one point immediately, but take no extra Damage in combat. After combat, they have a 50% chance of taking 1 point of Damage every month until they die."
+Foul Magic,Gift of Death,2,10,Y,-,-,-,"Disease, Decay",Single,(gd) MR 2d6,-,-,-,-,-,-,"Diseased units have their Strength lowered by one point immediately, but take no extra Damage in combat. After combat, they have a 50% chance of taking 1 point of Damage every month until they die; Units suffering from Decay take 1 point of Damage per combat round until they die. Decay can usually not be survived, but after the battle has ended the effect will run out eventually "
+Foul Magic,Plague,2,10,Y,Only Enemy,Lifeless,-,Disease,Burst 25,MR 2d4,-,-,-,-,-,-,"Diseased units have their Strength lowered by one point immediately, but take no extra Damage in combat. After combat, they have a 50% chance of taking 1 point of Damage every month until they die."
+Foul Magic,Wither,2,8,Y,-,-,-,Decay,Burst 5,(gd) MR 2d6,-,-,-,-,-,-,"Units suffering from Decay take 1 point of Damage per combat round until they die. Decay can usually not be survived, but after the battle has ended the effect will run out eventually"
+Foul Magic,Black Death,3,0,Y,-,Lifeless,-,Disease,Entire Battlefield,MR 2d4,-,-,-,-,Y,-,"Diseased units have their Strength lowered by one point immediately, but take no extra Damage in combat. After combat, they have a 50% chance of taking 1 point of Damage every month until they die."
+Foul Magic,Symbol of Death,3,10,Y,Only Enemy,Lifeless,Y,Magic 1-2,Burst 100,MR 2d4,Disease,-,MR 2d4 (reg),-,-,-,"Diseased units have their Strength lowered by one point immediately, but take no extra Damage in combat. After combat, they have a 50% chance of taking 1 point of Damage every month until they die."
+Foul Magic,Tendrils of Death,3,8,Y,-,Lifeless,-,"Disease, Decay, Weakness",7 strikes,(gd) MR 2d6,-,-,-,-,-,-,"Diseased units have their Strength lowered by one point immediately, but take no extra Damage in combat. After combat, they have a 50% chance of taking 1 point of Damage every month until they die; Units suffering from Decay take 1 point of Damage per combat round until they die. Decay can usually not be survived, but after the battle has ended the effect will run out eventually; Weakened units have their Strength and Damage reduced by 2"
+Frost Magic,Cold Resistance,1,6,Y,-,-,-,Cold Resistance (100),Burst 5,-,-,-,-,-,-,-,Cold Damage reduced by 100%
+Frost Magic,Freeze,1,6,Y,-,-,Y,Cold 1-8,Single,-,-,-,-,-,-,-,
+Frost Magic,Frost,1,6,Y,-,-,Y,Cold 1-3,Burst 3,-,-,-,-,-,-,-,
+Frost Magic,Frozen Heart,1,8,Y,-,Lifeless,Y,Cold 1-20,Single,MR 2d4,-,-,-,-,-,-,
+Frost Magic,Icicle,1,6,Y,-,-,xEffect only,Pierce 1-6,Single,-,Cold 1-3,-,-,-,-,-,
+Frost Magic,Blizzard,2,0,Y,-,-,Y,Cold 1-3,Entire Battlefield,-,-,-,-,-,Y,-,
+Frost Magic,Encase in Ice,2,6,Y,-,-,Y,Cold 1-2,Burst 5,-,Imprison in Ice,-,MR 2d4 (reg),-,-,-,"Units imprisoned in ice are immobilized and gain 2 points of Armor, but take 1 point of cold Damage every combat round until the effect wears off (20% chance each round)"
+Frost Magic,Falling Frost,2,10,Y,-,-,Y,Cold 1-6,Burst 25,-,-,-,-,-,-,-,
+Frost Magic,Hail Storm,2,0,Y,-,-,-,Blunt 1-4,Entire Battlefield,-,-,-,-,-,Y,-,
+Frost Magic,Ice Shards,2,10,Y,-,-,xEffect only,Pierce 1-12,3 strikes,-,Cold 1-3,-,-,-,-,-,
+Frost Magic,Winter Ward,2,6,Y,-,-,-,Cold Resistance (100),Burst 25,-,-,-,-,-,-,-,Cold Damage reduced by 100%
+Frost Magic,Frozen Flames,3,10,Y,-,-,Y,Cold 1-17,Burst 25,-,-,-,-,-,-,-,
+Frost Magic,Ice Prison,3,6,Y,-,-,Y,Cold 1-6,Burst 25,-,Imprison in Ice,-,MR 2d4 (reg),-,-,-,"Units imprisoned in ice are immobilized and gain 2 points of Armor, but take 1 point of cold Damage every combat round until the effect wears off (20% chance each round)"
+Frost Magic,Legion of Ice,3,6,Y,Only Friendly,Ethereal,-,"Cold Resistance (100), Armor +1",All Friends,-,-,-,-,-,-,-,Cold Damage reduced by 100%
+Garnet Sorcery,Blood Boil,1,6,Y,-,Lifeless,Y,Fire 1-15,Single,MR 2d4,-,-,-,-,-,-,
+Garnet Sorcery,Fire Shield,1,6,Y,-,-,-,Fire Shield (3),Single,-,-,-,-,-,-,-,"Any enemy attacking this unit in melee will take some fire Damage; They may also be set on fire, suffering more fire Damage every turn until the fire goes out; Units with Fire Aura (6) or greater will automatically set forest and jungle squares on fire upon entering them"
+Garnet Sorcery,Flames,1,6,Y,-,-,-,Fire 1-3,Burst 3,-,-,-,-,-,-,-,
+Garnet Sorcery,Pain,1,6,Y,-,Lifeless,Y,Magic 1-10,Single,MR 2d4,-,-,-,-,-,-,
+Garnet Sorcery,Agony,2,10,Y,-,Lifeless,Y,Magic 1-9,Burst 25,MR 2d4,-,-,-,-,-,-,
+Garnet Sorcery,Blood Burst,2,6,Y,-,Lifeless,-,Magic 1-20,Burst 5,(ez) MR 1d5,-,-,-,-,-,-,
+Garnet Sorcery,Flame Strike,2,6,Y,-,-,-,Fire 1-15,Single,-,-,-,-,-,-,-,
+Garnet Sorcery,Soldiers of Flame,2,6,Y,-,-,-,Fire Shield (3),Burst 5,-,-,-,-,-,-,-,"Any enemy attacking this unit in melee will take some fire Damage; They may also be set on fire, suffering more fire Damage every turn until the fire goes out; Units with Fire Aura (6) or greater will automatically set forest and jungle squares on fire upon entering them"
+Garnet Sorcery,Falling Flames,3,10,Y,-,-,-,Fire 1-8,Burst 25,-,-,-,-,Burn Forest,-,-,Grants Burn Forest ability
+Garnet Sorcery,Flame Explosion,3,8,Y,-,-,-,Fire 1-25,Single,-,Fire 1-8,Burst 9,-,-,-,-,
+Geomancy,Earth Grip,1,6,Y,-,Flying/Floating,-,Earth Grip,Single,-,-,-,-,-,-,-,Earth gripped units are immobilized until they pass a strength check vs 2d6. Passing a strength check vs 1d5+7 will have the unit break free and attack in the same round
+Geomancy,Iron Skin,1,8,Y,-,Ethereal,-,Armor +2,Single,-,-,-,-,-,-,-,
+Geomancy,Stone Shards,1,6,Y,-,-,-,Blunt 1-4,3 strikes,-,-,-,-,-,-,-,
+Geomancy,Strength,1,8,Y,-,-,-,Strength +2,Burst 3,-,-,-,-,-,-,-,
+Geomancy,Tremor,1,6,-,-,Flying/Floating,-,Blunt 1-2,Burst 5,-,Stun,-,STR 2d4,x5 damage vs Walls (Primary only),-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Geomancy,Earth Meld,2,6,Y,-,-,-,Earth Grip,Burst 9,-,-,-,-,-,-,-,Earth gripped units are immobilized until they pass a strength check vs 2d6. Passing a strength check vs 1d5+7 will have the unit break free and attack in the same round
+Geomancy,Eruption,2,6,-,-,Flying/Floating,-,Blunt 1-9,Burst 5,-,Stun,-,STR 2d4,x5 damage vs Walls (Primary only),-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Geomancy,Iron Bolts,2,6,Y,-,-,-,Blunt 1-10,5 strikes,-,-,-,-,-,-,-,
+Geomancy,Soldiers of Steel,2,8,Y,Only Friendly,Ethereal,-,Armor +2,Burst 5,-,-,-,-,-,-,-,
+Geomancy,Strength of the Earth,2,8,Y,-,Ethereal,-,"Regeneration, Strength +2",Burst 5,-,-,-,-,-,-,-,The unit heals roughly 10% of its HP every combat round
+Geomancy,Summon Earth,2,3,Y,-,-,-,Summon,-,-,-,-,-,1-3 Lesser Earths,Y,-,A maximum of about 25 Lesser Earths can be summoned in a single battle; CANNOT be cast at sea
+Geomancy,Army of Gold,3,6,Y,Only Friendly,Ethereal,-,"Fire Resistance (100), Armor +2",All Friends,-,-,-,-,-,-,-,All Friendly Units have Fire Damage reduced by 100%
+Geomancy,Chasm,3,6,Y,-,Flying/Floating; Giant sized,Y,Blunt 1-100,Crack 15,-,Earth Grip,-,-,-,-,-,Earth gripped units are immobilized until they pass a strength check vs 2d6. Passing a strength check vs 1d5+7 will have the unit break free and attack in the same round
+Geomancy,Earthquake,3,0,-,-,Flying/Floating,-,Blunt 1-5,Entire Battlefield,-,Stun,-,STR 2d4,x5 damage vs Walls (Primary only),Y,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Geomancy,Maws of the Earth,3,6,Y,-,Flying/Floating; Giant sized,Y,Blunt 1-100,Crack 5,-,Earth Grip; Fire 1-8,-,-,x5 damage vs Walls (Primary only),-,-,Earth gripped units are immobilized until they pass a strength check vs 2d6. Passing a strength check vs 1d5+7 will have the unit break free and attack in the same round
+Gold Arcana,Fire Resistance,1,6,Y,-,-,-,Fire Resistance (100),Burst 3,-,-,-,-,-,-,-,Fire Damage reduced by 100%
+Gold Arcana,Flames,1,6,Y,-,-,-,Fire 1-3,Burst 3,-,-,-,-,-,-,-,
+Gold Arcana,Luck,1,8,Y,Only Friendly,-,-,Luck,Single,-,-,-,-,-,-,-,50% chance of not taking any Damage from an attack
+Gold Arcana,Paralyze,1,10,Y,-,-,-,Paralyzation,Single,MR 2d4,-,-,-,-,-,-,Paralyzed units are immobilized and cannot do anything until the effect wears off. (10% chance each combat round)
+Gold Arcana,Sunbeam,1,8,Y,-,-,Y,Fire 1-2,Burst 5,-,Blindness,-,MR 2d4 (reg),x2 damage vs Undead,-,-,Unit almost always misses with attacks
+Gold Arcana,Antimagic,2,8,Y,-,-,-,Magic Resistance +2,Burst 25,-,-,-,-,-,-,-,
+Gold Arcana,Fire Ward,2,6,Y,-,-,-,Fire Resistance (100),Burst 25,-,-,-,-,-,-,-,Fire Damage reduced by 100%
+Gold Arcana,Fireball,2,6,Y,-,-,-,Fire 1-15,Burst 5,-,-,-,-,Burn Forest,-,-,Grants Burn Forest ability
+Gold Arcana,Fortune,2,8,Y,Only Friendly,-,-,Luck,Burst 9,-,-,-,-,-,-,-,50% chance of not taking any Damage from an attack
+Gold Arcana,Incinerate,2,6,Y,-,-,Y,Fire 1-25,Single,-,-,-,-,-,-,-,
+Gold Arcana,Solar Flare,2,8,Y,-,-,Y,Fire 1-8,Burst 5,-,Blindness,-,MR 2d4 (reg),x2 damage vs Undead,-,-,Unit almost always misses with attacks
+Gold Arcana,Soul Slay,2,10,Y,-,Mindless,Y,Magic 1-999,Single,(gd) MR 2d6,Paralyzation,-,MR 2d4 (reg),-,-,-,Paralyzed units are immobilized and cannot do anything until the effect wears off. (10% chance each combat round)
+Gold Arcana,Summon Fire,2,3,Y,-,-,-,Summon,-,-,-,-,-,1-2 Lesser Fires; Burn Forest,Y,-,A maximum of about 25 Lesser Fires can be summoned in a single battle; CANNOT be cast at sea; Grants Burn Forest ability
+Gold Arcana,Army of Gold,3,6,Y,Only Friendly,Ethereal,-,"Fire Resistance (100),  Armor +2",All Friends,-,-,-,-,-,-,-,All Friendly Units have Fire Damage reduced by 100%
+Gold Arcana,Battle Fortune,3,8,Y,Only Friendly,-,-,Luck,Burst 25,-,-,-,-,-,-,-,50% chance of not taking any Damage from an attack
+Gold Arcana,Flame Storm,3,10,Y,-,-,-,Fire 1-7,Burst 50,-,-,-,-,Burn Forest,-,-,Grants Burn Forest ability
+Gold Arcana,Pillar of Fire,3,8,Y,-,-,-,Fire 1-60,Single,-,Fire 1-8,Burst 9,-,Burn Forest,-,-,Grants Burn Forest ability
+Golden Magic,Fire Resistance,1,6,Y,-,-,-,Fire Resistance (100),Burst 5,-,-,-,-,-,-,-,Fire Damage reduced by 100%
+Golden Magic,Flames,1,6,Y,-,-,-,Fire 1-3,Burst 3,-,-,-,-,-,-,-,
+Golden Magic,Sleep,1,8,Y,Only Enemy,Mindless,-,Sleep,2 strikes,(gd) MR 2d6,-,-,-,-,-,-,Sleeping units are immobilized. The unit sleeps until it is hit or awakens on its own. (5% chance each combat round)
+Golden Magic,Sunbeam,1,8,Y,-,-,Y,Fire 1-2,Burst 5,-,Blindness,-,MR 2d4 (reg),x2 damage vs Undead,-,-,Unit almost always misses with attacks
+Golden Magic,Enchanted Sleep,2,10,Y,Only Enemy,Mindless,-,Sleep,Burst 25,MR 2d4,-,-,-,-,-,-,Sleeping units are immobilized. The unit sleeps until it is hit or awakens on its own. (5% chance each combat round)
+Golden Magic,Fire Ward,2,6,Y,-,-,-,Fire Resistance (100),Burst 25,-,-,-,-,-,-,-,Fire Damage reduced by 100%
+Golden Magic,Fireball,2,6,Y,-,-,-,Fire 1-15,Burst 5,-,-,-,-,Burn Forest,-,-,Grants Burn Forest ability
+Golden Magic,Solar Flare,2,8,Y,-,-,Y,Fire 1-8,Burst 5,-,Blindness,-,MR 2d4 (reg),x2 damage vs Undead,-,-,Unit almost always misses with attacks
+Golden Magic,Army of Gold,3,6,Y,Only Friendly,Ethereal,-,"Fire Resistance (100),  Armor +2",All Friends,-,-,-,-,-,-,-,All Friendly Units have Fire Damage reduced by 100%
+Golden Magic,Army of the Sun,3,8,Y,Only Friendly,Undead,-,Awe*,Burst 25,-,-,-,-,-,-,-,Enemy units attacking this unit in melee must pass a morale check (with a penalty of x) in order to successfully land an attack. Awe does not affect ranged attacks or spells
+Golden Magic,Flame Storm,3,10,Y,-,-,-,Fire 1-9,Burst 50,-,-,-,-,Burn Forest,-,-,Grants Burn Forest ability
+Golden Magic,Slumbering Army,3,0,Y,Only Enemy,Mindless,-,Sleep,Entire Battlefield,MR 2d4,-,-,-,-,Y,-,Sleeping units are immobilized. The unit sleeps until it is hit or awakens on its own. (5% chance each combat round)
+Hedge Magic,Curse,1,16,Y,-,-,-,Curse,Single,-,-,-,-,-,-,-,Cursed units have a greatly increased chance of receiving battle afflictions when they are hit
+Hedge Magic,Disease,1,8,Y,-,Lifeless,-,Disease,Single,(gd) MR 2d6,-,-,-,-,-,-,"Diseased units have their Strength lowered by one point immediately, but take no extra Damage in combat. After combat, they have a 50% chance of taking 1 point of Damage every month until they die."
+Hedge Magic,Flame Burst,1,6,Y,-,-,-,Fire 1-8,Single,-,-,-,-,-,-,-,
+Hedge Magic,Fortitude,1,8,Y,Only Friendly,Ethereal,-,Armor +1,Burst 5,-,-,-,-,-,-,-,
+Hedge Magic,Gust of Wind,1,8,-,-,-,-,Blunt 1-3,Burst 5,-,Stun,-,STR 2d4,-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Hedge Magic,Magic Stones,1,6,Y,-,-,-,Blunt 1-6,2 strikes,-,-,-,-,-,-,-,
+Hedge Magic,Poison Cloud,1,6,Y,-,-,Y,Poison 1-4,Burst 5,-,-,-,-,-,-,-,
+Hedge Magic,Poison Web,1,6,Y,-,-,Y,Poison 1-5,Single,-,Net,-,-,-,-,-,Net victim cannot do anything until it breaks free by making a successful STR 1d12
+Hedge Magic,Sleep,1,8,Y,Only Enemy,Mindless,-,Sleep,2 strikes,(gd) MR 2d6,-,-,-,-,-,-,Sleeping units are immobilized. The unit sleeps until it is hit or awakens on its own. (5% chance each combat round)
+Hedge Magic,Strength,1,8,Y,-,-,-,Strength +2,Burst 3,-,-,-,-,-,-,-,
+Hedge Magic,Summon Wolf,1,E,Y,-,-,-,Summon,-,-,-,-,-,1 Wolf,-,-,A maximum of about 40 Wolves can be summoned in a single battle
+Hedge Magic,Vine Arrow,1,5,-,-,Flying/Floating (xEffect Only),-,Pierce 1-6,Single,-,Entanglement,-,-,-,-,-,Entangled victim cannot do anything until it breaks free by making a successful Strenght test vs 1d14
+Hedge Magic,Curse of the Frog Prince,2,4,Y,Only Enemy,Lifeless,-,Polymorph,Single,MR 2d4,-,-,-,Change into Frog,-,-,Unit turns into a Frog
+Hedge Magic,Enchanted Sleep,2,10,Y,Only Enemy,Mindless,-,Sleep,Burst 25,MR 2d4,-,-,-,-,-,-,Sleeping units are immobilized. The unit sleeps until it is hit or awakens on its own. (5% chance each combat round)
+Hedge Magic,Poison Mist,2,8,Y,-,-,Y,Poison 1-8,Burst 25,-,-,-,-,-,-,-,
+Hedge Magic,Storm Wind,2,10,-,-,-,-,Blunt 1-4,Burst 25,-,Stun,-,STR 2d4,-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Hedge Magic,Summon Great Boar,2,E,Y,-,-,-,Summon,-,-,-,-,-,1 Great Boar,-,-,A maximum of about 25 Great Boars can be summoned in a single battle; CANNOT be cast at sea
+Hedge Magic,Summon Murder of Crows,2,10,Y,-,-,-,Summon,-,-,-,-,-,1-3 Murder of Crows,-,-,A maximum of about 200 Murder of Crows can be summoned in a single battle
+Hedge Magic,Summon Wolves,2,E,Y,-,-,-,Summon,-,-,-,-,-,1-3 Wolves,-,-,A maximum of about 40 Wolves can be summoned in a single battle
+Hedge Magic,Animate Tree,3,6,Y,-,-,-,Animate Tree,Single,-,-,-,-,-,-,-,
+Hedge Magic,Arcane Tempest,3,0,Y,Only Enemy,-,-,Blunt 1-3,All Enemies,-,Stun,-,STR 2d4,-,Y,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Hedge Magic,Army of Wolves,3,E,Y,-,-,-,Summon,-,-,-,-,-,1-10 Wolves,-,-,A maximum of about 40 Wolves can be summoned in a single battle
+Hedge Magic,Black Death,3,0,Y,-,Lifeless,-,Disease,Entire Battlefield,MR 2d4,-,-,-,-,Y,-,"Diseased units have their Strength lowered by one point immediately, but take no extra Damage in combat. After combat, they have a 50% chance of taking 1 point of Damage every month until they die."
+Hedge Magic,Call Lightning,3,10,Y,-,-,Y,Shock 1-8,12 strikes,-,Stun,-,MR 2d4 (reg),-,Y,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Hedge Magic,Deadly Fumes,3,10,Y,-,-,Y,Poison 1-6,Burst 100,-,-,-,-,-,-,-,
+Hedge Magic,Earthquake,3,0,-,-,Flying/Floating,-,Blunt 1-5,-,-,Stun,-,STR 2d4,-,Y,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Hedge Magic,Slumbering Army,3,0,Y,Only Enemy,Mindless,-,Sleep,Entire Battlefield,MR 2d4,-,-,-,-,Y,-,Sleeping units are immobilized. The unit sleeps until it is hit or awakens on its own. (5% chance each combat round)
+High Arcana,Combustion,1,6,Y,-,-,-,Burn,4 strikes,-,-,-,-,Burn Forest,-,-,"Burning units will take fire damage each round. Large units take more damage than small units. Chance to put out fire each round, greater chance with Fire Resist; Grants Burn Forest ability"
+High Arcana,Earth Grip,1,6,Y,-,Flying/Floating,-,Earth Grip,Single,-,-,-,-,-,-,-,Earth gripped units are immobilized until they pass a strength check vs 2d6. Passing a strength check vs 1d5+7 will have the unit break free and attack in the same round
+High Arcana,Fire Resistance,1,6,Y,-,-,-,Fire Resistance (100),Burst 5,-,-,-,-,-,-,-,Fire Damage reduced by 100%
+High Arcana,Fire Shield,1,6,Y,-,-,-,Fire Shield (3),Single,-,-,-,-,-,-,-,"Any enemy attacking this unit in melee will take some fire Damage; They may also be set on fire, suffering more fire Damage every turn until the fire goes out; Units with Fire Aura (6) or greater will automatically set forest and jungle squares on fire upon entering them"
+High Arcana,Ironskin,1,8,Y,-,Ethereal,-,Armor +2,Single,-,-,-,-,-,-,-,
+High Arcana,Luck,1,8,Y,Only Friendly,-,-,Luck,Single,-,-,-,-,-,-,-,50% chance of not taking any Damage from an attack
+High Arcana,Paralyze,1,10,Y,-,-,-,Paralyzation,Single,MR 2d4,-,-,-,-,-,-,Paralyzed units are immobilized and cannot do anything until the effect wears off. (10% chance each combat round)
+High Arcana,Sleep,1,8,Y,Only Enemy,Mindless,-,Sleep,2 strikes,(gd) MR 2d6,-,-,-,-,-,-,Sleeping units are immobilized. The unit sleeps until it is hit or awakens on its own. (5% chance each combat round)
+High Arcana,Earth Meld,2,6,Y,-,-,-,Earth Grip,Burst 9,-,-,-,-,-,-,-,Earth gripped units are immobilized until they pass a strength check vs 2d6. Passing a strength check vs 1d5+7 will have the unit break free and attack in the same round
+High Arcana,Enchanted Sleep,2,10,Y,Only Enemy,Mindless,-,Sleep,Burst 25,MR 2d4,-,-,-,-,-,-,Sleeping units are immobilized. The unit sleeps until it is hit or awakens on its own. (5% chance each combat round)
+High Arcana,Fire Ward,2,6,Y,-,-,-,Fire Resistance (100),Burst 25,-,-,-,-,-,-,-,Fire Damage reduced by 100%
+High Arcana,Fortune,2,8,Y,Only Friendly,-,-,Luck,Burst 9,-,-,-,-,-,-,-,50% chance of not taking any Damage from an attack
+High Arcana,Mass Combustion,2,10,Y,Only Enemy,-,-,Burn,Burst 50,-,-,-,-,Burn Forest,Y,-,"Burning units will take fire damage each round. Large units take more damage than small units. Chance to put out fire each round, greater chance with Fire Resist; Grants Burn Forest ability"
+High Arcana,Meteor,2,15,Y,-,-,-,Blunt 1-50,Single,-,Fire 1-8,Burst 5,-,x5 damage vs Walls (Primary only),Y,Y,
+High Arcana,Soldiers of Flame,2,6,Y,-,-,-,Fire Shield (3),Burst 5,-,-,-,-,-,-,-,"Any enemy attacking this unit in melee will take some fire Damage; They may also be set on fire, suffering more fire Damage every turn until the fire goes out; Units with Fire Aura (6) or greater will automatically set forest and jungle squares on fire upon entering them"
+High Arcana,Soldiers of Steel,2,8,Y,Only Friendly,Ethereal,-,Armor +2,Burst 5,-,-,-,-,-,-,-,
+High Arcana,Soul Slay,2,10,Y,-,Mindless,Y,Magic 1-999,Single,(gd) MR 2d6,Paralyzation,-,MR 2d4 (reg),-,-,-,Paralyzed units are immobilized and cannot do anything until the effect wears off. (10% chance each combat round)
+High Arcana,Army of Gold,3,6,Y,Only Friendly,Ethereal,-,"Fire Resistance (100),  Armor +2",All Friends,-,-,-,-,-,-,-,All Friendly Units have Fire Damage reduced by 100%
+High Arcana,Battle Fortune,3,8,Y,Only Friendly,-,-,Luck,Burst 25,-,-,-,-,-,-,-,50% chance of not taking any Damage from an attack
+High Arcana,Meteor Showers,3,0,Y,-,-,-,Blunt 1-40,15% of battlefield,-,Fire 1-8,Burst 5,-,x5 damage vs Walls (Primary only),Y,-,
+High Arcana,Slumbering Army,3,0,Y,Only Enemy,Mindless,-,Sleep,Entire Battlefield,MR 2d4,-,-,-,-,Y,-,Sleeping units are immobilized. The unit sleeps until it is hit or awakens on its own. (5% chance each combat round)
+Hydromancy,Acid Darts,1,6,Y,-,-,Y,Acid 1-5,2 strikes,-,-,-,-,-,-,-,
+Hydromancy,Dehydration,1,8,Y,-,Undead; Lifeless,-,Exhaustion,Single,STR 2d4,-,-,-,-,-,-,Exhausted units get -1 to Strength and has a chance of not moving.  Exhausted units that attack have a 50% chance of taking 1 point of damage.  Disappears after battle.
+Hydromancy,Stream of Water,1,6,Y,-,Lifeless (xEffect only; Water Breathers (xEffect only),xEffect only,Stun,Burst 3,MR 2d4; STR 2d4,Blunt 1-3,-,-,-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Hydromancy,Summon Water,1,3,Y,-,-,-,Summon,-,-,-,-,-,1 Lesser Water,Y,-,A maximum of about 25 Lesser Waters can be summoned in a single battle
+Hydromancy,Acid Spray,2,5,Y,-,-,Y,Acid 1-10,Narrow Cone 10,-,-,-,-,-,-,-,
+Hydromancy,Call Water,2,3,Y,-,-,-,Summon,-,-,-,-,-,1-4 Lesser Waters,Y,-,A maximum of about 25 Lesser Waters can be summoned in a single battle
+Hydromancy,Rising Tide,2,8,Y,-,Lifeless (xEffect only; Water Breathers (xEffect only),xEffect only,Stun,Burst 25,MR 2d4; STR 2d4,Blunt 1-3,-,-,-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Hydromancy,Sailor's Death,2,6,Y,-,Lifeless; Water Breathers,xEffect only,Stun,Single,(gd) MR 2d6,Magic 1-999,-,(ez) MR 1d5,-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Hydromancy,Torrent of Water,2,6,Y,-,-,-,Blunt 1-6,Burst 5,-,Stun,-,STR 2d4,-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Hydromancy,Acid Rain,3,8,Y,-,-,Y,Acid 1-12,Burst 25,-,-,-,-,-,-,-,
+Hydromancy,Army of Waves,3,3,Y,-,-,-,Summon,-,-,-,-,-,1-10 Lesser Waters,Y,-,A maximum of about 25 Lesser Waters can be summoned in a single battle
+Hydromancy,Deluge,3,6,Y,-,-,-,Blunt 1-11,Burst 25,-,Stun,-,STR 2d4,-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Hydromancy,Watery Doom,3,10,Y,-,Lifeless (xEffect only; Water Breathers (xEffect only),xEffect only,Stun,Burst 100,MR 2d4,Magic 1-999,-,(ez) MR 1d5,-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Illusionism,Beam of Light,1,8,Y,-,Giant sized (xEffect only),Y,Magic 1-3,Single,(gd) MR 2d6,Blindness,-,MR 2d4,-,-,-,Unit almost always misses with attacks
+Illusionism,Confusion,1,8,Y,-,Mindless,-,Confusion,Single,MR 2d4,-,-,-,-,-,-,Confused units do nothing (50% chance) or switch sides (10% chance) or move in a random direction instead of advancing (75%)
+Illusionism,Displaced Self,1,0,Y,-,-,-,Displacement,Single,-,-,-,-,-,-,-,"Displaced units seem to appear to be at a slighty different location than it really is.  Great protection from long Range attacks, slight protection against Melee attack. Does not offer protection from large AoE or mental attacks"
+Illusionism,Fear,1,8,Y,-,-,Y,Fear 1-12,Single,(gd) MR 2d6,-,-,-,-,-,-,"Fear Damage is applied against Morale. If the damage roll from fear exceeds the morale of the target, the target panics and runs away"
+Illusionism,Mirror Image,1,0,Y,-,-,-,Mirror Image,Single,-,-,-,-,-,-,-,*
+Illusionism,Sleep,1,8,Y,Only Enemy,Mindless,-,Sleep,2 strikes,(gd) MR 2d6,-,-,-,-,-,-,Sleeping units are immobilized. The unit sleeps until it is hit or awakens on its own. (5% chance each combat round)
+Illusionism,Bewilderment,2,8,Y,-,Mindless,-,Confusion,Burst 9,MR 2d4,-,-,-,-,-,-,Confused units do nothing (50% chance) or switch sides (10% chance) or move in a random direction instead of advancing (75%)
+Illusionism,Color Spray,2,8,Y,-,Giant sized (xEffect only),Y,Magic 1-2,Burst 5,(gd) MR 2d6,Blindness,-,MR 2d4,-,-,-,Unit almost always misses with attacks
+Illusionism,Enchanted Sleep,2,10,Y,Only Enemy,Mindless,-,Sleep,Burst 25,MR 2d4,-,-,-,-,-,-,Sleeping units are immobilized. The unit sleeps until it is hit or awakens on its own. (5% chance each combat round)
+Illusionism,Terror,2,10,Y,Only Enemy,-,Y,Fear 1-8,Burst 25,(gd) MR 2d6,-,-,-,-,-,-,"Fear Damage is applied against Morale. If the damage roll from fear exceeds the morale of the target, the target panics and runs away"
+Illusionism,Displace Army,3,8,Y,Only Friendly,-,-,Displacement,Burst 25,-,-,-,-,-,-,-,"Displaced units seem to appear to be at a slighty different location than it really is.  Great protection from long Range attacks, slight protection against Melee attack. Does not offer protection from large AoE or mental attacks"
+Illusionism,Mist of Confusion,3,10,Y,-,Mindless,-,Confusion,Burst 25,MR 2d4,-,-,-,-,-,-,Confused units do nothing (50% chance) or switch sides (10% chance) or move in a random direction instead of advancing (75%)
+Illusionism,Slumbering Army,3,0,Y,Only Enemy,Mindless,-,Sleep,Entire Battlefield,MR 2d4,-,-,-,-,Y,-,Sleeping units are immobilized. The unit sleeps until it is hit or awakens on its own. (5% chance each combat round)
+Illusionism,Visions of Dread,3,10,Y,-,-,Y,Fear 1-8,Burst 100,-,-,-,-,-,-,-,"Fear Damage is applied against Morale. If the damage roll from fear exceeds the morale of the target, the target panics and runs away"
+Infernal Magic,Blood Boil,1,6,Y,-,Lifeless,Y,Fire 1-15,Single,MR 2d4,-,-,-,-,-,-,
+Infernal Magic,Flame Burst,1,6,Y,-,-,-,Fire 1-8,Single,-,-,-,-,-,-,-,
+Infernal Magic,Pain,1,6,Y,-,Lifeless,Y,Magic 1-10,Single,MR 2d4,-,-,-,-,-,-,
+Infernal Magic,Spontaneous Combustion,1,6,Y,-,-,-,Burn,3 strikes,-,-,-,-,-,-,-,"Burning units will take fire damage each round. Large units take more damage than small units. Chance to put out fire each round, greater chance with Fire Resist"
+Infernal Magic,Strength,1,8,Y,-,-,-,Strength +2,Burst 3,-,-,-,-,-,-,-,
+Infernal Magic,Summon Imp,1,3,Y,-,-,-,Summon,-,-,-,-,-,1 Imp,Y,-,A maximum of about 50 Imps can be summoned in a single battle; CANNOT be cast at sea
+Infernal Magic,Agony,2,10,Y,-,Lifeless,Y,Magic 1-9,Burst 25,MR 2d4,-,-,-,-,-,-,
+Infernal Magic,Blood Burst,2,6,Y,-,Lifeless,-,Magic 1-20,Burst 5,(ez) MR 1d5,-,-,-,-,-,-,
+Infernal Magic,Harm,2,8,Y,-,Lifeless,Y,Magic 1-33,Single,MR 2d4,-,-,-,-,-,-,
+Infernal Magic,Hellbind Heart,2,6,Y,-,Mindless,-,Enslave,Single,MR 2d4,-,-,-,-,Y,-,Enslaved units immediately switch sides and attack their former comrades
+Infernal Magic,Infernal Strength,2,8,Y,-,-,-,Strength +2,Burst 25,-,-,-,-,-,-,-,
+Infernal Magic,Lashes of Pain,2,6,Y,-,Lifeless,-,Slash 1-9,3 strikes,-,Stun,-,MR 2d4 (reg),-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round.
+Infernal Magic,Summon Imps,2,3,Y,-,-,-,Summon,-,-,-,-,-,1-3 Imps,Y,-,A maximum of about 50 Imps can be summoned in a single battle; CANNOT be cast at sea
+Infernal Magic,Bloodletting,3,0,Y,-,Lifeless,-,Magic 1-6,Entire Battlefield,-,-,-,-,Drain,Y,-,"In addition to causing Damage to their targets, life draining attacks add an equal amount of Hit Points to the attacker, healing them of Damage already suffered or augmenting their Hit Points beyond the normal maximum."
+Infernal Magic,Imp Horde,3,3,Y,-,-,-,Summon,-,-,-,-,-,1-12 Imps,y,-,A maximum of about 50 Imps can be summoned in a single battle
+Infernal Magic,Infernal Gate,3,3,Y,-,-,-,Summon,-,-,-,-,-,1 Fiend of Darkness; 1 Lesser Demon; and 1 Devil,Y,-,"A maximum of about 25 Fiends of Darkness, 25 Lesser Demons, and 25 Devils can be summoned in a single battle"
+Infernal Magic,Rain of Blood,3,0,Y,Only Enemy,-,Y,Fear 1-7,Entire Battlefield,MR 2d4,-,-,-,-,Y,-,"Fear Damage is applied against Morale. If the damage roll from fear exceeds the morale of the target, the target panics and runs away"
+Infernal Magic,Summon Demon,3,3,Y,-,-,-,Summon,-,-,-,-,-,1-3 Lesser Demons,Y,-,A maximum of about 25 Lesser Demons can be summoned in a single battle; CANNOT be cast at sea
+Infernal Magic,Summon Fiend,3,3,Y,-,-,-,Summon,-,-,-,-,-,1-3 Fiends of Darkness,Y,-,A maximum of about 25 Fiends of Darkness can be summoned in a single battle; CANNOT be cast at sea
+Iron Arcana,Iron Shard,1,6,Y,-,-,-,Blunt 1-5,3 strikes,-,-,-,-,-,-,-,
+Iron Arcana,Iron Skin,1,8,Y,-,Ethereal,-,Armor +2,Single,-,-,-,-,-,-,-,
+Iron Arcana,Iron Spear,1,6,Y,-,-,-,Pierce 1-12,Single,-,-,-,-,-,-,-,
+Iron Arcana,Luck,1,8,Y,Only Friendly,-,-,Luck,Single,-,-,-,-,-,-,-,50% chance of not taking any Damage from an attack
+Iron Arcana,Paralyze,1,10,Y,-,-,-,Paralyzation,Single,MR 2d4,-,-,-,-,-,-,Paralyzed units are immobilized and cannot do anything until the effect wears off. (10% chance each combat round)
+Iron Arcana,Antimagic,2,8,Y,-,-,-,Magic Resistance +2,Burst 25,-,-,-,-,-,-,-,
+Iron Arcana,Fortune,2,8,Y,Only Friendly,-,-,Luck,Burst 9,-,-,-,-,-,-,-,50% chance of not taking any Damage from an attack
+Iron Arcana,Iron Darts,2,6,Y,-,-,-,Pierce 1-6,-,-,-,-,-,-,-,-,
+Iron Arcana,Iron Shower,2,10,Y,-,-,-,Blunt 1-5,Burst 25,-,-,-,-,-,-,-,
+Iron Arcana,Soldiers of Steel,2,8,Y,Only Friendly,Ethereal,-,Armor +2,Burst 5,-,-,-,-,-,-,-,
+Iron Arcana,Soul Slay,2,10,Y,-,Mindless,Y,Magic 1-999,Single,(gd) MR 2d6,Paralyzation,-,MR 2d4 (reg),-,-,-,Paralyzed units are immobilized and cannot do anything until the effect wears off. (10% chance each combat round)
+Iron Arcana,Summon Earth,2,3,Y,-,-,-,Summon,-,-,-,-,-,1-2 Lesser Earths,Y,-,A maximum of about 25 Lesser Earths can be summoned in a single battle; CANNOT be cast at sea
+Iron Arcana,Battle Fortune,3,8,Y,Only Friendly,-,-,Luck,Burst 25,-,-,-,-,-,-,-,50% chance of not taking any Damage from an attack
+Iron Arcana,Invulnerability,3,0,Y,-,-,-,Non-Magical Invulnerability,Single,-,-,-,-,-,-,-,"A unit with this ability cannot be harmed by Slash, Pierce, or Blunt damage unless it is magical"
+Iron Arcana,Iron Globes,3,6,Y,-,-,-,Blunt 1-50,3 strikes,-,-,-,-,-,-,-,
+Iron Arcana,Iron Storm,3,10,-,-,-,-,Pierce 1-6,All Enemies,-,-,-,-,-,Y,-,
+Iron Arcana,Legion of Steel,3,8,Y,Only Friendly,Ethereal,-,Armor +2,Burst 25,-,-,-,-,-,-,-,
+Jade Sorcery,Poison Bolts,1,6,Y,-,-,Y,Poison 1-8,3 strikes,-,-,-,-,-,-,-,
+Jade Sorcery,Poison Resistance,1,6,Y,-,-,-,Poison Resistance*,Burst 3,-,-,-,-,-,-,-,Poison Damage reduced by x%*
+Jade Sorcery,Regeneration,1,8,Y,-,Lifeless,-,Regeneration,Single,-,-,-,-,-,-,-,The unit heals roughly 10% of its HP every combat round
+Jade Sorcery,Venom,1,6,Y,-,-,Y,Poison 1-20,Single,-,-,-,-,-,-,-,
+Jade Sorcery,Hydra's Blessing,2,8,Y,-,Lifeless,-,Regeneration,Burst 5,-,-,-,-,-,-,-,The unit heals roughly 10% of its HP every combat round
+Jade Sorcery,Lungs of Watery Death,2,6,Y,-,Lifeless; Water breathers,Y,Stun,Single,(gd) MR 2d6,Magic 1-999,-,MR 2d4 (reg),-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Jade Sorcery,Venom Ward,2,6,Y,-,-,-,Poison Resistance*,Burst 15,-,-,-,-,-,-,-,Poison Damage reduced by x%*
+Jade Sorcery,Venomous Death,2,6,Y,-,-,Y,Poison 1-40,Single,-,-,-,-,-,-,-,
+Jade Sorcery,Mass Regeneration,3,8,Y,-,Lifeless,-,Regeneration,Burst 25,-,-,-,-,-,-,-,The unit heals roughly 10% of its HP every combat round
+Jade Sorcery,Poison Mist,3,8,Y,-,-,Y,Poison 1-12,Burst 25,-,-,-,-,-,-,-,
+Kuro Do,Curse,1,16,Y,-,-,-,Curse,Single,-,-,-,-,-,-,-,Cursed units have a greatly increased chance of receiving battle afflictions when they are hit
+Kuro Do,Disease,1,8,Y,-,Lifeless,-,Disease,Single,(gd) MR 2d6,-,-,-,-,-,-,"Diseased units have their Strength lowered by one point immediately, but take no extra Damage in combat. After combat, they have a 50% chance of taking 1 point of Damage every month until they die."
+Kuro Do,Fear,1,8,Y,-,-,Y,Fear 1-12,Single,(gd) MR 2d6,-,-,-,-,-,-,"Fear Damage is applied against Morale. If the damage roll from fear exceeds the morale of the target, the target panics and runs away"
+Kuro Do,Gust of Wind,1,8,-,-,-,-,Blunt 1-3,Burst 5,-,Stun,-,STR 2d4,-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Kuro Do,Pain,1,6,Y,-,Lifeless,Y,Magic 1-10,Single,MR 2d4,-,-,-,-,-,-,
+Kuro Do,Blizzard,2,0,Y,-,-,Y,Cold 1-3,Entire Battlefield,-,-,-,-,-,Y,-,
+Kuro Do,Harm,2,8,Y,-,Lifeless,Y,Magic 1-30,Single,MR 2d4,-,-,-,-,-,-,
+Kuro Do,Plague,2,10,Y,Only Enemy,Lifeless,-,Disease,Burst 25,MR 2d4,-,-,-,-,-,-,"Diseased units have their Strength lowered by one point immediately, but take no extra Damage in combat. After combat, they have a 50% chance of taking 1 point of Damage every month until they die."
+Kuro Do,Storm Wind,2,10,-,-,-,-,Blunt 1-4,Burst 25,-,Stun,-,STR 2d4,-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Kuro Do,Summon Wolves,2,E,Y,-,-,-,Summon,-,-,-,-,-,1-4 Wolves,-,-,A maximum of about 40 Wolves can be summoned in a single battle
+Kuro Do,Terror,2,10,Y,Only Enemy,-,Y,Fear 1-8,Burst 25,(gd) MR 2d6,-,-,-,-,-,-,"Fear Damage is applied against Morale. If the damage roll from fear exceeds the morale of the target, the target panics and runs away"
+Kuro Do,Thunderhead,2,15,Y,-,-,Y,Shock 1-12,3 strikes,-,Shock 1,Burst 6,-,-,Y,-,
+Kuro Do,Arcane Tempest,3,0,Y,Only Enemy,-,-,Blunt 1-3,All Enemies,-,Stun,-,STR 2d4,-,Y,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Kuro Do,Black Death,3,0,Y,-,Lifeless,-,Disease,Entire Battlefield,MR 2d4,-,-,-,-,Y,-,"Diseased units have their Strength lowered by one point immediately, but take no extra Damage in combat. After combat, they have a 50% chance of taking 1 point of Damage every month until they die."
+Kuro Do,Earthquake,3,0,-,-,Flying/Floating,-,Blunt 1-5,Entire Battlefield,-,Stun,-,STR 2d4,x5 damage vs Walls (Primary only),Y,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Kuro Do,Rain of stones,3,0,Y,-,-,-,Blunt 1-7,Entire Battlefield,-,-,-,-,-,Y,-,
+Maladies,Curse,1,16,Y,-,-,-,Curse,Single,-,-,-,-,-,-,-,Cursed units have a greatly increased chance of receiving battle afflictions when they are hit
+Maladies,Disease,1,8,Y,-,Lifeless,-,Disease,Single,(gd) MR 2d6,-,-,-,-,-,-,"Diseased units have their Strength lowered by one point immediately, but take no extra Damage in combat. After combat, they have a 50% chance of taking 1 point of Damage every month until they die."
+Maladies,Fear,1,8,Y,-,-,Y,Fear 1-12,Single,(gd) MR 2d6,-,-,-,-,-,-,"Fear Damage is applied against Morale. If the damage roll from fear exceeds the morale of the target, the target panics and runs away"
+Maladies,Gust of Wind,1,8,-,-,-,-,Blunt 1-3,Burst 5,-,Stun,-,STR 2d4,-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Maladies,Summon Crows,1,10,Y,-,-,-,Summon,-,-,-,-,-,1 Murder of Crows,-,-,A maximum of about 200 Murder of Crows can be summoned in a single battle
+Maladies,Curse,2,16,Y,-,-,-,Curse,5 strikes,-,-,-,-,-,-,-,Cursed units have a greatly increased chance of receiving battle afflictions when they are hit
+Maladies,Plague,2,10,Y,Only Enemy,Lifeless,-,Disease,Burst 25,MR 2d4,-,-,-,-,-,-,"Diseased units have their Strength lowered by one point immediately, but take no extra Damage in combat. After combat, they have a 50% chance of taking 1 point of Damage every month until they die."
+Maladies,Storm Wind,2,10,-,-,-,-,Blunt 1-4,Burst 25,-,Stun,-,STR 2d4,-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Maladies,Summon Murder of Crows,2,10,Y,-,-,-,Summon,-,-,-,-,-,1-3 Murder of Crows,-,-,A maximum of about 200 Murder of Crows can be summoned in a single battle
+Maladies,Terror,2,10,Y,Only Enemy,-,Y,Fear 1-8,Burst 25,(gd) MR 2d6,-,-,-,-,-,-,"Fear Damage is applied against Morale. If the damage roll from fear exceeds the morale of the target, the target panics and runs away"
+Maladies,Arcane Tempest,3,0,Y,Only Enemy,-,-,Blunt 1-3,All Enemies,-,Stun,-,STR 2d4,-,Y,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Maladies,Army of Crows,3,10,Y,-,-,-,Summon,-,-,-,-,-,1-13 Murder of Crows,-,-,A maximum of about 200 Murder of Crows can be summoned in a single battle
+Maladies,Black Death,3,0,Y,-,Lifeless,-,Disease,Entire Battlefield,MR 2d4,-,-,-,-,Y,-,"Diseased units have their Strength lowered by one point immediately, but take no extra Damage in combat. After combat, they have a 50% chance of taking 1 point of Damage every month until they die."
+Maladies,Curse,3,16,Y,-,-,-,Curse,15 strikes,-,-,-,-,-,-,-,Cursed units have a greatly increased chance of receiving battle afflictions when they are hit
+Metal Arcana,Air Shield,1,8,Y,Only Friendly,-,-,Air Shield (75),Burst 5,-,-,-,-,-,-,-,75% chance of taking no Damage from normal non-magical missile attacks
+Metal Arcana,Iron Skin,1,8,Y,-,Ethereal,-,Armor +2,Single,-,-,-,-,-,-,-,
+Metal Arcana,Luck,1,8,Y,Only Friendly,-,-,Luck,Single,-,-,-,-,-,-,-,50% chance of not taking any Damage from an attack
+Metal Arcana,Paralyze,1,10,Y,-,-,-,Paralyzation,Single,MR 2d4,-,-,-,-,-,-,Paralyzed units are immobilized and cannot do anything until the effect wears off. (10% chance each combat round)
+Moon Magic,Fear,1,8,Y,-,-,Y,Fear 1-12,Single,(gd) MR 2d6,-,-,-,-,-,-,"Fear Damage is applied against Morale. If the damage roll from fear exceeds the morale of the target, the target panics and runs away"
+Moon Magic,Moonlight,1,10,Y,Only Enemy,Mindless (xEffect only),Y,Magic 1-3,Single,-,Confusion,Single,MR 2d4 (reg),-,-,-,Confused units do nothing (50% chance) or switch sides (10% chance) or move in a random direction instead of advancing (75%)
+Moon Magic,Shadowform,1,6,Y,-,-,-,Etherealness,Single,-,-,-,-,-,-,-,75% chance of taking no Damage from non-magical attacks
+Moon Magic,Sleep,1,8,Y,Only Enemy,Mindless,-,Sleep,2 strikes,(gd) MR 2d6,-,-,-,-,-,-,Sleeping units are immobilized. The unit sleeps until it is hit or awakens on its own. (5% chance each combat round)
+Moon Magic,Antimagic,2,8,Y,-,-,-,Magic Resistance +2,Burst 25,-,-,-,-,-,-,-,
+Moon Magic,Moonbeams,2,10,Y,Only Enemy,Mindless (xEffect only),Y,Magic 1-3,Burst 9,-,Confusion,Single,MR 2d4 (reg),-,-,-,Confused units do nothing (50% chance) or switch sides (10% chance) or move in a random direction instead of advancing (75%)
+Moon Magic,Shade Warriors,2,8,Y,-,-,-,Etherealness,Burst 9,-,-,-,-,-,-,-,75% chance of taking no Damage from non-magical attacks
+Moon Magic,Terror,2,10,Y,Only Enemy,-,Y,Fear 1-8,Burst 25,(gd) MR 2d6,-,-,-,-,-,-,"Fear Damage is applied against Morale. If the damage roll from fear exceeds the morale of the target, the target panics and runs away"
+Moon Magic,Touch of the Moon,2,6,Y,Only Enemy,-,-,Sleep,Burst 5,MR 2d4,-,-,-,-,-,-,Sleeping units are immobilized. The unit sleeps until it is hit or awakens on its own. (5% chance each combat round)
+Moon Magic,Army of Darkness,3,8,Y,Only Friendly,-,-,Etherealness,Burst 25,-,-,-,-,-,-,-,75% chance of taking no Damage from non-magical attacks
+Moon Magic,Lunar Brilliance,3,10,Y,Only Enemy,Mindless (xEffect only),Y,Magic 1-3,Burst 25,-,Confusion,Single,MR 2d4 (reg),-,-,-,Confused units do nothing (50% chance) or switch sides (10% chance) or move in a random direction instead of advancing (75%)
+Moon Magic,Summon Phase Spider,3,15,Y,-,-,-,Summon,-,-,-,-,-,1 Phase Spider; Targets rear Enemy,Y,-,A maximum of about 25 Phase Spiders can be summoned in a single battle
+Mysticism,Cleansing Water,1,6,Y,-,-,-,Blunt 1-2,Single,-,Stun,-,STR 2d4,-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Mysticism,Dehydration,1,8,Y,-,Undead; Lifeless,-,Exhaustion,Single,STR 2d4,-,-,-,-,-,-,Exhausted units get -1 to Strength and has a chance of not moving.  Exhausted units that attack have a 50% chance of taking 1 point of damage.  Disappears after battle.
+Mysticism,Purify,1,6,Y,Only Undead,-,-,Magic 1-10,2 strikes,-,-,-,-,-,-,-,
+Mysticism,Holy Word,2,4,Y,-,-,-,Paralyzation,Single,(gd) MR 2d6,-,-,-,-,-,-,Paralyzed units are immobilized and cannot do anything until the effect wears off. (10% chance each combat round)
+Mysticism,Rising Tide,2,8,Y,-,Lifeless (xEffect only); Water Breathers (xEffect only),Y,Stun,Burst 25,STR 2d4,Blunt 1-3,-,-,-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Mysticism,Syllable of Death,2,5,Y,-,-,Y,Magic 1-999,Single,MR 2d4,Stun,-,(gd) MR 2d6,-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Mysticism,Torrent of the Sacred River,2,10,Y,-,-,-,Blunt 1-3,Burst 25,-,Stun,-,STR 2d4,-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Mysticism,Divine Names,3,10,Y,-,-,-,Paralyzation,7 strikes,(gd) MR 2d6,-,-,-,-,-,-,Paralyzed units are immobilized and cannot do anything until the effect wears off. (10% chance each combat round)
+Mysticism,Final Rest,3,0,Y,-,-,-,Banish,Entire Battlefield,(ez) MR 1d5,-,-,-,-,-,-,*
+Nahualli Magic,Call Vengeful Spirit,1,8,Y,-,-,Y,Fear 1-9,Single,(gd) MR 2d6,-,-,-,-,Y,-,"Fear Damage is applied against Morale. If the damage roll from fear exceeds the morale of the target, the target panics and runs away"
+Nahualli Magic,Curse,1,16,Y,-,-,-,Curse,Single,-,-,-,-,-,-,-,Cursed units have a greatly increased chance of receiving battle afflictions when they are hit
+Nahualli Magic,Disease,1,8,Y,-,Lifeless,-,Disease,Single,(gd) MR 2d6,-,-,-,-,-,-,"Diseased units have their Strength lowered by one point immediately, but take no extra Damage in combat. After combat, they have a 50% chance of taking 1 point of Damage every month until they die."
+Nahualli Magic,Gust of Wind,1,8,-,-,-,-,Blunt 1-3,Burst 5,-,Stun,-,STR 2d4,-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Nahualli Magic,Leech,1,5,Y,-,Lifeless,Y,Magic 1-6,Single,-,-,-,-,Drain,-,-,"In addition to causing Damage to their targets, life draining attacks add an equal amount of Hit Points to the attacker, healing them of Damage already suffered or augmenting their Hit Points beyond the normal maximum."
+Nahualli Magic,Sleep,1,8,Y,Only Enemy,Mindless,-,Sleep,2 strikes,(gd) MR 2d6,-,-,-,-,-,-,Sleeping units are immobilized. The unit sleeps until it is hit or awakens on its own. (5% chance each combat round)
+Nahualli Magic,Harm,2,8,Y,-,Lifeless,Y,Magic 1-30,Single,MR 2d4,-,-,-,-,-,-,
+Nahualli Magic,Plague,2,10,Y,Only Enemy,Lifeless,-,Disease,Burst 25,MR 2d4,-,-,-,-,-,-,"Diseased units have their Strength lowered by one point immediately, but take no extra Damage in combat. After combat, they have a 50% chance of taking 1 point of Damage every month until they die."
+Nahualli Magic,Storm Wind,2,10,-,-,-,-,Blunt 1-4,Burst 25,-,Stun,-,STR 2d4,-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Nahualli Magic,Black Death,3,0,Y,-,Lifeless,-,Disease,Entire Battlefield,MR 2d4,-,-,-,-,Y,-,"Diseased units have their Strength lowered by one point immediately, but take no extra Damage in combat. After combat, they have a 50% chance of taking 1 point of Damage every month until they die."
+Nahualli Magic,Great Curse,3,16,Y,-,-,-,Curse,15 strikes,-,-,-,-,-,-,-,Cursed units have a greatly increased chance of receiving battle afflictions when they are hit
+Nahualli Magic,Shade of Death,3,0,Y,-,Undead; Lifeless,-,Weakness,Entire Battlefield,(gd) MR 2d6,-,-,-,-,Y,-,Weakened units have their Strength and Damage reduced by 2
+Necromancy,Black Cloud,1,8,Y,-,Lifeless,-,Disease,Burst 5,MR 2d4,-,-,-,-,-,-,"Diseased units have their Strength lowered by one point immediately, but take no extra Damage in combat. After combat, they have a 50% chance of taking 1 point of Damage every month until they die."
+Necromancy,Bolt of Unlife,1,6,Y,-,Lifeless,Y,Magic 1-6,Single,(gd) MR 2d6,-,-,-,Reanimates victim,-,-,"Turns unit into Soulless, if killed"
+Necromancy,Decay,1,8,Y,-,-,-,Decay,Single,MR 2d4,-,-,-,-,-,-,"Units suffering from Decay take 1 point of Damage per combat round until they die. Decay can usually not be survived, but after the battle has ended the effect will run out eventually"
+Necromancy,Disease,1,8,Y,-,Lifeless,-,Disease,Single,(gd) MR 2d6,-,-,-,-,-,-,"Diseased units have their Strength lowered by one point immediately, but take no extra Damage in combat. After combat, they have a 50% chance of taking 1 point of Damage every month until they die."
+Necromancy,Drain Life,1,5,Y,-,Lifeless,Y,Magic 1-6,Single,-,-,-,-,Drain,-,-,"In addition to causing Damage to their targets, life draining attacks add an equal amount of Hit Points to the attacker, healing them of Damage already suffered or augmenting their Hit Points beyond the normal maximum."
+Necromancy,Fear,1,8,Y,-,-,Y,Fear 1-12,Single,(gd) MR 2d6,-,-,-,-,-,-,"Fear Damage is applied against Morale. If the damage roll from fear exceeds the morale of the target, the target panics and runs away"
+Necromancy,Raise Longdead,1,3,Y,-,-,-,Summon,-,-,-,-,-,1 Longdead,-,-,
+Necromancy,Reanimation,1,3,Y,-,-,-,Summon,-,-,-,-,-,1 Soulless,-,-,
+Necromancy,Strength Sap,1,8,Y,-,Undead,-,Weakness,Burst 3,(gd) MR 2d6,-,-,-,-,-,-,Weakened units have their Strength and Damage reduced by 2
+Necromancy,Bane Fire,2,8,Y,-,-,Y,Magic 1-20,Single,-,Decay,Burst 9,MR 2d4,-,-,-,"Units suffering from Decay take 1 point of Damage per combat round until they die. Decay can usually not be survived, but after the battle has ended the effect will run out eventually"
+Necromancy,Cloud of Death,2,10,Y,-,-,-,Decay,Burst 25,MR 2d4,-,-,-,-,-,-,"Units suffering from Decay take 1 point of Damage per combat round until they die. Decay can usually not be survived, but after the battle has ended the effect will run out eventually"
+Necromancy,Dance Macabre,2,3,Y,-,-,-,Summon,-,-,-,-,-,1-5 Longdeads,-,-,
+Necromancy,Dark Power,2,8,Y,-,Lifeless,Y,Magic 1-7,3 Strikes,-,-,-,-,Drain,-,-,"In addition to causing Damage to their targets, life draining attacks add an equal amount of Hit Points to the attacker, healing them of Damage already suffered or augmenting their Hit Points beyond the normal maximum."
+Necromancy,Finger of Death,2,8,Y,-,Lifeless,Y,Magic 1-999,Single,-,Paralyzation,-,STR 2d4,-,-,-,Paralyzed units are immobilized and cannot do anything until the effect wears off. (10% chance each combat round)
+Necromancy,Plague,2,10,Y,Only Enemy,Lifeless,-,Disease,Burst 25,MR 2d4,-,-,-,-,-,-,"Diseased units have their Strength lowered by one point immediately, but take no extra Damage in combat. After combat, they have a 50% chance of taking 1 point of Damage every month until they die."
+Necromancy,Soul Vortex,2,5,Y,-,Lifeless,Y,Magic 1-6,Burst 9,-,-,-,-,Drain,-,-,"In addition to causing Damage to their targets, life draining attacks add an equal amount of Hit Points to the attacker, healing them of Damage already suffered or augmenting their Hit Points beyond the normal maximum."
+Necromancy,Terror,2,10,Y,Only Enemy,-,Y,Fear 1-8,Burst 25,(gd) MR 2d6,-,-,-,-,-,-,"Fear Damage is applied against Morale. If the damage roll from fear exceeds the morale of the target, the target panics and runs away"
+Necromancy,Weakness,2,8,Y,-,Undead; Lifeless,-,Weakness,Burst 25,(gd) MR 2d6,-,-,-,-,-,-,Weakened units have their Strength and Damage reduced by 2
+Necromancy,Wither,2,8,Y,-,-,-,Decay,Burst 5,(gd) MR 2d6,-,-,-,-,-,-,"Units suffering from Decay take 1 point of Damage per combat round until they die. Decay can usually not be survived, but after the battle has ended the effect will run out eventually"
+Necromancy,Army of the Dead,3,3,Y,-,-,-,Summon,-,-,-,-,-,1-18 Longdeads,-,-,
+Necromancy,Bane Fire Vortex,3,8,Y,-,-,Y,Magic 1-30,Burst 9,MR 2d4,Decay,Burst 3,(ez) MR 1d5,-,-,-,"Units suffering from Decay take 1 point of Damage per combat round until they die. Decay can usually not be survived, but after the battle has ended the effect will run out eventually"
+Necromancy,Black Death,3,0,Y,-,Lifeless,-,Disease,Entire Battlefield,MR 2d4,-,-,-,-,Y,-,"Diseased units have their Strength lowered by one point immediately, but take no extra Damage in combat. After combat, they have a 50% chance of taking 1 point of Damage every month until they die."
+Necromancy,Chill of the Dead,3,10,Y,-,Undead (xEffect only); Lifeless (xEffect only),Y,Cold 1-13,Burst 25,-,Weakness,-,(gd) MR 2d6,-,-,-,Weakened units have their Strength and Damage reduced by 2
+Necromancy,Death Spell,3,10,Y,-,-,Y,Magic 1-20,Burst 25,-,-,-,-,-,-,-,
+Necromancy,Invulnerability,3,0,Y,-,-,-,Non-Magical Invulnerability,Single,-,-,-,-,-,-,-,"A unit with this ability cannot be harmed by Slash, Pierce, or Blunt damage unless it is magical"
+Necromancy,Shade of Death,3,0,Y,-,Undead; Lifeless,-,Weakness,Entire Battlefield,(gd) MR 2d6,-,-,-,-,Y,-,Weakened units have their Strength and Damage reduced by 2
+Necromancy,Soul Drain,3,0,Y,-,Lifeless,-,Magic 1-5,Entire Battlefield,-,-,-,-,Drain,Y,-,"In addition to causing Damage to their targets, life draining attacks add an equal amount of Hit Points to the attacker, healing them of Damage already suffered or augmenting their Hit Points beyond the normal maximum."
+Necromancy,Tendrils of Death,3,8,Y,-,Lifeless,-,"Disease, Decay, Weakness",7 strikes,(gd) MR 2d6,-,-,-,-,-,-,"Diseased units have their Strength lowered by one point immediately, but take no extra Damage in combat. After combat, they have a 50% chance of taking 1 point of Damage every month until they die; Units suffering from Decay take 1 point of Damage per combat round until they die. Decay can usually not be survived, but after the battle has ended the effect will run out eventually; Weakened units have their Strength and Damage reduced by 2"
+Night,Blessing,1,8,Y,Only Friendly,-,-,Blessing,Burst 9,-,-,-,-,-,-,-,*
+Night,Moonlight,1,10,Y,Only Enemy,Mindless (xEffect only),Y,Magic 1-3,Single,-,Confusion,Single,MR 2d4 (reg),-,-,-,Confused units do nothing (50% chance) or switch sides (10% chance) or move in a random direction instead of advancing (75%)
+Night,Shadowform,1,6,Y,-,-,-,Etherealness,Single,-,-,-,-,-,-,-,75% chance of taking no Damage from non-magical attacks
+Night,Slumber,1,6,Y,-,Mindless,-,Sleep,Single,(gd) MR 2d6,-,-,-,-,-,-,Sleeping units are immobilized. The unit sleeps until it is hit or awakens on its own. (5% chance each combat round)
+Night,Greater Blessing,2,8,Y,Only Friendly,-,-,Blessing,Burst 25,-,-,-,-,-,-,-,*
+Night,Moonbeams,2,10,Y,Only Enemy,Mindless (xEffect only),Y,Magic 1-3,Burst 9,-,Confusion,Single,MR 2d4 (reg),-,-,-,Confused units do nothing (50% chance) or switch sides (10% chance) or move in a random direction instead of advancing (75%)
+Night,Terror,2,10,Y,Only Enemy,-,Y,Fear 1-8,Burst 25,(gd) MR 2d6,-,-,-,-,-,-,"Fear Damage is applied against Morale. If the damage roll from fear exceeds the morale of the target, the target panics and runs away"
+Night,Touch of the Moon,2,6,Y,Only Enemy,-,-,Sleep,Burst 5,MR 2d4,-,-,-,-,-,-,Sleeping units are immobilized. The unit sleeps until it is hit or awakens on its own. (5% chance each combat round)
+Night,Word of Power,2,4,Y,-,-,-,Paralyzation,Single,(gd) MR 2d6,-,-,-,-,-,-,Paralyzed units are immobilized and cannot do anything until the effect wears off. (10% chance each combat round)
+Night,Army of Darkness,3,8,Y,Only Friendly,-,-,Etherealness,Burst 25,-,-,-,-,-,-,-,75% chance of taking no Damage from non-magical attacks
+Night,Lunar Brilliance,3,10,Y,Only Enemy,Mindless (xEffect only),Y,Magic 1-3,Burst 25,-,Confusion,Single,MR 2d4 (reg),-,-,-,Confused units do nothing (50% chance) or switch sides (10% chance) or move in a random direction instead of advancing (75%)
+Night,Smite,3,5,Y,-,-,Y,Fire 1-50,Single,(gd) MR 2d6,-,-,-,-,-,-,
+Onyx Sorcery,Bones of Stone,1,8,Y,-,Ethereal,Y,Blunt Resistance,Burst 5,-,-,-,-,-,-,-,Half Damage from Blunt weapons
+Onyx Sorcery,Fear,1,8,Y,-,-,Y,Fear 1-12,Single,(gd) MR 2d6,-,-,-,-,-,-,"Fear Damage is applied against Morale. If the damage roll from fear exceeds the morale of the target, the target panics and runs away"
+Onyx Sorcery,Raise Longdead,1,3,Y,-,-,-,Summon,-,-,-,-,-,1 Longdead,-,-,
+Onyx Sorcery,Stoneskin,1,8,Y,Only Friendly,Ethereal,-,Armor +1,Burst 5,-,-,-,-,-,-,-,
+Onyx Sorcery,Stygian Skin,1,8,Y,-,Ethereal,-,Pierce Resistance,Burst 5,-,-,-,-,-,-,-,Half Damage from Piercing weapons
+Onyx Sorcery,Dance of Bones,2,3,Y,-,-,-,Summon,-,-,-,-,-,1-3 Longdeads,-,-,
+Onyx Sorcery,Granite Army,2,8,Y,Only Friendly,Ethereal,-,Armor +1,Burst 25,-,-,-,-,-,-,-,
+Onyx Sorcery,Terror,2,10,Y,Only Enemy,-,Y,Fear 1-8,Burst 25,(gd) MR 2d6,-,-,-,-,-,-,"Fear Damage is applied against Morale. If the damage roll from fear exceeds the morale of the target, the target panics and runs away"
+Onyx Sorcery,Army of Bones,3,3,Y,-,-,-,Summon,-,-,-,-,-,1-7 Longdeads,-,-,
+Onyx Sorcery,Nightmares,3,10,Y,-,-,Y,Fear 1-7,Burst 100,(ez) MR 1d5,-,-,-,-,-,-,"Fear Damage is applied against Morale. If the damage roll from fear exceeds the morale of the target, the target panics and runs away"
+Paladin Magic,Aura of God,1,0,Y,-,-,-,Awe*,Single,-,-,-,-,-,-,-,Enemy units attacking this unit in melee must pass a morale check (with a penalty of x) in order to successfully land an attack. Awe does not affect ranged attacks or spells
+Paladin Magic,Laying on Hands,1,1,Y,Only Friendly Humans & Hoburghers,Lifeless,Y,Heal 1-5,Single,-,-,-,-,Increased Healing for Humans & Horburghers,-,-,CANNOT heal above half of full HP
+Paladin Magic,Lesser Banishment,1,6,Y,-,-,-,Banish,Single,(ez) MR 1d5,-,-,-,-,-,-,
+Paladin Magic,Lesser Smite,1,5,Y,-,-,Y,Fire 1-13,Single,MR 2d4,-,-,-,-,-,-,
+Paladin Magic,Godflesh,2,0,Y,-,-,-,"Armor +2, Slash/Blunt/ Pierce Resistance",Single,-,-,-,-,-,-,-,"Half Damage from Slashing, Blunt, and Piercing weapons"
+Paladin Magic,Resist Magic,2,8,Y,Only Friendly,-,-,Magic Resistance +2,Single,-,-,-,-,-,-,-,
+Paladin Magic,Avatar,3,0,Y,-,-,-,Non-Magical Invulnerability,Single,-,-,-,-,-,-,-,"A unit with this ability cannot be harmed by Slash, Pierce, or Blunt damage unless it is magical"
+Paladin Magic,Smite,3,5,Y,-,-,Y,Fire 1-50,Single,(gd) MR 2d6,-,-,-,-,-,-,
+Prayers,Banish,1,6,Y,-,-,-,Banish,-,MR 2d4,-,-,-,-,-,-,
+Prayers,Blessing,1,8,Y,Only Friendly,-,-,Blessing,Burst 9,-,-,-,-,-,-,-,*
+Prayers,Conversion,1,5,Y,Humans; Hoburghers,Mindless,-,Charm,Single,MR 2d4; MRL 2d4,-,-,-,-,-,-,Charmed units immediately switch sides and attack their former comrades
+Prayers,Healing Words,1,8,Y,Only Friendly Humans & Hoburghers,Lifeless,Y,Heal 1-5,Single,-,-,-,-,Increased Healing for Humans & Horburghers,-,-,CANNOT heal above half of full HP
+Prayers,Resist Magic,1,8,Y,Only Friendly,-,-,Magic Resistance +2,Single,-,-,-,-,-,-,-,
+Prayers,Saving Grace,1,8,Y,Only Friendly,-,-,Twist Fate,Single,-,-,-,-,-,-,-,The Twist Fate effect will prevent the first successful attack against the unit
+Prayers,Divine Utterings,2,8,Y,-,-,-,Banish,Burst 9,(ez) MR 1d5,-,-,-,-,-,-,
+Prayers,Greater Banishment,2,6,Y,-,-,-,Banish,3 strikes,(gd) MR 2d6,-,-,-,-,-,-,
+Prayers,Greater Blessing,2,8,Y,Only Friendly,-,-,Blessing,Burst 25,-,-,-,-,-,-,-,*
+Prayers,Healing Prayer,2,8,Y,Only Friendly Humans & Hoburghers,Lifeless,Y,Heal 1-3,Burst 9,-,-,-,-,Increased Healing for Humans & Horburghers,-,-,CANNOT heal above half of full HP
+Prayers,Mass Conversion,2,5,Y,Humans; Hoburghers,Mindless,-,Charm,Burst 9,MR 2d4; MRL 2d4,-,-,-,-,-,-,Charmed units immediately switch sides and attack their former comrades
+Prayers,Mercy,2,8,Y,Only Friendly,-,-,Twist Fate,Burst 9,-,-,-,-,-,Y,-,The Twist Fate effect will prevent the first successful attack against the unit
+Prayers,Bless Army,3,8,Y,Only Friendly,-,-,Blessing,All Friends,-,-,-,-,-,-,-,*
+Prayers,Divine Word,3,8,Y,-,-,-,Banish,Burst 9,(gd) MR 2d6,-,-,-,-,-,-,
+Prayers,Healing Miracle,3,8,Y,Only Friendly Humans & Hoburghers,Lifeless,Y,Heal 1-3,Burst 25,-,-,-,-,Increased Healing for Humans & Horburghers,-,-,CANNOT heal above half of full HP
+Prayers,Heavenly Strike,3,10,Y,-,-,Y,Fire 1-999,Single,(gd) MR 2d6,-,-,-,-,-,-,
+Prayers,True Faith,3,5,Y,Humans; Hoburghers,Mindless,-,Charm,Burst 25,MR 2d4; MRL 2d4,-,-,-,-,-,-,Charmed units immediately switch sides and attack their former comrades
+Pyromancy,Blood Boil,1,6,Y,-,Lifeless,Y,Fire 1-15,Single,MR 2d4,-,-,-,-,-,-,
+Pyromancy,Combustion,1,6,Y,-,-,-,Burn,4 strikes,-,-,-,-,Burn Forest,-,-,"Burning units will take fire damage each round. Large units take more damage than small units. Chance to put out fire each round, greater chance with Fire Resist; Grants Burn Forest ability"
+Pyromancy,Fire Resistance,1,6,Y,-,-,-,Fire Resistance (100),Burst 5,-,-,-,-,-,-,-,Fire Damage reduced by 100%
+Pyromancy,Fire Shield,1,6,Y,-,-,-,Fire Shield (3),Single,-,-,-,-,-,-,-,"Any enemy attacking this unit in melee will take some fire Damage; They may also be set on fire, suffering more fire Damage every turn until the fire goes out; Units with Fire Aura (6) or greater will automatically set forest and jungle squares on fire upon entering them"
+Pyromancy,Flame Burst,1,6,Y,-,-,-,Fire 1-8,Single,-,-,-,-,-,-,-,
+Pyromancy,Flames,1,6,Y,-,-,-,Fire 1-3,Burst 3,-,-,-,-,-,-,-,
+Pyromancy,Falling Fires,2,10,Y,-,-,-,Fire 1-6,Burst 25,-,-,-,-,Burn Forest,-,-,Grants Burn Forest ability
+Pyromancy,Fire Cloud,2,8,Y,-,-,-,Fire 1-10,Burst 9,-,-,-,-,Burn Forest,-,-,Grants Burn Forest ability
+Pyromancy,Fire Ward,2,6,Y,-,-,-,Fire Resistance (100),Burst 25,-,-,-,-,-,-,-,Fire Damage reduced by 100%
+Pyromancy,Fireball,2,6,Y,-,-,-,Fire 1-15,Burst 5,-,-,-,-,Burn Forest,-,-,Grants Burn Forest ability
+Pyromancy,Incinerate,2,6,Y,-,-,Y,Fire 1-25,Single,-,-,-,-,-,-,-,
+Pyromancy,Mass Combustion,2,10,Y,Only Enemy,-,-,Burn,Burst 50,-,-,-,-,Burn Forest,Y,-,Grants Burn Forest ability
+Pyromancy,Meteor,2,15,Y,-,-,-,Blunt 1-50,Single,-,Fire 1-8,Burst 5,-,x5 damage vs Walls (Primary only),Y,Y,
+Pyromancy,Summon Fire,2,3,Y,-,-,-,Summon,-,-,-,-,-,1-3 Lesser Fires; Burn Forest,Y,-,A maximum of about 25 Lesser Fires can be summoned in a single battle; CANNOT be cast at sea; Grants Burn Forest ability
+Pyromancy,Flame Eruption,3,10,Y,-,-,-,Fire 1-18,Burst 25,-,-,-,-,Burn Forest,-,-,Grants Burn Forest ability
+Pyromancy,Flame Storm,3,10,Y,-,-,-,Fire 1-7,Burst 50,-,-,-,-,Burn Forest,-,-,Grants Burn Forest ability
+Pyromancy,Hellfire,3,0,Y,-,-,-,Fire 1-10,Entire Battlefield,-,-,-,-,Burn Forest,Y,-,Grants Burn Forest ability
+Pyromancy,Meteor Showers,3,0,Y,-,-,-,Blunt 1-40,15% of Battlefield,-,Fire 1-8,Burst 5,-,x5 damage vs Walls (Primary only),Y,-,
+Pyromancy,Pillar of Fire,3,8,Y,-,-,-,Fire 1-60,Single,-,Fire 1-8,Burst 9,-,Burn Forest,-,-,Grants Burn Forest ability
+Rain,Blessing,1,8,Y,Only Friendly,-,-,Blessing,Burst 9,-,-,-,-,-,-,-,*
+Rain,Dehydration,1,8,Y,-,Undead; Lifeless,-,Exhaustion,Single,STR 2d4,-,-,-,-,-,-,Exhausted units get -1 to Strength and has a chance of not moving.  Exhausted units that attack have a 50% chance of taking 1 point of damage.  Disappears after battle.
+Rain,Leech,1,5,Y,-,Lifeless,Y,Magic 1-6,Single,-,-,-,-,Drain,-,-,"In addition to causing Damage to their targets, life draining attacks add an equal amount of Hit Points to the attacker, healing them of Damage already suffered or augmenting their Hit Points beyond the normal maximum."
+Rain,Greater Blessing,2,8,Y,Only Friendly,-,-,Blessing,Burst 25,-,-,-,-,-,-,-,*
+Rain,Rising Tide,2,8,Y,-,Lifeless (xEffect only); Water Breathers (xEffect only),xEffect only,Stun,Burst 25,MR 2d4; STR 2d4,Blunt 1-3,-,-,-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Rain,Torrent of Water,2,6,Y,-,-,-,Blunt 1-6,Burst 5,-,Stun,-,STR 2d4,-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Rain,Word of Power,2,4,Y,-,-,-,Paralyzation,Single,(gd) MR 2d6,-,-,-,-,-,-,Paralyzed units are immobilized and cannot do anything until the effect wears off. (10% chance each combat round)
+Rain,Deluge,3,6,Y,-,-,-,Blunt 1-11,Burst 25,-,Stun,-,STR 2d4,-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Rain,Living Rain,3,3,Y,-,-,-,Summon,-,-,-,-,-,1-7 Lesser Waters,Y,-,A maximum of about 25 Lesser Waters can be summoned in a single battle
+Rain,Smite,3,5,Y,-,-,Y,Fire 1-50,Single,(gd) MR 2d6,-,-,-,-,-,-,
+Sage Magic,Confusion,1,8,Y,-,Mindless,-,Confusion,Single,MR 2d4,-,-,-,-,-,-,Confused units do nothing (50% chance) or switch sides (10% chance) or move in a random direction instead of advancing (75%)
+Sage Magic,Fire Resistance,1,6,Y,-,-,-,Fire Resistance (100),Burst 3,-,-,-,-,-,-,-,Fire Damage reduced by 100%
+Sage Magic,Sleep,1,8,Y,Only Enemy,Mindless,-,Sleep,2 strikes,(gd) MR 2d6,-,-,-,-,-,-,Sleeping units are immobilized. The unit sleeps until it is hit or awakens on its own. (5% chance each combat round)
+Sage Magic,Bewilderment,2,8,Y,-,Mindless,-,Confusion,Burst 9,MR 2d4,-,-,-,-,-,-,Confused units do nothing (50% chance) or switch sides (10% chance) or move in a random direction instead of advancing (75%)
+Sage Magic,Enchanted Sleep,2,10,Y,Only Enemy,Mindless,-,Sleep,Burst 25,MR 2d4,-,-,-,-,-,-,Sleeping units are immobilized. The unit sleeps until it is hit or awakens on its own. (5% chance each combat round)
+Sage Magic,Fortune,2,8,Y,Only Friendly,-,-,Luck,Burst 9,-,-,-,-,-,-,-,50% chance of not taking any Damage from an attack
+Sage Magic,Invulnerability,3,0,Y,-,-,-,Non-Magical Invulnerability,Single,-,-,-,-,-,-,-,"A unit with this ability cannot be harmed by Slash, Pierce, or Blunt damage unless it is magical"
+Sage Magic,Riddles of Insanity,3,8,Y,Only Enemy,Mindless,-,Confusion,8 strikes,(gd) MR 2d6,-,-,-,-,-,-,Confused units do nothing (50% chance) or switch sides (10% chance) or move in a random direction instead of advancing (75%)
+Sage Magic,Slumbering Army,3,0,Y,Only Enemy,Mindless,-,Sleep,Entire Battlefield,MR 2d4,-,-,-,-,Y,-,Sleeping units are immobilized. The unit sleeps until it is hit or awakens on its own. (5% chance each combat round)
+Serpent Magic,Poison Bolts,1,6,Y,-,-,Y,Poison 1-8,3 strikes,-,-,-,-,-,-,-,
+Serpent Magic,Poison Cloud,1,6,Y,-,-,Y,Poison 1-5,Burst 5,-,-,-,-,-,-,-,
+Serpent Magic,Poison Resistance,1,6,Y,-,-,-,Poison Resistance*,Burst 5,-,-,-,-,-,-,-,Poison Damage reduced by x%*
+Serpent Magic,Summon Snake,1,3,Y,-,-,-,Summon,-,-,-,-,-,1 Snake,-,-,A maximum of about 50 Snakes can be summoned in a single battle
+Serpent Magic,Venom,1,6,Y,-,-,Y,Poison 1-26,Single,-,-,-,-,-,-,-,
+Serpent Magic,Hydra's Blessing,2,8,Y,-,Lifeless,-,Regeneration,Burst 5,-,-,-,-,-,-,-,The unit heals roughly 10% of its HP every combat round
+Serpent Magic,Pit of Snakes,2,3,Y,-,-,-,Summon,-,-,-,-,-,1-3 Snakes,-,-,A maximum of about 50 Snakes can be summoned in a single battle
+Serpent Magic,Poison Darts,2,6,Y,-,-,Y,Poison 1-6,9 strikes,-,-,-,-,-,-,-,
+Serpent Magic,Poison Mist,2,8,Y,-,-,Y,Poison 1-8,Burst 25,-,-,-,-,-,-,-,
+Serpent Magic,Summon Serpent,2,E,Y,-,-,-,Summon,-,-,-,-,-,1 Serpent,-,-,A maximum of about 25 Serpents can be summoned in a single battle; CANNOT be cast at sea
+Serpent Magic,Venom Ward,2,6,Y,-,-,-,Poison Resistance*,Burst 25,-,-,-,-,-,-,-,Poison Damage reduced by x%*
+Serpent Magic,Venomous Death,2,6,Y,-,-,Y,Poison 1-60,Single,-,-,-,-,-,-,-,
+Serpent Magic,Deadly Fumes,3,10,Y,-,-,Y,Poison 1-6,Burst 100,-,-,-,-,-,-,-,
+Serpent Magic,Green Death,3,8,Y,-,-,Y,Poison 1-22,Burst 25,-,-,-,-,-,-,-,
+Serpent Magic,Summon Serpents,3,E,Y,-,-,-,Summon,-,-,-,-,-,1-5 Serpents,-,-,A maximum of about 25 Serpents can be summoned in a single battle; CANNOT be cast at sea
+Sidhe,Air Shield,1,8,Y,Only Friendly,-,-,Air Shield*,Burst 5,-,-,-,-,-,-,-,x%* chance of taking no Damage from normal non-magical missile attacks
+Sidhe,Charm,1,5,Y,-,Mindless,-,Charm,Single,(ez) MR 1d5,-,-,-,-,-,-,Charmed units immediately switch sides and attack their former comrades
+Sidhe,Confusion,1,8,Y,-,Mindless,-,Confusion,Single,MR 2d4,-,-,-,-,-,-,Confused units do nothing (50% chance) or switch sides (10% chance) or move in a random direction instead of advancing (75%)
+Sidhe,Curse,1,16,Y,-,-,-,Curse,Single,-,-,-,-,-,-,-,Cursed units have a greatly increased chance of receiving battle afflictions when they are hit
+Sidhe,Fortitude,1,8,Y,Only Friendly,Ethereal,-,Armor +1,Burst 5,-,-,-,-,-,-,-,
+Sidhe,Heal,1,8,Y,Only Friendly,Lifeless,Y,Heal 1-5,Single,-,-,-,-,Increased Healing,-,-,CANNOT heal above half of full HP. Grants increased healing rate for all non-inanimate beings in army
+Sidhe,Luck,1,8,Y,Only Friendly,-,-,Luck,Single,-,-,-,-,-,-,-,50% chance of not taking any Damage from an attack
+Sidhe,Magic Stones,1,6,Y,-,-,-,Blunt 1-6,2 strikes,-,-,-,-,-,-,-,
+Sidhe,Sleep,1,8,Y,Only Enemy,Mindless,-,Sleep,2 strikes,(gd) MR 2d6,-,-,-,-,-,-,Sleeping units are immobilized. The unit sleeps until it is hit or awakens on its own. (5% chance each combat round)
+Sidhe,Strength,1,8,Y,-,-,-,Strength +2,Burst 3,-,-,-,-,-,-,-,
+Sidhe,Charm,2,5,Y,-,Mindless,-,Charm,Single,MR 2d4,-,-,-,-,-,-,Charmed units immediately switch sides and attack their former comrades
+Sidhe,Cloud of Confusion,2,8,Y,-,Mindless,-,Confusion,Burst 9,MR 2d4,-,-,-,-,-,-,Confused units do nothing (50% chance) or switch sides (10% chance) or move in a random direction instead of advancing (75%)
+Sidhe,Enchanted Sleep,2,10,Y,Only Enemy,Mindless,-,Sleep,Burst 25,MR 2d4,-,-,-,-,-,-,Sleeping units are immobilized. The unit sleeps until it is hit or awakens on its own. (5% chance each combat round)
+Sidhe,Fortune,2,8,Y,Only Friendly,-,-,Luck,Burst 9,-,-,-,-,-,-,-,50% chance of not taking any Damage from an attack
+Sidhe,Greater Healing,2,8,Y,Only Friendly,Lifeless,Y,Heal 1-3,Burst 9,-,-,-,-,Increased Healing,-,-,CANNOT heal above half of full HP. Grants increased healing rate for all non-inanimate beings in army
+Sidhe,Herculean Soldiers,2,8,Y,Only Friendly,Ethereal,-,Strength +2,Burst 25,-,-,-,-,-,-,-,
+Sidhe,Indomitability,2,8,Y,Only Friendly,Ethereal,-,Slash/Blunt/ Pierce Resistance,Burst 5,-,-,-,-,-,-,-,"Half Damage from Slashing, Blunt, and Piercing weapons"
+Sidhe,Protective Winds,2,8,Y,Only Friendly,-,-,Air Shield*,Burst 20,-,-,-,-,-,-,-,x%* chance of taking no Damage from normal non-magical missile attacks
+Sidhe,Battle Fortune,3,8,Y,Only Friendly,-,-,Luck,Burst 25,-,-,-,-,-,-,-,50% chance of not taking any Damage from an attack
+Sidhe,Enchanting Voice,3,10,Y,Only Enemy,Mindless,-,Sleep,Burst 100,MR 2d4,-,-,-,-,-,-,Sleeping units are immobilized. The unit sleeps until it is hit or awakens on its own. (5% chance each combat round)
+Sidhe,Mist of Confusion,3,10,Y,-,Mindless,-,Confusion,Burst 25,MR 2d4,-,-,-,-,-,-,Confused units do nothing (50% chance) or switch sides (10% chance) or move in a random direction instead of advancing (75%)
+Sidhe,True Charm,3,8,Y,-,Mindless,-,Charm,Single,(gd) MR 2d6,-,-,-,-,-,-,Charmed units immediately switch sides and attack their former comrades
+Silver Arcana,Air Shield,1,8,Y,Only Friendly,-,-,Air Shield*,Burst 5,-,-,-,-,-,-,-,x%* chance of taking no Damage from normal non-magical missile attacks
+Silver Arcana,Guide Arrows,1,8,Y,Only Friendly,-,-,Wind Guide,Burst 5,-,-,-,-,-,-,-,"+1 Range, +1 Damage for missiles; Arrows and Javelins will hit target more easily"
+Silver Arcana,Gust of Wind,1,8,-,-,-,-,Blunt 1-3,Burst 5,-,Stun,-,STR 2d4,-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Silver Arcana,Luck,1,8,Y,Only Friendly,-,-,Luck,Single,-,-,-,-,-,-,-,50% chance of not taking any Damage from an attack
+Silver Arcana,Paralyze,1,10,Y,-,-,-,Paralyzation,Single,MR 2d4,-,-,-,-,-,-,Paralyzed units are immobilized and cannot do anything until the effect wears off. (10% chance each combat round)
+Silver Arcana,Shock,1,6,Y,-,-,Y,Shock 1-6,Single,-,-,-,-,-,-,-,
+Silver Arcana,Antimagic,2,8,Y,-,-,-,Magic Resistance +2,Burst 25,-,-,-,-,-,-,-,
+Silver Arcana,Chain Lightning,2,6,Y,-,-,Y,Shock 1-5,8 bounces range 2,-,-,-,-,-,-,-,
+Silver Arcana,Fortune,2,8,Y,Only Friendly,-,-,Luck,Burst 9,-,-,-,-,-,-,-,50% chance of not taking any Damage from an attack
+Silver Arcana,Lightning Bolt,2,6,Y,-,-,Y,Shock 1-10,Line 5,-,-,-,-,-,-,-,
+Silver Arcana,Protective Winds,2,8,Y,Only Friendly,-,-,Air Shield*,Burst 20,-,-,-,-,-,-,-,x%* chance of taking no Damage from normal non-magical missile attacks
+Silver Arcana,Soul Slay,2,10,Y,-,Mindless,Y,Magic 1-999,Single,(gd) MR 2d6,Paralyzation,-,MR 2d4 (reg),-,-,-,Paralyzed units are immobilized and cannot do anything until the effect wears off. (10% chance each combat round)
+Silver Arcana,Storm Wind,2,10,-,-,-,-,Blunt 1-4,Burst 25,-,Stun,-,STR 2d4,-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Silver Arcana,Summon Clouds,2,1,Y,-,-,-,Summon,-,-,-,-,-,1-2 Cloud Elementals,Y,-,A maximum of about 25 Cloud Elementals can be summoned in a single battle
+Silver Arcana,Wind Guide,2,8,Y,Only Friendly,-,-,Wind Guide,Burst 5,-,-,-,-,-,-,-,"+1 Range, +1 Damage for missiles; Arrows and Javelins will hit target more easily"
+Silver Arcana,Arcane Tempest,3,0,Y,Only Enemy,-,-,Blunt 1-3,All Enemies,-,Stun,-,STR 2d4,-,Y,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Silver Arcana,Battle Fortune,3,8,Y,Only Friendly,-,-,Luck,Burst 25,-,-,-,-,-,-,-,50% chance of not taking any Damage from an attack
+Silver Arcana,Call Lightning,3,10,Y,-,-,Y,Shock 1-8,12 strikes,-,Stun,-,MR 2d4 (reg),-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Silver Arcana,Friendly Storm,3,0,Y,Only Friendly,-,-,Air Shield*,All Friends,-,-,-,-,-,-,-,x%* chance of taking no Damage from normal non-magical missile attacks
+Sky,Blessing,1,8,Y,Only Friendly,-,-,Blessing,Burst 9,-,-,-,-,-,-,-,*
+Sky,Gust of Wind,1,8,-,-,-,-,Blunt 1-3,Burst 5,-,Stun,-,STR 2d4,-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Sky,Shock,1,6,Y,-,-,Y,Shock 1-6,Single,-,-,-,-,-,-,-,
+Sky,Greater Blessing,2,8,Y,Only Friendly,-,-,Blessing,Burst 25,-,-,-,-,-,-,-,*
+Sky,Storm Wind,2,10,-,-,-,-,Blunt 1-4,Burst 25,-,Stun,-,STR 2d4,-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Sky,Thunderhead,2,15,Y,-,-,Y,Shock 1-12,3 strikes,-,Shock 1,Burst 6,-,-,Y,-,
+Sky,Word of Power,2,4,Y,-,-,-,Paralyzation,Single,(gd) MR 2d6,-,-,-,-,-,-,Paralyzed units are immobilized and cannot do anything until the effect wears off. (10% chance each combat round)
+Sky,Gale,3,0,Y,-,-,-,Blunt 1-5,Entire Battlefield,-,Stun,-,STR 2d4,-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Sky,Living Clouds,3,1,Y,-,-,-,Summon,-,-,-,-,-,1-2 Cloud Elementals,Y,-,A maximum of 25 Cloud Elementals can be summoned in a single battle
+Sky,Smite,3,5,Y,-,-,Y,Fire 1-50,Single,(gd) MR 2d6,-,-,-,-,-,-,
+Solar Magic,Aura of the Sun,1,8,Y,Only Friendly,Undead,-,Awe*,Single,-,-,-,-,-,-,-,Enemy units attacking this unit in melee must pass a morale check (with a penalty of x) in order to successfully land an attack. Awe does not affect ranged attacks or spells
+Solar Magic,Sunbeam,1,8,Y,-,-,Y,Fire 1-2,Burst 5,-,Blindness,-,MR 2d4 (reg),x2 damage vs Undead,-,-,Unit almost always misses with attacks
+Solar Magic,Sunlight,1,8,Y,-,-,Y,Fire 1-3,Single,-,Blindness,-,MR 2d4 (reg),x2 damage vs Undead,-,-,Unit almost always misses with attacks
+Solar Magic,Solar Flare,2,8,Y,-,-,Y,Fire 1-8,Burst 5,-,Blindness,-,MR 2d4 (reg),x2 damage vs Undead,-,-,Unit almost always misses with attacks
+Solar Magic,Solar Rays,2,10,Y,-,-,Y,Fire 1-2,Burst 25,-,Blindness,-,(ez) MR 1d5,x2 damage vs Undead,-,-,Unit almost always misses with attacks
+Solar Magic,Vengeance of the Sun,2,6,Y,-,-,-,Fire Shield (3),Burst 5,-,-,-,-,-,-,-,"Any enemy attacking this unit in melee will take some fire Damage; They may also be set on fire, suffering more fire Damage every turn until the fire goes out; Units with Fire Aura (6) or greater will automatically set forest and jungle squares on fire upon entering them"
+Solar Magic,Army of the Sun,3,8,Y,Only Friendly,Undead,-,Awe*,Burst 25,-,-,-,-,-,-,-,Enemy units attacking this unit in melee must pass a morale check (with a penalty of x) in order to successfully land an attack. Awe does not affect ranged attacks or spells
+Solar Magic,Godflesh,3,8,Y,-,Ethereal,-,"Fire Resistance (100), Awe, Armor +2, Slash/Blunt/ Pierce Resistance",Single,-,-,-,-,-,-,-,"All Friendly Units have Fire Damage reduced by 100%; Enemy units attacking this unit in melee must pass a morale check (with a penalty of x) in order to successfully land an attack. Awe does not affect ranged attacks or spells; Half Damage from Slashing, Blunt, and Piercing weapons"
+Solar Magic,Solar Brilliance,3,0,Y,-,-,Y,Fire 1-2,Entire Battlefield,-,Blindness,-,MR 2d4 (reg),x2 damage vs Undead,Y,-,Unit almost always misses with attacks
+Spiritism,Banish Spirit,1,6,Y,-,-,-,Banish,Single,MR 2d4,-,-,-,-,-,-,
+Spiritism,Call Ancestor,1,3,Y,-,-,-,Summon,-,-,-,-,-,1 Ancestral Warrior,Y,-,A maximum of about 25 Ancestral Warriors can be summoned in a single battle
+Spiritism,Call Spirit of the Western Wind,1,8,-,-,-,-,Blunt 1-3,Burst 9,-,Stun,-,STR 2d4,-,Y,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Spiritism,Call Vengeful Spirit,1,8,Y,-,-,Y,Fear 1-9,Single,(gd) MR 2d6,-,-,-,-,Y,-,"Fear Damage is applied against Morale. If the damage roll from fear exceeds the morale of the target, the target panics and runs away"
+Spiritism,Curse,1,16,Y,-,-,-,Curse,Single,-,-,-,-,-,-,-,Cursed units have a greatly increased chance of receiving battle afflictions when they are hit
+Spiritism,Disease,1,8,Y,-,Lifeless,-,Disease,Single,(gd) MR 2d6,-,-,-,-,-,-,"Diseased units have their Strength lowered by one point immediately, but take no extra Damage in combat. After combat, they have a 50% chance of taking 1 point of Damage every month until they die."
+Spiritism,Call Spirits of the Night,2,10,Y,Only Enemy,-,Y,Fear 1-5,Burst 25,(gd) MR 2d6,-,-,-,-,Y,-,"Fear Damage is applied against Morale. If the damage roll from fear exceeds the morale of the target, the target panics and runs away"
+Spiritism,Call Storm Spirit,2,10,-,-,-,-,Blunt 1-3,Burst 25,-,Stun,-,STR 2d4,-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Spiritism,Call the Spirits of Plague,2,10,Y,Only Enemy,Lifeless,-,Disease,Burst 25,MR 2d4,-,-,-,-,Y,-,"Diseased units have their Strength lowered by one point immediately, but take no extra Damage in combat. After combat, they have a 50% chance of taking 1 point of Damage every month until they die."
+Spiritism,Call the Spirits of Thunder,2,15,Y,-,-,Y,Shock 1-13,3 strikes,-,Shock 1,Burst 6,-,-,Y,-,
+Spiritism,Fortune of Ancestors,2,8,Y,Only Friendly,-,-,Luck,Burst 9,-,-,-,-,-,-,-,50% chance of not taking any Damage from an attack
+Spiritism,Wind of Silence,2,6,Y,-,-,-,Banish,Burst 9,(ez) MR 1d5,-,-,-,-,-,-,
+Spiritism,Wrath of the Ancestors,2,3,Y,-,-,-,Summon,-,-,-,-,-,1-4 Ancestor Spirits,Y,-,A maximum of about 25 Ancestor Spirits can be summoned in a single battle
+Spiritism,Call Spirit Lord of the Sky,3,0,-,-,-,-,Blunt 1-5,Entire Battlefield,-,Stun,-,STR 2d4,-,Y,-,
+Spiritism,Eternal Rest,3,6,Y,-,-,-,Banish,Burst 9,MR 2d4,-,-,-,-,-,-,
+Spiritism,Spirit Gate,3,3,Y,-,-,-,Summon,-,-,-,-,-,1-9 Ancestor Spirits,Y,-,A maximum of about 25 Ancestor Spirits can be summoned in a single battle
+Storm Magic,Air Shield,1,8,Y,Only Friendly,-,-,Air Shield*,Burst 5,-,-,-,-,-,-,-,x%* chance of taking no Damage from normal non-magical missile attacks
+Storm Magic,Guide Arrows,1,8,Y,Only Friendly,-,-,Wind Guide,Burst 5,-,-,-,-,-,-,-,"+1 Range, +1 Damage for missiles; Arrows and Javelins will hit target more easily"
+Storm Magic,Gust of Wind,1,8,-,-,-,-,Blunt 1-3,Burst 5,-,Stun,-,STR 2d4,-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Storm Magic,Lightning Resistance,1,6,Y,-,-,-,Shock Resistance*,Burst 5,-,-,-,-,-,-,-,Shock Damage reduced by (x)%*
+Storm Magic,Shock,1,6,Y,-,-,Y,Shock 1-6,Single,-,-,-,-,-,-,-,
+Storm Magic,Shock Field,1,4,Y,-,-,Y,Shock 1-2,Burst 3,-,-,-,-,-,-,-,
+Storm Magic,Sparks,1,8,Y,-,-,Y,Shock 1-3,2 strikes,-,Stun,-,MR 2d4 (reg),-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Storm Magic,Swiftness,1,8,Y,-,Lifeless,-,Quickness,Single,-,-,-,-,-,-,-,A unit with quickness will move fast in combat and also avoide about 1/4 of all attacks made against it
+Storm Magic,Chain Lightning,2,6,Y,-,-,Y,Shock 1-5,8 bounces range 2,-,-,-,-,-,-,-,
+Storm Magic,Haste,2,8,Y,-,Lifeless,-,Quickness,Burst 25,-,-,-,-,-,-,-,A unit with quickness will move fast in combat and also avoide about 1/4 of all attacks made against it
+Storm Magic,Lightning Bolt,2,6,Y,-,-,Y,Shock 1-10,Line 5,-,-,-,-,-,-,-,
+Storm Magic,Orb Lightning,2,6,Y,-,-,Y,Shock 1-8,Burst 15,-,Stun,-,MR 2d4 (reg),-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Storm Magic,Protective Winds,2,8,Y,Only Friendly,-,-,Air Shield (75),Burst 20,-,-,-,-,-,-,-,75% chance of taking no Damage from normal non-magical missile attacks
+Storm Magic,Storm Wind,2,10,-,-,-,-,Blunt 1-4,Burst 25,-,Stun,-,STR 2d4,-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Storm Magic,Summon Clouds,2,1,Y,-,-,-,Summon,-,-,-,-,-,1-2 Cloud Elementals,Y,-,A maximum of about 25 Cloud Elementals can be summoned in a single battle
+Storm Magic,Thunder Strike,2,15,Y,-,-,Y,Shock 1-45,Single,-,Shock 1,Burst 6,-,-,Y,Y,
+Storm Magic,Thunder Ward,2,6,Y,-,-,-,Shock Resistance*,Burst 25,-,-,-,-,-,-,-,Shock Damage reduced by (x)%*
+Storm Magic,Thunderhead,2,15,Y,-,-,Y,Shock 1-12,3 strikes,-,Shock 1,Burst 6,-,-,Y,-,
+Storm Magic,Wind Guide,2,8,Y,Only Friendly,-,-,Wind Guide,Burst 25,-,-,-,-,-,-,-,"+1 Range, +1 Damage for missiles; Arrows and Javelins will hit target more easily"
+Storm Magic,Arcane Tempest,3,0,Y,Only Enemy,-,-,Blunt 1-3,All Enemies,-,Stun,-,STR 2d4,-,Y,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Storm Magic,Call Lightning,3,10,Y,-,-,Y,Shock 1-8,12 strikes,-,Stun,-,MR 2d4 (reg),-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Storm Magic,Friendly Storm,3,0,Y,Only Friendly,-,-,Air Shield*,All Friends,-,-,-,-,-,-,-,x%* chance of taking no Damage from normal non-magical missile attacks
+Storm Magic,Gale,3,0,-,-,-,-,Blunt 1-5,Entire Battlefield,-,Stun,-,STR 2d4,-,Y,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Storm Magic,Lightning Storm,3,10,Y,-,-,Y,Shock 1-14,12 bounces range 2,-,-,-,-,-,-,-,
+Storm Magic,Quicken Army,3,8,Y,Only Friendly,Lifeless,-,Quickness,All Friends,-,-,-,-,-,-,-,A unit with quickness will move fast in combat and also avoide about 1/4 of all attacks made against it
+Tree Magic,Confusion,1,8,Y,-,Mindless,-,Confusion,Single,MR 2d4,-,-,-,-,-,-,Confused units do nothing (50% chance) or switch sides (10% chance) or move in a random direction instead of advancing (75%)
+Tree Magic,Poison Arrow,1,5,-,-,-,xEffect only,Pierce 1-6,Single,-,Poison 1-10,Single,-,-,-,-,
+Tree Magic,Poison Vine,1,6,-,-,-,xEffect only,Entanglement,Single,-,Poison 1-5,Single,-,-,-,-,Entangled victim cannot do anything until it breaks free by making a successful Strenght test vs 1d14
+Tree Magic,Sleep,1,8,Y,Only Enemy,Mindless,-,Sleep,2 strikes,(gd) MR 2d6,-,-,-,-,-,-,Sleeping units are immobilized. The unit sleeps until it is hit or awakens on its own. (5% chance each combat round)
+Tree Magic,Strength,1,8,Y,-,-,-,Strength +2,Burst 3,-,-,-,-,-,-,-,
+Tree Magic,Tangle Vine,1,6,-,-,Flying/Floating,-,Entanglement,Single,-,-,-,-,-,-,-,Entangled victim cannot do anything until it breaks free by making a successful Strenght test vs 1d14
+Tree Magic,Vine Arrow,1,5,-,-,Flying/Floating (xEffect Only),-,Pierce 1-6,Single,-,Entanglement,-,-,-,-,-,Entangled victim cannot do anything until it breaks free by making a successful Strenght test vs 1d14
+Tree Magic,Animate Tree,2,6,Y,-,-,-,Animate Tree,Single,-,-,-,-,-,-,-,
+Tree Magic,Briar Cage,2,6,Y,-,-,-,Entanglement,Burst 9,-,-,-,-,-,-,-,Entangled victim cannot do anything until it breaks free by making a successful Strenght test vs 1d14
+Tree Magic,Curse of Wood,2,10,Y,-,Lifeless,-,-,Burst 25,MR 2d4,-,-,-,Change into Tree,-,-,Unit turns into Tree
+Tree Magic,Enchanted Sleep,2,10,Y,Only Enemy,Mindless,-,Sleep,Burst 25,MR 2d4,-,-,-,-,-,-,Sleeping units are immobilized. The unit sleeps until it is hit or awakens on its own. (5% chance each combat round)
+Tree Magic,Poison Vines,2,6,-,Only Enemy,-,xEffect only,Entanglement,Burst 3,-,Poison 1-5,Single,-,-,-,-,Entangled victim cannot do anything until it breaks free by making a successful Strenght test vs 1d14
+Tree Magic,Shooting Thorns,2,6,-,-,-,xEffect only,Pierce 1-2,7 strikes,-,Poison 1-10,Single,-,-,-,-,
+Tree Magic,Summon Dragonflies,2,10,-,-,-,-,Summon,-,-,-,-,-,1-4 Dragonflies,-,-,A maximum of about 25 Dragonflies can be summoned in a single battle
+Tree Magic,Animate Forest,3,0,Y,-,-,-,Animate Forest,Entire Battlefield,-,-,-,-,-,Y,-,
+Tree Magic,Earthquake,3,0,-,-,Flying/Floating,-,Blunt 1-5,Entire Battlefield,-,Stun,-,STR 2d4,x5 damage vs Walls (Primary only),Y,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Tree Magic,Wild Growth,3,10,Y,Only Enemy,-,-,Entanglement,Burst 100,STR 2d4,-,-,-,-,Y,-,Entangled victim cannot do anything until it breaks free by making a successful Strenght test vs 1d14
+Troll Magic,Curse,1,16,Y,-,-,-,Curse,Single,-,-,-,-,-,-,-,Cursed units have a greatly increased chance of receiving battle afflictions when they are hit
+Troll Magic,Disease,1,8,Y,-,Lifeless,-,Disease,Single,(gd) MR 2d6,-,-,-,-,-,-,"Diseased units have their Strength lowered by one point immediately, but take no extra Damage in combat. After combat, they have a 50% chance of taking 1 point of Damage every month until they die."
+Troll Magic,Fear,1,8,Y,-,-,Y,Fear 1-12,Single,(gd) MR 2d6,-,-,-,-,-,-,"Fear Damage is applied against Morale. If the damage roll from fear exceeds the morale of the target, the target panics and runs away"
+Troll Magic,Fortitude,1,8,Y,Only Friendly,Ethereal,-,Armor +1,Burst 5,-,-,-,-,-,-,-,
+Troll Magic,Sleep Cloud,1,6,Y,-,-,-,Sleep,Burst 5,-,-,-,-,-,-,-,Sleeping units are immobilized. The unit sleeps until it is hit or awakens on its own. (5% chance each combat round)
+Troll Magic,Summon Frogs,1,3,Y,-,-,-,Summon,-,-,-,-,-,1-3 Frogs,-,-,A maximum of about 200 Frogs can be summoned in a single battle
+Troll Magic,Summon Wolf,1,E,Y,-,-,-,Summon,-,-,-,-,-,1 Wolf,-,-,A maximum of about 40 Wolves can be summoned in a single battle
+Troll Magic,A Promise for Life,2,10,Y,Only Enemy,-,-,Curse,Burst 25,-,-,-,-,-,-,-,Cursed units have a greatly increased chance of receiving battle afflictions when they are hit
+Troll Magic,Bucket of Frogs,2,3,Y,-,-,-,Summon,-,-,-,-,-,1-8 Frogs,-,-,A maximum of about 200 Frogs can be summoned in a single battle
+Troll Magic,Curse of the Frog Prince,2,4,Y,Only Enemy,Lifeless,-,Polymorph,Single,MR 2d4,-,-,-,Change into Frog,-,-,Unit turns into a Frog
+Troll Magic,Enchanted Sleep,2,10,Y,Only Enemy,Mindless,-,Sleep,Burst 25,MR 2d4,-,-,-,-,-,-,Sleeping units are immobilized. The unit sleeps until it is hit or awakens on its own. (5% chance each combat round)
+Troll Magic,Plague,2,10,Y,Only Enemy,Lifeless,-,Disease,Burst 25,MR 2d4,-,-,-,-,-,-,"Diseased units have their Strength lowered by one point immediately, but take no extra Damage in combat. After combat, they have a 50% chance of taking 1 point of Damage every month until they die."
+Troll Magic,Summon Giant Toad,2,E,Y,-,-,-,Summon,-,-,-,-,-,1 Giant Toad,-,-,A maximum of about 15 Giant Toads can be summoned in a single battle
+Troll Magic,Summon Monster Toad,2,E,Y,-,-,-,Summon,-,-,-,-,-,1 Monster Toad,-,-,A maximum of about 15 Monster Toads can be summoned in a single battle
+Troll Magic,Summon Wolves,2,E,Y,-,-,-,Summon,-,-,-,-,-,1-6 Wolves,-,-,A maximum of about 40 Wolves can be summoned in a single battle
+Troll Magic,Terror,2,10,Y,Only Enemy,-,Y,Fear 1-8,Burst 25,(gd) MR 2d6,-,-,-,-,-,-,"Fear Damage is applied against Morale. If the damage roll from fear exceeds the morale of the target, the target panics and runs away"
+Troll Magic,Black Death,3,0,Y,All Enemies,-,-,Disease,Entire Battlefield,MR 2d4,-,-,-,-,Y,-,"Diseased units have their Strength lowered by one point immediately, but take no extra Damage in combat. After combat, they have a 50% chance of taking 1 point of Damage every month until they die."
+Troll Magic,Dread of Monsters,3,10,Y,-,-,-,Fear 1-8,Burst 100,(gd) MR 2d6,-,-,-,-,-,-,"Fear Damage is applied against Morale. If the damage roll from fear exceeds the morale of the target, the target panics and runs away"
+Troll Magic,Slumber of the Stones,3,10,Y,-,Mindless,-,Sleep,Burst 100,MR 2d4,-,-,-,-,Y,-,Sleeping units are immobilized. The unit sleeps until it is hit or awakens on its own. (5% chance each combat round)
+Troll Magic,Summon Giant Toads,3,E,Y,-,-,-,Summon,-,-,-,-,-,1-6 Giant Toads,-,-,A maximum of about 15 Giant Toads can be summoned in a single battle
+Troll Magic,Summon Wolf Pack,3,E,Y,-,-,-,Summon,-,-,-,-,-,1-16 Wolves,-,-,A maximum of about 40 Wolves can be summoned in a single battle
+Unlife,Bolt of Unlife,1,6,Y,-,Lifeless,Y,Magic 1-6,Single,(gd) MR 2d6,-,-,-,Reanimates victim,-,-,"Turns unit into Soulless, if killed"
+Unlife,Drain Life,1,5,Y,-,Lifeless,Y,Magic 1-8,Single,-,-,-,-,Drain,-,-,"In addition to causing Damage to their targets, life draining attacks add an equal amount of Hit Points to the attacker, healing them of Damage already suffered or augmenting their Hit Points beyond the normal maximum."
+Unlife,Strength Sap,1,8,Y,-,Undead,-,Weakness,Burst 3,(gd) MR 2d6,-,-,-,-,-,-,Weakened units have their Strength and Damage reduced by 2
+Unlife,Dark Power,2,8,Y,-,Lifeless,Y,Magic 1-7,3 Strikes,-,-,-,-,Drain,-,-,"In addition to causing Damage to their targets, life draining attacks add an equal amount of Hit Points to the attacker, healing them of Damage already suffered or augmenting their Hit Points beyond the normal maximum."
+Unlife,Finger of Death,2,8,Y,-,Lifeless,Y,Magic 1-999,Single,-,Paralyzation,-,STR 2d4,-,-,-,Paralyzed units are immobilized and cannot do anything until the effect wears off. (10% chance each combat round)
+Unlife,Soul Vortex,2,5,Y,-,Lifeless,Y,Magic 1-6,Burst 9,-,-,-,-,Drain,-,-,"In addition to causing Damage to their targets, life draining attacks add an equal amount of Hit Points to the attacker, healing them of Damage already suffered or augmenting their Hit Points beyond the normal maximum."
+Unlife,Weakness,2,8,Y,-,Undead; Lifeless,-,Weakness,Burst 25,(gd) MR 2d6,-,-,-,-,-,-,Weakened units have their Strength and Damage reduced by 2
+Unlife,Chill of the Dead,3,10,Y,-,Undead (xEffect only); Lifeless (xEffect only),Y,Cold 1-13,Burst 25,-,Weakness,-,(gd) MR 2d6,-,-,-,Weakened units have their Strength and Damage reduced by 2
+Unlife,Soul Drain,3,0,Y,-,Lifeless,-,Magic 1-6,Entire Battlefield,-,-,-,-,Drain,Y,-,"In addition to causing Damage to their targets, life draining attacks add an equal amount of Hit Points to the attacker, healing them of Damage already suffered or augmenting their Hit Points beyond the normal maximum."
+Unlife,Symbol of Unlife,3,10,Y,Only Enemy,-,Y,Magic 1-2,Burst 100,MR 2d4,-,-,-,Reanimates victim,-,-,"Turns unit into Soulless, if killed"
+Void Magic,Confusion,1,8,Y,-,Mindless,-,Confusion,Single,MR 2d4,-,-,-,-,-,-,Confused units do nothing (50% chance) or switch sides (10% chance) or move in a random direction instead of advancing (75%)
+Void Magic,Mind Burn,1,10,Y,-,Mindless,Y,Magic 1-11,Single,(gd) MR 2d6,-,-,-,-,-,-,
+Void Magic,Paralyze,1,10,Y,-,-,-,Paralyzation,Single,MR 2d4,-,-,-,-,-,-,Paralyzed units are immobilized and cannot do anything until the effect wears off. (10% chance each combat round)
+Void Magic,Reading the Stars,1,8,Y,Only Friendly,-,-,Luck,2 strikes,-,-,-,-,-,-,-,50% chance of not taking any Damage from an attack
+Void Magic,Starlight,1,10,Y,-,-,Y,Magic 1-5,Single,-,Paralyzation,-,(ez) MR 1d5,-,-,-,Paralyzed units are immobilized and cannot do anything until the effect wears off. (10% chance each combat round)
+Void Magic,Words of the Void,1,4,Y,-,Mindless,-,Stun,3 strikes,MR 2d4,-,-,-,-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Void Magic,Foresight,2,8,Y,Only Friendly,-,-,Luck,5 strikes,-,-,-,-,-,-,-,50% chance of not taking any Damage from an attack
+Void Magic,Invade Mind,2,10,Y,-,Mindless,-,Enslave,Single,MR 2d4,-,-,-,-,-,-,Enslaved units immediately switch sides and attack their former comrades
+Void Magic,Mental Overload,2,8,Y,Only Enemy,Mindless,-,Confusion,4 strikes,MR 2d4,-,-,-,-,-,-,Confused units do nothing (50% chance) or switch sides (10% chance) or move in a random direction instead of advancing (75%)
+Void Magic,Meteor,2,15,Y,-,-,-,Blunt 1-50,Single,-,Fire 1-8,Burst 5,-,x5 damage vs Walls (Primary only),Y,Y,
+Void Magic,Soul Slay,2,10,Y,-,Mindless,Y,Magic 1-999,Single,(gd) MR 2d6,Paralyzation,-,MR 2d4 (reg),-,-,-,Paralyzed units are immobilized and cannot do anything until the effect wears off. (10% chance each combat round)
+Void Magic,Star Showers,2,10,Y,-,-,Y,Magic 1-10,5 strikes,-,Paralyzation,-,MR 2d4,-,-,-,Paralyzed units are immobilized and cannot do anything until the effect wears off. (10% chance each combat round)
+Void Magic,Strange Hymn,2,6,Y,-,-,-,Paralyzation,Burst 25,(ez) MR 1d5,-,-,-,-,-,-,Paralyzed units are immobilized and cannot do anything until the effect wears off. (10% chance each combat round)
+Void Magic,Summon Lesser Horror,2,3,-,-,-,-,Summon,-,-,-,-,-,1 Spine Membrane Horror,Y,-,A maximum of about 10 Spine Membrane Horrors can be summoned in a single battle
+Void Magic,A New Way,3,10,Y,-,-,-,Paralyzation,7 strikes,(gd) MR 2d6,-,-,-,-,-,-,Paralyzed units are immobilized and cannot do anything until the effect wears off. (10% chance each combat round)
+Void Magic,Meteor Showers,3,0,Y,-,-,-,Blunt 1-40,15% of battlefield,-,Fire 1-8,Burst 5,-,x5 damage vs Walls (Primary only),Y,-,
+Void Magic,Mind Vortex,3,0,Y,-,-,-,Paralyzation,Entire Battlefield,(ez) MR 1d5,-,-,-,-,-,-,Paralyzed units are immobilized and cannot do anything until the effect wears off. (10% chance each combat round)
+Void Magic,Strange Dimensions,3,10,Y,-,-,-,Etherealness,All Friends,-,-,-,-,-,Y,-,75% chance of taking no Damage from non-magical attacks
+Void Magic,Summon Float Cat Horrors,3,3,Y,-,-,-,Summon,-,-,-,-,-,1-4 Float Cat Horrors,Y,-,A maximum of about 10 Float Cat Horrors can be summoned in a single battle
+Void Magic,Summon Spine Membranes,3,3,Y,-,-,-,Summon,-,-,-,-,-,1-4 Spine Membrane Horrors,Y,-,A maximum of about 10 Spine Membrane Horrors can be summoned in a single battle
+Void Magic,Symbols of Insanity,3,10,Y,Only Enemy,Mindless,-,Confusion,Burst 100,MR 2d4,-,-,-,-,-,-,Confused units do nothing (50% chance) or switch sides (10% chance) or move in a random direction instead of advancing (75%)
+Void Magic,Void Gate,3,3,Y,-,-,-,Summon,-,-,-,-,-,1-4 Mind Slime Horrors,Y,-,A maximum of about 5 Mind Slime Horrors can be summoned in a single battle
+War and the Sun,Aura of the Sun,1,8,Y,Only Friendly,Undead,-,Awe*,Single,-,-,-,-,-,-,-,Enemy units attacking this unit in melee must pass a morale check (with a penalty of x) in order to successfully land an attack. Awe does not affect ranged attacks or spells
+War and the Sun,Blessing,1,8,Y,Only Friendly,-,-,Blessing,Burst 9,-,-,-,-,-,-,-,*
+War and the Sun,Blood Boil,1,6,Y,-,Lifeless,Y,Fire 1-15,Single,MR 2d4,-,-,-,-,-,-,
+War and the Sun,Regeneration,1,8,Y,-,Lifeless,-,Regeneration,Single,-,-,-,-,-,-,-,The unit heals roughly 10% of its HP every combat round
+War and the Sun,Strength,1,8,Y,-,-,-,Strength +2,Burst 3,-,-,-,-,-,-,-,
+War and the Sun,Sunlight,1,8,Y,-,-,Y,Fire 1-3,Single,-,Blindness,-,MR 2d4 (reg),x2 damage vs Undead,-,-,Unit almost always misses with attacks
+War and the Sun,Greater Blessing,2,8,Y,Only Friendly,-,-,Blessing,Burst 25,-,-,-,-,-,-,-,*
+War and the Sun,Incinerate,2,6,Y,-,-,Y,Fire 1-25,Single,-,-,-,-,-,-,-,
+War and the Sun,Solar Rays,2,10,Y,-,-,Y,Fire 1-2,Burst 25,-,Blindness,-,(ez) MR 1d5,x2 damage vs Undead,-,-,Unit almost always misses with attacks
+War and the Sun,Word of Power,2,4,Y,-,-,-,Paralyzation,Single,(gd) MR 2d6,-,-,-,-,-,-,Paralyzed units are immobilized and cannot do anything until the effect wears off. (10% chance each combat round)
+War and the Sun,Army of Jaguars,3,8,Y,-,Lifeless,Y,Regeneration,Burst 25,-,-,-,-,-,-,-,The unit heals roughly 10% of its HP every combat round
+War and the Sun,Army of the Sun,3,8,Y,Only Friendly,Undead,-,Awe*,Burst 25,-,-,-,-,-,-,-,Enemy units attacking this unit in melee must pass a morale check (with a penalty of x) in order to successfully land an attack. Awe does not affect ranged attacks or spells
+War and the Sun,Smite,3,5,Y,-,-,Y,Fire 1-50,Single,(gd) MR 2d6,-,-,-,-,-,-,
+War and the Sun,Solar Brilliance,3,0,Y,-,-,Y,Fire 1-2,Entire Battlefield,-,Blindness,-,MR 2d4 (reg),x2 damage vs Undead,Y,-,Unit almost always misses with attacks
+Warrior Wards,Fortitude,1,8,Y,Only Friendly,Ethereal,-,Armor +1,Burst 5,-,-,-,-,-,-,-,
+Warrior Wards,Luck,1,8,Y,Only Friendly,-,-,Luck,Single,-,-,-,-,-,-,-,50% chance of not taking any Damage from an attack
+Warrior Wards,Strength,1,8,Y,-,-,-,Strength +2,Burst 3,-,-,-,-,-,-,-,
+Warrior Wards,Toughness,1,8,Y,-,Ethereal,-,Slash/Blunt/ Pierce Resistance,Single,-,-,-,-,-,-,-,"Half Damage from Slashing, Blunt, and Piercing weapons"
+Warrior Wards,Spirit of Fortitude,2,8,Y,Only Friendly,Ethereal,-,Armor +1,Burst 25,-,-,-,-,-,-,-,
+Warrior Wards,Spirit of Luck,2,8,Y,Only Friendly,-,-,Luck,Burst 9,-,-,-,-,-,-,-,50% chance of not taking any Damage from an attack
+Warrior Wards,Spirit of Strength,2,8,Y,-,-,-,Strength +2,Burst 25,-,-,-,-,-,-,-,
+Warrior Wards,Spirit of Toughness,2,8,Y,Only Friendly,Ethereal,-,Slash/Blunt/ Pierce Resistance,Burst 5,-,-,-,-,-,-,-,"Half Damage from Slashing, Blunt, and Piercing weapons"
+Warrior Wards,Battle Fortune,3,8,Y,Only Friendly,-,-,Luck,Burst 25,-,-,-,-,-,-,-,50% chance of not taking any Damage from an attack
+Warrior Wards,Legion of Stone,3,8,Y,Only Friendly,Ethereal,-,Armor +1,All Friends,-,-,-,-,-,-,-,
+White Magic,Air Shield,1,8,Y,Only Friendly,-,-,Air Shield*,Burst 5,-,-,-,-,-,-,-,x%* chance of taking no Damage from normal non-magical missile attacks
+White Magic,Aura of Awe,1,8,Y,Only Friendly,Undead,-,Awe*,Single,-,-,-,-,-,-,-,Enemy units attacking this unit in melee must pass a morale check (with a penalty of x) in order to successfully land an attack. Awe does not affect ranged attacks or spells
+White Magic,Banish,1,6,Y,-,-,-,Banish,-,MR 2d4,-,-,-,-,-,-,
+White Magic,Heal,1,8,Y,Only Friendly,Lifeless,Y,Heal 1-5,Single,-,-,-,-,Increased Healing,-,-,CANNOT heal above half of full HP. Grants increased healing rate for all non-inanimate beings in army
+White Magic,Luck,1,8,Y,Only Friendly,-,-,Luck,Single,-,-,-,-,-,-,-,50% chance of not taking any Damage from an attack
+White Magic,Resist Magic,1,8,Y,-,-,-,Magic Resistance +2,Single,-,-,-,-,-,-,-,
+White Magic,Sunlight,1,8,Y,-,-,Y,Fire 1-3,Single,-,Blindness,-,MR 2d4 (reg),x2 damage vs Undead,-,-,Unit almost always misses with attacks
+White Magic,Antimagic,2,8,Y,-,-,-,Magic Resistance +2,Burst 25,-,-,-,-,-,-,-,
+White Magic,Divine Aura,2,6,Y,-,Undead,-,Awe*,Burst 9,-,-,-,-,-,-,-,Enemy units attacking this unit in melee must pass a morale check (with a penalty of x) in order to successfully land an attack. Awe does not affect ranged attacks or spells
+White Magic,Divine Utterings,2,8,Y,-,-,-,Banish,Burst 9,(ez) MR 1d5,-,-,-,-,-,-,
+White Magic,Fortune,2,8,Y,Only Friendly,-,-,Luck,Burst 9,-,-,-,-,-,-,-,50% chance of not taking any Damage from an attack
+White Magic,Greater Banishment,2,6,Y,-,-,-,Banish,3 strikes,(gd) MR 2d6,-,-,-,-,-,-,
+White Magic,Greater Healing,2,8,Y,Only Friendly,Lifeless,Y,Heal 1-3,Burst 9,-,-,-,-,Increased Healing,-,-,CANNOT heal above half of full HP. Grants increased healing rate for all non-inanimate beings in army
+White Magic,Solar Rays,2,10,Y,-,-,Y,Fire 1-2,Burst 25,-,Blindness,-,(ez) MR 1d5,x2 damage vs Undead,-,-,Unit almost always misses with attacks
+White Magic,Storm Wind,2,10,-,-,-,-,Blunt 1-4,Burst 25,-,Stun,-,STR 2d4,-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+White Magic,Alter Reality,3,8,Y,Only Friendly,-,-,Luck,All Friends,-,-,-,-,-,Y,-,50% chance of not taking any Damage from an attack
+White Magic,Divine Word,3,8,Y,-,-,-,Banish,Burst 9,(gd) MR 2d6,-,-,-,-,-,-,
+White Magic,Symbol of Light,3,10,Y,Only Enemy,-,Y,Magic 1-4,Burst 100,MR 2d4,-,-,-,x2 damage vs Undead,-,-,
+Witchery,Acid Cloud,1,6,Y,-,-,Y,Acid 1-2,Burst 9,-,-,-,-,-,-,-,
+Witchery,Charm,1,5,Y,-,Mindless,-,Charm,Single,(ez) MR 1d5,-,-,-,-,-,-,Charmed units immediately switch sides and attack their former comrades
+Witchery,Confusion,1,8,Y,-,Mindless,-,Confusion,Single,MR 2d4,-,-,-,-,-,-,Confused units do nothing (50% chance) or switch sides (10% chance) or move in a random direction instead of advancing (75%)
+Witchery,Curse,1,16,Y,-,-,-,Curse,Single,-,-,-,-,-,-,-,Cursed units have a greatly increased chance of receiving battle afflictions when they are hit
+Witchery,Poison Cloud,1,6,Y,-,-,Y,Poison 1-4,Burst 5,-,-,-,-,-,-,-,
+Witchery,Poison Resistance,1,6,Y,-,-,-,Poison Resistance*,Burst 3,-,-,-,-,-,-,-,Poison Damage reduced by x%*
+Witchery,Sleep,1,8,Y,Only Enemy,Mindless,-,Sleep,2 strikes,(gd) MR 2d6,-,-,-,-,-,-,Sleeping units are immobilized. The unit sleeps until it is hit or awakens on its own. (5% chance each combat round)
+Witchery,Venom,1,6,Y,-,-,Y,Poison 1-20,Single,-,-,-,-,-,-,-,
+Witchery,Acid Mist,2,8,Y,-,-,Y,Acid 1-2,Burst 25,-,-,-,-,-,-,-,
+Witchery,Charm,2,5,Y,-,Mindless,-,Charm,Single,MR 2d4,-,-,-,-,-,-,Charmed units immediately switch sides and attack their former comrades
+Witchery,Cloud of Confusion,2,8,Y,-,Mindless,-,Confusion,Burst 9,MR 2d4,-,-,-,-,-,-,Confused units do nothing (50% chance) or switch sides (10% chance) or move in a random direction instead of advancing (75%)
+Witchery,Curse of the Frog Prince,2,4,Y,Only Enemy,Lifeless,-,Polymorph,Single,MR 2d4,-,-,-,Change into Frog,-,-,Unit turns into a Frog
+Witchery,Enchanted Sleep,2,10,Y,Only Enemy,Mindless,-,Sleep,Burst 25,MR 2d4,-,-,-,-,-,-,Sleeping units are immobilized. The unit sleeps until it is hit or awakens on its own. (5% chance each combat round)
+Witchery,Poison Mist,2,8,Y,-,-,Y,Poison 1-8,Burst 25,-,-,-,-,-,-,-,
+Witchery,Venom Ward,2,6,Y,-,-,-,Poison Resistance*,Burst 15,-,-,-,-,-,-,-,Poison Damage reduced by x%*
+Witchery,Venomous Death,2,6,Y,-,-,Y,Poison 1-60,Single,-,-,-,-,-,-,-,
+Witchery,Curse of Pigs,3,10,Y,Only Enemy,Lifeless,-,Polymorph,Burst 100,(ez) MR 1d5,-,-,-,Change into Boar,Y,-,Unit turns into Boar
+Witchery,Enchanting Voice,3,10,Y,Only Enemy,Mindless,-,Sleep,Burst 100,MR 2d4,-,-,-,-,-,-,Sleeping units are immobilized. The unit sleeps until it is hit or awakens on its own. (5% chance each combat round)
+Witchery,Mass Charm,3,5,Y,Only Enemy,Mindless,-,Charm,Burst 15,(ez) MR 1d5,-,-,-,-,-,-,Charmed units immediately switch sides and attack their former comrades
+Witchery,Mist of Confusion,3,10,Y,-,Mindless,-,Confusion,Burst 25,MR 2d4,-,-,-,-,-,-,Confused units do nothing (50% chance) or switch sides (10% chance) or move in a random direction instead of advancing (75%)
+Witchery,True Charm,3,8,Y,-,Mindless,-,Charm,Single,(gd) MR 2d6,-,-,-,-,-,-,Charmed units immediately switch sides and attack their former comrades
+Wizardry,Acid Darts,1,6,Y,-,-,Y,Acid 1-5,2 strikes,-,-,-,-,-,-,-,
+Wizardry,Air Shield,1,8,Y,Only Friendly,-,-,Air Shield*,Burst 5,-,-,-,-,-,-,-,x%* chance of taking no Damage from normal non-magical missile attacks
+Wizardry,Combustion,1,6,Y,-,-,-,Burn,4 strikes,-,-,-,-,Burn Forest,-,-,"Burning units will take fire damage each round. Large units take more damage than small units. Chance to put out fire each round, greater chance with Fire Resist; Grants Burn Forest ability"
+Wizardry,Confusion,1,8,Y,-,Mindless,-,Confusion,Single,MR 2d4,-,-,-,-,-,-,Confused units do nothing (50% chance) or switch sides (10% chance) or move in a random direction instead of advancing (75%)
+Wizardry,Flames,1,6,Y,-,-,-,Fire 1-3,Burst 3,-,-,-,-,-,-,-,
+Wizardry,Frozen Heart,1,8,Y,-,Lifeless,Y,Cold 1-20,Single,MR 2d4,-,-,-,-,-,-,
+Wizardry,Stone Shards,1,6,Y,-,-,-,Blunt 1-4,3 strikes,-,-,-,-,-,-,-,
+Wizardry,Venom,1,6,Y,-,-,Y,Poison 1-20,Single,-,-,-,-,-,-,-,
+Wizardry,Acid Spray,2,5,Y,-,-,Y,Acid 1-10,Narrow Cone 10,-,-,-,-,-,-,-,
+Wizardry,Chain Lightning,2,6,Y,-,-,Y,Shock 1-5,8 bounces range 2,-,-,-,-,-,-,-,
+Wizardry,Eruption,2,6,-,-,Flying/Floating,-,Blunt 1-9,Burst 5,-,Stun,-,STR 2d4,x5 damage vs Walls (Primary only),-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Wizardry,Fireball,2,6,Y,-,-,-,Fire 1-15,Burst 5,-,-,-,-,Burn Forest,-,-,Grants Burn Forest ability
+Wizardry,Oak Army,2,8,Y,Only Friendly,Ethereal,-,Armor +1,Burst 25,-,-,-,-,-,-,-,
+Wizardry,Poison Mist,2,8,Y,-,-,Y,Poison 1-8,Burst 25,-,-,-,-,-,-,-,
+Wizardry,Protective Winds,2,8,Y,Only Friendly,-,-,Air Shield*,Burst 20,-,-,-,-,-,-,-,x%* chance of taking no Damage from normal non-magical missile attacks
+Wizardry,Acid Rain,3,8,Y,-,-,Y,Acid 1-12,Burst 25,-,-,-,-,-,-,-,
+Wizardry,Call Lightning,3,10,Y,-,-,Y,Shock 1-8,12 strikes,-,Stun,-,MR 2d4 (reg),-,-,-,Stunned units are immobilized and cannot do anything until they recover. Stunned units have a 75% chance of recovering every round
+Wizardry,Flame Storm,3,10,Y,-,-,-,Fire 1-7,Burst 50,-,-,-,-,Burn Forest,-,-,Grants Burn Forest ability
+Wizardry,Invulnerability,3,0,Y,-,-,-,Non-Magical Invulnerability,Single,-,-,-,-,-,-,-,"A unit with this ability cannot be harmed by Slash, Pierce, or Blunt damage unless it is magical"
+Wizardry,Maws of the Earth,3,6,Y,-,Flying/Floating; Giant sized,Y,Blunt 1-100,Crack 5,-,Earth Grip; Fire 1-8,-,-,x5 damage vs Walls (Primary only),-,-,Earth gripped units are immobilized until they pass a strength check vs 2d6. Passing a strength check vs 1d5+7 will have the unit break free and attack in the same round
+Wizardry,Wild Growth,3,10,Y,Only Enemy,-,-,Entanglement,Burst 100,STR 2d4,-,-,-,-,Y,-,Entangled victim cannot do anything until it breaks free by making a successful Strenght test vs 1d14

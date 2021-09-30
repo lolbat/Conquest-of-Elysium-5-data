@@ -9,3 +9,8 @@ The `convertModsJSON.js` file is used for  processing the `modcommands.json`  fi
 
 `node convertModsJSON.js`
 
+### processRitualCosts.js
+
+The `processRitualCosts.js` is used to denormalize the COST key into an array that we will use to create a cost display that uses the sprites from the game.   It is a node.js file that is meant to be used on the command line.
+
+`node processRitualCosts.js`
