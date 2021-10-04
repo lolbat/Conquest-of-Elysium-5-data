@@ -1,21 +1,25 @@
-[
-{"number":"1","objective":"walk randomly on same plane"},
-{"number":"2","objective":"crusade"},
-{"number":"3","objective":"inquisition/saint"},
-{"number":"4","objective":"rider"},
-{"number":"5","objective":"angel"},
-{"number":"6","objective":"devil"},
-{"number":"7","objective":"ghost"},
-{"number":"8","objective":"visit citadels & settlements"},
-{"number":"9","objective":"dragon"},
-{"number":"10","objective":"merchant"},
-{"number":"11","objective":"celestial angel"},
-{"number":"12","objective":"primal gods"},
-{"number":"13","objective":"wild hunt"},
-{"number":"14","objective":"vassal"},
-{"number":"15","objective":"orchard of souls"},
-{"number":"16","objective":"pirate captain"},
-{"number":"17","objective":"teleporting horror"},
-{"number":"18","objective":"hunt enemy armies if on home plane"},
-{"number":"19","objective":"hunt player squares if on home plane"}
-]
+{
+	"title": "Objectives",
+	"headings": ["Number", "Objective"],
+	"data": [
+		[1, "walk randomly on same plane"],
+		[2, "crusade"],
+		[3, "inquisition/saint"],
+		[4, "rider"],
+		[5, "angel"],
+		[6, "devil"],
+		[7, "ghost"],
+		[8, "visit citadels & settlements"],
+		[9, "dragon"],
+		[10, "merchant"],
+		[11, "celestial angel"],
+		[12, "primal gods"],
+		[13, "wild hunt"],
+		[14, "vassal"],
+		[15, "orchard of souls"],
+		[16, "pirate captain"],
+		[17, "teleporting horror"],
+		[18, "hunt enemy armies if on home plane"],
+		[19, "hunt player squares if on home plane"]
+	]
+}

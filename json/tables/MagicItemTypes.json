@@ -1,8 +1,12 @@
-[
-{"type":"weapon","value":"1"},
-{"type":"helm","value":"3"},
-{"type":"armor","value":"4"},
-{"type":"glove","value":"5"},
-{"type":"boots","value":"6"},
-{"type":"misc","value":"7"}
-]
+{
+	"title": "Magic Item Types",
+	"headings": ["Number", "Magic Item Type"],
+	"data": [
+		[1, "weapon"],
+		[3, "helm"],
+		[4, "armor"],
+		[5, "glove"],
+		[6, "boots"],
+		[7, "misc"]
+	]
+}

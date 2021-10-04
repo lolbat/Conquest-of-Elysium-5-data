@@ -1,21 +1,25 @@
-[
-{"value":"0","resourcetype":"gold"},
-{"value":"1","resourcetype":"iron"},
-{"value":"2","resourcetype":"herbs"},
-{"value":"3","resourcetype":"fungus"},
-{"value":"4","resourcetype":"sacr"},
-{"value":"5","resourcetype":"hands"},
-{"value":"6","resourcetype":"weed"},
-{"value":"7","resourcetype":"fire"},
-{"value":"8","resourcetype":"water"},
-{"value":"9","resourcetype":"air"},
-{"value":"10","resourcetype":"earth"},
-{"value":"11","resourcetype":"trade"},
-{"value":"12","resourcetype":"relics"},
-{"value":"13","resourcetype":"lifeforce"},
-{"value":"14","resourcetype":"human corpses"},
-{"value":"15","resourcetype":"gems"},
-{"value":"16","resourcetype":"expendable units"},
-{"value":"17","resourcetype":"corpses"},
-{"value":"18","resourcetype":"goblins"}
-]
+{
+	"title": "Resource Types",
+	"headings": ["Number", "Resource"],
+	"data": [
+		[0, "gold"],
+		[1, "iron"],
+		[2, "herbs"],
+		[3, "fungus"],
+		[4, "sacr"],
+		[5, "hands"],
+		[6, "weed"],
+		[7, "fire"],
+		[8, "water"],
+		[9, "air"],
+		[10, "earth"],
+		[11, "trade"],
+		[12, "relics"],
+		[13, "lifeforce"],
+		[14, "human corpses"],
+		[15, "gems"],
+		[16, "expendable units"],
+		[17, "corpses"],
+		[18, "goblins"]
+	]
+}

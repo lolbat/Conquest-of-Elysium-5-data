@@ -1,9 +1,14 @@
-// denormalise the Ritual costs into a object with the type and number of resources so we can
-// use that later to build a display using sprites from the game
-
-// Also create a top-level node and then push each new object into that. It needs to be called rituals
-
-// uses node.js 
+/**
+ * CoE5 Data - processRitualCosts.js
+ * @author lolbat
+ */
+ 
+ /**
+* Denormalise the Ritual costs into a object with the type and number of resources
+* Build an HTML string with the ritual resources replaced with a png.
+* Create a top-level node and then push each new object into that. It needs to be called ritual
+* uses node.js 
+*/
 
 const fs = require('fs');
 
@@ -32,7 +37,7 @@ jsonObj.forEach(ritualObj => {
     finalArray = costItems.map(items => [parseInt(items[0]), items[1]]);
     
     // create a set of HTML items as well
-    htmlArray = finalArray.map(items => `<span class='ritualCostSpan'>${items[0]}<img class='ritCostImage' src='img/${items[1]}.png' /></span>`);
+    htmlArray = finalArray.map(items => `<div class='ritualCostItem'><div class='ritualCostText'>${items[0]}</div><div class='ritualCostImg'><img class='ritImage' src='img/${items[1]}.png' /></div></div>`);
     
     // save the data 
     ritualObj['costHTML'] = htmlArray.join(''); // combine it into one string to remove the array delimiters when we display it

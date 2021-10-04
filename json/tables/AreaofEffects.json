@@ -1,18 +1,22 @@
-[
-{"value":"0","area":"Single target"},
-{"value":"xx","area":"Nbr of nearby squares"},
-{"value":"-xx","area":"Nbr of random squares"},
-{"value":"997","area":"Circle around unit"},
-{"value":"998","area":"All friendly units"},
-{"value":"999","area":"All enemy units"},
-{"value":"10xx","area":"Beam xx squares"},
-{"value":"20xx","area":"Narrow cone xx squares"},
-{"value":"30xx","area":"Cone xx squares"},
-{"value":"40xx","area":"Wide cone xx squares"},
-{"value":"50xx","area":"Far beam xx squares"},
-{"value":"70xx","area":"Far crack xx squares"},
-{"value":"9rxx","area":"Chain lightning xx targets r = max distance"},
-{"value":"9997","area":"25% of all squares"},
-{"value":"9998","area":"All units"},
-{"value":"9999","area":"All squares"}
-]
+{
+	"title": "Area Of Effects",
+	"headings": ["Value", "Effect"],
+	"data": [
+		[0, "Single target"],
+		["xx", "Nbr of nearby squares"],
+		["-xx", "Nbr of random squares"],
+		[997, "Circle around unit"],
+		[998, "All friendly units"],
+		[999, "All enemy units"],
+		["10 xx", "Beam xx squares"],
+		["20 xx", "Narrow cone xx squares"],
+		["30 xx", "Cone xx squares"],
+		["40 xx", "Wide cone xx squares"],
+		["50 xx", "Far beam xx squares"],
+		["70 xx", "Far crack xx squares"],
+		["9 rxx", "Chain lightning xx targets r = max distance"],
+		[9997, "25% of all squares"],
+		[9998, "All units"],
+		[9999, "All squares"]
+	]
+}

@@ -1,9 +1,13 @@
-[
-{"power":"2^0","value":"1","gemincome":"Ruby income 1 (fire)"},
-{"power":"2^3","value":"8","gemincome":"Sapphire income 1 (water)"},
-{"power":"2^6","value":"64","gemincome":"Diamond income 1 (air)"},
-{"power":"2^9","value":"512","gemincome":"Emerald income 1 (earth)"},
-{"power":"2^12","value":"4096","gemincome":"Random gem income 1"},
-{"power":"2^15","value":"32768","gemincome":"Random gem B income 1"},
-{"power":"2^18","value":"262144","gemincome":"Use dice for income"}
-]
+{
+	"title": "Gem Income Bitmask",
+	"headings": ["Power", "Value", "Gem Income "],
+	"data": [
+		["2^0", 1, "Ruby income 1 (fire"],
+		["2^3", 8, "Sapphire income 1 (water"],
+		["2 ^ 6 ", 64, "Diamond income 1(air)"],
+		["2 ^ 9 ", 512, "Emerald income 1(earth)"],
+		["2 ^ 12 ", 4096, "Random gem income 1 "],
+		["2^15", 32768, "Random gem B income 1"],
+		["2^18", 262144, "Use dice for income"]
+	]
+}

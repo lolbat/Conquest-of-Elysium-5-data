@@ -1,10 +1,14 @@
-[
-{"number":"0","target":"self"},
-{"number":"1","target":"front row enemy"},
-{"number":"5","target":"border square (for summoning)"},
-{"number":"6","target":"border square but not behind walls (for summoning)"},
-{"number":"7","target":"target a square (for summoning)"},
-{"number":"8","target":"a rear enemy"},
-{"number":"9","target":"any enemy"},
-{"number":"-9","target":"a friendly unit"}
-]
+{
+	"title": "Target Ranks",
+	"headings": ["Number", "Rank"],
+	"data": [
+		[0, "self"],
+		[1, "front row enemy"],
+		[5, "border square (for summoning)"],
+		[6, "border square but not behind walls (for summoning)"],
+		[7, "target a square (for summoning)"],
+		[8, "a rear enemy"],
+		[9, "any enemy"],
+		[-9, "a friendly unit"]
+	]
+}

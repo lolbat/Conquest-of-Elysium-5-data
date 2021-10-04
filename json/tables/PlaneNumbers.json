@@ -1,14 +1,18 @@
-[
-{"value":"-2","plane":"Elysium like planes (sky - agartha - elysium)"},
-{"value":"-1","plane":"All planes"},
-{"value":"0","plane":"Elysium"},
-{"value":"1","plane":"Celestial"},
-{"value":"2","plane":"Sky"},
-{"value":"3","plane":"Agartha"},
-{"value":"4","plane":"Inferno"},
-{"value":"5","plane":"Hades"},
-{"value":"6","plane":"Aztlan"},
-{"value":"7","plane":"Primal"},
-{"value":"8","plane":"Elemental Planes"},
-{"value":"9","plane":"The Void"}
-]
+{
+	"title": "Plane Numbers",
+	"headings": ["Number", "Plane"],
+	"data": [
+		[-2, "Elysium like planes (sky - agartha - elysium)"],
+		[-1, "All planes"],
+		[0, "Elysium"],
+		[1, "Celestial"],
+		[2, "Sky"],
+		[3, "Agartha"],
+		[4, "Inferno"],
+		[5, "Hades"],
+		[6, "Aztlan"],
+		[7, "Primal"],
+		[8, "Elemental Planes"],
+		[9, "The Void"]
+	]
+}
