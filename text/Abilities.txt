@@ -1,0 +1,203 @@
+Fast
+Battle Fast
+Battle Slow
+Giant Sized
+Ship
+Flying
+Floating
+Amphibian
+Aquatic
+Swamp Move
+Snow Move
+Mountain Move
+Desert Move
+Passwall
+Tunneling
+Slow
+Immobile
+Stationary
+Wall Climbing
+Experienced
+Invisible
+Stealth
+Forest Stealth
+Animal Forest Stealth
+Desert Stealth
+Snow Stealth
+Acute Senses.Can see stealthy units.
+Spirit Sight
+Farsight
+Bad Sight
+Clumsy.Misses half of all attacks.
+Sense Dead
+Combat Caster
+Local Leadership
+Leadership
+Army Trainer
+Armor +1
+Armor +2
+Ice Armor
+Melts
+Cold Heal
+Awe
+Unaging
+Poisoned
+Poison Aura
+Disease Aura
+Aura of Desolation
+Desolator
+Lifeforce Spellcasting
+Poison
+Poison (
+Disease
+Acid Blood
+Split
+Fire Shield
+Frost Shield
+Shock Shield
+Fire Vulnerability
+Cold Vulnerability
+Fire Resistance
+Acid Resistance
+Cold Resistance
+Poison Resistance
+Shock Resistance
+Sleep Immunity
+Charm Immunity
+Non-Magical Invulnerability
+Invulnerability
+Pierce Resistance
+Slash Resistance
+Blunt Resistance
+Ethereal
+Undead
+Banishable
+Mindless
+Lifeless
+Never Heals
+Only Heals on
+Fast Heal
+Regeneration
+Immortal
+Other Planar Immortality
+Plane Shift
+Swamp Soul
+Shield
+Large Shield
+Magic Shield
+Tiny
+Air Shield
+Wind Guide
+Divine Protection
+Displaced
+Constant Mirror Images
+Mirror Images
+Decaying
+Exhausted
+Slimy
+Slimed
+Cursed
+Lucky
+Twist Fate
+Lucky Strike
+Evasion
+Quickness
+Stronger
+Weakened
+Imprisoned In Ice
+Turned into Gold
+Local Gold Bonus
+Local Iron Bonus
+Gold Bonus
+Limited Gold Bonus
+Limited Iron Bonus
+Limited Trade Bonus
+Limited Gem Bonus
+Entangled
+Earth Gripped
+Stunned
+Stuck in Net
+Shackled
+Paralyzed
+Asleep
+Afraid
+Panicked
+Gone Berserk
+Berserker
+Corpse Eater
+Absorb Dead
+Petrification
+Combustion Aura
+Shard Explosion on Death
+Poison Explosion on Death
+Putrid Explosion on Death
+Fire Explosion on Death
+Mental Agony on Death
+Causes Fear
+Causes Dread
+Causes Terror
+Range Bonus
+Spell Range Bonus
+Triple Entity
+Insane
+Insane (
+Stupid
+Semi-stupid
+Extra Life
+Confused
+Horror Marked
+Spawn Monsters
+Stored Images
+Trample
+Combat Burrowing
+Siege Tunneling
+Regain Sanity
+Blood Vengeance
+Non Combatant
+No Zone of Control
+Cannot Pass Rivers
+Seduction
+Cold Blooded
+Cursed Item
+Hates 
+Enable Recruitment
+Recruitment Chance Boost
+Satyr Spawn Boost
+Harpy Spawn Boost
+Centaur Spawn Boost
+Minotaur Spawn Boost
+Fatigued
+Wall Cover
+Wall Range Bonus
+Expendable Unit
+Expendable Kobold
+Expendable Goblin
+Library Mastery
+Hades Immunity
+False Life
+Superior Astrologist
+Never Healing Wound
+Feebleminded
+Diseased
+Battle Fright
+Death Wish
+Debilitating Wound
+Festering Wound
+Chest Wound
+Blind
+Lost his only eye
+Lost the other eye as well
+Lost an eye
+Lost yet another eye
+Temporary Insanity
+Burning
+Profuse Bleeding
+Numbness
+Awaken Trees
+Awaken Mushrooms
+Primal Node
+Deep Sleeper
+Snow Snoozer
+Promise of the Ancestors
+Twiceborn
+Ritual Caster

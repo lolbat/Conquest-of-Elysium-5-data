@@ -1,0 +1,1320 @@
+Deer
+Moose
+Giant Moose
+Bear
+Serpent
+Horned Serpent
+Snake
+Snake Familiar
+Water Snake
+Giant Spider
+Large Spider
+Giant Spider Queen
+Small Spider
+Scorpion
+Boar
+Great Boar
+Monster Boar
+Elephant
+War Elephant
+Giant Ant Queen
+Giant Ant
+Fire Ant
+Myrmeke Queen
+Myrmeke
+Giant Centipede
+Giant Mantis
+Wolf
+Hyena
+Winter Wolf
+Giant Crab
+Sacred Moose
+Cockatrice
+Lion
+Leogryph
+Tiger
+Lobster
+Large Fish
+Small Shark
+Great Shark
+Asp Turtle
+Monster Fish
+Monster of the Deep
+Hippocampus
+Sea Stag
+Sea Dog
+Leocampus
+Giant Jellyfish
+Kraken
+Dragonfly
+Beetle
+Goat
+Great Mouflon
+Rabbit
+Rabbit Familiar
+Murder of Crows
+Messenger Crows
+Wyvern
+Amphiptere
+Horse
+Donkey
+Chimaera
+Gryphon
+Roc
+Eye Tyrant
+Elder Beholder
+Beholder
+Ancient Beholder
+Sphinx
+Dog
+War Dog
+Black Hound
+Elder Druid
+Druid
+Druid's Apprentice
+Monkey
+Ape
+Great Ape
+Camel
+Thrice Horned Boar
+Rams-Headed Serpent
+Hooded Spirit
+Horned God
+Hammer God
+God of the Seasons
+God of War
+Goddess of the Sacred Spring
+God of the Sea
+Primal Totem
+Forest Shepherd
+Ivy King.Not used
+Gutuater.Not Used
+Vergobret
+Barechested Scout
+Barechested Warrior
+Barechested Slinger
+Barechested Swordsman
+Hornblower
+Chieftain
+Beast Cavalry
+Beast Knight
+Boar Warrior
+Sea Dragon
+Winged Monkey
+Ent
+Rat
+Giant Rat
+Satyr
+Satyr Javelinist
+Satyr Warrior
+Satyr Hoplite
+Satyr Commander
+Steel Hoplite
+Hoplite Commander
+Satyr Sniper
+Centaur
+Centaur Warrior
+Centaur Cataphract
+Centaur Commander
+Steel Cataphract
+Cataphract Commander
+Centauride
+Centauride Warrior
+Centauride Cataphract
+Centauride Crossbow
+Minotaur
+Minotaur Brigand
+Minotaur Warrior
+Bronze Bull
+Keeper of Traditions
+Steel Bull
+Minotaur Lord
+Harpy
+Harpy Scout
+Stymphalian Bird
+Dryad
+Dryad Queen
+Anointed of Gaia
+Hierophantide
+Grand Hierophantide
+Hierophant
+Grand Hierophant
+Centaur Sage
+Centaur Seer
+Pan
+Elder Pan
+Pandemoniac
+Panic Apostate
+White Centaur
+Grove Guard
+Dryad Hoplite
+Harpy Queen
+Earth Mother.Behold Fertility made Flesh.
+Lord of the Hunt
+Hyena Tribe Witch Doctor
+Hyena Tribe Warrior
+Tribal Queen
+Lion King
+Lion Tribe Warrior
+Serpent Tribe Warrior
+Serpent Tribe Witch Doctor
+Spider Tribe Warrior
+Spider Tribe Archer
+Spider Tribe Witch Doctor
+Pygmy
+Venus Trap
+Death Fungus
+Devil Fungus
+Snow Fungus
+Blood Fungus
+Blue Giant
+Giant Mushroom
+Giant Morel
+Heart of the Forest
+Tree of Crows
+Woodman
+Kelpman
+Ichtyid Raider
+Ichtyid Warrior
+Ichtyid Captain
+Bishop Fish
+Triton
+Triton Trooper
+Triton King
+Hedge Wizard
+Archmage
+Pyromancer
+Adept of Pyriphlegeton
+Animist
+Master Animist
+Old Wizard
+Dark Wizard
+Master of Darkness
+Sorceress
+Great Sorceress
+Black Sorceress
+Mother Superior
+White Wizard
+Grand Wizard
+Golden Wizard
+Master Arch Wizard
+Moon Mage
+Moon Master
+Astrologer
+High Astrologer
+Ice Druid
+Frost Father
+Sea Father
+Grandfather of the Sea
+Green Enchantress
+High Enchantress
+Scarlet Sister
+Scarlet Mother
+Initiate of the Metal Orders
+Adept of the Silver Order
+Adept of the Golden Order
+Adept of the Iron Order
+Master of the Silver Order
+Master of the Golden Order
+Master of the Iron Order
+Ice Witch
+Frost Hag
+Unknown Priest
+Unknown Priestess
+Assassin
+Unexpected Hero
+Hero
+Heroine
+Old Weapon Master
+Peddlar
+Merchant
+Caravan Guard
+Damned Merchant
+Werewolf
+King
+Princess
+Bard
+Brigand
+Bandit
+Bandit King
+Councilor
+Nymph
+Siren
+Monument of Hades
+Unfinished Monument
+Colossus
+Werebear
+Elder Dragon
+Dragon
+Dragon Hatchling
+Legion of Gods
+Wolf Tribe Shaman
+Wolf Tribe Warrior
+Wolf Tribe Bowman
+Deer Tribe Shaman
+Deer Tribe Warrior
+Deer Tribe Bowman
+Caveman
+Caveman Hunter
+Caveman Warrior
+Caveman Shaman
+Lesser Cyclops
+Cyclops Shepherd
+Rakshasa
+Fir Bolg Slinger
+Fir Bolg Spearman
+Fir Bolg Warrior
+Fir Bolg Swordsman
+Fir Bolg Champion
+Fir Bolg Druid
+Sidhe Warrior
+Sidhe Champion
+Sidhe Lord
+Bean Sidhe
+Tuatha Warrior
+Ri
+Tuatha Sorceress
+Hound of Hades
+Lizardman
+Lizard Shaman
+Spearman
+Swordsman
+Pikeneer
+Heavy Infantry
+Archer
+Crossbowman
+Captain
+Scout
+Catapult
+Militia
+Angry Peasant.Unused unit
+Pirate
+Pirate Captain
+Halberdier
+Zweihander
+Longbowman
+Trebuchet
+Alchemical Catapult
+Alchemical Trebuchet
+Tower Guard
+Cavalryman
+Ballista
+Knight
+Unicorn Knight
+Baron
+Vassal Knight
+High Lord
+Levy
+Slinger
+Court Mage
+Magus
+High Magus
+Alchemist
+Master Alchemist
+Monk
+Abbot
+Bishop
+Arch Bishop
+Cardinal
+Pontiff
+Saint
+Flagellant
+Temple Guard
+Templar
++0 Apocalyptic Rider
++1 Apocalyptic Rider
++2 Apocalyptic Rider
++3 Apocalyptic Rider
+Pilgrim
+Heavenly Sword
+Angel
+Angelic Warrior
+Harbinger
+Arch Angel
+Seraph
+Ophan
+Great Archon
+Celestial Lion
+Inquisitor
+High Inquisitor
+Grand Master
+Crusader
+Great Enchanter
+Enchanter
+Enchanter's Apprentice
+Dancing Tools
+Flying Quills and Scrolls
+Animated Tools
+Dancing Sword
+Dancing Spear
+Living Bow
+Animated Ballista
+Animated Armor
+Mimic
+Terracotta Soldier
+Gargoyle
+Dog of Gold
+Dog of Silver
+Brass Bull
+Necrotod
+Guardian
+Animated Statue
+Flesh Golem
+Iron Grafted Golem
+Wood Golem
+Oak Golem
+Clay Golem
+Ice Golem
+Stone Golem
+Iron Golem
+Silver Golem
+Onyx Golem
+Crystal Golem
+Gold Golem
+Vessel of Iron Lore
+Vessel of Silver Lore
+Vessel of Golden Lore
+Vessel of Iron Arcana
+Vessel of Silver Arcana
+Vessel of Golden Arcana
+Crystal
+Juggernaut
+Devout Follower
+Senator
+Magistratus
+Emperor
+Dark Emperor
+Empress
+God Emperor
+God Empress
+Centurion
+Heliodromus
+Renata
+Renatus
+Leo
+Princeps Solaris
+Serpent Acolyte
+Serpent Priest
+Pontifex Serpentis
+Reveler
+Satyr Reveler
+Maenad
+Hamadryad
+Flamen
+Augur
+Veles
+Hastatus
+Princeps
+Triarius
+Standard
+Gladiator
+Retiarius
+Praetorian Guard
+Imperial Statue
+Statue of the Underworld
+Lar
+Limitane
+Limitane Slinger
+Barbarian Leader
+Mounted Chief
+Barbarian Lancer
+Barbarian Cavalry
+Barbarian Warrior
+Barbarian Swordsman
+Barbarian Bowman
+Barbarian Werebear
+Mounted Scout
+Elder Enarie
+Enarie
+Spirit Guide
+Soothsayer
+Effigy
+Thunder Totem
+Beast Totem
+Warrior Totem
+Totem of Maladies
+Ancestral Archer
+Ancestral Warrior
+Ancestral Lancer
+Ancestor Spirit
+Sending
+Ancestral Hero
+Ancestral Chief
+Ancestral Leader
+Ancestor Guide
+Ancestral Shaman
+Crystal Amazon
+Crystal Priestess
+Crystal Sorceress
+Painted Crystal Amazon
+Painted Crystal Priestess
+Painted Crystal Sorceress
+Garnet Amazon
+Garnet Priestess
+Garnet Sorceress
+Painted Garnet Amazon
+Painted Garnet Priestess
+Painted Garnet Sorceress
+Jade Amazon
+Jade Priestess
+Jade Sorceress
+Painted Jade Amazon
+Painted Jade Priestess
+Painted Jade Sorceress
+Onyx Amazon
+Onyx Priestess
+Onyx Sorceress
+Painted Onyx Amazon
+Painted Onyx Priestess
+Painted Onyx Sorceress
+Kithaironic Lion
+Nemean Lion
+Giant Snail
+Monster Snail
+Black Cat Familiar
+Magic Cat Familiar
+Frog
+Frog Familiar
+Magic Frog Familiar
+Giant Toad
+Monster Toad
+Marsh Worm
+Bog Beast
+Swamp Monster
+Swamp Thing
+Swamp Ghost
+Slime Mold
+Creeping Doom
+Hydra
+Hydra Hatchling
+Ancient Hydra
+Crocodile
+Giant Crocodile
+Gelatinous Cube
+Will o'the Wisp
+Doppelganger
+Doppelganger Captain
+Doppel Spawn
+Swamp Drake
+Ancient Presence
+Mother of Monsters
+Catoblepas
+Wyrm
+Swamp God
+Dracolion
+Androphag Spearman
+Androphag Archer
+Androphag Cavalry
+Androphag Lord
+Manflayer
+Hag
+Witch
+Witch's Apprentice
+Bog Witch
+Rootmonster
+Gorgon
+Mortal Gorgon
+Erinye
+Homunculus
+Evolved Homunculus
+Ochre Jelly
+Small Jelly
+Green Ooze
+Small Ooze
+Warlock's Apprentice
+Warlock of Fire
+Warlock of Water
+Warlock of Air
+Warlock of Earth
+Great Warlock of Fire
+Great Warlock of Water
+Great Warlock of Air
+Great Warlock of Earth
+Water Elemental
+Earth Elemental
+Air Elemental
+Storm Elemental
+Fire Elemental
+Lesser Water
+Lesser Earth
+Lesser Fire
+Cloud Elemental
+Storm Cloud
+Champion of Flames
+Champion of Waves
+Champion of Storms
+Champion of Mountains
+Yeti
+Wheel of Frost and Flames
+Wheel of Storm and Stone
+Phoenix
+Fire Bird
+Salamander
+Fire Lizard
+Flame Spirit
+Magma Child
+Fire Drake
+Frost Drake
+Thunderbird
+Sylph
+Queen of Clouds
+Queen of Storms
+Queen of Thunder
+Child of Nephele
+Child of Aella
+Child of Thuella
+King of Magma
+King of Fire
+King of Flames
+Child of Rhuax
+Child of Catharsis
+Child of Pyriphlogos
+Undine
+Queen of the Sea
+Queen of the Lake
+Queen of the Deeps
+Child of Thalassa
+Child of Limne
+Child of Bathusma
+Earth Gnome
+King of Mountains
+King of Deeper Earth
+King of Earth
+Child of Oreigenes
+Child of Barathrus
+Child of Pedoseion
+Stone Drake
+Fire Giant
+Fire Titan
+Frost Giant
+Frost Titan
+Storm Giant
+Storm Titan
+Cyclops
+Elder Cyclops
+Sea Giant
+Sea Titan
+Ember Warrior
+Stone Warrior
+Wave Warrior
+Cloud Warrior
+Magma Warrior
+Mist Warrior
+Smoke Warrior
+Mud Warrior
+Pale One Commander
+Pale One
+Pale One Slinger
+Pale One Scout
+Pale One Soldier
+Cavern Guard
+Earth Reader
+Earth Mind
+Ancient Pale One
+Ancient Commander
+Ancient Hurler
+Oracle of Subterranean Fires
+Oracle of Rhuax
+Oracle of Apsu
+Oracle of the Dead
+Oracle of Allatu
+Earth Made Flesh
+Troglodyte
+Sentinel
+Granite Guardian
+Onyx Oracle
+Marble Oracle
+Umbral
+Seal Guard
+King of the Deep
+Cavern Wight
+Sepulchral
+Tomb Oracle
+Cave Grub
+Cave Cow
+Olm Sage
+Olm Farseer
+Olm
+Purple Worm
+Eagle King
+Cloud Lord
+Cloud Caster
+Storm Captain
+Airya Scout
+Airya Spearman
+Airya Archer
+Airya Swordsman
+Iceclad
+Dawn Guard
+Dusk Guard
+Black Hawk
+Swan
+Solar Eagle
+Cloudfolk Soldier
+Cloudfolk Archer
+Cloudfolk Lady
+Cloudfolk Elder
+Cultist
+Mad Cultist
+Demonologist
+Goetic Master
+Imp Familiar
+Imp
+Shadow Imp
+Fiery Imp
+Ice Imp
+Bone Imp
+Imp Messenger
+Harlequin
+Sinner
+Hellhound
+Demonic Locust
+Disease Demon
+Serpent Fiend
+Devil
+Inhumer Devil
+Frost Fiend
+Lesser Demon
+Bone Devil
+Spine Devil
+Fiend of Darkness
+Demon Knight
+Bloodsworn
+Storm Demon
+Succubus
+Greater Demon
+Ice Devil
+Greater Devil
+Heliophagus
+Lord of Corruption
+Demon Lord
+Goat Sun
+Monster of Fraud
+Duke of Hell
+Prince of Death
+Arch Devil
+God
+Apkallu
+Urmahlullu
+Shedu
+Urigallu
+Kusarikku
+Anointed Priestess
+High Priestess
+Hierodule
+Ba'alite Spearman
+Ba'alite Archer
+Ba'alite Heavy Infantry
+Ba'alite Zealot
+Gibbor
+Anakite
+Anakite Captain
+Adon
+Zamzummite
+Rephaite
+Melqart
+Ditanu
+Malik
+Nephil
+Watcher
+Lammashta
+Sirrush
+Desert Sun
+Scorpion Man
+Large Spider Familiar
+Magic Spider Familiar
+Giant Scorpion
+Scorpion Beast
+Mazzik
+Lilot
+Se'ir
+Shed
+Manticore
+Priest King
+Tribal King
+Slave
+Sun Temple Attendant
+Blood Temple Attendant
+Death Temple Attendant
+Rain Temple Attendant
+Moon Temple Attendant
+Sky Temple Attendant
+Tribal Warrior
+Jungle Warrior
+Feathered Warrior
+Jaguar Warrior
+Sun Warrior
+Moon Warrior
+Eagle Warrior
+Jaguar
+Ozelotl
+Balam
+Great Macaw
+Coatl
+Beast Bat
+Civateteo
+Onaqui
+Bolon-Ti-Ku
+Tzitzimitl
+Plumed Serpent
+Tlahuelpuchi
+Tlaloque of the East
+Tlaloque of the South
+Tlaloque of the West
+Tlaloque of the North
+Chaac of the East
+Chaac of the South
+Chaac of the West
+Chaac of the North
+Priest of the Bloody Mother
+Priest of the Dead
+Rain Priest
+Moon Priest
+Sky Priest
+High Priest of the Sun
+High Priest of the Sky
+High Priest of the Rain
+High Priest of the Night
+High Priest of the Dead
+Nahualli
+Old Nahualli
+Smoking Mirror
+Turkey Spirit Double
+Rain Warrior
+Toad Priest
+King of Rain
+Teotl of War
+Teteo Inan
+Teotl of Rain
+Teotl of the Sky
+Teotl of the Night
+Teotl of the Underworld
+Ether Warrior
+Ether Lord
+Elder Thing
+Strange Thing
+Yithian
+Yithian Sage
+Formless Spawn
+Star Oak
+Thing from Beyond
+Eldritch Abomination
+Void Hound
+Brass Claw Horror
+Dream Horror
+Gore Tide Horror
+Horror Mantis
+Horror Olm
+Mind Slime Horror
+Soulshatter Horror
+Moon Horror
+Float Cat Horror
+Spine Membrane Horror
+Soultorn
+Tree of Tainted Fruits
+Tainted Soul
+Hunter of Gods
+Maker of Ruins
+Slave to Unreason
+Flame of the Void
+Abomination of Desolation
+Unmaker of Souls
+Orchard of Souls
+High Cultist
+Cultist of the Deep
+Hybrid Cultist
+Star Child
+Insane Fisherman
+Hybrid Fisherman
+Hybrid Spearman
+Hybrid Soldier
+Angler Spawn
+Angler of the Depths
+Pillar of the Depths
+Basalt Princess
+Basalt Queen
+Basalt Prince
+Basalt King
+Deep One
+Deep One Warrior
+Shambler
+War Shambler
+Shambler Prince
+Starspawn
+Elder Starspawn
+Void Lord
+Angler Queen
+Vastness
+King in Yellow
+Shade Beast
+Mound King
+Longdead Giant
+Longdead Animal
+Longdead Beast
+Restless Carcass
+Carcass Beast
+Longdead Hastatus
+Longdead Principe
+Longdead Triarius
+Longdead Velite
+Soulless
+Soulless Giant
+Ghoul
+Wight
+Wight Lord
+Airyan Wight
+Corpse Mage
+Wight Mage
+Wight King
+Necromancer's Apprentice
+Necromancer
+Grand Necromancer
+Vampire
+Vampire Count
+Lich
+Demilich
+Carrion
+Raven Spy
+Raven Familiar
+Dracolich
+Ziz
+Abomination
+Tartarian Spirit
+Banshee
+Ghost
+Ghost Mage
+Ghost Lord
+Ghost King
+Stygian Ghost
+Stygian King
+Dispossessed Spirit
+Imperial Spirit
+Shade
+Shade Lord
+Shade Mage
+Dusk Elder
+Wraith
+Wraith Lord
+Wraith King
+Ghost Warrior
+Ghost Scout
+Ghost Captain
+Spectral Archer
+Spectral Horseman
+Mummy
+Soulless Soldier
+Armored Soulless
+Armored Longdead
+Bane Fire Archer
+Bane-Bones
+Bane
+Bane Lord
+Unfrozen
+Unfrozen Warrior
+Unfrozen Lord
+Unfrozen Mage
+Dust Walker
+Dust King
+Dust Priest
+Dire Wolf
+Death Knight
+Pyramid of Skulls
+Mirror
+Silver Mirror
+Large Mirror
+Golden Mirror
+Soldier Mirror
+Animal Mirror
+Large Soldier Mirror
+Large Animal Mirror
+Large Unearthly Mirror
+Large Swarm Mirror
+Large Monster Mirror
+Silver Soldier Mirror
+Silver Animal Mirror
+Golden Soldier Mirror
+Golden Animal Mirror
+Golden Unearthly Mirror
+Golden Swarm Mirror
+Golden Monster Mirror
+Mirror of Dread
+Mirror of Confusion
+Mirror of Many Colors
+Large Mirror of Dread
+Large Mirror of Confusion
+Large Mirror of Many Colors
+Silver Mirror of Dread
+Silver Mirror of Confusion
+Silver Mirror of Many Colors
+Golden Mirror of Dread
+Golden Mirror of Confusion
+Golden Mirror of Many Colors
+Master Illusionist
+Illusionist
+Illusionist's Apprentice
+Floating Eye
+Archer Illusion
+Spearman Illusion
+Swordsman Illusion
+Halberdier Illusion
+Pikeneer Illusion
+Zweihander Illusion
+Captain Illusion
+Knight Illusion
+Wolf Illusion
+Deer Illusion
+Moose Illusion
+Bear Illusion
+Boar Illusion
+Lion Illusion
+Fiend Illusion
+Demon Illusion
+Devil Illusion
+Greater Devil Illusion
+Angel Illusion
+Arch Angel Illusion
+Horror Illusion
+Great Horror Illusion
+Insect Illusion
+Bug Illusion
+Ant Illusion
+Cat Illusion
+Rabbit Illusion
+Frog Illusion
+Snake Illusion
+Troll Illusion
+Giant Illusion
+Drake Illusion
+Monster Illusion
+Hydra Illusion
+Chimaera Illusion
+Manticore Illusion
+Dragon Illusion
+Sirrush Illusion
+Roc Illusion
+Beholder Illusion
+Phantasmal Archer
+Phantasmal Spearman
+Phantasmal Swordsman
+Phantasmal Halberdier
+Phantasmal Pikeneer
+Phantasmal Zweihander
+Phantasmal Captain
+Phantasmal Knight
+Phantasmal Wolf
+Phantasmal Deer
+Phantasmal Moose
+Phantasmal Bear
+Phantasmal Boar
+Phantasmal Lion
+Phantasmal Fiend
+Phantasmal Demon
+Phantasmal Devil
+Phantasmal Greater Devil
+Phantasmal Angel
+Phantasmal Arch Angel
+Phantasmal Horror
+Phantasmal Great Horror
+Phantasmal Insect
+Phantasmal Bug
+Phantasmal Ant
+Phantasmal Cat
+Phantasmal Rabbit
+Phantasmal Frog
+Phantasmal Snake
+Phantasmal Troll
+Phantasmal Giant
+Phantasmal Drake
+Phantasmal Monster
+Phantasmal Hydra
+Phantasmal Chimaera
+Phantasmal Manticore
+Phantasmal Dragon
+Phantasmal Sirrush
+Phantasmal Roc
+Phantasmal Beholder
+Phase Spider
+Displacer Beast
+Daughter of Dvalin
+Dvala
+Young Dvala
+Dwarf Worker
+Queen's Councilor
+Chosen of Dvalin
+Elder Rune Smith
+Rune Smith
+Dwarf
+Dwarf Warrior
+Rime Dwarf
+Rime Brand Dwarf
+Rime Warrior
+Rime Brand Warrior
+Furnace Dwarf
+Flame Brand Dwarf
+Furnace Warrior
+Flame Brand Warrior
+Dvalin's Vanguard
+Dvalin's Elite
+Dvalin's Warrior
+Dvalin's Best
+Rime Guard
+Rime Brand Guard
+Furnace Guard
+Flame Brand Guard
+Council Guard
+Storm Sapper
+Ground Shatter Sapper
+Dwarf Guard
+Dwarf Sapper
+Queen's Guard
+Dwarf Arbalest
+Rime Branded Arbalest
+Flame Branded Arbalest
+Defender of the Halls
+Rime Branded Ballista
+Flame Branded Ballista
+Earth Branded Ballista
+Dwarven Ballista
+Outdoor Dwarf
+Dwarf Commander
+Living Boulder
+Ao Oni
+Aka Oni
+Kuro Oni
+Dai Oni
+Ko Oni
+Spectral Oni
+Spectral Oni General
+Spectral Oni King
+Gozu
+Mezu
+Tengu
+Karasu Tengu
+Konoha Tengu
+Tengu Warrior
+Dai Tengu
+Tengu Weapon Master
+Chunari
+Hannya
+Bakemono Sho
+Bakemono Spearman
+Bakemono Bowman
+Bakemono Soldier
+Bakemono Swordsman
+Bakemono Archer
+Bakemono Shaman
+Bakemono Witch Doctor
+Dai Bakemono
+Dai Bakemono Archer
+Bakemono General
+Bakemono Sorceror
+Bakemono Great Sorceror
+Bakemono Kunshu
+Bakemono O Kunshu
+O Bakemono
+Shuten Doji
+Uba
+Ghost Cat
+Kappa
+Kappa Shaman
+Mujina
+Nushi
+Black Serpent
+Kitsune
+Fox Spirit
+Tanuki
+Racoon Dog
+Jorogumo
+Golden Spider
+Shikome
+Bakeneko
+Black Cat
+Omukade
+Tatsu
+Troll King
+Old Troll
+Ancient Troll
+Ageless Troll
+Ettin
+Forest Troll
+Rock Troll
+Troll
+Forest Giant
+Hill Giant
+Ogre
+Ogre Chief
+Troll Shaman
+Troll Witch Doctor
+Elder Troll Shaman
+Lake Troll King
+Lake Troll Warrior
+Lake Troll
+Goblin
+Goblin Spearman
+Goblin Archer
+Goblin Chieftain
+Goblin Hero
+Goblin Murderer
+Wolf Kin
+Wolf Kin Reaver
+Goblin King
+Goblin Shaman
+Goblin Witch Doctor
+Shadow Tree
+Linnorm
+Orm
+Carrion Stalker
+Carrion Beast
+Carrion Manikin
+Burgmeister
+Burgmann
+Hoburg Scout
+Kaiser
+Malefic Kaiser
+Markmann
+Leibwache
+Horticulturist
+Garden Master
+Horologist
+Clockwork Master Crafter
+Hoburg Militia
+Hoburg Slinger
+Hoburg Soldier
+Hoburg Defender
+Hoburg Crossbow
+Hoburg Pikeneer
+Burgmeister Guard
+Hog Knight
+Hogmeister
+Ruby Clockwork Soldier
+Sapphire Clockwork Soldier
+Diamond Clockwork Soldier
+Emerald Clockwork Soldier
+Ruby Clockwork Horror
+Sapphire Clockwork Horror
+Diamond Clockwork Horror
+Emerald Clockwork Horror
+Ruby Iron Dragon
+Sapphire Iron Dragon
+Diamond Iron Dragon
+Emerald Iron Dragon
+Ferrous Wheel
+Iron Fly
+Iron Spider
+Iron Ant
+Iron Scorpion
+Markgraf
+Malefic Markgraf
+Malefic Master
+Malefic Markmeister
+Malefic Hauptmarkmeister
+Nekromant
+Grand Nekromant
+Corpse Nekromant
+Wight Nekromant
+Small Ghost
+Ghost Nekromant
+Grand Ghost Nekromant
+Hoburg Thrall
+Hobmark Soldier
+Hobmark Defender
+Hobmark Crossbow
+Hobmark Hammerer
+Hobmark Pikeneer
+Markgraf Guard
+Hog Hussar
+Markmeister
+Little Longdead
+Little Bane Fire Crossbow
+Little Soulless
+Little Soulless Soldier
+Little Soulless Defender
+Little Ghoul
+Ghoul Baron
+Ghoulgraf
+Ghoul Guardian
+Red Kobold
+White Kobold
+Green Kobold
+Blue Kobold
+Black Kobold
+Red Kobold Sorcerer
+White Kobold Sorcerer
+Green Kobold Sorcerer
+Blue Kobold Sorcerer
+Red Kobold King
+White Kobold King
+Green Kobold King
+Blue Kobold King
+Red Kobold Shaman
+White Kobold Shaman
+Green Kobold Shaman
+Blue Kobold Shaman
+Red Kobold Prophet
+White Kobold Prophet
+Green Kobold Prophet
+Blue Kobold Prophet
+Red Kobold Chief
+White Kobold Chief
+Green Kobold Chief
+Blue Kobold Chief
+Red Kobold Slinger
+Blue Kobold Slinger
+Green Kobold Archer
+White Kobold Archer
+Winged White Kobold Archer
+Red Kobold Warrior
+White Kobold Warrior
+Green Kobold Warrior
+Blue Kobold Warrior
+Black Kobold Warrior
+Red Dragon Spawn
+Green Dragon Spawn
+Blue Dragon Spawn
+Green Dragon Spawn Archer
+White Dragon Spawn
+Black Dragon Spawn
+Red Dragon Spawn Chief
+White Dragon Spawn Chief
+Green Dragon Spawn Chief
+Blue Dragon Spawn Chief
+Black Kobold Scout
+Black Kobold Murderer
+Black Kobold Chief
+Black Kobold Slayer Shaman
+Black Kobold Slayer Prophet
+Wyvern Knight
+Fire Dragon
+Bile Dragon
+Frost Dragon
+Fire Dragon Hatchling
+Storm Drake
+Storm Dragon
+Dusk Dragon
+Scourge King
+Scourge Lord
+Scourge Herald
+Desert Scout
+Desert Warrior
+Camel Rider
+Sheikh
+Sellsoul
+Monster Scarab
+Apophis
+Myrmecoleon
+Scourge Worm
+Dark Centipede
+Dark Serpent
+Basilisk
+Black Ant
+Black Soldier Ant
+Scourge Ant
+Scourge Ant Queen
+Spiderling
+Black Spider
+Scourge Spider
+Guardian Statue
+Taskmaster
+Slave Worker
+Scourge Flame
+Scourge Wind

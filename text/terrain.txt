@@ -1,0 +1,83 @@
+Wooden Gate
+Small Wooden Gate
+Iron Gate
+Small Iron Gate
+Enchanted Gate
+Small Enchanted Gate
+Cloud Gate
+Bramble Gate
+Earth Barricade
+Wooden Barricade
+Small Crater
+Stone Wall
+Stone Parapet (Light Cover)
+Stone Parapet (Medium Cover)
+Stone Parapet (Heavy Cover)
+Wooden Stairs
+Bronze Stairs
+Silver Stairs
+Golden Stairs
+Stone Stairs
+Bronze Wall
+Silver Wall
+Golden Wall
+Golden Parapet (Heavy Cover)
+Cloud Wall
+Cloud Parapet
+Dispersing Clouds
+Earth Wall
+Earth Parapet (Light Cover)
+Earth Parapet (Medium Cover)
+Earth Parapet (Heavy Cover)
+Earth Rampart (Light Cover)
+Earthen Barricade
+Cliff Parapet (Medium Cover)
+Palisade Wall
+Palisade Parapet
+Palisade Parapet (High)
+Bramble Wall
+Stone Rubble
+Palisade Rubble
+Stone Bridge
+House
+House (W)
+House (E)
+House (S)
+House (N)
+House (SW)
+House (NW)
+House (NE)
+House (SE)
+House Rubble
+Hoburgher Grubhut
+Tent
+Aft
+Port Quarter
+Starboard Quarter
+Deck
+Mast
+Port
+Starboard
+Port Bow
+Starboard Bow
+Forward Port Bow
+Forward Starboard Bow
+Bow
+Bowsprit
+Large Mushroom
+Tree
+Jungle Tree
+Destroyed Tree
+Bush
+Dry Bush
+Destroyed Bush
+Marsh Flower
+Desert Plant
+Animated Tree
+Animated Bush
+Animated Mushroom
+Boulder
+Shimmering Cube
+Shimmering Cube Cluster
+Shimmering Field
+Void Slime Jelly

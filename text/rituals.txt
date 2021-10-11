@@ -1,0 +1,335 @@
+Lesser Ritual of Mastery
+Lesser Void Mastery
+Ritual of Mastery
+Void Mastery
+Ritual of Grand Mastery
+Grand Void Mastery
+Minor Animal Summoning
+Major Animal Summoning
+Messenger Crows
+Plant Forest Guardians
+Heart of the Forest
+Lord of the Wild
+Wild Hunt
+Summon Mythic beasts
+Summon Legendary Beings
+Shepherds of the Wood
+Faery Paths
+Unification
+Revive Ancient Forest
+Call Primal Being
+Capture Images
+Capture Phantasms
+Capture Spell
+Capture Greater Spell
+Summon Phase Beast
+Floating Eye
+Scrying
+Mirror Walk
+Mirror Gate
+Create Simulacrum
+Mirror Wall
+Vision Brew
+Wither Wood
+Plant Shadow Tree
+Plant Giant Fungus
+Activate Fairy Circle
+Call the Old Forest
+Golden Nose
+Summon Orm
+Summon Linnorm
+Stygian Bath
+Clamor and Clang
+Raise Dead
+Reanimate Animals
+Dark Knowledge
+Raven Spy
+Pierce the Veil of Death
+Minor Summoning
+Major Summoning
+Raise Legion
+Twiceborn
+Ravenous Curse
+Blood Rite
+Mummification
+Stygian Paths
+Animate Abomination
+Pyramid of Skulls
+Wall of Unlife
+Planar Swap
+Lichcraft
+Greater Lichcraft
+Lich Gate
+rit539 Blood Rite
+rit539 Blood Servant
+Flesh Rite
+Animate Tools
+Animate Sword
+Animate Spear
+Animate Bow
+Animate Armor
+Animate Ballista
+Craft Gargoyle
+Create Flesh Golem
+Iron Grafting
+Create Wood Golem
+Create Stone Golem
+Create Ice Golem
+Create Clay Golem
+Craft Guardian
+Create Necrotod
+Enliven Statue
+Dogs of Gold and Silver
+Brass Bull
+Create Oak Golem
+Create Iron Golem
+Create Onyx Golem
+Create Crystal Golem
+Create Silver Golem
+Create Gold Golem
+Create Home Portal
+Create Portal
+Enchanted Gate
+Infuse Magic Library
+Infuse Magic Academy
+Create Artifact
+Create Juggernaut
+Create Mimic
+Sense Mines
+Create Councilor
+Create Rune Smith
+Divine Marriage
+Create Rime Armor
+Create Furnace Armor
+Create Armor of Dvalin
+Rime Brand Weapons
+Flame Brand Weapons
+Earth Brand Weapons
+Rime Brand Ballista
+Flame Brand Ballista
+Earth Brand Ballista
+Create Iron Gate
+rit528 Enchant Gate
+Lore of Dvalin I
+Lore of Dvalin II
+Lore of Dvalin III
+Found Colony
+Living Boulders
+Portal of Dvalin
+Summon God
+Convert Settlement
+rit525 Ceremony of Mastery
+Break the First Seal
+Break the Second Seal
+Break the Third Seal
+Break the Fourth Seal
+Break the Fifth Seal
+Break the Sixth Seal
+Break the Seventh Seal
+Increase Divine Favor
+Bolster Devotion
+Start Crusade
+Call the Inquisition
+Imp Summoning
+Demon Summoning
+Greater Demon Summoning
+infernal Horde
+Summon Demon Lieutenant
+Summon Demon Lord
+Personal Gate
+Returning
+Infernal Gate
+Wall of Torment
+rit504 Minor Summoning
+rit504 Major Summoning
+rit504 Summon Old One
+Swamp Guardians
+Marshlands
+Bog Eye
+Mirror Mirror
+Murderous Mist
+Miasma
+Swamp Soul
+Bog Path
+Lesser Ceremony to Baal
+Ceremony to Baal
+Grand Ceremony to Baal
+Lesser Blood Feast
+Blood Feast
+Grand Blood Feast
+Banquet for the Dead
+rit508 Summon God
+Second Sun
+Flame Pact
+Water Pact
+Storm Pact
+Earth Pact
+Greater Flame Pact
+Greater Water Pact
+Greater Storm Pact
+Greater Earth Pact
+Lesser Fire Summoning
+Lesser Water Summoning
+Lesser Earth Summoning
+Lesser Air Summoning
+Greater Fire Summoning
+Summon Champion of Fire
+Circle of Flames
+Vafur Flames
+Greater Water Summoning
+Summon Champion of Water
+Maelstrom
+Primal Maelstrom
+Enchant Lake
+Greater Air Summoning
+Summon Champion of Air
+Curtain of Storms
+Greater Earth Summoning
+Summon Champion of Earth
+Ramparts of Earth
+Wizard's Tower
+Dig
+Summon King of Fire
+Summon Queen of Water
+Wheel of Storm and Stone
+Summon Queen of Air
+Summon King of Earth
+Eternal Pyre
+Fimbul Fortress
+King of Giants
+Call Giants
+Call Winter Wolves
+Perpetual Storm
+Raise Volcano
+Summon Magma Warrior
+Summon Smoke Warrior
+Summon Mist Warrior
+Summon Mud Warrior
+Create Hoburg Village
+Animal Summoning
+Farm Animal Summoning
+Great Animal Summoning
+Ruby Construct
+Sapphire Construct
+Diamond Construct
+Emerald Construct
+Ruby Iron Dragon
+Sapphire Iron Dragon
+Diamond Iron Dragon
+Emerald Iron Dragon
+Construct Ferrous Wheel
+Raise Levies
+Appoint Vassal
+rit506 Coronation
+Swift Justice
+Drain Swamp
+Raise Fort
+Raise Castle
+Benediction
+Found Monastery
+Relocate Manor
+Alchemy
+Greater Alchemy
+Alchemical Catapult
+Alchemical Trebuchet
+Summon Ancestor
+Summon Heroes of Old
+Carve Totempole
+Army of Legends
+Promise of the Ancestors
+Sending
+Paint Tattoo
+Design Eagle Tattoo
+Design Pegasus Tattoo
+Design Lion Tattoo
+Design Gryphon Tattoo
+Design Serpent Tattoo
+Design Hydra Tattoo
+Design Badger Tattoo
+Design Skull Tattoo
+Astrology
+Horoscope
+Send Lesser Horror
+Send Greater Horror
+Call of the Deep
+Ceremony in the Deep
+Call Army of the Deep
+Contact Old Ones
+Deep Rising
+Contact Elder Being
+Call Elder Beings
+Call Outer God
+Coronation
+Appoint Governor
+Imperial Wedding
+Erect Statue
+Erect Imperial Statue
+Apotheosis
+Incite Revelry
+Katabasis
+Anabasis
+Build Lararium
+Raise Limitanei
+rit515 Scrying
+Cave Temple Construction
+Awaken Guardians
+Lesser Lava Summoning
+Lesser Olm Summoning
+Lesser Deep Summoning
+Olm Conclave
+Summoning of the Dead
+Lava Summoning
+Deep Earth Summoning
+Awaken Marble Oracle
+Awaken Onyx Oracle
+Earth Made Flesh
+Summon Lesser Beings
+Summon Greater Beings
+Summon Lesser Oni
+Summon Oni
+Make Effigy
+Hide Heart
+Mountain Lair
+Summon King
+Create Sacred Grove
+Create Grove of Gaia
+Create Primal Forest
+Bramble Fort
+Plant Hamadryad
+Call of Gaia
+Summon Servants of Gaia
+Blood Orgy
+Call of the Wild
+Incarnate Earth Mother
+Rainbow Curtain
+Shape Clouds
+Cloud Castle
+Diamond Alchemy
+Lesser Sky Summoning
+Greater Sky Summoning
+Summon Mist Warriors
+Summon Yeti
+Summon Frost Giant
+Summon Storm Giant
+Summon Solar Eagle
+Pyramid Walls
+Call of the Pyramid
+Call of the Pillar
+Pyramid Gate
+Dark Bonds
+Scourge Summons
+Dark Scourge Summons
+Black Scourge Summons
+Construct Guardian
+Appoint Herald
+Dark Blessing
+Kobold Hatchery
+Kobold Stronghold
+Summon Dragon
+Summon Elder Dragon
+Flame Rune Trap
+Frost Rune Trap
+Lightning Rune Trap
+Poison Gas Trap
+Decay Rune Trap
+Foretelling

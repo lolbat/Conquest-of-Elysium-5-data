@@ -1,0 +1,785 @@
+Army of Legends
+Ancestral Shaman &  Ancestral Chief & 3d6*Ancestral Lancer & 3d6*Ancestral Warrior & 3d6*Ancestral Archer
+Ancestral Hero &  Ancestor Guide &  Ancestral Chief & 3d6*Ancestral Lancer & 4d6*Ancestral Warrior & 3d6*Ancestral Archer
+
+Call of the Deep
+1d5*Deep One
+1d2*Shambler
+
+Ceremony in the Deep
+Monster of the Deep
+1d4+1*Angler Spawn
+1d2*Angler of the Depths
+
+Call Warriors of the Deep
+Shambler Prince
+2d4+2*Deep One Warrior
+1d3+1*War Shambler
+
+Contact Elder Being
+Elder Thing
+1d4*Strange Thing
+Formless Spawn
+Star Oak
+Yithian
+
+Plant Forest Guardians
+2d4*Venus Trap
+1d2+1*Woodman
+Tree of Crows
+
+Summon Mythic Beasts
+Sacred Moose
+Amphiptere
+1d2*Wyvern
+1d4*Leogryph
+Monster Boar
+Black Hound
+
+Wild Hunt
+Lord of the Hunt & 2d6*Deer & 2d6*Boar & 4d6*Wolf
+
+Summon Legendary Beings
+Ent
+Monster Boar & 3d6*Great Boar & 4d6*Boar
+Chimaera
+Cockatrice
+Giant Moose & 2d4*Moose
+
+
+Necromantic Minor Summoning
+Wight
+Bane
+Dire Wolf
+Raven Familiar
+1d3*Ghost Warrior
+1d3*Spectral Archer
+Spectral Horseman
+Mound King
+1d3*Shade
+1d3*Shade Beast
+1d6*Dispossessed Spirit
+
+Necromantic Major Summoning
+Dracolich
+Wraith
+Ghost
+Banshee
+Death Knight
+Carrion
+Tartarian Spirit
+Ziz
+
+Raise Legion
+20*Longdead Velite & 20*Longdead Hastatus & 20*Longdead Principe & 20*Longdead Triarius
+2d6*Spectral Horseman & 3d6*Spectral Archer & 4d6*Ghost Warrior
+Dust King & Dust Priest & 5d6*Dust Walker
+Bane Lord & 5d6*Bane
+Shade Mage &  Shade Lord & 5d6*Shade & 3d6*Shade Beast
+Unfrozen Lord & Unfrozen Mage & 2d6*Unfrozen Warrior & 3d6*Unfrozen
+
+Ravenous Curse
+4d6*Ghoul
+
+Imp Summoning
+1d2*Ice Imp
+1d6*Imp
+1d6*Fiery Imp
+Imp Familiar
+Imp Messenger
+Shadow Imp
+2d3*Bone Imp
+Harlequin
+
+Demon Summoning
+Frost Fiend
+Spine Devil
+1d2*Bone Devil
+Serpent Fiend
+Lesser Demon
+Fiend of Darkness
+Inhumer Devil
+
+Greater Demon Summoning
+1d2+1*Hellhound
+ Devil
+ Disease Demon
+Storm Demon
+
+Infernal Horde
+4d6*Bloodsworn
+3d3*Demon Knight
+3d6*Demonic Locust
+
+Summon Demon Lieutenant
+Succubus
+ Greater Demon
+ Greater Devil
+ Ice Devil
+ Heliophagus
+ 
+Summon Demon Lieutenant
+Succubus
+ Greater Demon
+ Greater Devil
+ Ice Devil
+ Heliophagus
+Witch
+
+Minor Summoning (Witch)
+3d6*Frog
+2d4*Giant Snail
+Crocodile
+Marsh Worm
+(!)Black Cat Familiar
+1d2*Bog Beast
+Swamp Monster
+Swamp Thing
+1d3*Hydra Hatchling
+Swamp Ghost
+Giant Toad
+
+Swamp Guardians
+Crocodile
+(!)Frog Familiar
+1d2+1*Slime Mold
+2d3*Blood Fungus
+2d3*Devil Fungus
+2d3*Death Fungus
+Blue Giant
+Giant Mushroom
+Giant Morel
+1d3+1*Ochre Jelly
+
+Major Summoning (Witch)
+Gelatinous Cube
+Monster Toad
+Giant Crocodile
+Hydra
+Creeping Doom
+Rootmonster
+Will o'the Wisp
+
+ Doppelganger Captain
+ Doppelganger
+1d2+1*Swamp Drake
+Monster Snail
+1d2+1*Green Ooze
+(!)Homunculus
+
+Summon Old One
+Mother of Monsters
+Wyrm
+ Erinye
+ Gorgon
+ Mortal Gorgon
+ Dracolion
+Catoblepas
+Ancient Hydra
+Ancient Presence
+Swamp God
+
+Ceremony of the Lord of Sky
+Turkey Spirit Double
+1d2*Beast Bat
+
+Ceremony of the Lord of Rain
+1d3*Rain Warrior
+1d5*Toad Warrior
+ Toad Priest
+ 
+Ceremony of the Lord of War
+Ozelotl
+1d3*Jaguar
+
+Ceremony of the Lord of Death
+Civateteo
+2d4*Longdead
+1d3*Shade
+
+Ceremony of the Lord of Night
+Ozelotl
+1d4*Beast Bat
+1d3*Shade
+
+Ceremony of the Bloody Mother
+Tlahuelpuchi
+1d2*Jaguar
+1d3+1*Serpent
+
+Greater Ceremony of the Lord of Sky
+1d2*Tzitzimitl
+ Coatl
+Great Macaw
+
+Greater Ceremony of the Lord of Rain
+ King of Rain & 2d4*Rain Warrior & 2d8*Toad Warrior
+ Tlaloque of the East
+ Tlaloque of the North
+ Tlaloque of the West
+ Tlaloque of the South
+ 
+Greater Ceremony of the Lord of War
+1d3*Plumed Serpent
+Balam
+
+Greater Ceremony of the Lord of Death
+ Onaqui
+ Bolon-Ti-Ku
+ 
+Greater Ceremony of the Lord of Night
+1d3*Tzitzimitl
+ Onaqui
+ 
+Greater Ceremony of the Bloody Mother
+1d3+1*Plumed Serpent
+ Coatl
+ 
+Summon God
+ Teteo Inan
+ Teotl of the Night
+ Teotl of the Underworld
+ Teotl of Rain
+ Teotl of War
+ Teotl of the Sky
+ 
+Capture Spell
+Mirror of Dread
+Mirror of Confusion
+Mirror of Many Colors
+
+Capture Images
+Large Soldier Mirror
+Large Animal Mirror
+Large Unearthly Mirror
+Large Swarm Mirror
+Large Monster Mirror
+
+Capture Phantasms
+Silver Soldier Mirror
+Silver Animal Mirror
+
+Capture Spell
+Large Mirror of Dread
+Large Mirror of Confusion
+Large Mirror of Many Colors
+
+Capture Greater Spell
+Silver Mirror of Dread
+Silver Mirror of Confusion
+Silver Mirror of Many Colors
+
+Summon Phase Beast
+Phase Spider
+Displacer Beast
+
+Capture Phantasms
+Golden Soldier Mirror
+Golden Animal Mirror
+Golden Unearthly Mirror
+Golden Swarm Mirror
+Golden Monster Mirror
+
+Capture Greater Spell
+Golden Mirror of Dread
+Golden Mirror of Confusion
+Golden Mirror of Many Colors
+
+Lesser Ceremony to Baal
+(!)Large Spider Familiar
+1d3+1*Large Spider
+2d5*Small Spider
+2d5*Scorpion
+1d3+1*Giant Scorpion
+(-110)1d4+2*Mazzik
+(-110)Se'ir
+(167)Anakite
+(167)1d2+1*Gibbor
+
+Lesser Blood Feast
+Anakite
+1d3+1*Gibbor
+
+Ceremony to Baal
+Lammashta
+2d4*Giant Spider
+2d3*Scorpion Beast
+(117)2d3*Se'ir
+(117)1d2*Shed
+(117)3d6*Mazzik
+(117)1d3*Lilot
+(167)1d3+1*Anakite
+
+Blood Feast
+Anakite Captain & 2d3*Anakite
+ Zamzummite
+2*Ditanu
+
+Grand Ceremony to Baal
+Sirrush
+ Manticore
+ Scorpion Man
+ 
+Grand Blood Feast
+ Adon & 2d6*Anakite
+ Melqart & 2d4*Rephaite
+ Watcher
+ Nephil
+ 
+Banquet for the Dead
+Malik & 2d3*Ditanu
+
+Plant Giant Fungus
+(-101)1d3*Snow Fungus
+(-97)Giant Mushroom
+1d3*Blood Fungus
+1d3*Devil Fungus
+1d3*Giant Morel
+
+Lesser Fire Summoning
+Fire Elemental
+1d4+1*Lesser Fire
+
+Lesser Water Summoning
+Water Elemental
+1d4+1*Lesser Water
+
+Lesser Air Summoning
+Air Elemental
+1d3*Cloud Elemental
+
+Lesser Earth Summoning
+Earth Elemental
+1d4+1*Lesser Earth
+
+Greater Fire Summoning
+2d4+1*Salamander
+1d3+2*Flame Spirit
+4d6*Ember Warrior
+1d2+1*Fire Bird
+3d4+1*Fire Lizard
+
+Summon Champion of Fire
+Champion of Flames
+ Phoenix
+ Fire Giant
+ 
+Summon Magma Warrior
+3d4*Magma Warrior
+
+Summon Smoke Warrior
+3d4*Smoke Warrior
+
+Greater Water Summoning
+1d3+2*Undine
+4d6*Wave Warrior
+(-42)2d4+1*Winter Wolf
+(-17)1d2+1*Lake Troll
+(-17)1d2*Lake Troll Warrior
+
+Summon Yeti
+1d3+2*Yeti
+
+Summon Champion of Water
+ Champion of Waves
+(-42) Frost Giant
+(-43) Sea Giant
+(-17) Lake Troll King
+
+Summon Mist Warrior
+3d4*Mist Warrior
+
+Summon Mud Warrior
+3d4*Mud Warrior
+
+Greater Air Summoning
+1d3+2*Thunderbird
+1d3+2*Sylph
+4d6*Cloud Warrior
+
+Summon Yeti
+1d3+2*Yeti
+
+Summon Champion of Air
+Champion of Storms
+ Storm Giant
+ 
+Summon Mist Warrior
+3d4*Mist Warrior
+
+Summon Smoke Warrior
+3d4*Smoke Warrior
+
+Greater Earth Summoning
+Purple Worm
+1d3*Stone Drake
+1d3+2*Earth Gnome
+4d6*Stone Warrior
+
+Summon Champion of Earth
+Champion of Mountains
+ Cyclops
+ 
+Summon Magma Warrior
+3d4*Magma Warrior
+
+Summon Mud Warrior
+3d4*Mud Warrior
+
+Summon King of Fire
+ King of Fire
+ King of Flames
+ King of Magma
+ 
+Summon Queen of Water
+ Queen of the Lake
+ Queen of the Deeps
+ Queen of the Sea
+ 
+Summon Queen of Air
+ Queen of Storms
+ Queen of Thunder
+ Queen of Clouds
+ 
+Summon King of Earth
+ King of Mountains
+ King of Deeper Earth
+ King of Earth
+ 
+Call Giants
+2d3+1*Fire Giant
+
+Call Giants
+2d3+1*Frost Giant
+
+Call Winter Wolves
+2d3+1*Winter Wolf
+
+Call Giants
+2d3+1*Sea Giant
+
+Call Giants
+2d3+1*Storm Giant
+
+Call Giants
+2d3+1*Cyclops
+
+Animal Summoning
+2d4*Rabbit
+1d4*Wolf
+1d6*Deer
+Moose
+Bear
+1d2*Serpent
+1d3*Snake
+1d4*Boar
+
+Farm Animal Summoning
+3d4*Rabbit
+1d4+1*Snake
+1d2*Giant Ant
+
+Great Animal Summoning
+4d6*Wolf
+2d6*Moose
+2d6*Bear
+2d6*Serpent
+2d8*Snake
+Great Boar & 3d4*Boar
+4d6*Boar
+
+Ruby Construct
+Iron Ant
+1d4*Ruby Clockwork Soldier
+1d4+1*Ruby Clockwork Horror
+
+Sapphire Construct
+Iron Spider
+1d4*Sapphire Clockwork Soldier
+1d4+1*Sapphire Clockwork Horror
+
+Diamond Construct
+Iron Fly
+1d4*Diamond Clockwork Soldier
+1d4+1*Diamond Clockwork Horror
+
+Emerald Construct
+Iron Scorpion
+1d4*Emerald Clockwork Soldier
+1d4+1*Emerald Clockwork Horror
+
+
+Minor Summoning (Markgraf)
+Wight
+Bane
+Dire Wolf
+Raven Familiar
+1d3*Spectral Archer
+1d3*Ghost Warrior
+Spectral Horseman
+ Mound King
+1d3*Shade
+1d3*Shade Beast
+1d6*Dispossessed Spirit
+
+Major Summoning (Markgraf)
+Dracolich
+ Wraith
+Ghost
+Banshee
+ Death Knight
+ Carrion
+ Tartarian Spirit
+ Ziz
+ 
+Ravenous Curse
+(70)6d6*Little Ghoul
+(-8)3d6*Ghoul
+
+Raise Levies
+1d4+1*Levy
+
+Summon Ancestor
+Ancestral Chief
+Ancestral Lancer
+Ancestral Warrior
+Ancestral Archer
+
+Summon Heroes of Old
+(4) Ancestor Guide
+ Ancestral Hero
+ Ancestral Chief & 1d3+1*Ancestral Lancer
+1d4+1*Ancestral Warrior & 1d4+1*Ancestral Archer
+2d4+2*Ancestral Warrior
+2d3*Ancestral Lancer
+
+Carve Totempole
+Totem of Maladies
+Warrior Totem
+Beast Totem
+Thunder Totem
+
+Ceremony in the Deep  
+Monster of the Deep
+1d4+1*Angler Spawn
+1d2*Angler of the Depths
+
+Call Warriors of the Deep
+Shambler Prince
+2d4+2*Deep One Warrior
+1d3+1*War Shambler
+
+Contact Elder Being
+Elder Thing
+1d4*Strange Thing
+Formless Spawn
+Star Oak
+Yithian
+
+Greater Ceremony in the Deep
+1d3+1*Angler of the Depths & 3d6*Angler Spawn
+1d4+1*Pillar of the Depths
+
+Call Army of the Deep
+ Shambler Prince & 2d5*War Shambler
+3d6*Shambler
+1d4*War Shambler & 3d6*Deep One Warrior
+1d4*Shambler & 5d6*Deep One
+
+Contact Old Ones
+Starspawn
+ Basalt Princess
+ Basalt Prince
+ Yithian Sage & 1d4*Yithian
+Thing from Beyond
+
+Deep Rising
+4d6*Pillar of the Depths
+ Basalt Prince & 2d6*War Shambler & 4d6*Deep One Warrior
+ Angler Queen & 1d6*Pillar of the Depths & 2d6*Angler of the Depths
+ 
+Call Outer God
+ Void Lord
+ King in Yellow
+ Vastness
+Eldritch Abomination
+
+Call Elder Beings
+1d3*Elder Thing
+2d5*Strange Thing
+1d3*Formless Spawn
+1d3*Star Oak
+1d3*Yithian
+ Yithian Sage
+Thing from Beyond
+
+Send Lesser Horror
+1d2*Horror Mantis
+Float Cat Horror
+1d2*Brass Claw Horror
+1d2*Spine Membrane Horror
+1d4*Soultorn
+1d2*Mind Slime Horror
+Void Hound
+
+Send Greater Horror
+2d4*Void Hound
+Dream Horror
+Moon Horror
+Horror Olm
+Gore Tide Horror
+Soulshatter Horror
+
+Summon Lesser Beings
+Bakeneko
+ Tengu Weapon Master
+ Mujina
+2d3*Kappa
+Karasu Tengu
+1d3*Konoha Tengu
+
+Summon Lesser Oni
+2d5*Ko Oni
+2d3*Shikome
+1d4*Ao Oni
+1d4*Aka Oni
+ Chunari
+ 
+Summon Greater Beings
+ Tatsu
+ Jorogumo
+ Nushi
+ Kitsune
+ Tanuki
+ Shuten Doji
+ Kappa Shaman & 2d4*Kappa
+3d4*Konoha Tengu
+3d4*Tengu Warrior
+Omukade
+
+Summon Oni
+ Kuro Oni
+ Hannya
+3d6*Ao Oni
+3d6*Aka Oni
+Gozu & Mezu
+
+Summon King
+ Dai Oni & 2d6*Aka Oni
+ Dai Tengu & 3d6*Tengu Warrior & 3d6*Konoha Tengu
+ 
+Awaken Guardians
+1d3*Sentinel
+Granite Guardian
+
+Lesser Lava Summoning
+1d2+1*Lesser Fire
+
+Lesser Deep Summoning
+Cave Grub
+Cave Cow
+
+Lesser Summoning of the Dead
+Cavern Wight
+Penumbral
+
+Olm Conclave
+ Olm Sage & 2d5+2*Olm
+ 
+Summoning of the Dead
+2d6+4*Penumbral
+1d3+2*Umbral
+2d5+4*Cavern Wight
+1d3+1*Sepulchral
+
+Lava Summoning
+3d6+4*Lesser Fire
+1d3+2*Fire Elemental
+1d3+1*Magma Child
+
+Deep Earth Summoning
+2d4*Troglodyte
+1d6*Earth Elemental
+4d6+2*Lesser Earth
+Purple Worm
+
+Awaken Marble Oracle
+Marble Oracle & 2*Granite Guardian
+
+Awaken Onyx Oracle
+Onyx Oracle & 4*Granite Guardian & 2d3*Sentinel
+
+Call of Gaia
+ Pan
+ Harpy Queen
+2d4*White Centaur
+(237)2d3*Grove Guard
+(238)2d3*Grove Guard
+(238)2d3*Dryad Hoplite
+
+Blood Orgy
+3d6*Maenad
+
+Summon Servants of Gaia
+1d4+1*Kithaironic Lion
+Chimaera
+2d4*Monster Boar
+Nymph & 3d6*Satyr
+Nemean Lion
+
+Scourge Summons
+Dark Centipede
+2d3*Hyena
+1d4*Black Ant & 1d2*Black Soldier Ant
+2d4*Spiderling
+Scourge Ant
+1d3+1*Black Spider
+
+Dark Bonds
+Taskmaster & 2d4+4*Slave Worker
+
+Dark Scourge Summons
+Basilisk
+ Scourge Ant Queen & 2d3*Black Soldier Ant
+1d6+1*Scourge Ant
+1d4+1*Scourge Spider
+1d2+1*Dark Serpent
+Scourge Flame
+
+Black Scourge Summons
+Scourge Worm
+Myrmecoleon
+Apophis
+Monster Scarab
+1d2*Scourge Wind
+
+Lesser Sky Summoning
+Air Elemental
+1d3*Cloud Elemental
+4d6*Swan
+3d6*Murder of Crows
+ Black Hawk
+ 
+Greater Sky Summoning
+Gryphon
+Roc
+1d3+2*Thunderbird
+1d3+2*Sylph
+4d6*Cloud Warrior
+
+Summon Mist Warrior
+3d4*Mist Warrior
+
+Summon Yeti
+1d3+2*Yeti
+
+Summon Queen of Air
+Queen of Storms
+ Queen of Thunder
+ Queen of Clouds
+ 
+Summon Dragon
+Storm Dragon
+
+Raise Limitanei
+1d3+1*Limitane & 1d2*Limitane Slinger
