@@ -1,3 +1,13 @@
+## Introduction
+
+This is a list of the type and number of creatures that are summoned by the various rituals in the game. They are organized by faction. The only rituals listed here are those that either have a single creature summoned with a random number (such as Raise Levy) are those that can summon multiple creature types.
+
+Some creatures are marked with an (!). These creatures, typically familiars, can be summoned multiple times and get additional abilities each time applied to the original creature. For instance, the Priestess of Ba'al can get a Spider Familiar and each time it get selected in a summoning the original familiar gets additional abilities.
+
+Some creature options are prefixed by a numeric value. I have left those in even though I am not sure what they represent. I suspect that it indicates a creature that has a lower chance of being summoned. 
+
+If there are any rituals missing please post an issue or comment on the Steam Community forum and I will track the data down.
+
 ### Druid
 
 **Plant Forest Guardians**
@@ -14,7 +24,7 @@
 - Black Hound
 
 **Wild Hunt**
-* Lord of the Hunt & 2d6 x Deer & 2d6 x Boar & 4d6 x Wolf
+- Lord of the Hunt & 2d6 x Deer & 2d6 x Boar & 4d6 x Wolf
 
 **Summon Legendary Beings**
 - Ent
@@ -57,7 +67,7 @@
 - Unfrozen Lord & Unfrozen Mage & 2d6 x Unfrozen Warrior & 3d6 x Unfrozen
 
 **Ravenous Curse**
-* 4d6 x Ghoul
+- 4d6 x Ghoul
 
 ### Demonologist
 
