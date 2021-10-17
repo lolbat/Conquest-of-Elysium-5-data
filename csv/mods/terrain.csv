@@ -1,81 +1,81 @@
-Terrain,Basic,spr,image.tga,,Sets the image file for the terrain square.
-Terrain,Basic,name,name,,Name of the terrain type.
-Terrain,Basic,gold,<nbr>,,Gold income for the terrain when owned.
-Terrain,Basic,iron,<nbr>,,Iron income for the terrain when owned.
-Terrain,Basic,trade,<nbr>,,Trade value of the terrain when owned.
-Terrain,Basic,herbs,<nbr>,,Herb income for the terrain when owned.
-Terrain,Basic,fungus,<nbr>,,Fungus income for the terrain when owned.
-Terrain,Basic,weed,<nbr>,,Weed income for the terrain when owned.
-Terrain,Basic,sacr,<nbr>,,Sacrifice income for the terrain when owned.
-Terrain,Basic,dead,<nbr>,,The location starts with <nbr> * d6 corpses in it.
-Terrain,Basic,hands,<nbr>,,Hands of Glory income for the terrain when owned.
-Terrain,Basic,gems,<nbr>,,A bitmask value that determines the gem income of the location. See the Gem Income Bitmask table. Note that you can add multiple 1 income values together to create a higher income value of a certain type of gem. Maximum income for a single gem type is 7.
-Terrain,Basic,pop,<nbr>,,A value indicating the size of humanlike population. Farm = 5 City = 50.
-Terrain,Basic,lifeforce,<nbr>,,Sets amount of lifeforce that can be drained from the square * 10. A plain has 10 and a forest 30. Negative values means square drain lifeforce with this radius (Pillar of Power has a value of -1).
 Terrain,Basic,apcost,<nbr>,,Action Point cost for moving through the terrain.
-Terrain,Copy/Clear,clearspec,,,Clears the special attributes of the selected terrain.
+Terrain,Basic,dead,<nbr>,,The location starts with <nbr> * d6 corpses in it.
+Terrain,Basic,fungus,<nbr>,,Fungus income for the terrain when owned.
+Terrain,Basic,gems,<nbr>,,A bitmask value that determines the gem income of the location. See the Gem Income Bitmask table. Note that you can add multiple 1 income values together to create a higher income value of a certain type of gem. Maximum income for a single gem type is 7.
+Terrain,Basic,gold,<nbr>,,Gold income for the terrain when owned.
+Terrain,Basic,hands,<nbr>,,Hands of Glory income for the terrain when owned.
+Terrain,Basic,herbs,<nbr>,,Herb income for the terrain when owned.
+Terrain,Basic,iron,<nbr>,,Iron income for the terrain when owned.
+Terrain,Basic,lifeforce,<nbr>,,Sets amount of lifeforce that can be drained from the square * 10. A plain has 10 and a forest 30. Negative values means square drain lifeforce with this radius (Pillar of Power has a value of -1).
+Terrain,Basic,name,name,,Name of the terrain type.
+Terrain,Basic,pop,<nbr>,,A value indicating the size of humanlike population. Farm = 5 City = 50.
+Terrain,Basic,sacr,<nbr>,,Sacrifice income for the terrain when owned.
+Terrain,Basic,spr,image.tga,,Sets the image file for the terrain square.
+Terrain,Basic,trade,<nbr>,,Trade value of the terrain when owned.
+Terrain,Basic,weed,<nbr>,,Weed income for the terrain when owned.
 Terrain,Copy/Clear,clearfort,,,Clears the fort attributes of the selected terrain.
-Terrain,Special,citadel,,,The terrain functions as a citadel when owned.
-Terrain,Special,batmap,<batmap nbr>,,Associates the terrain with a certain battle map. See table Battle Maps. This is usually used for fortified locations but villages also have a battle map.
-Terrain,Special,walls,,,The location has walls in battle and is a siegable location.
-Terrain,Special,woodengate,,,The fort has a wooden gate
-Terrain,Special,irongate,,,The fort has an iron gate
-Terrain,Special,enchantedgate,,,The fort has an enchanted gate
-Terrain,Special,bramblegate,,,Bramble gate
+Terrain,Copy/Clear,clearspec,,,Clears the special attributes of the selected terrain.
+Terrain,Special,anchored,,,Dimensionally anchored location.
 Terrain,Special,barricade,,,Wooden barricade gate
-Terrain,Special,earthbarricade,,,Earth barricade gate
-Terrain,Special,cloudgate,,,Cloud gate
-Terrain,Special,magicwalls,,,Ethereal units cannot pass through walls at this fort
+Terrain,Special,batmap,<batmap nbr>,,Associates the terrain with a certain battle map. See table Battle Maps. This is usually used for fortified locations but villages also have a battle map.
+Terrain,Special,bonusrelics,<value>,,Get this number of extra relics from this location. By default the amount of relics is one less than the amount of sacrifices earned.
+Terrain,Special,bramblegate,,,Bramble gate
 Terrain,Special,burnable,,,The terran can be burned like forest.
-Terrain,Special,water,,,The terrain is water and cannot be passed unless it is frozen or the monsters moving through it are amphibian or aquatic.
 Terrain,Special,cave,,,The terrain counts as a cave.
-Terrain,Special,nostdrec,,,Standard class based recruitment lists are not available in this terrain. Instead there are other units available for recruitment specific to the terrain.
-Terrain,Special,ownable,,,The terrain can be claimed for ownership if it provides income the player can use.
-Terrain,Special,smoke,,,Pixels with a certain pink color (2450255) will produce smoke. Pixels with color (2350255) will produce flames and smoke.
-Terrain,Special,goldboost,,,The terrain provides a global boost to gold income when owned.
-Terrain,Special,ironboost,,,The terrain provides a global boost to iron incomewhen owned.
-Terrain,Special,tradeboost,,,The terrain provides a global boost to trade points when owned.
-Terrain,Special,harvest,,,Structures with this command get double gold income during bumper harvest events. Farms have this attribute.
-Terrain,Special,invisible,,,Terrain on top of the background (like the tower) is not drawn but the grass will still be drawn. Not a useful command for modding.
-Terrain,Special,forest,,,The terrain counts as forest for the purposes of abilities like Forest Stealth.
-Terrain,Special,mountain,,,The terrain counts as a mountain for the purposes of abilities like Mountain Move.
-Terrain,Special,desert,,,The terrain counts as a desert for the purposes of abilities like Desert Move.
+Terrain,Special,citadel,,,The terrain functions as a citadel when owned.
+Terrain,Special,cityname,,,This terrain should start with a random city name.
+Terrain,Special,cloudgate,,,Cloud gate
 Terrain,Special,deepspawn,,,Hybrid fishermen can appear here.
-Terrain,Special,melts,,,A hint to the AI that the terrain melts after the winter. Frozen lakes and rivers have this attribute. Not a useful command for modding.
-Terrain,Special,nostart,,,Players cannot start in this type of terrain. Other squares can be overwritten by a start citadel from a player.
-Terrain,Special,woodencitadel,,,Can be used as citadel by the Senator
-Terrain,Special,forestcitadel,,,Can be used as citadel by the Troll King.
-Terrain,Special,useable,,,There is a special power inherent to the terrain that can be activated by commander actions.
-Terrain,Special,rare,,,The terrain is a rare special terrain. It is sometimes deployed at a random place in Elysium by the random map generator.
-Terrain,Special,unqiue,,,This terrain is unique and can only be placed once by the random map generator.
-Terrain,Special,mine,,,The terrain counts as a mine.
-Terrain,Special,farsight,,,The terrain gives increased vision range when there are units present there. Watchtowers and some citadels have this attribute.
-Terrain,Special,nosight,,,The terrain does not provide vision into adjacent squares when owned. Forests and swamps have this attribute.
-Terrain,Special,temple,,,The terrain counts as a temple.
+Terrain,Special,desert,,,The terrain counts as a desert for the purposes of abilities like Desert Move.
+Terrain,Special,desertok,,,The terrain can appear in the southern portion of the map.
+Terrain,Special,earthbarricade,,,Earth barricade gate
 Terrain,Special,el,,,Terrain starts as converted to the worship of El.
-Terrain,Special,settlement,,,Defines the terrain as a human settlement. Hamlets villages towns etc have this attribute.
-Terrain,Special,voidret,,,The terrain is connected to the Void. Use for Pyramids and other such structures.
+Terrain,Special,enchantedgate,,,The fort has an enchanted gate
+Terrain,Special,farsight,,,The terrain gives increased vision range when there are units present there. Watchtowers and some citadels have this attribute.
+Terrain,Special,farvis,,,Can be seen from far away.
+Terrain,Special,forest,,,The terrain counts as forest for the purposes of abilities like Forest Stealth.
+Terrain,Special,forestcitadel,,,Can be used as citadel by the Troll King.
+Terrain,Special,goldboost,,,The terrain provides a global boost to gold income when owned.
+Terrain,Special,hardfly,,,Difficult to fly here costs 2 AP.
+Terrain,Special,harvest,,,Structures with this command get double gold income during bumper harvest events. Farms have this attribute.
+Terrain,Special,hoburg,,,All starting corpses here will be small size.
+Terrain,Special,invisible,,,Terrain on top of the background (like the tower) is not drawn but the grass will still be drawn. Not a useful command for modding.
+Terrain,Special,invseason,,,Seasons are reversed in this terrain.
+Terrain,Special,ironboost,,,The terrain provides a global boost to iron incomewhen owned.
+Terrain,Special,irongate,,,The fort has an iron gate
 Terrain,Special,library1,,,Library level +1.
 Terrain,Special,library2,,,Library level +2.
-Terrain,Special,hoburg,,,All starting corpses here will be small size.
+Terrain,Special,magicwalls,,,Ethereal units cannot pass through walls at this fort
+Terrain,Special,melts,,,A hint to the AI that the terrain melts after the winter. Frozen lakes and rivers have this attribute. Not a useful command for modding.
+Terrain,Special,mine,,,The terrain counts as a mine.
+Terrain,Special,misty,,,Mist emanates from here.
+Terrain,Special,mountain,,,The terrain counts as a mountain for the purposes of abilities like Mountain Move.
+Terrain,Special,nevercold,,,This square will never get cold.
+Terrain,Special,nosight,,,The terrain does not provide vision into adjacent squares when owned. Forests and swamps have this attribute.
+Terrain,Special,nosnowpen,,,No income penalty from snow.
+Terrain,Special,nostart,,,Players cannot start in this type of terrain. Other squares can be overwritten by a start citadel from a player.
+Terrain,Special,nostdrec,,,Standard class based recruitment lists are not available in this terrain. Instead there are other units available for recruitment specific to the terrain.
+Terrain,Special,ownable,,,The terrain can be claimed for ownership if it provides income the player can use.
+Terrain,Special,port,,,Ships can enter this terrain.
+Terrain,Special,rare,,,The terrain is a rare special terrain. It is sometimes deployed at a random place in Elysium by the random map generator.
+Terrain,Special,realport,,,Ships can be recruited here.
+Terrain,Special,ritrebate,<percent>,,All rituals cast on this location will be cheaper.
+Terrain,Special,seepast,,,Far horizon (like sea).
+Terrain,Special,settlement,,,Defines the terrain as a human settlement. Hamlets villages towns etc have this attribute.
+Terrain,Special,smoke,,,Pixels with a certain pink color (2450255) will produce smoke. Pixels with color (2350255) will produce flames and smoke.
 Terrain,Special,snowok,,,The terrain can appear in the northern portion of the map and can be snowy.
-Terrain,Special,desertok,,,The terrain can appear in the southern portion of the map.
-Terrain,Special,invseason,,,Seasons are reversed in this terrain.
 Terrain,Special,spreadcold,,,The terrain square spreads cold around it turning nearby squares snowy.
 Terrain,Special,tempimmune,,,The terrain will not be transformed into a wasteland when it gets too hot
-Terrain,Special,ritrebate,<percent>,,All rituals cast on this location will be cheaper.
-Terrain,Special,bonusrelics,<value>,,Get this number of extra relics from this location. By default the amount of relics is one less than the amount of sacrifices earned.
-Terrain,Special,nosnowpen,,,No income penalty from snow.
-Terrain,Special,farvis,,,Can be seen from far away.
-Terrain,Special,seepast,,,Far horizon (like sea).
-Terrain,Special,port,,,Ships can enter this terrain.
-Terrain,Special,realport,,,Ships can be recruited here.
-Terrain,Special,misty,,,Mist emanates from here.
-Terrain,Special,anchored,,,Dimensionally anchored location.
-Terrain,Special,hardfly,,,Difficult to fly here costs 2 AP.
-Terrain,Special,nevercold,,,This square will never get cold.
-Terrain,Special,ug,,,This is an underground terrain.
+Terrain,Special,temple,,,The terrain counts as a temple.
 Terrain,Special,town1,,,One town point.
 Terrain,Special,town2,,,Two town points.
-Terrain,Special,cityname,,,This terrain should start with a random city name.
+Terrain,Special,tradeboost,,,The terrain provides a global boost to trade points when owned.
+Terrain,Special,ug,,,This is an underground terrain.
+Terrain,Special,unqiue,,,This terrain is unique and can only be placed once by the random map generator.
+Terrain,Special,useable,,,There is a special power inherent to the terrain that can be activated by commander actions.
+Terrain,Special,voidret,,,The terrain is connected to the Void. Use for Pyramids and other such structures.
+Terrain,Special,walls,,,The location has walls in battle and is a siegable location.
+Terrain,Special,water,,,The terrain is water and cannot be passed unless it is frozen or the monsters moving through it are amphibian or aquatic.
+Terrain,Special,woodencitadel,,,Can be used as citadel by the Senator
+Terrain,Special,woodengate,,,The fort has a wooden gate
 Terrain,Start,selectterr,<terrain nbr>,,Select the terrain to be modified. Select a low number to alter an existing terrain or select a number between 500 - 999 to create a new terrain.

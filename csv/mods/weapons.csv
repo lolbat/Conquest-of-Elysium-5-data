@@ -32,6 +32,7 @@ Weapons,Special Attribute,an,,,The weapon ignores armor.
 Weapons,Special Attribute,shieldneg,,,The weapon ignores shields.
 Weapons,Special Attribute,strresist,,,The effects of this weapon can be resisted by a successful strength check.
 Weapons,Special Attribute,holykill,,,The weapon causes double damage against undead
+Weapons,Special Attribute,undkill,,,The weapon causes double damage against undead only
 Weapons,Special Attribute,affectundead,,,The weapon only affects undead.
 Weapons,Special Attribute,nostr,,,The weapon is unaffected by damage bonuses from any source
 Weapons,Special Attribute,drown,,,Water breathers are immune to this weapon.

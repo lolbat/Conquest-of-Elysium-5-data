@@ -1,0 +1,14 @@
+[
+{"Magic":"Magic","Basic":"Basic","name":"descr","item name":"item description","field5":"","Set the name of the magic item. Not necessary if you created a new one with newitem.":"Not necessary as most magic items don’t have descriptions."}
+,
+{"Magic":"Magic","Basic":"Basic","name":"spr","item name":"image file","field5":"","Set the name of the magic item. Not necessary if you created a new one with newitem.":"Sets the sprite for the magic item. It should be centered in a 32x32 or 64x64 pixel large image. The drawn item should not be larger than 40x40 pixels however so if put in a 64x64 image it should be surrounded by black."},
+{"Magic":"Magic","Basic":"Basic","name":"rarity","item name":"<rarity>","field5":"0","Set the name of the magic item. Not necessary if you created a new one with newitem.":"Sets how easy it should be to find this item. 0=common 1=rare 2=rare & unique 3=impossible to find as a random item. Default is 0."},
+{"Magic":"Magic","Basic":"Basic","name":"type","item name":"<item type>","field5":"7","Set the name of the magic item. Not necessary if you created a new one with newitem.":"Sets the magic item type. Default is 7 = misc item. See table Magic Item Types"},
+{"Magic":"Magic","Basic":"Basic","name":"armor","item name":"<value>","field5":"0","Set the name of the magic item. Not necessary if you created a new one with newitem.":"Armor value default 0."},
+{"Magic":"Magic","Basic":"Basic","name":"protection","item name":"<value>","field5":"0","Set the name of the magic item. Not necessary if you created a new one with newitem.":"Protection bonus default 0."},
+{"Magic":"Magic","Basic":"Basic","name":"hp","item name":"<value>","field5":"0","Set the name of the magic item. Not necessary if you created a new one with newitem.":"Hit Point bonus default 0."},
+{"Magic":"Magic","Basic":"Copy/Clear","name":"copyspr","item name":"item name","field5":"","Set the name of the magic item. Not necessary if you created a new one with newitem.":"Uses the sprite from this magic item."},
+{"Magic":"Magic","Basic":"Copy/Clear","name":"copystats","item name":"item name","field5":"","Set the name of the magic item. Not necessary if you created a new one with newitem.":"Copies all stats except the name from this magic item."},
+{"Magic":"Magic","Basic":"Start","name":"newitem","item name":"item name","field5":"","Set the name of the magic item. Not necessary if you created a new one with newitem.":"This command creates a new magic item."},
+{"Magic":"Magic","Basic":"Start","name":"selectitem","item name":"item name","field5":"","Set the name of the magic item. Not necessary if you created a new one with newitem.":"Selects an existing magic item for modification."}
+]

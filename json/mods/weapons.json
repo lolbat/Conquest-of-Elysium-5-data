@@ -1,0 +1,586 @@
+[
+ {
+   "Weapons": "Weapons",
+   "Basic": "Basic",
+   "trgrank": "range",
+   "<nbr>": "<nbr>",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "The maximum range of the weapon. This should be 1 for melee weapons. A normal bow has range 5."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Basic",
+   "trgrank": "init",
+   "<nbr>": "<nbr>",
+   "1": 2,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "Initiative value for the weapon default is 2. Some common initiative values are these 1=spell 2=fist/dagger/bow 3=club/axe 4=sword 6=spear."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Basic",
+   "trgrank": "dmgtype",
+   "<nbr>": "<nbr>",
+   "1": 3,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "Sets the damage type for the weapon. Table Damage Types contains the list of possible damage types. The default value is 3 (piercing damage)."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Basic",
+   "trgrank": "dmg",
+   "<nbr>": "<nbr>",
+   "1": 0,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "Sets the damage for the weapon. The default value is 0 which makes the weapon a natural weapon whose base damage is determined during monster modding. Note that damage types 12 and 13 require a bitmask value for their special effects. The special afflictions and benefit effects are listed in Table Special Afflictions and Table  Special Benefits."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Basic",
+   "trgrank": "aoe",
+   "<nbr>": "<nbr>",
+   "1": 0,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "Sets the area of effect for the weapon in squares. The default value is 0 (a single monster). A value of x will hit up to x monsters near the target. There are also many special values that can be used for other kind of areas. See Table Area of Effects. Those that are written as e.g. 30xx must be written as a 4 digit number e.g. 'aoe 3005' for a cone of 5 squares."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Chained",
+   "trgrank": "next",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "If the target is wounded by the weapon it will also be hit by the next weapon i.e. the weapon defined next in the mod after this weapon. This command can only be used for new weapons so you must have created one with the newweapon command."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Chained",
+   "trgrank": "nextwep",
+   "<nbr>": "weapon name | <nbr>",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "Like 'next' but the additional strike will come from a named weapon that has already been created."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Chained",
+   "trgrank": "nextalways",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "Like next but will take effect even if no damage was inflicted on the target."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Chained",
+   "trgrank": "nextalwayswep",
+   "<nbr>": "weapon name | <nbr>",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "Like 'nextalways' but the additional strike will come from a named weapon that has already been created."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Chained",
+   "trgrank": "nextdmg",
+   "<nbr>": "<dmg>",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "Sets the damage of the chained weapon."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Effects",
+   "trgrank": "look",
+   "<nbr>": "<look>",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "Sets the visual effect that occurs where the weapon strikes down e.g. a fiery explosion for a fireball. See the Visual Effects table. The default is no visual effect."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Effects",
+   "trgrank": "sound",
+   "<nbr>": "<sound>",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "The sound effect when the weapon strikes down. See table Sound Effects."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Effects",
+   "trgrank": "flymode",
+   "<nbr>": "<flymode nbr>",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "Set this if a projectile should be visible for a ranged attack. See Fly modes table. Those marked with an asterisk (*) behave like normal for aoe 1 effects but with larger aoe they still only create one flying graphical effect. Fireball uses this effect to create a single flying fireball but with a larger aoe explosion. If using a sprite (flymode 1) then the look value will be used to set the sprite used. See the table Fly Sprites for possible sprites to use."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Effects",
+   "trgrank": "flylook",
+   "<nbr>": "<look>",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "The visual effect (see table Visual Effects) of the flying projectile ranged weapons only. If flymode is 1 a fly sprite (see table Fly Sprites) should be used instead of a look number."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Effects",
+   "trgrank": "flysound",
+   "<nbr>": "<sound>",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "The sound effect when the projectile starts flying ranged weapons only. -1 = none."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Effects",
+   "trgrank": "sndvol",
+   "<nbr>": "<dvol>",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "dvol -50 = half volume 100 = double volume."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Effects",
+   "trgrank": "reloadsnd",
+   "<nbr>": "<sound>",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "Sound when reloading -1 = none."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Effects",
+   "trgrank": "yellow",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "set color of damage numbers"
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Effects",
+   "trgrank": "blue",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "set color of damage numbers"
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Effects",
+   "trgrank": "purple",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "set color of damage numbers"
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "clearwspec",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "Clears all special attributes of the weapon."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "drain",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "Draining damage that will heal the attacker"
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "oneshot",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "The weapon can only be used once per battle."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "reload1",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "It takes 1 combat round to reload this weapon."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "reload2",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "It takes 2 combat rounds to reload this weapon."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "reload3",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "It takes 3 combat rounds to reload this weapon."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "easymr",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "Passing an easy magic resistance check negates the effects of this weapon."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "mr",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "Passing a normal magic resistance check negates the effects of this weapon."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "hardmr",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "Passing a hard magic resistance check negates the effects of this weapon."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "an",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "The weapon ignores armor."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "shieldneg",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "The weapon ignores shields."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "strresist",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "The effects of this weapon can be resisted by a successful strength check."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "holykill",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "The weapon causes double damage against undead"
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "undkill",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "The weapon causes double damage against undead only"
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "affectundead",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "The weapon only affects undead."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "nostr",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "The weapon is unaffected by damage bonuses from any source"
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "drown",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "Water breathers are immune to this weapon."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "affectanimal",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "The weapon only affects animals."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "reanimate",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "A victim killed by the weapon becomes a Soulless."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "undead",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "The weapon does not affect Undead units."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "morale",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "A morale check vs 1d10 negates the effects of this weapon."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "hardmorale",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "A morale check vs 1d20 negates the effects of this weapon."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "mutate",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "A victim killed by this weapon becomes a monster of the type that immediately follows the killer in the monster list. For example units killed by a Doppelganger become Doppelspawn which is the next unit in order from Doppelganger."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "replicate",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "A victim killed by this weapon becomes the same type of monster as the killer."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "ethereal",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "The weapon does not affect Ethereal beings"
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "mind",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "The weapon does not affect Mindless beings."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "inanimate",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "The weapon does not affect Lifeless beings."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "large",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "The weapon does not affect monsters that are 2x2 tiles or larger in size on the battlefield."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "huge",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "The weapon does not affect Huge beings."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "affecthuman",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "The weapon only affects units with the res_convert attribute."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "flying",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "Flying and Floating units are immune."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "arrow",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "The effects of this weapon can be negated by the Air Shield attribute."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "mundane",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "Being Ethereal protects against this weapon. Ethereal units have a 75% chance to be unaffected by the weapon. Most weapons such as swords and spears are mundane."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "sweep",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "The weapon can continue to kill multiple targets."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "fullsweep",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "The attack will hit all adjacent units. The primary target takes full damage and all subsequent targets take a cumulative -1 damage (so the second target takes full damage -1 the third target takes full damage -2 etc)."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "lob",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "Use this command for arrows sling stones and other weapons with an arcing trajectory."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "rangepen",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "Damage penalty at long range. All normal range weapons like bows and slings have this."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "onlyenemy",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "This weapon will not affect friendly troops"
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "onlyfriend",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "This weapon will only affect friendly troops"
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "ghoulify",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "Humanoids killed by this weapon will become ghouls"
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "scatter",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "A missile weapon with this attribute may deviate one square"
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "poison",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "Poison resistance helps against this attack even though the weapon is not poison."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "dispossess",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "Victim becomes a dispossessed spirit"
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "affectmale",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "This weapon will not affect females"
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "stone",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "Stone beings are immune to the weapon."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "stonekill",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "x2 dmg vs stone beings and stone walls"
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "wallkill",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "x5 dmg vs walls and boats"
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "flying2",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "Flying units have 75% chance of evading this attack"
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "targterr",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "Weapon can target terrain"
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "soft",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "Armor is doubled vs this weapon"
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Special Attribute",
+   "trgrank": "tree",
+   "<nbr>": "",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "Tree/bushes/fungus are immune to this weapon"
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Start",
+   "trgrank": "newweapon",
+   "<nbr>": "weapon name",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "This command creates a new weapon."
+ },
+ {
+   "Weapons": "Weapons",
+   "Basic": "Start",
+   "trgrank": "selectweapon",
+   "<nbr>": "weapon name | <nbr>",
+   "1": null,
+   "Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.": "Selects an existing weapon for modification. There may be several different weapons with the same name in which case you should use the weapon number for selecting the desired weapon. You can see existing weapon numbers in game by pressing ctrl-i when inspecting a unit."
+ }
+]

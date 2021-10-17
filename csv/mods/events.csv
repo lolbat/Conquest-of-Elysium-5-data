@@ -20,6 +20,7 @@ Events,Start,squareevent,,,For each player and each square in the world every tu
 Events,Start,endevent,,,All events must end with this command
 Events,Target Action,newunits,<player> 'monsters',,also sets target unit
 Events,Target Action,promoteunits,<player> <max amount> 'from monster' 'to monster',,also sets target unit
+Events,Affect Target,gainxp,<xp>,,Gives XP to the target unit. XP can be negative to remove XP.
 Events,Target Action,alterterrain,<terrain nbr>,,changes the terrain of the current location
 Events,Target Action,killsquare,,,kills everyone in target square
 Events,Target Action,namesquare,'square name',,Sets name of square e.g. 'Crab Harbor' or '!2The Old Forest' or '!!The Old Tower'
@@ -42,6 +43,8 @@ Events,Trigger,+vargreater,<var> <value>,,True if the variable is greater than v
 Events,Trigger,+hasunit,<player> 'monster name',,Also sets target unit (player -1 = any player)
 Events,Trigger,+hasunithere,<player> 'monster name',,Also sets target unit (player -1 = any player)
 Events,Trigger,+squarename,'square name',,True if square has this name. e.g. 'Crab Harbor' or 'The Old Tower'
+Events,Trigger,+hasitem,"<player> ""item name""",,True if player has this kind of magic item somewhere in the world. Also sets target unit to wielder (player -1 = any player)
+Events,Trigger,+hasitemhere,"<player> ""item name""",,True if player has this kind of magic item in current square. Also sets target unit to wielder (player -1 = any player
 Events,Trigger,+plane,<planenr>,,True if target square is on this plane. See table Plane Numbers. The special values -1 (all planes) and -2 (Elysium-near planes) can also be used.
 Events,Variable,setvar,<var> <value>,,var = 0-9999  sets a variable to a value
 Events,Variable,addvar,<var> <value>,,var = 0-9999  adds a value to a variable.

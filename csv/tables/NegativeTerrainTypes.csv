@@ -1,113 +1,114 @@
-value,terraintype
--1,anywhere
--2,temples
--3,libraries
--4,mines
--5,mountains
--6,forests and jungles
--7,mountains forests and jungles
--8,villages and smaller human settlements
--9,fortified citadels
--10,forests jungles and swamps
--11,forests
--12,greater mines
--13,farms
--14,human settlements
--15,ancient forests and old battlefields
--16,village size settlement
--17,near water areas
--18,temples and pyramids
--19,gold and silver mines
--20,swamps and bogs
--21,outdoors areas
--22,capital locations
--23,citadels
--24,villages and smaller settlements
--25,the north
--26,the mid
--27,the south
--28,towns and cities
--29,hamlets or larger
--30,gem deposits and crystal forests
--31,fortified locations
--32,villages or larger settlements
--33,somewhat important squares
--34,blessable squares
--35,citadels and graveyards
--36,infernal citadels
--37,hades citadels
--38,forests and jungles
--39,magic locations
--40,hamlets
--41,hamlets tent villages and villages
--42,land locations
--43,underwater locations
--44,elemental plane of fire
--45,elemental plane of water
--46,elemental plane of air
--47,elemental plane of earth
--48,fire citadels
--49,water citadels
--50,air citadels
--51,earth citadels
--52,ice citadels
--53,void gateways
--54,second suns
--55,damned capitals
--56,level 2 libraries
--57,level 3 libraries
--58,gold income locations
--59,non mines
--60,non forest citadels
--61,forge location
--62,ancient forests and any sacred grove
--63,ancient forests and sacred groves
--64,farms and hamlets
--65,any sacred grove
--66,groves of gaia and primal forests
--67,forests and ancient forests
--68,capitals or fallen capitals
--69,any normal location
--70,graveyards
--71,flat terrains
--72,kokytos
--73,pandemonium
--74,inferno
--75,abyss
--76,void plane
--77,celestial plane
--78,hades plane
--79,unsiegable locations
--80,stonehenges or ancient forests
--81,ruby locations
--82,sapphire locations
--83,diamond locations
--84,emerald locations
--85,forests jungles swamps and caves
--86,not on sky plane
--87,ant hill terrains
--88,ruby locations and towers
--89,sapphire locations and towers
--90,diamond locations and towers
--91,emerald locations and towers
--92,trade locations
--93,ports
--94,temples and fortified locations
--95,citadels and settlements
--96,lakes
--97,ancient forests and similar
--98,Elysium plane
--99,forest like locations
--100,forest or jungle like locations
--101,snowy location
--102,near fresh water
--103,plain-like terrains
--104,hills and coal mines
--105,non-void
--106,sky plane
--107,deep earth gem deposits
--108,castles suitable for the Baron
--109,buildings of power
--110,desert-like terrains
--111,iron producing terrains
--112,non-iron producing terrains
+"value","terraintype"
+"-1","anywhere"
+"-2","temples"
+"-3","libraries"
+"-4","mines"
+"-5","mountains"
+"-6","forests and jungles"
+"-7","mountains forests and jungles"
+"-8","villages and smaller human settlements"
+"-9","fortified citadels"
+"-10","forests jungles and swamps"
+"-11","forests"
+"-12","greater mines"
+"-13","farms"
+"-14","human settlements"
+"-15","ancient forests and old battlefields"
+"-16","village size settlement"
+"-17","near water areas"
+"-18","temples and pyramids"
+"-19","gold and silver mines"
+"-20","swamps and bogs"
+"-21","outdoors areas"
+"-22","capital locations"
+"-23","citadels"
+"-24","villages and smaller settlements"
+"-25","the north"
+"-26","the mid"
+"-27","the south"
+"-28","towns and cities"
+"-29","hamlets or larger"
+"-30","gem deposits and crystal forests"
+"-31","fortified locations"
+"-32","villages or larger settlements"
+"-33","somewhat important squares"
+"-34","blessable squares"
+"-35","citadels and graveyards"
+"-36","infernal citadels"
+"-37","hades citadels"
+"-38","forests and jungles"
+"-39","magic locations"
+"-40","hamlets"
+"-41","hamlets tent villages and villages"
+"-42","land locations"
+"-43","underwater locations"
+"-44","elemental plane of fire"
+"-45","elemental plane of water"
+"-46","elemental plane of air"
+"-47","elemental plane of earth"
+"-48","fire citadels"
+"-49","water citadels"
+"-50","air citadels"
+"-51","earth citadels"
+"-52","ice citadels"
+"-53","void gateways"
+"-54","second suns"
+"-55","damned capitals"
+"-56","level 2 libraries"
+"-57","level 3 libraries"
+"-58","gold income locations"
+"-59","non mines"
+"-60","non forest citadels"
+"-61","forge location"
+"-62","ancient forests and any sacred grove"
+"-63","ancient forests and sacred groves"
+"-64","farms and hamlets"
+"-65","any sacred grove"
+"-66","groves of gaia and primal forests"
+"-67","forests and ancient forests"
+"-68","capitals or fallen capitals"
+"-69","any normal location"
+"-70","graveyards"
+"-71","flat terrains"
+"-72","kokytos"
+"-73","pandemonium"
+"-74","inferno"
+"-75","abyss"
+"-76","void plane"
+"-77","celestial plane"
+"-78","hades plane"
+"-79","unsiegable locations"
+"-80","stonehenges or ancient forests"
+"-81","ruby locations"
+"-82","sapphire locations"
+"-83","diamond locations"
+"-84","emerald locations"
+"-85","forests jungles swamps and caves"
+"-86","not on sky plane"
+"-87","ant hill terrains"
+"-88","ruby locations and towers"
+"-89","sapphire locations and towers"
+"-90","diamond locations and towers"
+"-91","emerald locations and towers"
+"-92","trade locations"
+"-93","ports"
+"-94","temples and fortified locations"
+"-95","citadels and settlements"
+"-96","lakes"
+"-97","ancient forests and similar"
+"-98","Elysium plane"
+"-99","forest like locations"
+"-100","forest or jungle like locations"
+"-101","snowy location"
+"-102","near fresh water"
+"-103","plain-like terrains"
+"-104","hills and coal mines"
+"-105","non-void"
+"-106","sky plane"
+"-107","deep earth gem deposits"
+"-108","castles suitable for the Baron"
+"-109","buildings of power"
+"-110","desert-like terrains"
+"-111","iron producing terrains"
+"-112","non-iron producing terrains"
+"-113","cities"
