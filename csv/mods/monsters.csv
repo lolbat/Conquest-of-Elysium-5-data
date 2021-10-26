@@ -1,3 +1,4 @@
+Category,Type,Command,Hint,Default,Description
 Monsters,Attacks,assassinweapon,<dmg> 'weapon',,Equips the monster with an assassination weapon of this name that has a base damage of <dmg>. This weapon will be used to make an assassination attempt on an enemy before normal combat (including siege weapons) begins. Assassination attempts can only be used by the attacker and cannot be used against summoned creatures the summoner fails to control.
 Monsters,Attacks,meleeweapon,<dmg> 'weapon',,Equips the monster with a melee weapon of this name that has a base damage of <dmg>.
 Monsters,Attacks,meleeweapon50s,<dmg> 'weapon',,Equips the monster with a melee+skip attack that has 50% chance of being used. If it is used the next attack will be skipped.
@@ -127,6 +128,13 @@ Monsters,Income,relics,<nbr>,,Gives extra income per month of this resource.
 Monsters,Income,trade,<nbr>,,Gives this number of extra trade points
 Monsters,Income,tradebonus,<percent>,,Percentage bonus to trade income for entire nation.
 Monsters,Income,weed,<nbr>,,Gives extra income per month of this resource.
+Monsters,Mirrors,mirror,<value>,,1=is small mirror 2=is large mirror 3=silver 4=gold
+Monsters,Mirrors,mirrorammo,<value>,,default number of images for this type of mirror (def 20)
+Monsters,Mirrors,phantasm,<value>,,1=phantasmal warrior 2=phantasmal animal etc.
+Monsters,Mirrors,releasephant,<value>,,mirror releases this type of phantasms (has phantasm = value)
+Monsters,Mirrors,releaserate,<value>,,bonus to the number of phantasms released
+Monsters,Mirrors,releasespell,<value>,,making an attack drains one mirror charge (fx_mirror)
+Monsters,Mirrors,revertmirror,<value>,,revert to mirror when empty. 1=small mirror 2=large mirror 3=silver 4=gold
 Monsters,Movement,battlefast,,,Monster is fast but in battles only.
 Monsters,Movement,battleslow,,,Monster is slow in battles.
 Monsters,Movement,battleslow2,,,Monster is very slow battles.
@@ -139,6 +147,7 @@ Monsters,Movement,immobile,,,Monster is immobile (cannot move in battle).
 Monsters,Movement,mountain,,,Monster has mountain move.
 Monsters,Movement,noland,,,Monster cannot move on land.
 Monsters,Movement,passwall,,,Monster can move through walls.
+Monsters,Movement,shipmove,,,Monster is a ship. Movement will cost 1 AP for everyone in the same square.
 Monsters,Movement,slow,,,Monster is slow on world map.
 Monsters,Movement,snow,,,Monster has snow move.
 Monsters,Movement,stationary,,,Monster is stationary (cannot move on world map).
@@ -179,6 +188,7 @@ Monsters,Ritual Power,gatherfungus,,,A commander with this ability will enable t
 Monsters,Ritual Power,gathergems,,,A commander with this ability will enable the player to gather gems of individual types.
 Monsters,Ritual Power,gatherhands,,,A commander with this ability will enable the player to gather Hands of Glory.
 Monsters,Ritual Power,gatherherbs,,,A commander with this ability will enable the player to gather herbs.
+Monsters,Ritual Power,gatherlifeforce,,,A commander with this ability will enable the player to gather lifeforce.
 Monsters,Ritual Power,gatherrelics,,,A commander with this ability will enable the player to gather relics.
 Monsters,Ritual Power,gathersacr,,,A commander with this ability will enable the player to gather sacrifices.
 Monsters,Ritual Power,gatherweed,,,A commander with this ability will enable the player to gather weed.

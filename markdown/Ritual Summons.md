@@ -642,7 +642,7 @@ If there are any rituals missing please post an issue or comment on the Steam Co
 - Gore Tide Horror
 - Soulshatter Horror
 
-### Bakemano
+### Bakemono
 
 **Summon Lesser Beings**
 - Bakeneko
@@ -726,6 +726,8 @@ If there are any rituals missing please post an issue or comment on the Steam Co
 - Onyx Oracle & 4 x Granite Guardian & 2d3 x Sentinel
 
 ### Dryad Queen
+
+Minor and Major Animal Summoning do not appear to be listed as tables in the CoE5 executable.
 
 **Call of Gaia**
 - Pan

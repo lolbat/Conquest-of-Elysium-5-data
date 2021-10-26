@@ -1,4 +1,5 @@
-Class,Basic,classabdescr,text,,Sets the description for the ability section of the class. The text must be on one line. The ^ symbol may be used for paragraph breaks.
+Category,Type,Command,Hint,Default,Description
+Class,Basics,classabdescr,text,,Sets the description for the ability section of the class. The text must be on one line. The ^ symbol may be used for paragraph breaks.
 Class,Basic,classdescr,text,,Sets the description for the class. The text must be on one line. The ^ symbol may be used for paragraph breaks.
 Class,Basic,hometerr,<terrain nbr>,,Sets the home terrain (home citadel) for the class. This terrain must be a citadel or the player will lose immediately when the game begins. This command is mandatory for a new class.
 Class,Basic,setclassname,class name,,'Sets name for the class (e.g. ''Dwarf Queen'' or ''Necromancer'' or ''Baron'') This command must be the first command after creating a new class.'
@@ -29,6 +30,7 @@ Class,Special,classforestcit,<0-1>,,Can use ancient forests as citadels like the
 Class,Special,classminecit,<0-1>,,Can use mountain mines as citadels like the Dwarf Queen.
 Class,Special,classtune,<sound>,,Sets the class specific tune to this sound number. Tune sound numbers are 125-150 (class specific tunes) and 155-168 (general tunes).
 Class,Special,classwoodencit,<0-1>,,Can use watch towers as citadels like the Senator.
+Class,Special,otherplanar,,,"Will enable the class to survive without owning a citadel in Elysium. Note that all classes will survive when owning thei start citadel, even if it is not in Elysium."
 Class,Special,reqterr,<terrain nbr>,,The class requires at least one square of this terrain to be present on a map to play. This must be a terrain type that is normally present on maps. There can only be one reqterr per class.
 Class,Start,newclass,,,Creates a new class. The new class is automatically assigned a class number from the range of free numbers.
 Class,Start,selectclass,<class nbr>,,Selects the class to be modified. The selected class is referred to as the active class. Class numbers are listed in Table Class numbers.

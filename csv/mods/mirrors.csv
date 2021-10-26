@@ -1,7 +1,0 @@
-Mirrors,mirror,<value>,,1=is small mirror 2=is large mirror 3=silver 4=gold
-Mirrors,mirrorammo,<value>,,default number of images for this type of mirror (def 20)
-Mirrors,phantasm,<value>,,1=phantasmal warrior 2=phantasmal animal etc.
-Mirrors,releasephant,<value>,,mirror releases this type of phantasms (has phantasm = value)
-Mirrors,releaserate,<value>,,bonus to the number of phantasms released
-Mirrors,releasespell,<value>,,making an attack drains one mirror charge (fx_mirror)
-Mirrors,revertmirror,<value>,,revert to mirror when empty. 1=small mirror 2=large mirror 3=silver 4=gold

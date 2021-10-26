@@ -1,8 +1,10 @@
-Terrain Groups,Start,selectterrgroup,<terrgroup nbr>,,Select the terrain group to be modified. The number must be between -1000 and -1199. The numbers between -1 and -999 are reserved for standard CoE5 and cannot be modified.
-Terrain Groups,Basic,setname,image.tga,,"Sets the name for the terrain group  e.g. ""forests and temples""."
-Terrain Groups,Basic,addterr,<terrain nbr>,,Adds a terrain to this group. Negative numbers cannot be used here. By default a terrain group is empty.
-Terrain Groups,Basic,remterr,<terrain nbr>,,Removes this terrain from the group.
+Category,Type,Command,Hint,Default,Description
 Terrain Groups,Basic,addallforests,,,Adds all different forest terrains to the group. Jungles are not included.
 Terrain Groups,Basic,addalljungles,,,Adds all different jungle terrains to the group.
 Terrain Groups,Basic,addallsettlements,,,Adds all different human settlement terrains to the group.
+Terrain Groups,Basic,addterr,<terrain nbr>,,Adds a terrain to this group. Negative numbers cannot be used here. By default a terrain group is empty.
+Terrain Groups,Basic,gold,<nbr>,,Gold income for the terrain when owned.
 Terrain Groups,Basic,invert,,,Inverts the contents of the group. Very useful when making a group that should contains all terrains but one.
+Terrain Groups,Basic,remterr,<terrain nbr>,,Removes this terrain from the group.
+Terrain Groups,Basic,setname,image.tga,,"Sets the name for the terrain group  e.g. ""forests and temples""."
+Terrain Groups,Start,selectterrgroup,<terrgroup nbr>,,Select the terrain group to be modified. The number must be between -1000 and -1199. The numbers between -1 and -999 are reserved for standard CoE5 and cannot be modified.

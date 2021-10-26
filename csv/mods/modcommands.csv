@@ -30,6 +30,7 @@ Class,Special,classforestcit,<0-1>,,Can use ancient forests as citadels like the
 Class,Special,classminecit,<0-1>,,Can use mountain mines as citadels like the Dwarf Queen.
 Class,Special,classtune,<sound>,,Sets the class specific tune to this sound number. Tune sound numbers are 125-150 (class specific tunes) and 155-168 (general tunes).
 Class,Special,classwoodencit,<0-1>,,Can use watch towers as citadels like the Senator.
+Class,Special,otherplanar,,,"Will enable the class to survive without owning a citadel in Elysium. Note that all classes will survive when owning thei start citadel, even if it is not in Elysium."
 Class,Special,reqterr,<terrain nbr>,,The class requires at least one square of this terrain to be present on a map to play. This must be a terrain type that is normally present on maps. There can only be one reqterr per class.
 Class,Start,newclass,,,Creates a new class. The new class is automatically assigned a class number from the range of free numbers.
 Class,Start,selectclass,<class nbr>,,Selects the class to be modified. The selected class is referred to as the active class. Class numbers are listed in Table Class numbers.
@@ -44,75 +45,78 @@ Class,Starting Units,addstartcom,monster name,,Adds a starting commander to the 
 Class,Starting Units,addstartunits,monster name <nbr>,,Adds <nbr> monsters to the starting army for the class. Use this command multiple times to assign several different types of monsters (for example spearmen and archers).
 Class,Starting Units,clearstartunits,,,Clears the starting army for the active class.
 Class,Starting Units,setmaincom,monster name,,Sets the main commander for the class. For example the main commander for the Baron class is Baron and the main commander for the Barbarian class is Barbarian Leader. If the main commander does not appear in the recruitment list for the class he cannot be replaced if lost.
+Events,Affect Target,alterterrain,<terrain nbr>,,changes the terrain of the current location
+Events,Affect Target,changeowner,<player>,,changes ownership of unit to this player
 Events,Affect Target,comname,commander’s name,,to be written
-Events,Affect Target,newitem,item name,,to be written
-Events,Affect Target,randitem,<rare chance>,,to be written
-Events,Affect Target,randmisc,<rare chance>,,to be written
+Events,Affect Target,cureoneaff,,,(cures one affliction)
+Events,Affect Target,gainxp,<xp>,,Gives XP to the target unit. XP can be negative to remove XP.
+Events,Affect Target,killsquare,,,kills everyone in target square
 Events,Affect Target,killunit,<dmg>,,to be written
-Events,Affect Target,promote,<commanderize> 'monster',,commanderize 0 = do not alter commander status 1 = turns a non commander into a commander
-Events,Affect Target,makestationary,,,(makes target unit stationary on world map)
 Events,Affect Target,makeblind,,,(makes target unit blind)
 Events,Affect Target,makediseased,,,(makes target unit diseased)
 Events,Affect Target,makenhwound,,,(gives target unit a never healing wound)
-Events,Affect Target,cureoneaff,,,(cures one affliction)
-Events,Affect Target,changeowner,<player>,,changes ownership of unit to this player
+Events,Affect Target,makestationary,,,(makes target unit stationary on world map)
+Events,Affect Target,namesquare,'square name',,Sets name of square e.g. 'Crab Harbor' or '!2The Old Forest' or '!!The Old Tower'
+Events,Affect Target,newitem,item name,,to be written
+Events,Affect Target,promote,<commanderize> 'monster',,commanderize 0 = do not alter commander status 1 = turns a non commander into a commander
+Events,Affect Target,randitem,<rare chance>,,to be written
+Events,Affect Target,randmisc,<rare chance>,,to be written
+Events,Affect Target,removeanimalcorpses,<nbr>,,Removes this many animal corpses from target location. Nbr must be a positive value.
+Events,Affect Target,removecorpses,<nbr>,,Removes this many corpses from target location. Nbr must be a positive value.
+Events,Affect Target,removehumanoidcorpses,<nbr>,,Removes this many humanoid corpses from target location. Nbr must be a positive value.
 Events,Basic Action,addresources,<player> <resource type> <amount>,,Adds an amount of resources to a player. See table Resource Types for resource types.
 Events,Basic Action,message,<to player> 'text',,Sends a text message to a player.
-Events,Change Location,setloc,<x> <y>,,move target location to a fixed location
 Events,Change Location,randloc,<planenr> <terr nbr>,,move target location to a random location. See table Plane Numbers. The plane special values -1 (all planes) and -2 (Elysium-near planes) can also be used. Negative terrain numbers can also be used for special group of terrains.
 Events,Change Location,scatterloc,<radius>,,makes target location deviate a bit can result in the same square. Cannot be used on squareevents
+Events,Change Location,setloc,<x> <y>,,move target location to a fixed location
+Events,Start,endevent,,,All events must end with this command
 Events,Start,playerevent,,,Once for each player every turn occurs in home citadel by default
 Events,Start,squareevent,,,For each player and each square in the world every turn
-Events,Start,endevent,,,All events must end with this command
 Events,Target Action,newunits,<player> 'monsters',,also sets target unit
 Events,Target Action,promoteunits,<player> <max amount> 'from monster' 'to monster',,also sets target unit
-Events,Affect Target,gainxp,<xp>,,Gives XP to the target unit. XP can be negative to remove XP.
-Events,Target Action,alterterrain,<terrain nbr>,,changes the terrain of the current location
-Events,Target Action,killsquare,,,kills everyone in target square
-Events,Target Action,namesquare,'square name',,Sets name of square e.g. 'Crab Harbor' or '!2The Old Forest' or '!!The Old Tower'
-Events,Trigger,+squareowner,<player>,,True if target square is owned or occupied by this player
 Events,Trigger,+armyowner,<player>,,True if square is occupied by this player
-Events,Trigger,+turnnbr,<turn nbr>,,True if the current turn number is this turn nbr.
-Events,Trigger,+minturnnbr,<turn nbr>,,True if the current turn number is this turn nbr of greater.
 Events,Trigger,+chance,<percent>,,Trigger has percent chance of being true.
-Events,Trigger,+player,<player>,,True if current player has this player number
 Events,Trigger,+class,<player> 'class name',,True if this player is this class
 Events,Trigger,+hascom,<player> 'commander’s name',,Also sets target unit
 Events,Trigger,+hascomhere,<player> 'commander’s name',,Also sets target unit
-Events,Trigger,+ownsloc,<player> <terr nbr>,,True if player owns this terrain anywhere in the world
-Events,Trigger,+terrain,<terr nbr>,,True if target square is of this terrain
-Events,Trigger,+season,<0-3>,,0=summer 1=autumn 2=winter 3=spring
-Events,Trigger,+seasondelay,<1-3>,,3=early (guaranteed to only happen once per season 2=mid 1=late)
-Events,Trigger,+varequal,<var> <value>,,var = 0-9999 true if variable equals value
-Events,Trigger,+varlesser,<var> <value>,,True if the variable is less than value
-Events,Trigger,+vargreater,<var> <value>,,True if the variable is greater than value
-Events,Trigger,+hasunit,<player> 'monster name',,Also sets target unit (player -1 = any player)
-Events,Trigger,+hasunithere,<player> 'monster name',,Also sets target unit (player -1 = any player)
-Events,Trigger,+squarename,'square name',,True if square has this name. e.g. 'Crab Harbor' or 'The Old Tower'
 Events,Trigger,+hasitem,"<player> ""item name""",,True if player has this kind of magic item somewhere in the world. Also sets target unit to wielder (player -1 = any player)
 Events,Trigger,+hasitemhere,"<player> ""item name""",,True if player has this kind of magic item in current square. Also sets target unit to wielder (player -1 = any player
+Events,Trigger,+hasunit,<player> 'monster name',,Also sets target unit (player -1 = any player)
+Events,Trigger,+hasunithere,<player> 'monster name',,Also sets target unit (player -1 = any player)
+Events,Trigger,+minanimalcorpses,<nbr>,,True if at least this many animal corpses (of any type) are present in the square.
+Events,Trigger,+mincorpses,<nbr>,,True if at least this many corpses of any type are present in the square.
+Events,Trigger,+minhumancorpses,<nbr>,,True if at least this many human corpses are present in the square.
+Events,Trigger,+minhumanoidcorpses,<nbr>,,"True if at least this many humanoid corpses (humans, hoburghers, giants) are present in the square."
+Events,Trigger,+minturnnbr,<turn nbr>,,True if the current turn number is this turn nbr of greater.
+Events,Trigger,+ownsloc,<player> <terr nbr>,,True if player owns this terrain anywhere in the world
 Events,Trigger,+plane,<planenr>,,True if target square is on this plane. See table Plane Numbers. The special values -1 (all planes) and -2 (Elysium-near planes) can also be used.
-Events,Variable,setvar,<var> <value>,,var = 0-9999  sets a variable to a value
+Events,Trigger,+player,<player>,,True if current player has this player number
+Events,Trigger,+season,<0-3>,,0=summer 1=autumn 2=winter 3=spring
+Events,Trigger,+seasondelay,<1-3>,,3=early (guaranteed to only happen once per season 2=mid 1=late)
+Events,Trigger,+squarename,'square name',,True if square has this name. e.g. 'Crab Harbor' or 'The Old Tower'
+Events,Trigger,+squareowner,<player>,,True if target square is owned or occupied by this player
+Events,Trigger,+terrain,<terr nbr>,,True if target square is of this terrain
+Events,Trigger,+turnnbr,<turn nbr>,,True if the current turn number is this turn nbr.
+Events,Trigger,+varequal,<var> <value>,,var = 0-9999 true if variable equals value
+Events,Trigger,+vargreater,<var> <value>,,True if the variable is greater than value
+Events,Trigger,+varlesser,<var> <value>,,True if the variable is less than value
 Events,Variable,addvar,<var> <value>,,var = 0-9999  adds a value to a variable.
-Magic,Basic,name,item name,,Set the name of the magic item. Not necessary if you created a new one with newitem.
+Events,Variable,setvar,<var> <value>,,var = 0-9999  sets a variable to a value
 Magic,Basic,descr,item description,,Not necessary as most magic items don’t have descriptions.
-Magic,Basic,spr,image file,,Sets the sprite for the magic item. It should be centered in a 32x32 or 64x64 pixel large image. The drawn item should not be larger than 40x40 pixels however so if put in a 64x64 image it should be surrounded by black.
+Magic,Basic,itemwep,weapon name,,Sets the weapon stats of the magic item to those of the weapon with this name. Only use this together with type 1 magic items.
+Magic,Basic,name,item name,,Set the name of the magic item. Not necessary if you created a new one with newitem.
 Magic,Basic,rarity,<rarity>,0,Sets how easy it should be to find this item. 0=common 1=rare 2=rare & unique 3=impossible to find as a random item. Default is 0.
+Magic,Basic,spr,image file,,Sets the sprite for the magic item. It should be centered in a 32x32 or 64x64 pixel large image. The drawn item should not be larger than 40x40 pixels however so if put in a 64x64 image it should be surrounded by black.
 Magic,Basic,type,<item type>,7,Sets the magic item type. Default is 7 = misc item. See table Magic Item Types
-Magic,Basic,armor,<value>,0,Armor value default 0.
-Magic,Basic,protection,<value>,0,Protection bonus default 0.
-Magic,Basic,hp,<value>,0,Hit Point bonus default 0.
 Magic,Copy/Clear,copyspr,item name,,Uses the sprite from this magic item.
 Magic,Copy/Clear,copystats,item name,,Copies all stats except the name from this magic item.
+Magic,Special,armor,<value>,0,Armor value default 0.
+Magic,Special,combatspell,"<mode> ""spell name""",,"Mode -1 = spell will be auto cast on the first round, 1 = unit can cast this spell (like a wand), 2 = spell will be auto cast each round. The spell name is simply the name of the combat spell to be cast, e.g. ""Fireball""."
+Magic,Special,combatsum,"<mode> ""summoning string""",,"Mode -1 = will summon on the first round of combat, 1 = will summon on all rounds of combat. Summoning string is very simlar to the summoning strings used for ritual summoning. E.g. ""2d4*Deer & 2*wolf"" would summon 2-8 deer and 2 wolves. Commanders cannot be summoned in battle."
+Magic,Special,hp,<value>,0,Hit Point bonus default 0.
+Magic,Special,protection,<value>,0,Protection bonus default 0.
 Magic,Start,newitem,item name,,This command creates a new magic item.
 Magic,Start,selectitem,item name,,Selects an existing magic item for modification.
-Mirrors,mirror,<value>,,,1=is small mirror 2=is large mirror 3=silver 4=gold
-Mirrors,mirrorammo,<value>,,,default number of images for this type of mirror (def 20)
-Mirrors,phantasm,<value>,,,1=phantasmal warrior 2=phantasmal animal etc.
-Mirrors,releasephant,<value>,,,mirror releases this type of phantasms (has phantasm = value)
-Mirrors,releaserate,<value>,,,bonus to the number of phantasms released
-Mirrors,releasespell,<value>,,,making an attack drains one mirror charge (fx_mirror)
-Mirrors,revertmirror,<value>,,,revert to mirror when empty. 1=small mirror 2=large mirror 3=silver 4=gold
 Miscellaneous,Playercolor,<player> <red> <green> <blue>,,,Sets the default color for a player. Each color value is between 0 and 255
 Monsters,Attacks,assassinweapon,<dmg> 'weapon',,Equips the monster with an assassination weapon of this name that has a base damage of <dmg>. This weapon will be used to make an assassination attempt on an enemy before normal combat (including siege weapons) begins. Assassination attempts can only be used by the attacker and cannot be used against summoned creatures the summoner fails to control.
 Monsters,Attacks,meleeweapon,<dmg> 'weapon',,Equips the monster with a melee weapon of this name that has a base damage of <dmg>.
@@ -243,6 +247,13 @@ Monsters,Income,relics,<nbr>,,Gives extra income per month of this resource.
 Monsters,Income,trade,<nbr>,,Gives this number of extra trade points
 Monsters,Income,tradebonus,<percent>,,Percentage bonus to trade income for entire nation.
 Monsters,Income,weed,<nbr>,,Gives extra income per month of this resource.
+Monsters,Mirrors,mirror,<value>,,1=is small mirror 2=is large mirror 3=silver 4=gold
+Monsters,Mirrors,mirrorammo,<value>,,default number of images for this type of mirror (def 20)
+Monsters,Mirrors,phantasm,<value>,,1=phantasmal warrior 2=phantasmal animal etc.
+Monsters,Mirrors,releasephant,<value>,,mirror releases this type of phantasms (has phantasm = value)
+Monsters,Mirrors,releaserate,<value>,,bonus to the number of phantasms released
+Monsters,Mirrors,releasespell,<value>,,making an attack drains one mirror charge (fx_mirror)
+Monsters,Mirrors,revertmirror,<value>,,revert to mirror when empty. 1=small mirror 2=large mirror 3=silver 4=gold
 Monsters,Movement,battlefast,,,Monster is fast but in battles only.
 Monsters,Movement,battleslow,,,Monster is slow in battles.
 Monsters,Movement,battleslow2,,,Monster is very slow battles.
@@ -255,6 +266,7 @@ Monsters,Movement,immobile,,,Monster is immobile (cannot move in battle).
 Monsters,Movement,mountain,,,Monster has mountain move.
 Monsters,Movement,noland,,,Monster cannot move on land.
 Monsters,Movement,passwall,,,Monster can move through walls.
+Monsters,Movement,shipmove,,,Monster is a ship. Movement will cost 1 AP for everyone in the same square.
 Monsters,Movement,slow,,,Monster is slow on world map.
 Monsters,Movement,snow,,,Monster has snow move.
 Monsters,Movement,stationary,,,Monster is stationary (cannot move on world map).
@@ -295,6 +307,7 @@ Monsters,Ritual Power,gatherfungus,,,A commander with this ability will enable t
 Monsters,Ritual Power,gathergems,,,A commander with this ability will enable the player to gather gems of individual types.
 Monsters,Ritual Power,gatherhands,,,A commander with this ability will enable the player to gather Hands of Glory.
 Monsters,Ritual Power,gatherherbs,,,A commander with this ability will enable the player to gather herbs.
+Monsters,Ritual Power,gatherlifeforce,,,A commander with this ability will enable the player to gather lifeforce.
 Monsters,Ritual Power,gatherrelics,,,A commander with this ability will enable the player to gather relics.
 Monsters,Ritual Power,gathersacr,,,A commander with this ability will enable the player to gather sacrifices.
 Monsters,Ritual Power,gatherweed,,,A commander with this ability will enable the player to gather weed.
@@ -465,104 +478,114 @@ Monsters,Types,statue,<0-1>,,statues get part of their name from their creator e
 Monsters,Types,stonebeing,,,monster is made of stone
 Monsters,Types,troll,,,is a troll
 Monsters,Types,undead,,,is an undead being
-Ritual,AI Hints,aiwhere,<terrain nbr>,,restricts the AI to only cast ritual in this terrain
+Ritual,Affect Unit,bentarg,<ben nbr>,,Gives a beneficial bitmask to the target unit. Particularly useful values for rituals are 2^26 to get the twiceborn effect and 2^22 to get a permanent invulnerability.
+Ritual,Affect Unit,bentargall,<ben nbr>,,Like bentarg but also affects all the target’s followers.
+Ritual,Affect Unit,bentargvar,<ben nbr>,,Like bentarg but terrain is restricted to the number in the generic modding variable.
+Ritual,Affect Unit,cureoneaff,<chance>,,Has this chance of curing one affliction on the target unit.
+Ritual,Affect Unit,fillmirror,<images>,,Puts a number of images into a mirror -1 = fill to default value (mirrorammo)
+Ritual,Affect Unit,insanity,<value>,,
+Ritual,Affect Unit,killtarg,<dmg>,,Gives between 1 and
+Ritual,Affect Unit,selectfx,<fx nbr>,,Sets mod-fx-nbr to this value. Used by next command.
+Ritual,Affect Unit,setfx,<value>,,Gives target unit a fx of type mod-fx-nbr and sets it to this value.
+Ritual,Affect Unit,setvar,<nbr>,,Set the generic modding variable to this value.
+Ritual,Affect Unit,teleportloc,<1-2>,,Teleport target unit to target location. Attribute value 2 means the caster’s entire army is teleported to the target location.
+Ritual,Affect Unit,updatehome,,,Updates home for target unit to where he stands. This is used to make some immortals resurrect in the correct place.
 Ritual,AI Hints,aialways,<chance>,,AI will always (if chance = 100 try to cast this ritual but not make any long time plans for it. chance=999 is special and means the AI will also make plans for the ritual.)
-Ritual,AI Hints,airare,<chance>,,Reduces the chance of the AI trying to use this ritual. Chance is the chance of casting the ritual and can be from 1-99. -1 is a special value meaning never cast it.
-Ritual,AI Hints,aiweakonly,<troop strength>,,AI commander will only cast this ritual if his troop strength is below this value. One spearman gives 10 troop strength points.
-Ritual,AI Hints,aionlyplane,<plane nr>,,AI will only cast ritual when on this plane
-Ritual,AI Hints,aitarg,<value>,,For long range rituals. 1=try to target squares with enemy commanders 2=try to target valuable squares with corpses in
-Ritual,AI Hints,ainothere,<terrain nbr>,,AI will not cast ritual in this terrain
+Ritual,AI Hints,aiapprspam,<chance>,,AI will dedicate apprentices to stay at home and only spam this ritual. Chance is 0-100
+Ritual,AI Hints,aimaxcast,<value>,,An AI player will never cast this ritual more than this number of times in a game
+Ritual,AI Hints,ainosimul,,,No more than one commander may plan to cast this ritual at once
 Ritual,AI Hints,ainotclose1,<terrain nbr>,,AI will not cast ritual if close to this terrain radius=1
 Ritual,AI Hints,ainotclose2,<terrain nbr>,,AI will not cast ritual if close to this terrain radius=2
 Ritual,AI Hints,ainotclose3,<terrain nbr>,,AI will not cast ritual if close to this terrain radius=3
+Ritual,AI Hints,ainothere,<terrain nbr>,,AI will not cast ritual in this terrain
 Ritual,AI Hints,ainotnearhome,<mindist>,,AI should not cast this ritual close to home (mindist = nbr of squares away)
-Ritual,AI Hints,aiapprspam,<chance>,,AI will dedicate apprentices to stay at home and only spam this ritual. Chance is 0-100
-Ritual,AI Hints,ainosimul,,,No more than one commander may plan to cast this ritual at once
+Ritual,AI Hints,aionlyplane,<plane nr>,,AI will only cast ritual when on this plane
+Ritual,AI Hints,airare,<chance>,,Reduces the chance of the AI trying to use this ritual. Chance is the chance of casting the ritual and can be from 1-99. -1 is a special value meaning never cast it.
 Ritual,AI Hints,airestrig,<value>,,AI will always try to cast this ritual if it has at least this many of the primary resource for the ritual
-Ritual,AI Hints,aimaxcast,<value>,,An AI player will never cast this ritual more than this number of times in a game
-Ritual,Affect Unit,teleportloc,<1-2>,,Teleport target unit to target location. Attribute value 2 means the caster’s entire army is teleported to the target location.
-Ritual,Affect Unit,selectfx,<fx nbr>,,Sets mod-fx-nbr to this value. Used by next command.
-Ritual,Affect Unit,setfx,<value>,,Gives target unit a fx of type mod-fx-nbr and sets it to this value.
-Ritual,Affect Unit,fillmirror,<images>,,Puts a number of images into a mirror -1 = fill to default value (mirrorammo)
-Ritual,Affect Unit,killtarg,<dmg>,,Gives between 1 and
-Ritual,Affect Unit,updatehome,,,Updates home for target unit to where he stands. This is used to make some immortals resurrect in the correct place.
-Ritual,Affect Unit,bentarg,<ben nbr>,,Gives a beneficial bitmask to the target unit. Particularly useful values for rituals are 2^26 to get the twiceborn effect and 2^22 to get a permanent invulnerability.
-Ritual,Affect Unit,bentargall,<ben nbr>,,Like bentarg but also affects all the target’s followers.
-Ritual,Affect Unit,setvar,<nbr>,,Set the generic modding variable to this value.
-Ritual,Affect Unit,bentargvar,<ben nbr>,,Like bentarg but terrain is restricted to the number in the generic modding variable.
-Ritual,Basic,ritpow,<pow nbr>,,Sets the ritpow used. If command is not used the latest created newritpow will be used. Existing ritpow numbers can be found in the Ritual Schools table.
-Ritual,Basic,level,<1-9>,,The level of the ritual. Usually the level is between 1 (apprentice level) and 3 (master level).
+Ritual,AI Hints,aitarg,<value>,,For long range rituals. 1=try to target squares with enemy commanders 2=try to target valuable squares with corpses in
+Ritual,AI Hints,aiweakonly,<troop strength>,,AI commander will only cast this ritual if his troop strength is below this value. One spearman gives 10 troop strength points.
+Ritual,AI Hints,aiwhere,<terrain nbr>,,restricts the AI to only cast ritual in this terrain
 Ritual,Basic,cost,<resource type> <amount>,,Adds a resource cost to the ritual. E.g. cost 4 10 to add a cost of 10 sacrifices. A single ritual can have at most 4 different costs. See table Resource Types for resource types.
+Ritual,Basic,level,<1-9>,,The level of the ritual. Usually the level is between 1 (apprentice level) and 3 (master level).
+Ritual,Basic,ritpow,<pow nbr>,,Sets the ritpow used. If command is not used the latest created newritpow will be used. Existing ritpow numbers can be found in the Ritual Schools table.
 Ritual,Basic,terr,<terrain nbr>,,Restrict ritual to this terrain only. Negative numbers can be used for special terrain combinations.
 Ritual,Boosts,apcost,<nbr>,,Extra Action Points cost for the rituals.
 Ritual,Boosts,rebatefx25,<fx nbr>,,Units with this fx nbr get 25% rebate
 Ritual,Boosts,rebatefx50,<fx nbr>,,Units with this fx nbr get 50% rebate
 Ritual,Boosts,rebateterr20,<terrain nbr>,,Ritual cost is 20% cheaper in this terrain
 Ritual,Boosts,rebateterr50,<terrain nbr>,,Ritual cost is 20% cheaper in this terrain
+Ritual,Boosts,sacrscale,,,Summoning amount scales with sacrifice production of target square
 Ritual,Boosts,terrboost,<terrain nbr>,,Adds 1 to number of summoned monsters when done in this terrain
 Ritual,Boosts,terrscale50,<terrain nbr>,,+50% number of summoned monster when done in this terrain
-Ritual,Boosts,sacrscale,,,Summoning amount scales with sacrifice production of target square
-Ritual,Casting Restrictions,levelreq,<1-9>,,Caster must be exactly this level to use this ritual and cannot have another power at higher level.
-Ritual,Casting Restrictions,resrestrict,<res nbr>,,Caster cannot have this resistance bitmask. Useful values are 2^4 for undead 2^20 for immortal and 2^26 for ethereal.
-Ritual,Casting Restrictions,resreq,<res nbr>,,Caster must have this resistance bitmask.
 Ritual,Casting Restrictions,benrestrict,<ben nbr>,,Caster cannot have this beneficial bitmask
-Ritual,Casting Restrictions,fxreq,<fx nbr>,,Unit must have 1+ in this fx to learn and cast this ritual. This command is probably not useful for modding.
-Ritual,Casting Restrictions,nomonworldreq,,,Monsters in addstring '(-)…​' must not be in the world
-Ritual,Casting Restrictions,nomonplayerreq,,,Monsters in addstring '(-)…​' must not be in the world and owned by the current player
-Ritual,Casting Restrictions,nomonmasteryreq,,,Monsters in addstring '(-)…​' must not be in the world and owned by the current player unless level is higher than ritual requires
-Ritual,Casting Restrictions,nomonelysiumreq,,,Monsters in addstring '(-)…​' must not be in elysium/sky/agartha. Monster in addstring '(+)…​' will disable following minuses if monster fulfils same requirement. This applies for all nomon… commands.
-Ritual,Casting Restrictions,nomonreq,,,Monsters in addstring '(-)…​' must not be at target location.
-Ritual,Casting Restrictions,nomonhomereq,,,Monsters in addstring '(-)…​' must not have their home at target location.
-Ritual,Casting Restrictions,fewmonreq,<max>,,The monsters in addstring '(-)…​' must not be more than max.
-Ritual,Casting Restrictions,minmonreq,<min>,,The monsters in addstring '(-)…​' must be at least 'min' in number.
-Ritual,Casting Restrictions,monworldreq,[<min>],1,At least min number (default 1) of the monsters in addstring '(&)…​' must be in the world. The min attribute is optional and can be omitted.
-Ritual,Casting Restrictions,monplayerreq,[<min>],1,At least min number (default 1) of the monsters in addstring '(&)…​' must be in the world and owned by the current player. The min attribute is optional and can be omitted.
 Ritual,Casting Restrictions,enchherereq,<ench nbr>,,This type of Enchantment must be active where there ritual is cast.
-Ritual,Casting Restrictions,nonearby1req,<terrain nbr>,,this terrain cannot be within 1 square when casting the ritual (a 3x3 square area).
-Ritual,Casting Restrictions,nonearby3req,<terrain nbr>,,this terrain cannot be within 3 squares when casting the ritual (a 7x7 square area).
-Ritual,Casting Restrictions,nonearby5req,<terrain nbr>,,this terrain cannot be within 5 squares when casting the ritual (a 11x11 square area).
-Ritual,Casting Restrictions,nonearby7req,<terrain nbr>,,this terrain cannot be within 7 squares when casting the ritual (a 15x15 square area).
-Ritual,Casting Restrictions,nonearby99req,<terrain nbr>,,this terrain cannot be anywhere on the same plane when casting the ritual
+Ritual,Casting Restrictions,eventvarreq,<var>,,This event variable must be 1 or higher for ritual to be castable.
+Ritual,Casting Restrictions,fewmonreq,<max>,,The monsters in addstring '(-)…​' must not be more than max.
+Ritual,Casting Restrictions,fortreq,,,to be written
+Ritual,Casting Restrictions,fxreq,<fx nbr>,,Unit must have 1+ in this fx to learn and cast this ritual. This command is probably not useful for modding.
+Ritual,Casting Restrictions,hasportalreq,<portal nbr>,,to be written
+Ritual,Casting Restrictions,homecitreq,<-1 or 1>,,Can only cast this in the player’s home citadel. -1=cannot.
+Ritual,Casting Restrictions,homereq,<-1 or 1>,,Caster can only cast this in his home province. -1=cannot.
+Ritual,Casting Restrictions,levelreq,<1-9>,,Caster must be exactly this level to use this ritual and cannot have another power at higher level.
+Ritual,Casting Restrictions,maxcast,<value>,,ritual cannot be cast more than this number of times per player
+Ritual,Casting Restrictions,minmonreq,<min>,,The monsters in addstring '(-)…​' must be at least 'min' in number.
+Ritual,Casting Restrictions,monplayerreq,[<min>],1,At least min number (default 1) of the monsters in addstring '(&)…​' must be in the world and owned by the current player. The min attribute is optional and can be omitted.
+Ritual,Casting Restrictions,monworldreq,[<min>],1,At least min number (default 1) of the monsters in addstring '(&)…​' must be in the world. The min attribute is optional and can be omitted.
 Ritual,Casting Restrictions,nearby1req,<terrain nbr>,,this terrain must be within 1 square when casting the ritual (a 3x3 square area).
 Ritual,Casting Restrictions,nearby3req,<terrain nbr>,,this terrain must be within 3 squares when casting the ritual (a 7x7 square area).
 Ritual,Casting Restrictions,nearby5req,<terrain nbr>,,this terrain must be within 5 squares when casting the ritual (a 11x11 square area).
 Ritual,Casting Restrictions,nearby7req,<terrain nbr>,,this terrain must be within 7 squares when casting the ritual (a 15x15 square area).
 Ritual,Casting Restrictions,nearby99req,<terrain nbr>,,this terrain must be somewhere on the same plane when casting the ritual
-Ritual,Casting Restrictions,noportalreq,<0-1>,,location where ritual is cast mustn’t contain a portal
-Ritual,Casting Restrictions,maxcast,<value>,,ritual cannot be cast more than this number of times per player
-Ritual,Casting Restrictions,planereq,<plane nbr>,,Can only be cast on this plane. See table Plane Numbers.
-Ritual,Casting Restrictions,nofxherereq,<fx nbr>,,to be written
+Ritual,Casting Restrictions,noeventvarreq,<var>,,This event variable must be 0 or lower for ritual to be castable.
 Ritual,Casting Restrictions,nofortreq,,,to be written
-Ritual,Casting Restrictions,fortreq,,,to be written
-Ritual,Casting Restrictions,hasportalreq,<portal nbr>,,to be written
-Ritual,Copy/Clear,copyritual,name,,Copies all stats and abilities (except pow nbr and name) from another ritual to the current one.
+Ritual,Casting Restrictions,nofxherereq,<fx nbr>,,to be written
+Ritual,Casting Restrictions,nomonelysiumreq,,,Monsters in addstring '(-)…​' must not be in elysium/sky/agartha. Monster in addstring '(+)…​' will disable following minuses if monster fulfils same requirement. This applies for all nomon… commands.
+Ritual,Casting Restrictions,nomonhomereq,,,Monsters in addstring '(-)…​' must not have their home at target location.
+Ritual,Casting Restrictions,nomonmasteryreq,,,Monsters in addstring '(-)…​' must not be in the world and owned by the current player unless level is higher than ritual requires
+Ritual,Casting Restrictions,nomonplayerreq,,,Monsters in addstring '(-)…​' must not be in the world and owned by the current player
+Ritual,Casting Restrictions,nomonreq,,,Monsters in addstring '(-)…​' must not be at target location.
+Ritual,Casting Restrictions,nomonworldreq,,,Monsters in addstring '(-)…​' must not be in the world
+Ritual,Casting Restrictions,nonearby1req,<terrain nbr>,,this terrain cannot be within 1 square when casting the ritual (a 3x3 square area).
+Ritual,Casting Restrictions,nonearby3req,<terrain nbr>,,this terrain cannot be within 3 squares when casting the ritual (a 7x7 square area).
+Ritual,Casting Restrictions,nonearby5req,<terrain nbr>,,this terrain cannot be within 5 squares when casting the ritual (a 11x11 square area).
+Ritual,Casting Restrictions,nonearby7req,<terrain nbr>,,this terrain cannot be within 7 squares when casting the ritual (a 15x15 square area).
+Ritual,Casting Restrictions,nonearby99req,<terrain nbr>,,this terrain cannot be anywhere on the same plane when casting the ritual
+Ritual,Casting Restrictions,noportalreq,<0-1>,,location where ritual is cast mustn’t contain a portal
+Ritual,Casting Restrictions,planereq,<plane nbr>,,Can only be cast on this plane. See table Plane Numbers.
+Ritual,Casting Restrictions,resreq,<res nbr>,,Caster must have this resistance bitmask.
+Ritual,Casting Restrictions,resrestrict,<res nbr>,,Caster cannot have this resistance bitmask. Useful values are 2^4 for undead 2^20 for immortal and 2^26 for ethereal.
 Ritual,Copy/Clear,clearritspec,,,Removes all special attributes from a ritual. This is only useful when modifying existing rituals.
-Ritual,Difficulty,free,,,always start with this ritual in addition the others
-Ritual,Difficulty,start,,,will start with this ritual(s) no others
-Ritual,Difficulty,nostart,,,never start with this ritual (or learn from mastery)
-Ritual,Difficulty,rarestart,,,reduced chance of starting with this ritual
-Ritual,Difficulty,notforpoor,,,units with more expensive rituals can’t get this one
-Ritual,Difficulty,nexttoo,,,recives next ritual too when receiving this one
+Ritual,Copy/Clear,copyritual,<name>,,Copies all stats and abilities (except pow nbr and name) from another ritual to the current one.
 Ritual,Difficulty,afterprev,,,must know previous ritual before learning this one
-Ritual,Difficulty,noundead,,,undeads never know this ritual
+Ritual,Difficulty,free,,,always start with this ritual in addition the others
+Ritual,Difficulty,gathergems,,,will start gathering gems when knowing this ritual
+Ritual,Difficulty,nexttoo,,,recives next ritual too when receiving this one
 Ritual,Difficulty,nodemon,,,demons never know this ritual
 Ritual,Difficulty,nofemale,,,females never know this ritual
-Ritual,Difficulty,gathergems,,,will start gathering gems when knowing this ritual
-Ritual,Event Interaction,setvar,<var>,,set this event variable to 1
-Ritual,Event Interaction,clearvar,<var>,,set this event variable to 0
+Ritual,Difficulty,nostart,,,never start with this ritual (or learn from mastery)
+Ritual,Difficulty,notforpoor,,,units with more expensive rituals can’t get this one
+Ritual,Difficulty,noundead,,,undeads never know this ritual
+Ritual,Difficulty,rarestart,,,reduced chance of starting with this ritual
+Ritual,Difficulty,start,,,will start with this ritual(s) no others
 Ritual,Event Interaction,addvar,<var>,,increases the value of this event variable by 1
+Ritual,Event Interaction,clearvar,<var>,,set this event variable to 0
+Ritual,Event Interaction,setvar,<var>,,set this event variable to 1
 Ritual,Event Interaction,subvar,<var>,,decreases the value of this event variable by 1
-Ritual,Mastery,newrit,<1-9>,,Grants a new ritual of this level.
+Ritual,Mastery,forgetrits,,,to be written
 Ritual,Mastery,gainrit,<offset>,,Learns the ritual that is offset numbers away. E.g. offset 1 = learn the following ritual when casting this one.
-Ritual,Mastery,rebatelvl,<1-9>,,This ritual will be half price if caster is this level or higher.
 Ritual,Mastery,levelup,<1-9>,,Will level up if caster is below this level. Leveling up means becoming a new monster determined by the mastery monster command.
 Ritual,Mastery,levelupmon,<1-9>,,Like levelup but the new monster type is set by the addstring command. Set the new monster type in the addstring command.
+Ritual,Mastery,newrit,<1-9>,,Grants a new ritual of this level.
 Ritual,Mastery,newspell1,<path nbr>,,to be written
 Ritual,Mastery,newspell2,<path nbr>,,to be written
 Ritual,Mastery,newspell3,<path nbr>,,to be written
-Ritual,Mastery,forgetrits,,,to be written
-Ritual,Special,soundfx,<sound>,,Play this sound effect.
-Ritual,Special,transformtarg,<1-2>,,to be written
+Ritual,Mastery,rebatelvl,<1-9>,,This ritual will be half price if caster is this level or higher.
+Ritual,Special,castertarg,,,Sets target unit to caster.
+Ritual,Special,centercaster,,,Center map on caster.
+Ritual,Special,closewin,,,Closes the ritual window after the ritual has completed.
+Ritual,Special,enchreqterr,<terrain nbr>,,Enchantment will be auto dispelled if it is outside this terrain.
+Ritual,Special,failplayer,<player nbr>,,to be written
+Ritual,Special,forgetcurrit,,,Caster will forget this ritual after casting it.
 Ritual,Special,gainbless,<percent>,,Percent chance of gaining a bless effect.
 Ritual,Special,gaindarkbless,<percent>,,Percent chance of gaining a dark bless effect.
 Ritual,Special,ornext,<percent>,,This ritual will have one of two possible effects. The first effect will consist of the following command the next effect will consist of the remaining commands. Percent is the chance of the first effect happening.
@@ -570,60 +593,56 @@ Ritual,Special,ornext2,<percent>,,This ritual will have one of two possible effe
 Ritual,Special,ornext3,<percent>,,This ritual will have one of two possible effects. The first effect will consist of the three following commands the next effect will consist of the remaining commands. Percent is the chance of the first effect happening.
 Ritual,Special,ornext4,<percent>,,Like the other ornext commands.
 Ritual,Special,ornext5,<percent>,,Like the other ornext commands.
-Ritual,Special,castertarg,,,Sets target unit to caster.
-Ritual,Special,closewin,,,Closes the ritual window after the ritual has completed.
-Ritual,Special,failplayer,<player nbr>,,to be written
-Ritual,Special,centercaster,,,Center map on caster.
-Ritual,Special,unfollowtarg,,,Removes all followers from the target should he be a commander that is commanding any units.
 Ritual,Special,simulacrum,,,to be written
-Ritual,Special,enchreqterr,<terrain nbr>,,Enchantment will be auto dispelled if it is outside this terrain.
-Ritual,Special,forgetcurrit,,,Caster will forget this ritual after casting it.
+Ritual,Special,soundfx,<sound>,,Play this sound effect.
+Ritual,Special,transformtarg,<1-2>,,to be written
+Ritual,Special,unfollowtarg,,,Removes all followers from the target should he be a commander that is commanding any units.
 Ritual,Start,newritpow,,,Creates an entire new school of rituals called a ritpow. This should be the first command when creating a new batch of rituals.
 Ritual,Start,newritual,name,,Create a new ritual with this name. This should be the first command for each new ritual.
 Ritual,Start,selectritual,name [<offs>],,The optional value offs can be used to select a ritual other than the first one with this name. 0=the first one 1=the second ritual with this name.
 Ritual,Summoning,addstring,string,,Adds some text data to a ritual. Most often used to set what is summoned by a summoning ritual but it depends on what effects are in the ritual.
-Ritual,Summoning,summoning,,,The ritual will summon the monsters specified in a random 'string'. Use addstring to add up to 15 strings with monsters. The string should be written like these examples:'1d6*Goblin' 'c*Captain & 2d6*spearman & 2d4+2*Archer' 'Purple Worm'. The c* indicates a commander and 2d6 means two 6-sided dice will determine the number of monsters summoned. Dice cannot be combined with commanders.
-Ritual,Summoning,farsummon,,,Like summoning but it will occur at target location instead of at the caster’s location.
+Ritual,Summoning,defctrl,<percent>,,Default control chance for summonings. Can be overridden by monster’s own ctrlchance.
+Ritual,Summoning,farsummon,,,Like summoning but it will occur at target location instead of at the caster’s location. Can now summon commanders too
+Ritual,Summoning,raiseanimals,,,Raises animal corpses from the dead.
+Ritual,Summoning,raisedead,,,Raises humanoid corpses from the dead.
+Ritual,Summoning,setplayer,<player nbr>,,Following summons will be owned by this player. Default owner is the current player. Player -1 resets the owner to the default
+Ritual,Summoning,specpow,<value>,,Makes a druid summoning 1=minor 2=major
 Ritual,Summoning,sum0chance,<percent>,,Use with summonings. Percent = chance of first 'string' to be used instead of a random string among the others.
+Ritual,Summoning,sum0snow,<percent>,,Works like sum0chance but it can only succeed if there is snow at the target location.
 Ritual,Summoning,sum1chance,<percent>,,Use with summonings. Percent = chance of second 'string' to be used instead of a random string among the third and later.
 Ritual,Summoning,sum2chance,<percent>,,Same but one higher.
 Ritual,Summoning,sum3chance,<percent>,,Same but one higher.
 Ritual,Summoning,sum4chance,<percent>,,Same but one higher.
-Ritual,Summoning,sum0snow,<percent>,,Works like sum0chance but it can only succeed if there is snow at the target location.
-Ritual,Summoning,defctrl,<percent>,,Default control chance for summonings. Can be overridden by monster’s own ctrlchance.
+Ritual,Summoning,summoning,,,The ritual will summon the monsters specified in a random 'string'. Use addstring to add up to 15 strings with monsters. The string should be written like these examples:'1d6*Goblin' 'c*Captain & 2d6*spearman & 2d4+2*Archer' 'Purple Worm'. The c* indicates a commander and 2d6 means two 6-sided dice will determine the number of monsters summoned. Dice cannot be combined with commanders.
 Ritual,Summoning,varcost,<percent>,,Set variable sacrifice amount (50=50-150% 100=0-150%)
-Ritual,Summoning,raisedead,,,Raises humanoid corpses from the dead.
-Ritual,Summoning,raiseanimals,,,Raises animal corpses from the dead.
-Ritual,Summoning,specpow,<value>,,Makes a druid summoning 1=minor 2=major
-Ritual,Summoning,setplayer,<player nbr>,,Following summons will be owned by this player. Default owner is the current player. Player -1 resets the owner to the default
-Ritual,Target Location Effects,scryloc,<radius *10>,,to be written
-Ritual,Target Location Effects,scatterscry,<nbr of squares>,,to be written
-Ritual,Target Location Effects,squarespec,<ss nbr>,,to be written
-Ritual,Target Location Effects,reducetown,,,Reduces settlement at target location one step in size.
-Ritual,Target Location Effects,destroyterr,,,Destroys any valuable terrain at target location.
 Ritual,Target Location Effects,alterloc,<terrain nbr>,,Changes target square to this terrain.
-Ritual,Target Location Effects,makeportal,<portal nbr>,,Connect this square to other portals of the same number. Portal nbr 1000 is special and will create a unique number.
 Ritual,Target Location Effects,centerloc,,,Center map on target location.
-Ritual,Target Location Effects,trollifyloc,,,Transform forest at target location into a troll forest.
-Ritual,Target Location Effects,squareench,<ench nbr>,,to be written
+Ritual,Target Location Effects,destroyterr,,,Destroys any valuable terrain at target location.
+Ritual,Target Location Effects,makeportal,<portal nbr>,,Connect this square to other portals of the same number. Portal nbr 1000 is special and will create a unique number.
+Ritual,Target Location Effects,movehome,,,Moves home citadel location to target square.
 Ritual,Target Location Effects,planeswap,<plane nbr>,,to be written
 Ritual,Target Location Effects,portalroom,<terrain nbr>,,Creates a portal to a location around this terrain.
-Ritual,Target Location Effects,movehome,,,Moves home citadel location to target square.
-Ritual,Target Location Effects,putcorpses,<nbr>,,Creates a number of human corpses in the target square (as if a fight involving humans had taken place there).
-Ritual,Targetting,chooseterrloc,<terrain nbr>,,Player will choose target location for ritual.
-Ritual,Targetting,randterrloc,<terrain nbr>,,Sets loc to a random terrain of this type on active plane.
-Ritual,Targetting,randomloc,<1-5>,,1=random land loc 2=many dead (excluding present) 3=rand enemy com 4=rand enemy citadel 5=home citadel
-Ritual,Targetting,randnewloc,<terrain nbr>,,Like previous but try to find an unknown location first.
-Ritual,Targetting,newlocplanes,<terrain nbr>,,Like randnewloc but will go to other planes if necessary (but not hades)
-Ritual,Targetting,chooseloc,<1-5>,,Player choose target location. 2=deviate to many dead 3=empty mirror req 4=empty gold mirror 5=horror mark deviation
-Ritual,Targetting,planeloc,<plane nbr>,,Shift target loc to same position but on another plane (neg = toggle between this plane and elysium).
-Ritual,Targetting,setplane,<plane nbr>,,Following randomloc etc. commands will be restricted to this plane
+Ritual,Target Location Effects,putcorpses,<nbr>,,Creates a number of human corpses in the target square (as if a fight involving humans had taken place there). Add 10000 to nbr in order to make the number of corpses scale with the sacrifice amount used.
+Ritual,Target Location Effects,reducetown,,,Reduces settlement at target location one step in size.
+Ritual,Target Location Effects,scatterscry,<nbr of squares>,,to be written
+Ritual,Target Location Effects,scryloc,<radius *10>,,to be written
+Ritual,Target Location Effects,squareench,<ench nbr>,,to be written
+Ritual,Target Location Effects,squarespec,<ss nbr>,,to be written
+Ritual,Target Location Effects,trollifyloc,,,Transform forest at target location into a troll forest.
 Ritual,Targetting,choosefxtarg,<fx nbr>,,Player will choose a target unit that has this fx nbr.
+Ritual,Targetting,chooseloc,<1-5>,,Player choose target location. 2=deviate to many dead 3=empty mirror req 4=empty gold mirror 5=horror mark deviation
+Ritual,Targetting,chooseterrloc,<terrain nbr>,,Player will choose target location for ritual.
 Ritual,Targetting,mirrortarg,<mirror size>,,Set targ to an empty mirror unit attr = size for mirror -1=any size
 Ritual,Targetting,montarg,<1>,,Sets targ unit to a random unit at target location among the type added by addstring.
+Ritual,Targetting,newlocplanes,<terrain nbr>,,Like randnewloc but will go to other planes if necessary (but not hades)
+Ritual,Targetting,planeloc,<plane nbr>,,Shift target loc to same position but on another plane (neg = toggle between this plane and elysium).
+Ritual,Targetting,randnewloc,<terrain nbr>,,Like previous but try to find an unknown location first.
+Ritual,Targetting,randomloc,<1-5>,,1=random land loc 2=many dead (excluding present) 3=rand enemy com 4=rand enemy citadel 5=home citadel
+Ritual,Targetting,randterrloc,<terrain nbr>,,Sets loc to a random terrain of this type on active plane.
+Ritual,Targetting,setplane,<plane nbr>,,Following randomloc etc. commands will be restricted to this plane
 Ritual,Transformation,promotion,<nbr of units>,,Promote existing units to another monster type. Use addstring to add promotion pairs the first string sets a source unit and the second one the destination units. Multiple of these pairs can be added to a single ritual.
 Ritual,Transformation,transformtarg,<1-2>,,Will transform target into the unit type set by addstring. Value 1 = standard (use this) 2 = transform into following unit if level is high enough.
-Sound,sample,<sound> 'sample.sw',,Sets a sample file (sample.sw) as a certain sound effect number (sound). The sound effect number can be between 0 and 249 high numbers (170+) will create new samples and low number will replace the old samples that already occupies those numbers. The sample file should have the .sw (mono) or .sw2 (stereo) extension and be save as a signed 16-bit 22050 Hz sample.,
+Sound,sample,<sound> 'sample.sw',,,Sets a sample file (sample.sw) as a certain sound effect number (sound). The sound effect number can be between 0 and 249 high numbers (170+) will create new samples and low number will replace the old samples that already occupies those numbers. The sample file should have the .sw (mono) or .sw2 (stereo) extension and be save as a signed 16-bit 22050 Hz sample.
 Sound,sampleisloopmusic,<sound>,,,Turns this sample into one of the background tunes. That means it will loop into another background tune when it has finished playing.
 Sound,sampleismusic,<sound>,,,Turns this sample into one a class specific tunes. That means it will loop into a background tune when it has finished playing. If you create a sample as a class specific tune this must be used on that sample to keep the music playing. If used on a background tune it will remove that tune from the loop of background music.
 Terrain,Basic,apcost,<nbr>,,Action Point cost for moving through the terrain.
@@ -707,15 +726,15 @@ Terrain,Special,water,,,The terrain is water and cannot be passed unless it is f
 Terrain,Special,woodencitadel,,,Can be used as citadel by the Senator
 Terrain,Special,woodengate,,,The fort has a wooden gate
 Terrain,Start,selectterr,<terrain nbr>,,Select the terrain to be modified. Select a low number to alter an existing terrain or select a number between 500 - 999 to create a new terrain.
-Terrain Groups,Start,selectterrgroup,<terrgroup nbr>,,Select the terrain group to be modified. The number must be between -1000 and -1199. The numbers between -1 and -999 are reserved for standard CoE5 and cannot be modified.
-Terrain Groups,Basic,setname,image.tga,,"Sets the name for the terrain group  e.g. ""forests and temples""."
-Terrain Groups,Basic,addterr,<terrain nbr>,,Adds a terrain to this group. Negative numbers cannot be used here. By default a terrain group is empty.
-Terrain Groups,Basic,remterr,<terrain nbr>,,Removes this terrain from the group.
 Terrain Groups,Basic,addallforests,,,Adds all different forest terrains to the group. Jungles are not included.
 Terrain Groups,Basic,addalljungles,,,Adds all different jungle terrains to the group.
 Terrain Groups,Basic,addallsettlements,,,Adds all different human settlement terrains to the group.
-Terrain Groups,Basic,invert,,,Inverts the contents of the group. Very useful when making a group that should contains all terrains but one.
+Terrain Groups,Basic,addterr,<terrain nbr>,,Adds a terrain to this group. Negative numbers cannot be used here. By default a terrain group is empty.
 Terrain Groups,Basic,gold,<nbr>,,Gold income for the terrain when owned.
+Terrain Groups,Basic,invert,,,Inverts the contents of the group. Very useful when making a group that should contains all terrains but one.
+Terrain Groups,Basic,remterr,<terrain nbr>,,Removes this terrain from the group.
+Terrain Groups,Basic,setname,image.tga,,"Sets the name for the terrain group  e.g. ""forests and temples""."
+Terrain Groups,Start,selectterrgroup,<terrgroup nbr>,,Select the terrain group to be modified. The number must be between -1000 and -1199. The numbers between -1 and -999 are reserved for standard CoE5 and cannot be modified.
 Terrain Modding,Basic ,apcost,<nbr>,,Action Point cost for moving through the terrain.
 Terrain Modding,Basic ,dead,<nbr>,,The location starts with <nbr> * d6 corpses in it.
 Terrain Modding,Basic ,fungus,<nbr>,,Fungus income for the terrain when owned.
@@ -798,77 +817,77 @@ Terrain Modding,Special,water,,,The terrain is water and cannot be passed  unles
 Terrain Modding,Special,woodencitadel,,,Can be used as citadel by the Senator
 Terrain Modding,Special,woodengate,,,The fort has a wooden gate
 Terrain Modding,Start ,selectterr,<terrain nbr>,,Select the terrain to be modified. Select a low number to alter an existing terrain or select a number between 500 - 999 to create a new terrain.
-Weapons,Basic,trgrank,<nbr>,1,Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.
-Weapons,Basic,range,<nbr>,,The maximum range of the weapon. This should be 1 for melee weapons. A normal bow has range 5.
-Weapons,Basic,init,<nbr>,2,Initiative value for the weapon default is 2. Some common initiative values are these 1=spell 2=fist/dagger/bow 3=club/axe 4=sword 6=spear.
-Weapons,Basic,dmgtype,<nbr>,3,Sets the damage type for the weapon. Table Damage Types contains the list of possible damage types. The default value is 3 (piercing damage).
-Weapons,Basic,dmg,<nbr>,0,Sets the damage for the weapon. The default value is 0 which makes the weapon a natural weapon whose base damage is determined during monster modding. Note that damage types 12 and 13 require a bitmask value for their special effects. The special afflictions and benefit effects are listed in Table Special Afflictions and Table  Special Benefits.
 Weapons,Basic,aoe,<nbr>,0,Sets the area of effect for the weapon in squares. The default value is 0 (a single monster). A value of x will hit up to x monsters near the target. There are also many special values that can be used for other kind of areas. See Table Area of Effects. Those that are written as e.g. 30xx must be written as a 4 digit number e.g. 'aoe 3005' for a cone of 5 squares.
+Weapons,Basic,dmg,<nbr>,0,Sets the damage for the weapon. The default value is 0 which makes the weapon a natural weapon whose base damage is determined during monster modding. Note that damage types 12 and 13 require a bitmask value for their special effects. The special afflictions and benefit effects are listed in Table Special Afflictions and Table  Special Benefits.
+Weapons,Basic,dmgtype,<nbr>,3,Sets the damage type for the weapon. Table Damage Types contains the list of possible damage types. The default value is 3 (piercing damage).
+Weapons,Basic,init,<nbr>,2,Initiative value for the weapon default is 2. Some common initiative values are these 1=spell 2=fist/dagger/bow 3=club/axe 4=sword 6=spear.
+Weapons,Basic,range,<nbr>,,The maximum range of the weapon. This should be 1 for melee weapons. A normal bow has range 5.
+Weapons,Basic,trgrank,<nbr>,1,Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.
 Weapons,Chained,next,,,If the target is wounded by the weapon it will also be hit by the next weapon i.e. the weapon defined next in the mod after this weapon. This command can only be used for new weapons so you must have created one with the newweapon command.
-Weapons,Chained,nextwep,weapon name | <nbr>,,Like 'next' but the additional strike will come from a named weapon that has already been created.
 Weapons,Chained,nextalways,,,Like next but will take effect even if no damage was inflicted on the target.
 Weapons,Chained,nextalwayswep,weapon name | <nbr>,,Like 'nextalways' but the additional strike will come from a named weapon that has already been created.
 Weapons,Chained,nextdmg,<dmg>,,Sets the damage of the chained weapon.
-Weapons,Effects,look,<look>,,Sets the visual effect that occurs where the weapon strikes down e.g. a fiery explosion for a fireball. See the Visual Effects table. The default is no visual effect.
-Weapons,Effects,sound,<sound>,,The sound effect when the weapon strikes down. See table Sound Effects.
-Weapons,Effects,flymode,<flymode nbr>,,Set this if a projectile should be visible for a ranged attack. See Fly modes table. Those marked with an asterisk (*) behave like normal for aoe 1 effects but with larger aoe they still only create one flying graphical effect. Fireball uses this effect to create a single flying fireball but with a larger aoe explosion. If using a sprite (flymode 1) then the look value will be used to set the sprite used. See the table Fly Sprites for possible sprites to use.
-Weapons,Effects,flylook,<look>,,The visual effect (see table Visual Effects) of the flying projectile ranged weapons only. If flymode is 1 a fly sprite (see table Fly Sprites) should be used instead of a look number.
-Weapons,Effects,flysound,<sound>,,The sound effect when the projectile starts flying ranged weapons only. -1 = none.
-Weapons,Effects,sndvol,<dvol>,,dvol -50 = half volume 100 = double volume.
-Weapons,Effects,reloadsnd,<sound>,,Sound when reloading -1 = none.
-Weapons,Effects,yellow,,,set color of damage numbers
+Weapons,Chained,nextwep,weapon name | <nbr>,,Like 'next' but the additional strike will come from a named weapon that has already been created.
 Weapons,Effects,blue,,,set color of damage numbers
+Weapons,Effects,flylook,<look>,,The visual effect (see table Visual Effects) of the flying projectile ranged weapons only. If flymode is 1 a fly sprite (see table Fly Sprites) should be used instead of a look number.
+Weapons,Effects,flymode,<flymode nbr>,,Set this if a projectile should be visible for a ranged attack. See Fly modes table. Those marked with an asterisk (*) behave like normal for aoe 1 effects but with larger aoe they still only create one flying graphical effect. Fireball uses this effect to create a single flying fireball but with a larger aoe explosion. If using a sprite (flymode 1) then the look value will be used to set the sprite used. See the table Fly Sprites for possible sprites to use.
+Weapons,Effects,flysound,<sound>,,The sound effect when the projectile starts flying ranged weapons only. -1 = none.
+Weapons,Effects,look,<look>,,Sets the visual effect that occurs where the weapon strikes down e.g. a fiery explosion for a fireball. See the Visual Effects table. The default is no visual effect.
 Weapons,Effects,purple,,,set color of damage numbers
+Weapons,Effects,reloadsnd,<sound>,,Sound when reloading -1 = none.
+Weapons,Effects,sndvol,<dvol>,,dvol -50 = half volume 100 = double volume.
+Weapons,Effects,sound,<sound>,,The sound effect when the weapon strikes down. See table Sound Effects.
+Weapons,Effects,yellow,,,set color of damage numbers
+Weapons,Special Attribute,affectanimal,,,The weapon only affects animals.
+Weapons,Special Attribute,affecthuman,,,The weapon only affects units with the res_convert attribute.
+Weapons,Special Attribute,affectmale,,,This weapon will not affect females
+Weapons,Special Attribute,affectundead,,,The weapon only affects undead.
+Weapons,Special Attribute,an,,,The weapon ignores armor.
+Weapons,Special Attribute,arrow,,,The effects of this weapon can be negated by the Air Shield attribute.
 Weapons,Special Attribute,clearwspec,,,Clears all special attributes of the weapon.
+Weapons,Special Attribute,dispossess,,,Victim becomes a dispossessed spirit
 Weapons,Special Attribute,drain,,,Draining damage that will heal the attacker
+Weapons,Special Attribute,drown,,,Water breathers are immune to this weapon.
+Weapons,Special Attribute,easymr,,,Passing an easy magic resistance check negates the effects of this weapon.
+Weapons,Special Attribute,ethereal,,,The weapon does not affect Ethereal beings
+Weapons,Special Attribute,flying,,,Flying and Floating units are immune.
+Weapons,Special Attribute,flying2,,,Flying units have 75% chance of evading this attack
+Weapons,Special Attribute,fullsweep,,,The attack will hit all adjacent units. The primary target takes full damage and all subsequent targets take a cumulative -1 damage (so the second target takes full damage -1 the third target takes full damage -2 etc).
+Weapons,Special Attribute,ghoulify,,,Humanoids killed by this weapon will become ghouls
+Weapons,Special Attribute,hardmorale,,,A morale check vs 1d20 negates the effects of this weapon.
+Weapons,Special Attribute,hardmr,,,Passing a hard magic resistance check negates the effects of this weapon.
+Weapons,Special Attribute,holykill,,,The weapon causes double damage against undead
+Weapons,Special Attribute,huge,,,The weapon does not affect Huge beings.
+Weapons,Special Attribute,inanimate,,,The weapon does not affect Lifeless beings.
+Weapons,Special Attribute,large,,,The weapon does not affect monsters that are 2x2 tiles or larger in size on the battlefield.
+Weapons,Special Attribute,lob,,,Use this command for arrows sling stones and other weapons with an arcing trajectory.
+Weapons,Special Attribute,mind,,,The weapon does not affect Mindless beings.
+Weapons,Special Attribute,morale,,,A morale check vs 1d10 negates the effects of this weapon.
+Weapons,Special Attribute,mr,,,Passing a normal magic resistance check negates the effects of this weapon.
+Weapons,Special Attribute,mundane,,,Being Ethereal protects against this weapon. Ethereal units have a 75% chance to be unaffected by the weapon. Most weapons such as swords and spears are mundane.
+Weapons,Special Attribute,mutate,,,A victim killed by this weapon becomes a monster of the type that immediately follows the killer in the monster list. For example units killed by a Doppelganger become Doppelspawn which is the next unit in order from Doppelganger.
+Weapons,Special Attribute,nostr,,,The weapon is unaffected by damage bonuses from any source
 Weapons,Special Attribute,oneshot,,,The weapon can only be used once per battle.
+Weapons,Special Attribute,onlyenemy,,,This weapon will not affect friendly troops
+Weapons,Special Attribute,onlyfriend,,,This weapon will only affect friendly troops
+Weapons,Special Attribute,poison,,,Poison resistance helps against this attack even though the weapon is not poison.
+Weapons,Special Attribute,rangepen,,,Damage penalty at long range. All normal range weapons like bows and slings have this.
+Weapons,Special Attribute,reanimate,,,A victim killed by the weapon becomes a Soulless.
 Weapons,Special Attribute,reload1,,,It takes 1 combat round to reload this weapon.
 Weapons,Special Attribute,reload2,,,It takes 2 combat rounds to reload this weapon.
 Weapons,Special Attribute,reload3,,,It takes 3 combat rounds to reload this weapon.
-Weapons,Special Attribute,easymr,,,Passing an easy magic resistance check negates the effects of this weapon.
-Weapons,Special Attribute,mr,,,Passing a normal magic resistance check negates the effects of this weapon.
-Weapons,Special Attribute,hardmr,,,Passing a hard magic resistance check negates the effects of this weapon.
-Weapons,Special Attribute,an,,,The weapon ignores armor.
-Weapons,Special Attribute,shieldneg,,,The weapon ignores shields.
-Weapons,Special Attribute,strresist,,,The effects of this weapon can be resisted by a successful strength check.
-Weapons,Special Attribute,holykill,,,The weapon causes double damage against undead
-Weapons,Special Attribute,undkill,,,The weapon causes double damage against undead only
-Weapons,Special Attribute,affectundead,,,The weapon only affects undead.
-Weapons,Special Attribute,nostr,,,The weapon is unaffected by damage bonuses from any source
-Weapons,Special Attribute,drown,,,Water breathers are immune to this weapon.
-Weapons,Special Attribute,affectanimal,,,The weapon only affects animals.
-Weapons,Special Attribute,reanimate,,,A victim killed by the weapon becomes a Soulless.
-Weapons,Special Attribute,undead,,,The weapon does not affect Undead units.
-Weapons,Special Attribute,morale,,,A morale check vs 1d10 negates the effects of this weapon.
-Weapons,Special Attribute,hardmorale,,,A morale check vs 1d20 negates the effects of this weapon.
-Weapons,Special Attribute,mutate,,,A victim killed by this weapon becomes a monster of the type that immediately follows the killer in the monster list. For example units killed by a Doppelganger become Doppelspawn which is the next unit in order from Doppelganger.
 Weapons,Special Attribute,replicate,,,A victim killed by this weapon becomes the same type of monster as the killer.
-Weapons,Special Attribute,ethereal,,,The weapon does not affect Ethereal beings
-Weapons,Special Attribute,mind,,,The weapon does not affect Mindless beings.
-Weapons,Special Attribute,inanimate,,,The weapon does not affect Lifeless beings.
-Weapons,Special Attribute,large,,,The weapon does not affect monsters that are 2x2 tiles or larger in size on the battlefield.
-Weapons,Special Attribute,huge,,,The weapon does not affect Huge beings.
-Weapons,Special Attribute,affecthuman,,,The weapon only affects units with the res_convert attribute.
-Weapons,Special Attribute,flying,,,Flying and Floating units are immune.
-Weapons,Special Attribute,arrow,,,The effects of this weapon can be negated by the Air Shield attribute.
-Weapons,Special Attribute,mundane,,,Being Ethereal protects against this weapon. Ethereal units have a 75% chance to be unaffected by the weapon. Most weapons such as swords and spears are mundane.
-Weapons,Special Attribute,sweep,,,The weapon can continue to kill multiple targets.
-Weapons,Special Attribute,fullsweep,,,The attack will hit all adjacent units. The primary target takes full damage and all subsequent targets take a cumulative -1 damage (so the second target takes full damage -1 the third target takes full damage -2 etc).
-Weapons,Special Attribute,lob,,,Use this command for arrows sling stones and other weapons with an arcing trajectory.
-Weapons,Special Attribute,rangepen,,,Damage penalty at long range. All normal range weapons like bows and slings have this.
-Weapons,Special Attribute,onlyenemy,,,This weapon will not affect friendly troops
-Weapons,Special Attribute,onlyfriend,,,This weapon will only affect friendly troops
-Weapons,Special Attribute,ghoulify,,,Humanoids killed by this weapon will become ghouls
 Weapons,Special Attribute,scatter,,,A missile weapon with this attribute may deviate one square
-Weapons,Special Attribute,poison,,,Poison resistance helps against this attack even though the weapon is not poison.
-Weapons,Special Attribute,dispossess,,,Victim becomes a dispossessed spirit
-Weapons,Special Attribute,affectmale,,,This weapon will not affect females
+Weapons,Special Attribute,shieldneg,,,The weapon ignores shields.
+Weapons,Special Attribute,soft,,,Armor is doubled vs this weapon
 Weapons,Special Attribute,stone,,,Stone beings are immune to the weapon.
 Weapons,Special Attribute,stonekill,,,x2 dmg vs stone beings and stone walls
-Weapons,Special Attribute,wallkill,,,x5 dmg vs walls and boats
-Weapons,Special Attribute,flying2,,,Flying units have 75% chance of evading this attack
+Weapons,Special Attribute,strresist,,,The effects of this weapon can be resisted by a successful strength check.
+Weapons,Special Attribute,sweep,,,The weapon can continue to kill multiple targets.
 Weapons,Special Attribute,targterr,,,Weapon can target terrain
-Weapons,Special Attribute,soft,,,Armor is doubled vs this weapon
 Weapons,Special Attribute,tree,,,Tree/bushes/fungus are immune to this weapon
+Weapons,Special Attribute,undead,,,The weapon does not affect Undead units.
+Weapons,Special Attribute,undkill,,,The weapon causes double damage against undead only
+Weapons,Special Attribute,wallkill,,,x5 dmg vs walls and boats
 Weapons,Start,newweapon,weapon name,,This command creates a new weapon.
 Weapons,Start,selectweapon,weapon name | <nbr>,,Selects an existing weapon for modification. There may be several different weapons with the same name in which case you should use the weapon number for selecting the desired weapon. You can see existing weapon numbers in game by pressing ctrl-i when inspecting a unit.

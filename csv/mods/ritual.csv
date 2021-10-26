@@ -1,158 +1,165 @@
-"Ritual","AI Hints","aiwhere","<terrain nbr>","","restricts the AI to only cast ritual in this terrain"
-"Ritual","AI Hints","aialways","<chance>","","AI will always (if chance = 100 try to cast this ritual but not make any long time plans for it. chance=999 is special and means the AI will also make plans for the ritual.)"
-"Ritual","AI Hints","airare","<chance>","","Reduces the chance of the AI trying to use this ritual. Chance is the chance of casting the ritual and can be from 1-99. -1 is a special value meaning never cast it."
-"Ritual","AI Hints","aiweakonly","<troop strength>","","AI commander will only cast this ritual if his troop strength is below this value. One spearman gives 10 troop strength points."
-"Ritual","AI Hints","aionlyplane","<plane nr>","","AI will only cast ritual when on this plane"
-"Ritual","AI Hints","aitarg","<value>","","For long range rituals. 1=try to target squares with enemy commanders 2=try to target valuable squares with corpses in"
-"Ritual","AI Hints","ainothere","<terrain nbr>","","AI will not cast ritual in this terrain"
-"Ritual","AI Hints","ainotclose1","<terrain nbr>","","AI will not cast ritual if close to this terrain radius=1"
-"Ritual","AI Hints","ainotclose2","<terrain nbr>","","AI will not cast ritual if close to this terrain radius=2"
-"Ritual","AI Hints","ainotclose3","<terrain nbr>","","AI will not cast ritual if close to this terrain radius=3"
-"Ritual","AI Hints","ainotnearhome","<mindist>","","AI should not cast this ritual close to home (mindist = nbr of squares away)"
-"Ritual","AI Hints","aiapprspam","<chance>","","AI will dedicate apprentices to stay at home and only spam this ritual. Chance is 0-100"
-"Ritual","AI Hints","ainosimul","","","No more than one commander may plan to cast this ritual at once"
-"Ritual","AI Hints","airestrig","<value>","","AI will always try to cast this ritual if it has at least this many of the primary resource for the ritual"
-"Ritual","AI Hints","aimaxcast","<value>","","An AI player will never cast this ritual more than this number of times in a game"
-"Ritual","Affect Unit","teleportloc","<1-2>","","Teleport target unit to target location. Attribute value 2 means the caster’s entire army is teleported to the target location."
-"Ritual","Affect Unit","selectfx","<fx nbr>","","Sets mod-fx-nbr to this value. Used by next command."
-"Ritual","Affect Unit","setfx","<value>","","Gives target unit a fx of type mod-fx-nbr and sets it to this value."
-"Ritual","Affect Unit","fillmirror","<images>","","Puts a number of images into a mirror -1 = fill to default value (mirrorammo)"
-"Ritual","Affect Unit","killtarg","<dmg>","","Gives between 1 and"
-"Ritual","Affect Unit","updatehome","","","Updates home for target unit to where he stands. This is used to make some immortals resurrect in the correct place."
-"Ritual","Affect Unit","bentarg","<ben nbr>","","Gives a beneficial bitmask to the target unit. Particularly useful values for rituals are 2^26 to get the twiceborn effect and 2^22 to get a permanent invulnerability."
-"Ritual","Affect Unit","bentargall","<ben nbr>","","Like bentarg but also affects all the target’s followers."
-"Ritual","Affect Unit","setvar","<nbr>","","Set the generic modding variable to this value."
-"Ritual","Affect Unit","bentargvar","<ben nbr>","","Like bentarg but terrain is restricted to the number in the generic modding variable."
-"Ritual","Basic","ritpow","<pow nbr>","","Sets the ritpow used. If command is not used the latest created newritpow will be used. Existing ritpow numbers can be found in the Ritual Schools table."
-"Ritual","Basic","level","<1-9>","","The level of the ritual. Usually the level is between 1 (apprentice level) and 3 (master level)."
-"Ritual","Basic","cost","<resource type> <amount>","","Adds a resource cost to the ritual. E.g. cost 4 10 to add a cost of 10 sacrifices. A single ritual can have at most 4 different costs. See table Resource Types for resource types."
-"Ritual","Basic","terr","<terrain nbr>","","Restrict ritual to this terrain only. Negative numbers can be used for special terrain combinations."
-"Ritual","Boosts","apcost","<nbr>","","Extra Action Points cost for the rituals."
-"Ritual","Boosts","rebatefx25","<fx nbr>","","Units with this fx nbr get 25% rebate"
-"Ritual","Boosts","rebatefx50","<fx nbr>","","Units with this fx nbr get 50% rebate"
-"Ritual","Boosts","rebateterr20","<terrain nbr>","","Ritual cost is 20% cheaper in this terrain"
-"Ritual","Boosts","rebateterr50","<terrain nbr>","","Ritual cost is 20% cheaper in this terrain"
-"Ritual","Boosts","terrboost","<terrain nbr>","","Adds 1 to number of summoned monsters when done in this terrain"
-"Ritual","Boosts","terrscale50","<terrain nbr>","","+50% number of summoned monster when done in this terrain"
-"Ritual","Boosts","sacrscale","","","Summoning amount scales with sacrifice production of target square"
-"Ritual","Casting Restrictions","levelreq","<1-9>","","Caster must be exactly this level to use this ritual and cannot have another power at higher level."
-"Ritual","Casting Restrictions","resrestrict","<res nbr>","","Caster cannot have this resistance bitmask. Useful values are 2^4 for undead 2^20 for immortal and 2^26 for ethereal."
-"Ritual","Casting Restrictions","resreq","<res nbr>","","Caster must have this resistance bitmask."
-"Ritual","Casting Restrictions","benrestrict","<ben nbr>","","Caster cannot have this beneficial bitmask"
-"Ritual","Casting Restrictions","fxreq","<fx nbr>","","Unit must have 1+ in this fx to learn and cast this ritual. This command is probably not useful for modding."
-"Ritual","Casting Restrictions","nomonworldreq","","","Monsters in addstring '(-)…​' must not be in the world"
-"Ritual","Casting Restrictions","nomonplayerreq","","","Monsters in addstring '(-)…​' must not be in the world and owned by the current player"
-"Ritual","Casting Restrictions","nomonmasteryreq","","","Monsters in addstring '(-)…​' must not be in the world and owned by the current player unless level is higher than ritual requires"
-"Ritual","Casting Restrictions","nomonelysiumreq","","","Monsters in addstring '(-)…​' must not be in elysium/sky/agartha. Monster in addstring '(+)…​' will disable following minuses if monster fulfils same requirement. This applies for all nomon… commands."
-"Ritual","Casting Restrictions","nomonreq","","","Monsters in addstring '(-)…​' must not be at target location."
-"Ritual","Casting Restrictions","nomonhomereq","","","Monsters in addstring '(-)…​' must not have their home at target location."
-"Ritual","Casting Restrictions","fewmonreq","<max>","","The monsters in addstring '(-)…​' must not be more than max."
-"Ritual","Casting Restrictions","minmonreq","<min>","","The monsters in addstring '(-)…​' must be at least 'min' in number."
-"Ritual","Casting Restrictions","monworldreq","[<min>]","1","At least min number (default 1) of the monsters in addstring '(&)…​' must be in the world. The min attribute is optional and can be omitted."
-"Ritual","Casting Restrictions","monplayerreq","[<min>]","1","At least min number (default 1) of the monsters in addstring '(&)…​' must be in the world and owned by the current player. The min attribute is optional and can be omitted."
-"Ritual","Casting Restrictions","enchherereq","<ench nbr>","","This type of Enchantment must be active where there ritual is cast."
-"Ritual","Casting Restrictions","nonearby1req","<terrain nbr>","","this terrain cannot be within 1 square when casting the ritual (a 3x3 square area)."
-"Ritual","Casting Restrictions","nonearby3req","<terrain nbr>","","this terrain cannot be within 3 squares when casting the ritual (a 7x7 square area)."
-"Ritual","Casting Restrictions","nonearby5req","<terrain nbr>","","this terrain cannot be within 5 squares when casting the ritual (a 11x11 square area)."
-"Ritual","Casting Restrictions","nonearby7req","<terrain nbr>","","this terrain cannot be within 7 squares when casting the ritual (a 15x15 square area)."
-"Ritual","Casting Restrictions","nonearby99req","<terrain nbr>","","this terrain cannot be anywhere on the same plane when casting the ritual"
-"Ritual","Casting Restrictions","nearby1req","<terrain nbr>","","this terrain must be within 1 square when casting the ritual (a 3x3 square area)."
-"Ritual","Casting Restrictions","nearby3req","<terrain nbr>","","this terrain must be within 3 squares when casting the ritual (a 7x7 square area)."
-"Ritual","Casting Restrictions","nearby5req","<terrain nbr>","","this terrain must be within 5 squares when casting the ritual (a 11x11 square area)."
-"Ritual","Casting Restrictions","nearby7req","<terrain nbr>","","this terrain must be within 7 squares when casting the ritual (a 15x15 square area)."
-"Ritual","Casting Restrictions","nearby99req","<terrain nbr>","","this terrain must be somewhere on the same plane when casting the ritual"
-"Ritual","Casting Restrictions","noportalreq","<0-1>","","location where ritual is cast mustn’t contain a portal"
-"Ritual","Casting Restrictions","maxcast","<value>","","ritual cannot be cast more than this number of times per player"
-"Ritual","Casting Restrictions","planereq","<plane nbr>","","Can only be cast on this plane. See table Plane Numbers."
-"Ritual","Casting Restrictions","nofxherereq","<fx nbr>","","to be written"
-"Ritual","Casting Restrictions","nofortreq","","","to be written"
-"Ritual","Casting Restrictions","fortreq","","","to be written"
-"Ritual","Casting Restrictions","hasportalreq","<portal nbr>","","to be written"
-"Ritual","Copy/Clear","copyritual","name","","Copies all stats and abilities (except pow nbr and name) from another ritual to the current one."
-"Ritual","Copy/Clear","clearritspec","","","Removes all special attributes from a ritual. This is only useful when modifying existing rituals."
-"Ritual","Difficulty","free","","","always start with this ritual in addition the others"
-"Ritual","Difficulty","start","","","will start with this ritual(s) no others"
-"Ritual","Difficulty","nostart","","","never start with this ritual (or learn from mastery)"
-"Ritual","Difficulty","rarestart","","","reduced chance of starting with this ritual"
-"Ritual","Difficulty","notforpoor","","","units with more expensive rituals can’t get this one"
-"Ritual","Difficulty","nexttoo","","","recives next ritual too when receiving this one"
-"Ritual","Difficulty","afterprev","","","must know previous ritual before learning this one"
-"Ritual","Difficulty","noundead","","","undeads never know this ritual"
-"Ritual","Difficulty","nodemon","","","demons never know this ritual"
-"Ritual","Difficulty","nofemale","","","females never know this ritual"
-"Ritual","Difficulty","gathergems","","","will start gathering gems when knowing this ritual"
-"Ritual","Event Interaction","setvar","<var>","","set this event variable to 1"
-"Ritual","Event Interaction","clearvar","<var>","","set this event variable to 0"
-"Ritual","Event Interaction","addvar","<var>","","increases the value of this event variable by 1"
-"Ritual","Event Interaction","subvar","<var>","","decreases the value of this event variable by 1"
-"Ritual","Mastery","newrit","<1-9>","","Grants a new ritual of this level."
-"Ritual","Mastery","gainrit","<offset>","","Learns the ritual that is offset numbers away. E.g. offset 1 = learn the following ritual when casting this one."
-"Ritual","Mastery","rebatelvl","<1-9>","","This ritual will be half price if caster is this level or higher."
-"Ritual","Mastery","levelup","<1-9>","","Will level up if caster is below this level. Leveling up means becoming a new monster determined by the mastery monster command."
-"Ritual","Mastery","levelupmon","<1-9>","","Like levelup but the new monster type is set by the addstring command. Set the new monster type in the addstring command."
-"Ritual","Mastery","newspell1","<path nbr>","","to be written"
-"Ritual","Mastery","newspell2","<path nbr>","","to be written"
-"Ritual","Mastery","newspell3","<path nbr>","","to be written"
-"Ritual","Mastery","forgetrits","","","to be written"
-"Ritual","Special","soundfx","<sound>","","Play this sound effect."
-"Ritual","Special","transformtarg","<1-2>","","to be written"
-"Ritual","Special","gainbless","<percent>","","Percent chance of gaining a bless effect."
-"Ritual","Special","gaindarkbless","<percent>","","Percent chance of gaining a dark bless effect."
-"Ritual","Special","ornext","<percent>","","This ritual will have one of two possible effects. The first effect will consist of the following command the next effect will consist of the remaining commands. Percent is the chance of the first effect happening."
-"Ritual","Special","ornext2","<percent>","","This ritual will have one of two possible effects. The first effect will consist of the two following commands the next effect will consist of the remaining commands. Percent is the chance of the first effect happening."
-"Ritual","Special","ornext3","<percent>","","This ritual will have one of two possible effects. The first effect will consist of the three following commands the next effect will consist of the remaining commands. Percent is the chance of the first effect happening."
-"Ritual","Special","ornext4","<percent>","","Like the other ornext commands."
-"Ritual","Special","ornext5","<percent>","","Like the other ornext commands."
-"Ritual","Special","castertarg","","","Sets target unit to caster."
-"Ritual","Special","closewin","","","Closes the ritual window after the ritual has completed."
-"Ritual","Special","failplayer","<player nbr>","","to be written"
-"Ritual","Special","centercaster","","","Center map on caster."
-"Ritual","Special","unfollowtarg","","","Removes all followers from the target should he be a commander that is commanding any units."
-"Ritual","Special","simulacrum","","","to be written"
-"Ritual","Special","enchreqterr","<terrain nbr>","","Enchantment will be auto dispelled if it is outside this terrain."
-"Ritual","Special","forgetcurrit","","","Caster will forget this ritual after casting it."
-"Ritual","Start","newritpow","","","Creates an entire new school of rituals called a ritpow. This should be the first command when creating a new batch of rituals."
-"Ritual","Start","newritual","name","","Create a new ritual with this name. This should be the first command for each new ritual."
-"Ritual","Start","selectritual","name [<offs>]","","The optional value offs can be used to select a ritual other than the first one with this name. 0=the first one 1=the second ritual with this name."
-"Ritual","Summoning","addstring","string","","Adds some text data to a ritual. Most often used to set what is summoned by a summoning ritual but it depends on what effects are in the ritual."
-"Ritual","Summoning","summoning","","","The ritual will summon the monsters specified in a random 'string'. Use addstring to add up to 15 strings with monsters. The string should be written like these examples:'1d6*Goblin' 'c*Captain & 2d6*spearman & 2d4+2*Archer' 'Purple Worm'. The c* indicates a commander and 2d6 means two 6-sided dice will determine the number of monsters summoned. Dice cannot be combined with commanders."
-"Ritual","Summoning","farsummon","","","Like summoning but it will occur at target location instead of at the caster’s location."
-"Ritual","Summoning","sum0chance","<percent>","","Use with summonings. Percent = chance of first 'string' to be used instead of a random string among the others."
-"Ritual","Summoning","sum1chance","<percent>","","Use with summonings. Percent = chance of second 'string' to be used instead of a random string among the third and later."
-"Ritual","Summoning","sum2chance","<percent>","","Same but one higher."
-"Ritual","Summoning","sum3chance","<percent>","","Same but one higher."
-"Ritual","Summoning","sum4chance","<percent>","","Same but one higher."
-"Ritual","Summoning","sum0snow","<percent>","","Works like sum0chance but it can only succeed if there is snow at the target location."
-"Ritual","Summoning","defctrl","<percent>","","Default control chance for summonings. Can be overridden by monster’s own ctrlchance."
-"Ritual","Summoning","varcost","<percent>","","Set variable sacrifice amount (50=50-150% 100=0-150%)"
-"Ritual","Summoning","raisedead","","","Raises humanoid corpses from the dead."
-"Ritual","Summoning","raiseanimals","","","Raises animal corpses from the dead."
-"Ritual","Summoning","specpow","<value>","","Makes a druid summoning 1=minor 2=major"
-"Ritual","Summoning","setplayer","<player nbr>","","Following summons will be owned by this player. Default owner is the current player. Player -1 resets the owner to the default"
-"Ritual","Target Location Effects","scryloc","<radius *10>","","to be written"
-"Ritual","Target Location Effects","scatterscry","<nbr of squares>","","to be written"
-"Ritual","Target Location Effects","squarespec","<ss nbr>","","to be written"
-"Ritual","Target Location Effects","reducetown","","","Reduces settlement at target location one step in size."
-"Ritual","Target Location Effects","destroyterr","","","Destroys any valuable terrain at target location."
-"Ritual","Target Location Effects","alterloc","<terrain nbr>","","Changes target square to this terrain."
-"Ritual","Target Location Effects","makeportal","<portal nbr>","","Connect this square to other portals of the same number. Portal nbr 1000 is special and will create a unique number."
-"Ritual","Target Location Effects","centerloc","","","Center map on target location."
-"Ritual","Target Location Effects","trollifyloc","","","Transform forest at target location into a troll forest."
-"Ritual","Target Location Effects","squareench","<ench nbr>","","to be written"
-"Ritual","Target Location Effects","planeswap","<plane nbr>","","to be written"
-"Ritual","Target Location Effects","portalroom","<terrain nbr>","","Creates a portal to a location around this terrain."
-"Ritual","Target Location Effects","movehome","","","Moves home citadel location to target square."
-"Ritual","Target Location Effects","putcorpses","<nbr>","","Creates a number of human corpses in the target square (as if a fight involving humans had taken place there)."
-"Ritual","Targetting","chooseterrloc","<terrain nbr>","","Player will choose target location for ritual."
-"Ritual","Targetting","randterrloc","<terrain nbr>","","Sets loc to a random terrain of this type on active plane."
-"Ritual","Targetting","randomloc","<1-5>","","1=random land loc 2=many dead (excluding present) 3=rand enemy com 4=rand enemy citadel 5=home citadel"
-"Ritual","Targetting","randnewloc","<terrain nbr>","","Like previous but try to find an unknown location first."
-"Ritual","Targetting","newlocplanes","<terrain nbr>","","Like randnewloc but will go to other planes if necessary (but not hades)"
-"Ritual","Targetting","chooseloc","<1-5>","","Player choose target location. 2=deviate to many dead 3=empty mirror req 4=empty gold mirror 5=horror mark deviation"
-"Ritual","Targetting","planeloc","<plane nbr>","","Shift target loc to same position but on another plane (neg = toggle between this plane and elysium)."
-"Ritual","Targetting","setplane","<plane nbr>","","Following randomloc etc. commands will be restricted to this plane"
-"Ritual","Targetting","choosefxtarg","<fx nbr>","","Player will choose a target unit that has this fx nbr."
-"Ritual","Targetting","mirrortarg","<mirror size>","","Set targ to an empty mirror unit attr = size for mirror -1=any size"
-"Ritual","Targetting","montarg","<1>","","Sets targ unit to a random unit at target location among the type added by addstring."
-"Ritual","Transformation","promotion","<nbr of units>","","Promote existing units to another monster type. Use addstring to add promotion pairs the first string sets a source unit and the second one the destination units. Multiple of these pairs can be added to a single ritual."
-"Ritual","Transformation","transformtarg","<1-2>","","Will transform target into the unit type set by addstring. Value 1 = standard (use this) 2 = transform into following unit if level is high enough."
+Category,Type,Command,Hint,Default,Description
+Ritual,Affect Unit,bentarg,<ben nbr>,,Gives a beneficial bitmask to the target unit. Particularly useful values for rituals are 2^26 to get the twiceborn effect and 2^22 to get a permanent invulnerability.
+Ritual,Affect Unit,bentargall,<ben nbr>,,Like bentarg but also affects all the target’s followers.
+Ritual,Affect Unit,bentargvar,<ben nbr>,,Like bentarg but terrain is restricted to the number in the generic modding variable.
+Ritual,Affect Unit,cureoneaff,<chance>,,Has this chance of curing one affliction on the target unit.
+Ritual,Affect Unit,fillmirror,<images>,,Puts a number of images into a mirror -1 = fill to default value (mirrorammo)
+Ritual,Affect Unit,insanity,<value>,,
+Ritual,Affect Unit,killtarg,<dmg>,,Gives between 1 and
+Ritual,Affect Unit,selectfx,<fx nbr>,,Sets mod-fx-nbr to this value. Used by next command.
+Ritual,Affect Unit,setfx,<value>,,Gives target unit a fx of type mod-fx-nbr and sets it to this value.
+Ritual,Affect Unit,setvar,<nbr>,,Set the generic modding variable to this value.
+Ritual,Affect Unit,teleportloc,<1-2>,,Teleport target unit to target location. Attribute value 2 means the caster’s entire army is teleported to the target location.
+Ritual,Affect Unit,updatehome,,,Updates home for target unit to where he stands. This is used to make some immortals resurrect in the correct place.
+Ritual,AI Hints,aialways,<chance>,,AI will always (if chance = 100 try to cast this ritual but not make any long time plans for it. chance=999 is special and means the AI will also make plans for the ritual.)
+Ritual,AI Hints,aiapprspam,<chance>,,AI will dedicate apprentices to stay at home and only spam this ritual. Chance is 0-100
+Ritual,AI Hints,aimaxcast,<value>,,An AI player will never cast this ritual more than this number of times in a game
+Ritual,AI Hints,ainosimul,,,No more than one commander may plan to cast this ritual at once
+Ritual,AI Hints,ainotclose1,<terrain nbr>,,AI will not cast ritual if close to this terrain radius=1
+Ritual,AI Hints,ainotclose2,<terrain nbr>,,AI will not cast ritual if close to this terrain radius=2
+Ritual,AI Hints,ainotclose3,<terrain nbr>,,AI will not cast ritual if close to this terrain radius=3
+Ritual,AI Hints,ainothere,<terrain nbr>,,AI will not cast ritual in this terrain
+Ritual,AI Hints,ainotnearhome,<mindist>,,AI should not cast this ritual close to home (mindist = nbr of squares away)
+Ritual,AI Hints,aionlyplane,<plane nr>,,AI will only cast ritual when on this plane
+Ritual,AI Hints,airare,<chance>,,Reduces the chance of the AI trying to use this ritual. Chance is the chance of casting the ritual and can be from 1-99. -1 is a special value meaning never cast it.
+Ritual,AI Hints,airestrig,<value>,,AI will always try to cast this ritual if it has at least this many of the primary resource for the ritual
+Ritual,AI Hints,aitarg,<value>,,For long range rituals. 1=try to target squares with enemy commanders 2=try to target valuable squares with corpses in
+Ritual,AI Hints,aiweakonly,<troop strength>,,AI commander will only cast this ritual if his troop strength is below this value. One spearman gives 10 troop strength points.
+Ritual,AI Hints,aiwhere,<terrain nbr>,,restricts the AI to only cast ritual in this terrain
+Ritual,Basic,cost,<resource type> <amount>,,Adds a resource cost to the ritual. E.g. cost 4 10 to add a cost of 10 sacrifices. A single ritual can have at most 4 different costs. See table Resource Types for resource types.
+Ritual,Basic,level,<1-9>,,The level of the ritual. Usually the level is between 1 (apprentice level) and 3 (master level).
+Ritual,Basic,ritpow,<pow nbr>,,Sets the ritpow used. If command is not used the latest created newritpow will be used. Existing ritpow numbers can be found in the Ritual Schools table.
+Ritual,Basic,terr,<terrain nbr>,,Restrict ritual to this terrain only. Negative numbers can be used for special terrain combinations.
+Ritual,Boosts,apcost,<nbr>,,Extra Action Points cost for the rituals.
+Ritual,Boosts,rebatefx25,<fx nbr>,,Units with this fx nbr get 25% rebate
+Ritual,Boosts,rebatefx50,<fx nbr>,,Units with this fx nbr get 50% rebate
+Ritual,Boosts,rebateterr20,<terrain nbr>,,Ritual cost is 20% cheaper in this terrain
+Ritual,Boosts,rebateterr50,<terrain nbr>,,Ritual cost is 20% cheaper in this terrain
+Ritual,Boosts,sacrscale,,,Summoning amount scales with sacrifice production of target square
+Ritual,Boosts,terrboost,<terrain nbr>,,Adds 1 to number of summoned monsters when done in this terrain
+Ritual,Boosts,terrscale50,<terrain nbr>,,+50% number of summoned monster when done in this terrain
+Ritual,Casting Restrictions,benrestrict,<ben nbr>,,Caster cannot have this beneficial bitmask
+Ritual,Casting Restrictions,enchherereq,<ench nbr>,,This type of Enchantment must be active where there ritual is cast.
+Ritual,Casting Restrictions,eventvarreq,<var>,,This event variable must be 1 or higher for ritual to be castable.
+Ritual,Casting Restrictions,fewmonreq,<max>,,The monsters in addstring '(-)…​' must not be more than max.
+Ritual,Casting Restrictions,fortreq,,,to be written
+Ritual,Casting Restrictions,fxreq,<fx nbr>,,Unit must have 1+ in this fx to learn and cast this ritual. This command is probably not useful for modding.
+Ritual,Casting Restrictions,hasportalreq,<portal nbr>,,to be written
+Ritual,Casting Restrictions,homecitreq,<-1 or 1>,,Can only cast this in the player’s home citadel. -1=cannot.
+Ritual,Casting Restrictions,homereq,<-1 or 1>,,Caster can only cast this in his home province. -1=cannot.
+Ritual,Casting Restrictions,levelreq,<1-9>,,Caster must be exactly this level to use this ritual and cannot have another power at higher level.
+Ritual,Casting Restrictions,maxcast,<value>,,ritual cannot be cast more than this number of times per player
+Ritual,Casting Restrictions,minmonreq,<min>,,The monsters in addstring '(-)…​' must be at least 'min' in number.
+Ritual,Casting Restrictions,monplayerreq,[<min>],1,At least min number (default 1) of the monsters in addstring '(&)…​' must be in the world and owned by the current player. The min attribute is optional and can be omitted.
+Ritual,Casting Restrictions,monworldreq,[<min>],1,At least min number (default 1) of the monsters in addstring '(&)…​' must be in the world. The min attribute is optional and can be omitted.
+Ritual,Casting Restrictions,nearby1req,<terrain nbr>,,this terrain must be within 1 square when casting the ritual (a 3x3 square area).
+Ritual,Casting Restrictions,nearby3req,<terrain nbr>,,this terrain must be within 3 squares when casting the ritual (a 7x7 square area).
+Ritual,Casting Restrictions,nearby5req,<terrain nbr>,,this terrain must be within 5 squares when casting the ritual (a 11x11 square area).
+Ritual,Casting Restrictions,nearby7req,<terrain nbr>,,this terrain must be within 7 squares when casting the ritual (a 15x15 square area).
+Ritual,Casting Restrictions,nearby99req,<terrain nbr>,,this terrain must be somewhere on the same plane when casting the ritual
+Ritual,Casting Restrictions,noeventvarreq,<var>,,This event variable must be 0 or lower for ritual to be castable.
+Ritual,Casting Restrictions,nofortreq,,,to be written
+Ritual,Casting Restrictions,nofxherereq,<fx nbr>,,to be written
+Ritual,Casting Restrictions,nomonelysiumreq,,,Monsters in addstring '(-)…​' must not be in elysium/sky/agartha. Monster in addstring '(+)…​' will disable following minuses if monster fulfils same requirement. This applies for all nomon… commands.
+Ritual,Casting Restrictions,nomonhomereq,,,Monsters in addstring '(-)…​' must not have their home at target location.
+Ritual,Casting Restrictions,nomonmasteryreq,,,Monsters in addstring '(-)…​' must not be in the world and owned by the current player unless level is higher than ritual requires
+Ritual,Casting Restrictions,nomonplayerreq,,,Monsters in addstring '(-)…​' must not be in the world and owned by the current player
+Ritual,Casting Restrictions,nomonreq,,,Monsters in addstring '(-)…​' must not be at target location.
+Ritual,Casting Restrictions,nomonworldreq,,,Monsters in addstring '(-)…​' must not be in the world
+Ritual,Casting Restrictions,nonearby1req,<terrain nbr>,,this terrain cannot be within 1 square when casting the ritual (a 3x3 square area).
+Ritual,Casting Restrictions,nonearby3req,<terrain nbr>,,this terrain cannot be within 3 squares when casting the ritual (a 7x7 square area).
+Ritual,Casting Restrictions,nonearby5req,<terrain nbr>,,this terrain cannot be within 5 squares when casting the ritual (a 11x11 square area).
+Ritual,Casting Restrictions,nonearby7req,<terrain nbr>,,this terrain cannot be within 7 squares when casting the ritual (a 15x15 square area).
+Ritual,Casting Restrictions,nonearby99req,<terrain nbr>,,this terrain cannot be anywhere on the same plane when casting the ritual
+Ritual,Casting Restrictions,noportalreq,<0-1>,,location where ritual is cast mustn’t contain a portal
+Ritual,Casting Restrictions,planereq,<plane nbr>,,Can only be cast on this plane. See table Plane Numbers.
+Ritual,Casting Restrictions,resreq,<res nbr>,,Caster must have this resistance bitmask.
+Ritual,Casting Restrictions,resrestrict,<res nbr>,,Caster cannot have this resistance bitmask. Useful values are 2^4 for undead 2^20 for immortal and 2^26 for ethereal.
+Ritual,Copy/Clear,clearritspec,,,Removes all special attributes from a ritual. This is only useful when modifying existing rituals.
+Ritual,Copy/Clear,copyritual,<name>,,Copies all stats and abilities (except pow nbr and name) from another ritual to the current one.
+Ritual,Difficulty,afterprev,,,must know previous ritual before learning this one
+Ritual,Difficulty,free,,,always start with this ritual in addition the others
+Ritual,Difficulty,gathergems,,,will start gathering gems when knowing this ritual
+Ritual,Difficulty,nexttoo,,,recives next ritual too when receiving this one
+Ritual,Difficulty,nodemon,,,demons never know this ritual
+Ritual,Difficulty,nofemale,,,females never know this ritual
+Ritual,Difficulty,nostart,,,never start with this ritual (or learn from mastery)
+Ritual,Difficulty,notforpoor,,,units with more expensive rituals can’t get this one
+Ritual,Difficulty,noundead,,,undeads never know this ritual
+Ritual,Difficulty,rarestart,,,reduced chance of starting with this ritual
+Ritual,Difficulty,start,,,will start with this ritual(s) no others
+Ritual,Event Interaction,addvar,<var>,,increases the value of this event variable by 1
+Ritual,Event Interaction,clearvar,<var>,,set this event variable to 0
+Ritual,Event Interaction,setvar,<var>,,set this event variable to 1
+Ritual,Event Interaction,subvar,<var>,,decreases the value of this event variable by 1
+Ritual,Mastery,forgetrits,,,to be written
+Ritual,Mastery,gainrit,<offset>,,Learns the ritual that is offset numbers away. E.g. offset 1 = learn the following ritual when casting this one.
+Ritual,Mastery,levelup,<1-9>,,Will level up if caster is below this level. Leveling up means becoming a new monster determined by the mastery monster command.
+Ritual,Mastery,levelupmon,<1-9>,,Like levelup but the new monster type is set by the addstring command. Set the new monster type in the addstring command.
+Ritual,Mastery,newrit,<1-9>,,Grants a new ritual of this level.
+Ritual,Mastery,newspell1,<path nbr>,,to be written
+Ritual,Mastery,newspell2,<path nbr>,,to be written
+Ritual,Mastery,newspell3,<path nbr>,,to be written
+Ritual,Mastery,rebatelvl,<1-9>,,This ritual will be half price if caster is this level or higher.
+Ritual,Special,castertarg,,,Sets target unit to caster.
+Ritual,Special,centercaster,,,Center map on caster.
+Ritual,Special,closewin,,,Closes the ritual window after the ritual has completed.
+Ritual,Special,enchreqterr,<terrain nbr>,,Enchantment will be auto dispelled if it is outside this terrain.
+Ritual,Special,failplayer,<player nbr>,,to be written
+Ritual,Special,forgetcurrit,,,Caster will forget this ritual after casting it.
+Ritual,Special,gainbless,<percent>,,Percent chance of gaining a bless effect.
+Ritual,Special,gaindarkbless,<percent>,,Percent chance of gaining a dark bless effect.
+Ritual,Special,ornext,<percent>,,This ritual will have one of two possible effects. The first effect will consist of the following command the next effect will consist of the remaining commands. Percent is the chance of the first effect happening.
+Ritual,Special,ornext2,<percent>,,This ritual will have one of two possible effects. The first effect will consist of the two following commands the next effect will consist of the remaining commands. Percent is the chance of the first effect happening.
+Ritual,Special,ornext3,<percent>,,This ritual will have one of two possible effects. The first effect will consist of the three following commands the next effect will consist of the remaining commands. Percent is the chance of the first effect happening.
+Ritual,Special,ornext4,<percent>,,Like the other ornext commands.
+Ritual,Special,ornext5,<percent>,,Like the other ornext commands.
+Ritual,Special,simulacrum,,,to be written
+Ritual,Special,soundfx,<sound>,,Play this sound effect.
+Ritual,Special,transformtarg,<1-2>,,to be written
+Ritual,Special,unfollowtarg,,,Removes all followers from the target should he be a commander that is commanding any units.
+Ritual,Start,newritpow,,,Creates an entire new school of rituals called a ritpow. This should be the first command when creating a new batch of rituals.
+Ritual,Start,newritual,name,,Create a new ritual with this name. This should be the first command for each new ritual.
+Ritual,Start,selectritual,name [<offs>],,The optional value offs can be used to select a ritual other than the first one with this name. 0=the first one 1=the second ritual with this name.
+Ritual,Summoning,addstring,string,,Adds some text data to a ritual. Most often used to set what is summoned by a summoning ritual but it depends on what effects are in the ritual.
+Ritual,Summoning,defctrl,<percent>,,Default control chance for summonings. Can be overridden by monster’s own ctrlchance.
+Ritual,Summoning,farsummon,,,Like summoning but it will occur at target location instead of at the caster’s location. Can now summon commanders too
+Ritual,Summoning,raiseanimals,,,Raises animal corpses from the dead.
+Ritual,Summoning,raisedead,,,Raises humanoid corpses from the dead.
+Ritual,Summoning,setplayer,<player nbr>,,Following summons will be owned by this player. Default owner is the current player. Player -1 resets the owner to the default
+Ritual,Summoning,specpow,<value>,,Makes a druid summoning 1=minor 2=major
+Ritual,Summoning,sum0chance,<percent>,,Use with summonings. Percent = chance of first 'string' to be used instead of a random string among the others.
+Ritual,Summoning,sum0snow,<percent>,,Works like sum0chance but it can only succeed if there is snow at the target location.
+Ritual,Summoning,sum1chance,<percent>,,Use with summonings. Percent = chance of second 'string' to be used instead of a random string among the third and later.
+Ritual,Summoning,sum2chance,<percent>,,Same but one higher.
+Ritual,Summoning,sum3chance,<percent>,,Same but one higher.
+Ritual,Summoning,sum4chance,<percent>,,Same but one higher.
+Ritual,Summoning,summoning,,,The ritual will summon the monsters specified in a random 'string'. Use addstring to add up to 15 strings with monsters. The string should be written like these examples:'1d6*Goblin' 'c*Captain & 2d6*spearman & 2d4+2*Archer' 'Purple Worm'. The c* indicates a commander and 2d6 means two 6-sided dice will determine the number of monsters summoned. Dice cannot be combined with commanders.
+Ritual,Summoning,varcost,<percent>,,Set variable sacrifice amount (50=50-150% 100=0-150%)
+Ritual,Target Location Effects,alterloc,<terrain nbr>,,Changes target square to this terrain.
+Ritual,Target Location Effects,centerloc,,,Center map on target location.
+Ritual,Target Location Effects,destroyterr,,,Destroys any valuable terrain at target location.
+Ritual,Target Location Effects,makeportal,<portal nbr>,,Connect this square to other portals of the same number. Portal nbr 1000 is special and will create a unique number.
+Ritual,Target Location Effects,movehome,,,Moves home citadel location to target square.
+Ritual,Target Location Effects,planeswap,<plane nbr>,,to be written
+Ritual,Target Location Effects,portalroom,<terrain nbr>,,Creates a portal to a location around this terrain.
+Ritual,Target Location Effects,putcorpses,<nbr>,,Creates a number of human corpses in the target square (as if a fight involving humans had taken place there). Add 10000 to nbr in order to make the number of corpses scale with the sacrifice amount used.
+Ritual,Target Location Effects,reducetown,,,Reduces settlement at target location one step in size.
+Ritual,Target Location Effects,scatterscry,<nbr of squares>,,to be written
+Ritual,Target Location Effects,scryloc,<radius *10>,,to be written
+Ritual,Target Location Effects,squareench,<ench nbr>,,to be written
+Ritual,Target Location Effects,squarespec,<ss nbr>,,to be written
+Ritual,Target Location Effects,trollifyloc,,,Transform forest at target location into a troll forest.
+Ritual,Targetting,choosefxtarg,<fx nbr>,,Player will choose a target unit that has this fx nbr.
+Ritual,Targetting,chooseloc,<1-5>,,Player choose target location. 2=deviate to many dead 3=empty mirror req 4=empty gold mirror 5=horror mark deviation
+Ritual,Targetting,chooseterrloc,<terrain nbr>,,Player will choose target location for ritual.
+Ritual,Targetting,mirrortarg,<mirror size>,,Set targ to an empty mirror unit attr = size for mirror -1=any size
+Ritual,Targetting,montarg,<1>,,Sets targ unit to a random unit at target location among the type added by addstring.
+Ritual,Targetting,newlocplanes,<terrain nbr>,,Like randnewloc but will go to other planes if necessary (but not hades)
+Ritual,Targetting,planeloc,<plane nbr>,,Shift target loc to same position but on another plane (neg = toggle between this plane and elysium).
+Ritual,Targetting,randnewloc,<terrain nbr>,,Like previous but try to find an unknown location first.
+Ritual,Targetting,randomloc,<1-5>,,1=random land loc 2=many dead (excluding present) 3=rand enemy com 4=rand enemy citadel 5=home citadel
+Ritual,Targetting,randterrloc,<terrain nbr>,,Sets loc to a random terrain of this type on active plane.
+Ritual,Targetting,setplane,<plane nbr>,,Following randomloc etc. commands will be restricted to this plane
+Ritual,Transformation,promotion,<nbr of units>,,Promote existing units to another monster type. Use addstring to add promotion pairs the first string sets a source unit and the second one the destination units. Multiple of these pairs can be added to a single ritual.
+Ritual,Transformation,transformtarg,<1-2>,,Will transform target into the unit type set by addstring. Value 1 = standard (use this) 2 = transform into following unit if level is high enough.

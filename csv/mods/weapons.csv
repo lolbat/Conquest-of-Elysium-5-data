@@ -1,74 +1,75 @@
-Weapons,Basic,trgrank,<nbr>,1,Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.
-Weapons,Basic,range,<nbr>,,The maximum range of the weapon. This should be 1 for melee weapons. A normal bow has range 5.
-Weapons,Basic,init,<nbr>,2,Initiative value for the weapon default is 2. Some common initiative values are these 1=spell 2=fist/dagger/bow 3=club/axe 4=sword 6=spear.
-Weapons,Basic,dmgtype,<nbr>,3,Sets the damage type for the weapon. Table Damage Types contains the list of possible damage types. The default value is 3 (piercing damage).
-Weapons,Basic,dmg,<nbr>,0,Sets the damage for the weapon. The default value is 0 which makes the weapon a natural weapon whose base damage is determined during monster modding. Note that damage types 12 and 13 require a bitmask value for their special effects. The special afflictions and benefit effects are listed in Table Special Afflictions and Table  Special Benefits.
+Category,Type,Command,Hint,Default,Description
 Weapons,Basic,aoe,<nbr>,0,Sets the area of effect for the weapon in squares. The default value is 0 (a single monster). A value of x will hit up to x monsters near the target. There are also many special values that can be used for other kind of areas. See Table Area of Effects. Those that are written as e.g. 30xx must be written as a 4 digit number e.g. 'aoe 3005' for a cone of 5 squares.
+Weapons,Basic,dmg,<nbr>,0,Sets the damage for the weapon. The default value is 0 which makes the weapon a natural weapon whose base damage is determined during monster modding. Note that damage types 12 and 13 require a bitmask value for their special effects. The special afflictions and benefit effects are listed in Table Special Afflictions and Table  Special Benefits.
+Weapons,Basic,dmgtype,<nbr>,3,Sets the damage type for the weapon. Table Damage Types contains the list of possible damage types. The default value is 3 (piercing damage).
+Weapons,Basic,init,<nbr>,2,Initiative value for the weapon default is 2. Some common initiative values are these 1=spell 2=fist/dagger/bow 3=club/axe 4=sword 6=spear.
+Weapons,Basic,range,<nbr>,,The maximum range of the weapon. This should be 1 for melee weapons. A normal bow has range 5.
+Weapons,Basic,trgrank,<nbr>,1,Sets the battlefield row where the weapon hits. See the Target Ranks table for the possible values. The default value is 1.
 Weapons,Chained,next,,,If the target is wounded by the weapon it will also be hit by the next weapon i.e. the weapon defined next in the mod after this weapon. This command can only be used for new weapons so you must have created one with the newweapon command.
-Weapons,Chained,nextwep,weapon name | <nbr>,,Like 'next' but the additional strike will come from a named weapon that has already been created.
 Weapons,Chained,nextalways,,,Like next but will take effect even if no damage was inflicted on the target.
 Weapons,Chained,nextalwayswep,weapon name | <nbr>,,Like 'nextalways' but the additional strike will come from a named weapon that has already been created.
 Weapons,Chained,nextdmg,<dmg>,,Sets the damage of the chained weapon.
-Weapons,Effects,look,<look>,,Sets the visual effect that occurs where the weapon strikes down e.g. a fiery explosion for a fireball. See the Visual Effects table. The default is no visual effect.
-Weapons,Effects,sound,<sound>,,The sound effect when the weapon strikes down. See table Sound Effects.
-Weapons,Effects,flymode,<flymode nbr>,,Set this if a projectile should be visible for a ranged attack. See Fly modes table. Those marked with an asterisk (*) behave like normal for aoe 1 effects but with larger aoe they still only create one flying graphical effect. Fireball uses this effect to create a single flying fireball but with a larger aoe explosion. If using a sprite (flymode 1) then the look value will be used to set the sprite used. See the table Fly Sprites for possible sprites to use.
-Weapons,Effects,flylook,<look>,,The visual effect (see table Visual Effects) of the flying projectile ranged weapons only. If flymode is 1 a fly sprite (see table Fly Sprites) should be used instead of a look number.
-Weapons,Effects,flysound,<sound>,,The sound effect when the projectile starts flying ranged weapons only. -1 = none.
-Weapons,Effects,sndvol,<dvol>,,dvol -50 = half volume 100 = double volume.
-Weapons,Effects,reloadsnd,<sound>,,Sound when reloading -1 = none.
-Weapons,Effects,yellow,,,set color of damage numbers
+Weapons,Chained,nextwep,weapon name | <nbr>,,Like 'next' but the additional strike will come from a named weapon that has already been created.
 Weapons,Effects,blue,,,set color of damage numbers
+Weapons,Effects,flylook,<look>,,The visual effect (see table Visual Effects) of the flying projectile ranged weapons only. If flymode is 1 a fly sprite (see table Fly Sprites) should be used instead of a look number.
+Weapons,Effects,flymode,<flymode nbr>,,Set this if a projectile should be visible for a ranged attack. See Fly modes table. Those marked with an asterisk (*) behave like normal for aoe 1 effects but with larger aoe they still only create one flying graphical effect. Fireball uses this effect to create a single flying fireball but with a larger aoe explosion. If using a sprite (flymode 1) then the look value will be used to set the sprite used. See the table Fly Sprites for possible sprites to use.
+Weapons,Effects,flysound,<sound>,,The sound effect when the projectile starts flying ranged weapons only. -1 = none.
+Weapons,Effects,look,<look>,,Sets the visual effect that occurs where the weapon strikes down e.g. a fiery explosion for a fireball. See the Visual Effects table. The default is no visual effect.
 Weapons,Effects,purple,,,set color of damage numbers
+Weapons,Effects,reloadsnd,<sound>,,Sound when reloading -1 = none.
+Weapons,Effects,sndvol,<dvol>,,dvol -50 = half volume 100 = double volume.
+Weapons,Effects,sound,<sound>,,The sound effect when the weapon strikes down. See table Sound Effects.
+Weapons,Effects,yellow,,,set color of damage numbers
+Weapons,Special Attribute,affectanimal,,,The weapon only affects animals.
+Weapons,Special Attribute,affecthuman,,,The weapon only affects units with the res_convert attribute.
+Weapons,Special Attribute,affectmale,,,This weapon will not affect females
+Weapons,Special Attribute,affectundead,,,The weapon only affects undead.
+Weapons,Special Attribute,an,,,The weapon ignores armor.
+Weapons,Special Attribute,arrow,,,The effects of this weapon can be negated by the Air Shield attribute.
 Weapons,Special Attribute,clearwspec,,,Clears all special attributes of the weapon.
+Weapons,Special Attribute,dispossess,,,Victim becomes a dispossessed spirit
 Weapons,Special Attribute,drain,,,Draining damage that will heal the attacker
+Weapons,Special Attribute,drown,,,Water breathers are immune to this weapon.
+Weapons,Special Attribute,easymr,,,Passing an easy magic resistance check negates the effects of this weapon.
+Weapons,Special Attribute,ethereal,,,The weapon does not affect Ethereal beings
+Weapons,Special Attribute,flying,,,Flying and Floating units are immune.
+Weapons,Special Attribute,flying2,,,Flying units have 75% chance of evading this attack
+Weapons,Special Attribute,fullsweep,,,The attack will hit all adjacent units. The primary target takes full damage and all subsequent targets take a cumulative -1 damage (so the second target takes full damage -1 the third target takes full damage -2 etc).
+Weapons,Special Attribute,ghoulify,,,Humanoids killed by this weapon will become ghouls
+Weapons,Special Attribute,hardmorale,,,A morale check vs 1d20 negates the effects of this weapon.
+Weapons,Special Attribute,hardmr,,,Passing a hard magic resistance check negates the effects of this weapon.
+Weapons,Special Attribute,holykill,,,The weapon causes double damage against undead
+Weapons,Special Attribute,huge,,,The weapon does not affect Huge beings.
+Weapons,Special Attribute,inanimate,,,The weapon does not affect Lifeless beings.
+Weapons,Special Attribute,large,,,The weapon does not affect monsters that are 2x2 tiles or larger in size on the battlefield.
+Weapons,Special Attribute,lob,,,Use this command for arrows sling stones and other weapons with an arcing trajectory.
+Weapons,Special Attribute,mind,,,The weapon does not affect Mindless beings.
+Weapons,Special Attribute,morale,,,A morale check vs 1d10 negates the effects of this weapon.
+Weapons,Special Attribute,mr,,,Passing a normal magic resistance check negates the effects of this weapon.
+Weapons,Special Attribute,mundane,,,Being Ethereal protects against this weapon. Ethereal units have a 75% chance to be unaffected by the weapon. Most weapons such as swords and spears are mundane.
+Weapons,Special Attribute,mutate,,,A victim killed by this weapon becomes a monster of the type that immediately follows the killer in the monster list. For example units killed by a Doppelganger become Doppelspawn which is the next unit in order from Doppelganger.
+Weapons,Special Attribute,nostr,,,The weapon is unaffected by damage bonuses from any source
 Weapons,Special Attribute,oneshot,,,The weapon can only be used once per battle.
+Weapons,Special Attribute,onlyenemy,,,This weapon will not affect friendly troops
+Weapons,Special Attribute,onlyfriend,,,This weapon will only affect friendly troops
+Weapons,Special Attribute,poison,,,Poison resistance helps against this attack even though the weapon is not poison.
+Weapons,Special Attribute,rangepen,,,Damage penalty at long range. All normal range weapons like bows and slings have this.
+Weapons,Special Attribute,reanimate,,,A victim killed by the weapon becomes a Soulless.
 Weapons,Special Attribute,reload1,,,It takes 1 combat round to reload this weapon.
 Weapons,Special Attribute,reload2,,,It takes 2 combat rounds to reload this weapon.
 Weapons,Special Attribute,reload3,,,It takes 3 combat rounds to reload this weapon.
-Weapons,Special Attribute,easymr,,,Passing an easy magic resistance check negates the effects of this weapon.
-Weapons,Special Attribute,mr,,,Passing a normal magic resistance check negates the effects of this weapon.
-Weapons,Special Attribute,hardmr,,,Passing a hard magic resistance check negates the effects of this weapon.
-Weapons,Special Attribute,an,,,The weapon ignores armor.
-Weapons,Special Attribute,shieldneg,,,The weapon ignores shields.
-Weapons,Special Attribute,strresist,,,The effects of this weapon can be resisted by a successful strength check.
-Weapons,Special Attribute,holykill,,,The weapon causes double damage against undead
-Weapons,Special Attribute,undkill,,,The weapon causes double damage against undead only
-Weapons,Special Attribute,affectundead,,,The weapon only affects undead.
-Weapons,Special Attribute,nostr,,,The weapon is unaffected by damage bonuses from any source
-Weapons,Special Attribute,drown,,,Water breathers are immune to this weapon.
-Weapons,Special Attribute,affectanimal,,,The weapon only affects animals.
-Weapons,Special Attribute,reanimate,,,A victim killed by the weapon becomes a Soulless.
-Weapons,Special Attribute,undead,,,The weapon does not affect Undead units.
-Weapons,Special Attribute,morale,,,A morale check vs 1d10 negates the effects of this weapon.
-Weapons,Special Attribute,hardmorale,,,A morale check vs 1d20 negates the effects of this weapon.
-Weapons,Special Attribute,mutate,,,A victim killed by this weapon becomes a monster of the type that immediately follows the killer in the monster list. For example units killed by a Doppelganger become Doppelspawn which is the next unit in order from Doppelganger.
 Weapons,Special Attribute,replicate,,,A victim killed by this weapon becomes the same type of monster as the killer.
-Weapons,Special Attribute,ethereal,,,The weapon does not affect Ethereal beings
-Weapons,Special Attribute,mind,,,The weapon does not affect Mindless beings.
-Weapons,Special Attribute,inanimate,,,The weapon does not affect Lifeless beings.
-Weapons,Special Attribute,large,,,The weapon does not affect monsters that are 2x2 tiles or larger in size on the battlefield.
-Weapons,Special Attribute,huge,,,The weapon does not affect Huge beings.
-Weapons,Special Attribute,affecthuman,,,The weapon only affects units with the res_convert attribute.
-Weapons,Special Attribute,flying,,,Flying and Floating units are immune.
-Weapons,Special Attribute,arrow,,,The effects of this weapon can be negated by the Air Shield attribute.
-Weapons,Special Attribute,mundane,,,Being Ethereal protects against this weapon. Ethereal units have a 75% chance to be unaffected by the weapon. Most weapons such as swords and spears are mundane.
-Weapons,Special Attribute,sweep,,,The weapon can continue to kill multiple targets.
-Weapons,Special Attribute,fullsweep,,,The attack will hit all adjacent units. The primary target takes full damage and all subsequent targets take a cumulative -1 damage (so the second target takes full damage -1 the third target takes full damage -2 etc).
-Weapons,Special Attribute,lob,,,Use this command for arrows sling stones and other weapons with an arcing trajectory.
-Weapons,Special Attribute,rangepen,,,Damage penalty at long range. All normal range weapons like bows and slings have this.
-Weapons,Special Attribute,onlyenemy,,,This weapon will not affect friendly troops
-Weapons,Special Attribute,onlyfriend,,,This weapon will only affect friendly troops
-Weapons,Special Attribute,ghoulify,,,Humanoids killed by this weapon will become ghouls
 Weapons,Special Attribute,scatter,,,A missile weapon with this attribute may deviate one square
-Weapons,Special Attribute,poison,,,Poison resistance helps against this attack even though the weapon is not poison.
-Weapons,Special Attribute,dispossess,,,Victim becomes a dispossessed spirit
-Weapons,Special Attribute,affectmale,,,This weapon will not affect females
+Weapons,Special Attribute,shieldneg,,,The weapon ignores shields.
+Weapons,Special Attribute,soft,,,Armor is doubled vs this weapon
 Weapons,Special Attribute,stone,,,Stone beings are immune to the weapon.
 Weapons,Special Attribute,stonekill,,,x2 dmg vs stone beings and stone walls
-Weapons,Special Attribute,wallkill,,,x5 dmg vs walls and boats
-Weapons,Special Attribute,flying2,,,Flying units have 75% chance of evading this attack
+Weapons,Special Attribute,strresist,,,The effects of this weapon can be resisted by a successful strength check.
+Weapons,Special Attribute,sweep,,,The weapon can continue to kill multiple targets.
 Weapons,Special Attribute,targterr,,,Weapon can target terrain
-Weapons,Special Attribute,soft,,,Armor is doubled vs this weapon
 Weapons,Special Attribute,tree,,,Tree/bushes/fungus are immune to this weapon
+Weapons,Special Attribute,undead,,,The weapon does not affect Undead units.
+Weapons,Special Attribute,undkill,,,The weapon causes double damage against undead only
+Weapons,Special Attribute,wallkill,,,x5 dmg vs walls and boats
 Weapons,Start,newweapon,weapon name,,This command creates a new weapon.
 Weapons,Start,selectweapon,weapon name | <nbr>,,Selects an existing weapon for modification. There may be several different weapons with the same name in which case you should use the weapon number for selecting the desired weapon. You can see existing weapon numbers in game by pressing ctrl-i when inspecting a unit.

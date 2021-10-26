@@ -1,100 +1,62 @@
 [
-{"Events":"Events","Affect Target":"Affect Target","comname":"newitem","commander’s name":"item name","field5":"","to be written":"to be written"}
+{"Category":"Events","Type":"Affect Target","Command":"alterterrain","Hint":"<terrain nbr>","Default":"","Description":"changes the terrain of the current location"},
+{"Category":"Events","Type":"Affect Target","Command":"changeowner","Hint":"<player>","Default":"","Description":"changes ownership of unit to this player"},
+{"Category":"Events","Type":"Affect Target","Command":"comname","Hint":"commander’s name","Default":"","Description":"to be written"}
 ,
-{"Events":"Events","Affect Target":"Affect Target","comname":"randitem","commander’s name":"<rare chance>","field5":"","to be written":"to be written"}
+{"Category":"Events","Type":"Affect Target","Command":"cureoneaff","Hint":"","Default":"","Description":"(cures one affliction)"},
+{"Category":"Events","Type":"Affect Target","Command":"gainxp","Hint":"<xp>","Default":"","Description":"Gives XP to the target unit. XP can be negative to remove XP."},
+{"Category":"Events","Type":"Affect Target","Command":"killsquare","Hint":"","Default":"","Description":"kills everyone in target square"},
+{"Category":"Events","Type":"Affect Target","Command":"killunit","Hint":"<dmg>","Default":"","Description":"to be written"},
+{"Category":"Events","Type":"Affect Target","Command":"makeblind","Hint":"","Default":"","Description":"(makes target unit blind)"},
+{"Category":"Events","Type":"Affect Target","Command":"makediseased","Hint":"","Default":"","Description":"(makes target unit diseased)"},
+{"Category":"Events","Type":"Affect Target","Command":"makenhwound","Hint":"","Default":"","Description":"(gives target unit a never healing wound)"},
+{"Category":"Events","Type":"Affect Target","Command":"makestationary","Hint":"","Default":"","Description":"(makes target unit stationary on world map)"},
+{"Category":"Events","Type":"Affect Target","Command":"namesquare","Hint":"'square name'","Default":"","Description":"Sets name of square e.g. 'Crab Harbor' or '!2The Old Forest' or '!!The Old Tower'"},
+{"Category":"Events","Type":"Affect Target","Command":"newitem","Hint":"item name","Default":"","Description":"to be written"},
+{"Category":"Events","Type":"Affect Target","Command":"promote","Hint":"<commanderize> 'monster'","Default":"","Description":"commanderize 0 = do not alter commander status 1 = turns a non commander into a commander"},
+{"Category":"Events","Type":"Affect Target","Command":"randitem","Hint":"<rare chance>","Default":"","Description":"to be written"},
+{"Category":"Events","Type":"Affect Target","Command":"randmisc","Hint":"<rare chance>","Default":"","Description":"to be written"},
+{"Category":"Events","Type":"Affect Target","Command":"removeanimalcorpses","Hint":"<nbr>","Default":"","Description":"Removes this many animal corpses from target location. Nbr must be a positive value."},
+{"Category":"Events","Type":"Affect Target","Command":"removecorpses","Hint":"<nbr>","Default":"","Description":"Removes this many corpses from target location. Nbr must be a positive value."},
+{"Category":"Events","Type":"Affect Target","Command":"removehumanoidcorpses","Hint":"<nbr>","Default":"","Description":"Removes this many humanoid corpses from target location. Nbr must be a positive value."},
+{"Category":"Events","Type":"Basic Action","Command":"addresources","Hint":"<player> <resource type> <amount>","Default":"","Description":"Adds an amount of resources to a player. See table Resource Types for resource types."},
+{"Category":"Events","Type":"Basic Action","Command":"message","Hint":"<to player> 'text'","Default":"","Description":"Sends a text message to a player."},
+{"Category":"Events","Type":"Change Location","Command":"randloc","Hint":"<planenr> <terr nbr>","Default":"","Description":"move target location to a random location. See table Plane Numbers. The plane special values -1 (all planes) and -2 (Elysium-near planes) can also be used. Negative terrain numbers can also be used for special group of terrains."},
+{"Category":"Events","Type":"Change Location","Command":"scatterloc","Hint":"<radius>","Default":"","Description":"makes target location deviate a bit can result in the same square. Cannot be used on squareevents"},
+{"Category":"Events","Type":"Change Location","Command":"setloc","Hint":"<x> <y>","Default":"","Description":"move target location to a fixed location"},
+{"Category":"Events","Type":"Start","Command":"endevent","Hint":"","Default":"","Description":"All events must end with this command"},
+{"Category":"Events","Type":"Start","Command":"playerevent","Hint":"","Default":"","Description":"Once for each player every turn occurs in home citadel by default"},
+{"Category":"Events","Type":"Start","Command":"squareevent","Hint":"","Default":"","Description":"For each player and each square in the world every turn"},
+{"Category":"Events","Type":"Target Action","Command":"newunits","Hint":"<player> 'monsters'","Default":"","Description":"also sets target unit"},
+{"Category":"Events","Type":"Target Action","Command":"promoteunits","Hint":"<player> <max amount> 'from monster' 'to monster'","Default":"","Description":"also sets target unit"},
+{"Category":"Events","Type":"Trigger","Command":"+armyowner","Hint":"<player>","Default":"","Description":"True if square is occupied by this player"},
+{"Category":"Events","Type":"Trigger","Command":"+chance","Hint":"<percent>","Default":"","Description":"Trigger has percent chance of being true."},
+{"Category":"Events","Type":"Trigger","Command":"+class","Hint":"<player> 'class name'","Default":"","Description":"True if this player is this class"},
+{"Category":"Events","Type":"Trigger","Command":"+hascom","Hint":"<player> 'commander’s name'","Default":"","Description":"Also sets target unit"}
 ,
-{"Events":"Events","Affect Target":"Affect Target","comname":"randmisc","commander’s name":"<rare chance>","field5":"","to be written":"to be written"}
+{"Category":"Events","Type":"Trigger","Command":"+hascomhere","Hint":"<player> 'commander’s name'","Default":"","Description":"Also sets target unit"}
 ,
-{"Events":"Events","Affect Target":"Affect Target","comname":"killunit","commander’s name":"<dmg>","field5":"","to be written":"to be written"}
-,
-{"Events":"Events","Affect Target":"Affect Target","comname":"promote","commander’s name":"<commanderize> 'monster'","field5":"","to be written":"commanderize 0 = do not alter commander status 1 = turns a non commander into a commander"}
-,
-{"Events":"Events","Affect Target":"Affect Target","comname":"makestationary","commander’s name":"","field5":"","to be written":"(makes target unit stationary on world map)"}
-,
-{"Events":"Events","Affect Target":"Affect Target","comname":"makeblind","commander’s name":"","field5":"","to be written":"(makes target unit blind)"}
-,
-{"Events":"Events","Affect Target":"Affect Target","comname":"makediseased","commander’s name":"","field5":"","to be written":"(makes target unit diseased)"}
-,
-{"Events":"Events","Affect Target":"Affect Target","comname":"makenhwound","commander’s name":"","field5":"","to be written":"(gives target unit a never healing wound)"}
-,
-{"Events":"Events","Affect Target":"Affect Target","comname":"cureoneaff","commander’s name":"","field5":"","to be written":"(cures one affliction)"}
-,
-{"Events":"Events","Affect Target":"Affect Target","comname":"changeowner","commander’s name":"<player>","field5":"","to be written":"changes ownership of unit to this player"}
-,
-{"Events":"Events","Affect Target":"Basic Action","comname":"addresources","commander’s name":"<player> <resource type> <amount>","field5":"","to be written":"Adds an amount of resources to a player. See table Resource Types for resource types."}
-,
-{"Events":"Events","Affect Target":"Basic Action","comname":"message","commander’s name":"<to player> 'text'","field5":"","to be written":"Sends a text message to a player."}
-,
-{"Events":"Events","Affect Target":"Change Location","comname":"setloc","commander’s name":"<x> <y>","field5":"","to be written":"move target location to a fixed location"}
-,
-{"Events":"Events","Affect Target":"Change Location","comname":"randloc","commander’s name":"<planenr> <terr nbr>","field5":"","to be written":"move target location to a random location. See table Plane Numbers. The plane special values -1 (all planes) and -2 (Elysium-near planes) can also be used. Negative terrain numbers can also be used for special group of terrains."}
-,
-{"Events":"Events","Affect Target":"Change Location","comname":"scatterloc","commander’s name":"<radius>","field5":"","to be written":"makes target location deviate a bit can result in the same square. Cannot be used on squareevents"}
-,
-{"Events":"Events","Affect Target":"Start","comname":"playerevent","commander’s name":"","field5":"","to be written":"Once for each player every turn occurs in home citadel by default"}
-,
-{"Events":"Events","Affect Target":"Start","comname":"squareevent","commander’s name":"","field5":"","to be written":"For each player and each square in the world every turn"}
-,
-{"Events":"Events","Affect Target":"Start","comname":"endevent","commander’s name":"","field5":"","to be written":"All events must end with this command"}
-,
-{"Events":"Events","Affect Target":"Target Action","comname":"newunits","commander’s name":"<player> 'monsters'","field5":"","to be written":"also sets target unit"}
-,
-{"Events":"Events","Affect Target":"Target Action","comname":"promoteunits","commander’s name":"<player> <max amount> 'from monster' 'to monster'","field5":"","to be written":"also sets target unit"}
-,
-{"Events":"Events","Affect Target":"Affect Target","comname":"gainxp","commander’s name":"<xp>","field5":"","to be written":"Gives XP to the target unit. XP can be negative to remove XP."}
-,
-{"Events":"Events","Affect Target":"Target Action","comname":"alterterrain","commander’s name":"<terrain nbr>","field5":"","to be written":"changes the terrain of the current location"}
-,
-{"Events":"Events","Affect Target":"Target Action","comname":"killsquare","commander’s name":"","field5":"","to be written":"kills everyone in target square"}
-,
-{"Events":"Events","Affect Target":"Target Action","comname":"namesquare","commander’s name":"'square name'","field5":"","to be written":"Sets name of square e.g. 'Crab Harbor' or '!2The Old Forest' or '!!The Old Tower'"}
-,
-{"Events":"Events","Affect Target":"Trigger","comname":"+squareowner","commander’s name":"<player>","field5":"","to be written":"True if target square is owned or occupied by this player"}
-,
-{"Events":"Events","Affect Target":"Trigger","comname":"+armyowner","commander’s name":"<player>","field5":"","to be written":"True if square is occupied by this player"}
-,
-{"Events":"Events","Affect Target":"Trigger","comname":"+turnnbr","commander’s name":"<turn nbr>","field5":"","to be written":"True if the current turn number is this turn nbr."}
-,
-{"Events":"Events","Affect Target":"Trigger","comname":"+minturnnbr","commander’s name":"<turn nbr>","field5":"","to be written":"True if the current turn number is this turn nbr of greater."}
-,
-{"Events":"Events","Affect Target":"Trigger","comname":"+chance","commander’s name":"<percent>","field5":"","to be written":"Trigger has percent chance of being true."}
-,
-{"Events":"Events","Affect Target":"Trigger","comname":"+player","commander’s name":"<player>","field5":"","to be written":"True if current player has this player number"}
-,
-{"Events":"Events","Affect Target":"Trigger","comname":"+class","commander’s name":"<player> 'class name'","field5":"","to be written":"True if this player is this class"}
-,
-{"Events":"Events","Affect Target":"Trigger","comname":"+hascom","commander’s name":"<player> 'commander’s name'","field5":"","to be written":"Also sets target unit"}
-,
-{"Events":"Events","Affect Target":"Trigger","comname":"+hascomhere","commander’s name":"<player> 'commander’s name'","field5":"","to be written":"Also sets target unit"}
-,
-{"Events":"Events","Affect Target":"Trigger","comname":"+ownsloc","commander’s name":"<player> <terr nbr>","field5":"","to be written":"True if player owns this terrain anywhere in the world"}
-,
-{"Events":"Events","Affect Target":"Trigger","comname":"+terrain","commander’s name":"<terr nbr>","field5":"","to be written":"True if target square is of this terrain"}
-,
-{"Events":"Events","Affect Target":"Trigger","comname":"+season","commander’s name":"<0-3>","field5":"","to be written":"0=summer 1=autumn 2=winter 3=spring"}
-,
-{"Events":"Events","Affect Target":"Trigger","comname":"+seasondelay","commander’s name":"<1-3>","field5":"","to be written":"3=early (guaranteed to only happen once per season 2=mid 1=late)"}
-,
-{"Events":"Events","Affect Target":"Trigger","comname":"+varequal","commander’s name":"<var> <value>","field5":"","to be written":"var = 0-9999 true if variable equals value"}
-,
-{"Events":"Events","Affect Target":"Trigger","comname":"+varlesser","commander’s name":"<var> <value>","field5":"","to be written":"True if the variable is less than value"}
-,
-{"Events":"Events","Affect Target":"Trigger","comname":"+vargreater","commander’s name":"<var> <value>","field5":"","to be written":"True if the variable is greater than value"}
-,
-{"Events":"Events","Affect Target":"Trigger","comname":"+hasunit","commander’s name":"<player> 'monster name'","field5":"","to be written":"Also sets target unit (player -1 = any player)"}
-,
-{"Events":"Events","Affect Target":"Trigger","comname":"+hasunithere","commander’s name":"<player> 'monster name'","field5":"","to be written":"Also sets target unit (player -1 = any player)"}
-,
-{"Events":"Events","Affect Target":"Trigger","comname":"+squarename","commander’s name":"'square name'","field5":"","to be written":"True if square has this name. e.g. 'Crab Harbor' or 'The Old Tower'"}
-,
-{"Events":"Events","Affect Target":"Trigger","comname":"+hasitem","commander’s name":"<player> \"item name\"","field5":"","to be written":"True if player has this kind of magic item somewhere in the world. Also sets target unit to wielder (player -1 = any player)"}
-,
-{"Events":"Events","Affect Target":"Trigger","comname":"+hasitemhere","commander’s name":"<player> \"item name\"","field5":"","to be written":"True if player has this kind of magic item in current square. Also sets target unit to wielder (player -1 = any player"}
-,
-{"Events":"Events","Affect Target":"Trigger","comname":"+plane","commander’s name":"<planenr>","field5":"","to be written":"True if target square is on this plane. See table Plane Numbers. The special values -1 (all planes) and -2 (Elysium-near planes) can also be used."}
-,
-{"Events":"Events","Affect Target":"Variable","comname":"setvar","commander’s name":"<var> <value>","field5":"","to be written":"var = 0-9999  sets a variable to a value"}
-,
-{"Events":"Events","Affect Target":"Variable","comname":"addvar","commander’s name":"<var> <value>","field5":"","to be written":"var = 0-9999  adds a value to a variable."}
-
+{"Category":"Events","Type":"Trigger","Command":"+hasitem","Hint":"<player> \"item name\"","Default":"","Description":"True if player has this kind of magic item somewhere in the world. Also sets target unit to wielder (player -1 = any player)"},
+{"Category":"Events","Type":"Trigger","Command":"+hasitemhere","Hint":"<player> \"item name\"","Default":"","Description":"True if player has this kind of magic item in current square. Also sets target unit to wielder (player -1 = any player"},
+{"Category":"Events","Type":"Trigger","Command":"+hasunit","Hint":"<player> 'monster name'","Default":"","Description":"Also sets target unit (player -1 = any player)"},
+{"Category":"Events","Type":"Trigger","Command":"+hasunithere","Hint":"<player> 'monster name'","Default":"","Description":"Also sets target unit (player -1 = any player)"},
+{"Category":"Events","Type":"Trigger","Command":"+minanimalcorpses","Hint":"<nbr>","Default":"","Description":"True if at least this many animal corpses (of any type) are present in the square."},
+{"Category":"Events","Type":"Trigger","Command":"+mincorpses","Hint":"<nbr>","Default":"","Description":"True if at least this many corpses of any type are present in the square."},
+{"Category":"Events","Type":"Trigger","Command":"+minhumancorpses","Hint":"<nbr>","Default":"","Description":"True if at least this many human corpses are present in the square."},
+{"Category":"Events","Type":"Trigger","Command":"+minhumanoidcorpses","Hint":"<nbr>","Default":"","Description":"True if at least this many humanoid corpses (humans, hoburghers, giants) are present in the square."},
+{"Category":"Events","Type":"Trigger","Command":"+minturnnbr","Hint":"<turn nbr>","Default":"","Description":"True if the current turn number is this turn nbr of greater."},
+{"Category":"Events","Type":"Trigger","Command":"+ownsloc","Hint":"<player> <terr nbr>","Default":"","Description":"True if player owns this terrain anywhere in the world"},
+{"Category":"Events","Type":"Trigger","Command":"+plane","Hint":"<planenr>","Default":"","Description":"True if target square is on this plane. See table Plane Numbers. The special values -1 (all planes) and -2 (Elysium-near planes) can also be used."},
+{"Category":"Events","Type":"Trigger","Command":"+player","Hint":"<player>","Default":"","Description":"True if current player has this player number"},
+{"Category":"Events","Type":"Trigger","Command":"+season","Hint":"<0-3>","Default":"","Description":"0=summer 1=autumn 2=winter 3=spring"},
+{"Category":"Events","Type":"Trigger","Command":"+seasondelay","Hint":"<1-3>","Default":"","Description":"3=early (guaranteed to only happen once per season 2=mid 1=late)"},
+{"Category":"Events","Type":"Trigger","Command":"+squarename","Hint":"'square name'","Default":"","Description":"True if square has this name. e.g. 'Crab Harbor' or 'The Old Tower'"},
+{"Category":"Events","Type":"Trigger","Command":"+squareowner","Hint":"<player>","Default":"","Description":"True if target square is owned or occupied by this player"},
+{"Category":"Events","Type":"Trigger","Command":"+terrain","Hint":"<terr nbr>","Default":"","Description":"True if target square is of this terrain"},
+{"Category":"Events","Type":"Trigger","Command":"+turnnbr","Hint":"<turn nbr>","Default":"","Description":"True if the current turn number is this turn nbr."},
+{"Category":"Events","Type":"Trigger","Command":"+varequal","Hint":"<var> <value>","Default":"","Description":"var = 0-9999 true if variable equals value"},
+{"Category":"Events","Type":"Trigger","Command":"+vargreater","Hint":"<var> <value>","Default":"","Description":"True if the variable is greater than value"},
+{"Category":"Events","Type":"Trigger","Command":"+varlesser","Hint":"<var> <value>","Default":"","Description":"True if the variable is less than value"},
+{"Category":"Events","Type":"Variable","Command":"addvar","Hint":"<var> <value>","Default":"","Description":"var = 0-9999  adds a value to a variable."},
+{"Category":"Events","Type":"Variable","Command":"setvar","Hint":"<var> <value>","Default":"","Description":"var = 0-9999  sets a variable to a value"}
 ]

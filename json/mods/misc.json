@@ -1,0 +1,3 @@
+[
+{"Category":"Miscellaneous","Type":"Playercolor","Command":"<player> <red> <green> <blue>","Hint":"","Default":"","Description":"Sets the default color for a player. Each color value is between 0 and 255"}
+]

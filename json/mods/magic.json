@@ -1,14 +1,18 @@
 [
-{"Magic":"Magic","Basic":"Basic","name":"descr","item name":"item description","field5":"","Set the name of the magic item. Not necessary if you created a new one with newitem.":"Not necessary as most magic items don’t have descriptions."}
+{"Category":"Magic","Type":"Basic","Command":"descr","Hint":"item description","Default":"","Description":"Not necessary as most magic items don’t have descriptions."}
 ,
-{"Magic":"Magic","Basic":"Basic","name":"spr","item name":"image file","field5":"","Set the name of the magic item. Not necessary if you created a new one with newitem.":"Sets the sprite for the magic item. It should be centered in a 32x32 or 64x64 pixel large image. The drawn item should not be larger than 40x40 pixels however so if put in a 64x64 image it should be surrounded by black."},
-{"Magic":"Magic","Basic":"Basic","name":"rarity","item name":"<rarity>","field5":"0","Set the name of the magic item. Not necessary if you created a new one with newitem.":"Sets how easy it should be to find this item. 0=common 1=rare 2=rare & unique 3=impossible to find as a random item. Default is 0."},
-{"Magic":"Magic","Basic":"Basic","name":"type","item name":"<item type>","field5":"7","Set the name of the magic item. Not necessary if you created a new one with newitem.":"Sets the magic item type. Default is 7 = misc item. See table Magic Item Types"},
-{"Magic":"Magic","Basic":"Basic","name":"armor","item name":"<value>","field5":"0","Set the name of the magic item. Not necessary if you created a new one with newitem.":"Armor value default 0."},
-{"Magic":"Magic","Basic":"Basic","name":"protection","item name":"<value>","field5":"0","Set the name of the magic item. Not necessary if you created a new one with newitem.":"Protection bonus default 0."},
-{"Magic":"Magic","Basic":"Basic","name":"hp","item name":"<value>","field5":"0","Set the name of the magic item. Not necessary if you created a new one with newitem.":"Hit Point bonus default 0."},
-{"Magic":"Magic","Basic":"Copy/Clear","name":"copyspr","item name":"item name","field5":"","Set the name of the magic item. Not necessary if you created a new one with newitem.":"Uses the sprite from this magic item."},
-{"Magic":"Magic","Basic":"Copy/Clear","name":"copystats","item name":"item name","field5":"","Set the name of the magic item. Not necessary if you created a new one with newitem.":"Copies all stats except the name from this magic item."},
-{"Magic":"Magic","Basic":"Start","name":"newitem","item name":"item name","field5":"","Set the name of the magic item. Not necessary if you created a new one with newitem.":"This command creates a new magic item."},
-{"Magic":"Magic","Basic":"Start","name":"selectitem","item name":"item name","field5":"","Set the name of the magic item. Not necessary if you created a new one with newitem.":"Selects an existing magic item for modification."}
+{"Category":"Magic","Type":"Basic","Command":"itemwep","Hint":"weapon name","Default":"","Description":"Sets the weapon stats of the magic item to those of the weapon with this name. Only use this together with type 1 magic items."},
+{"Category":"Magic","Type":"Basic","Command":"name","Hint":"item name","Default":"","Description":"Set the name of the magic item. Not necessary if you created a new one with newitem."},
+{"Category":"Magic","Type":"Basic","Command":"rarity","Hint":"<rarity>","Default":"0","Description":"Sets how easy it should be to find this item. 0=common 1=rare 2=rare & unique 3=impossible to find as a random item. Default is 0."},
+{"Category":"Magic","Type":"Basic","Command":"spr","Hint":"image file","Default":"","Description":"Sets the sprite for the magic item. It should be centered in a 32x32 or 64x64 pixel large image. The drawn item should not be larger than 40x40 pixels however so if put in a 64x64 image it should be surrounded by black."},
+{"Category":"Magic","Type":"Basic","Command":"type","Hint":"<item type>","Default":"7","Description":"Sets the magic item type. Default is 7 = misc item. See table Magic Item Types"},
+{"Category":"Magic","Type":"Copy/Clear","Command":"copyspr","Hint":"item name","Default":"","Description":"Uses the sprite from this magic item."},
+{"Category":"Magic","Type":"Copy/Clear","Command":"copystats","Hint":"item name","Default":"","Description":"Copies all stats except the name from this magic item."},
+{"Category":"Magic","Type":"Special","Command":"armor","Hint":"<value>","Default":"0","Description":"Armor value default 0."},
+{"Category":"Magic","Type":"Special","Command":"combatspell","Hint":"<mode> \"spell name\"","Default":"","Description":"Mode -1 = spell will be auto cast on the first round, 1 = unit can cast this spell (like a wand), 2 = spell will be auto cast each round. The spell name is simply the name of the combat spell to be cast, e.g. \"Fireball\"."},
+{"Category":"Magic","Type":"Special","Command":"combatsum","Hint":"<mode> \"summoning string\"","Default":"","Description":"Mode -1 = will summon on the first round of combat, 1 = will summon on all rounds of combat. Summoning string is very simlar to the summoning strings used for ritual summoning. E.g. \"2d4*Deer & 2*wolf\" would summon 2-8 deer and 2 wolves. Commanders cannot be summoned in battle."},
+{"Category":"Magic","Type":"Special","Command":"hp","Hint":"<value>","Default":"0","Description":"Hit Point bonus default 0."},
+{"Category":"Magic","Type":"Special","Command":"protection","Hint":"<value>","Default":"0","Description":"Protection bonus default 0."},
+{"Category":"Magic","Type":"Start","Command":"newitem","Hint":"item name","Default":"","Description":"This command creates a new magic item."},
+{"Category":"Magic","Type":"Start","Command":"selectitem","Hint":"item name","Default":"","Description":"Selects an existing magic item for modification."}
 ]

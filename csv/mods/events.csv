@@ -1,50 +1,58 @@
+Category,Type,Command,Hint,Default,Description
+Events,Affect Target,alterterrain,<terrain nbr>,,changes the terrain of the current location
+Events,Affect Target,changeowner,<player>,,changes ownership of unit to this player
 Events,Affect Target,comname,commander’s name,,to be written
-Events,Affect Target,newitem,item name,,to be written
-Events,Affect Target,randitem,<rare chance>,,to be written
-Events,Affect Target,randmisc,<rare chance>,,to be written
+Events,Affect Target,cureoneaff,,,(cures one affliction)
+Events,Affect Target,gainxp,<xp>,,Gives XP to the target unit. XP can be negative to remove XP.
+Events,Affect Target,killsquare,,,kills everyone in target square
 Events,Affect Target,killunit,<dmg>,,to be written
-Events,Affect Target,promote,<commanderize> 'monster',,commanderize 0 = do not alter commander status 1 = turns a non commander into a commander
-Events,Affect Target,makestationary,,,(makes target unit stationary on world map)
 Events,Affect Target,makeblind,,,(makes target unit blind)
 Events,Affect Target,makediseased,,,(makes target unit diseased)
 Events,Affect Target,makenhwound,,,(gives target unit a never healing wound)
-Events,Affect Target,cureoneaff,,,(cures one affliction)
-Events,Affect Target,changeowner,<player>,,changes ownership of unit to this player
+Events,Affect Target,makestationary,,,(makes target unit stationary on world map)
+Events,Affect Target,namesquare,'square name',,Sets name of square e.g. 'Crab Harbor' or '!2The Old Forest' or '!!The Old Tower'
+Events,Affect Target,newitem,item name,,to be written
+Events,Affect Target,promote,<commanderize> 'monster',,commanderize 0 = do not alter commander status 1 = turns a non commander into a commander
+Events,Affect Target,randitem,<rare chance>,,to be written
+Events,Affect Target,randmisc,<rare chance>,,to be written
+Events,Affect Target,removeanimalcorpses,<nbr>,,Removes this many animal corpses from target location. Nbr must be a positive value.
+Events,Affect Target,removecorpses,<nbr>,,Removes this many corpses from target location. Nbr must be a positive value.
+Events,Affect Target,removehumanoidcorpses,<nbr>,,Removes this many humanoid corpses from target location. Nbr must be a positive value.
 Events,Basic Action,addresources,<player> <resource type> <amount>,,Adds an amount of resources to a player. See table Resource Types for resource types.
 Events,Basic Action,message,<to player> 'text',,Sends a text message to a player.
-Events,Change Location,setloc,<x> <y>,,move target location to a fixed location
 Events,Change Location,randloc,<planenr> <terr nbr>,,move target location to a random location. See table Plane Numbers. The plane special values -1 (all planes) and -2 (Elysium-near planes) can also be used. Negative terrain numbers can also be used for special group of terrains.
 Events,Change Location,scatterloc,<radius>,,makes target location deviate a bit can result in the same square. Cannot be used on squareevents
+Events,Change Location,setloc,<x> <y>,,move target location to a fixed location
+Events,Start,endevent,,,All events must end with this command
 Events,Start,playerevent,,,Once for each player every turn occurs in home citadel by default
 Events,Start,squareevent,,,For each player and each square in the world every turn
-Events,Start,endevent,,,All events must end with this command
 Events,Target Action,newunits,<player> 'monsters',,also sets target unit
 Events,Target Action,promoteunits,<player> <max amount> 'from monster' 'to monster',,also sets target unit
-Events,Affect Target,gainxp,<xp>,,Gives XP to the target unit. XP can be negative to remove XP.
-Events,Target Action,alterterrain,<terrain nbr>,,changes the terrain of the current location
-Events,Target Action,killsquare,,,kills everyone in target square
-Events,Target Action,namesquare,'square name',,Sets name of square e.g. 'Crab Harbor' or '!2The Old Forest' or '!!The Old Tower'
-Events,Trigger,+squareowner,<player>,,True if target square is owned or occupied by this player
 Events,Trigger,+armyowner,<player>,,True if square is occupied by this player
-Events,Trigger,+turnnbr,<turn nbr>,,True if the current turn number is this turn nbr.
-Events,Trigger,+minturnnbr,<turn nbr>,,True if the current turn number is this turn nbr of greater.
 Events,Trigger,+chance,<percent>,,Trigger has percent chance of being true.
-Events,Trigger,+player,<player>,,True if current player has this player number
 Events,Trigger,+class,<player> 'class name',,True if this player is this class
 Events,Trigger,+hascom,<player> 'commander’s name',,Also sets target unit
 Events,Trigger,+hascomhere,<player> 'commander’s name',,Also sets target unit
-Events,Trigger,+ownsloc,<player> <terr nbr>,,True if player owns this terrain anywhere in the world
-Events,Trigger,+terrain,<terr nbr>,,True if target square is of this terrain
-Events,Trigger,+season,<0-3>,,0=summer 1=autumn 2=winter 3=spring
-Events,Trigger,+seasondelay,<1-3>,,3=early (guaranteed to only happen once per season 2=mid 1=late)
-Events,Trigger,+varequal,<var> <value>,,var = 0-9999 true if variable equals value
-Events,Trigger,+varlesser,<var> <value>,,True if the variable is less than value
-Events,Trigger,+vargreater,<var> <value>,,True if the variable is greater than value
-Events,Trigger,+hasunit,<player> 'monster name',,Also sets target unit (player -1 = any player)
-Events,Trigger,+hasunithere,<player> 'monster name',,Also sets target unit (player -1 = any player)
-Events,Trigger,+squarename,'square name',,True if square has this name. e.g. 'Crab Harbor' or 'The Old Tower'
 Events,Trigger,+hasitem,"<player> ""item name""",,True if player has this kind of magic item somewhere in the world. Also sets target unit to wielder (player -1 = any player)
 Events,Trigger,+hasitemhere,"<player> ""item name""",,True if player has this kind of magic item in current square. Also sets target unit to wielder (player -1 = any player
+Events,Trigger,+hasunit,<player> 'monster name',,Also sets target unit (player -1 = any player)
+Events,Trigger,+hasunithere,<player> 'monster name',,Also sets target unit (player -1 = any player)
+Events,Trigger,+minanimalcorpses,<nbr>,,True if at least this many animal corpses (of any type) are present in the square.
+Events,Trigger,+mincorpses,<nbr>,,True if at least this many corpses of any type are present in the square.
+Events,Trigger,+minhumancorpses,<nbr>,,True if at least this many human corpses are present in the square.
+Events,Trigger,+minhumanoidcorpses,<nbr>,,"True if at least this many humanoid corpses (humans, hoburghers, giants) are present in the square."
+Events,Trigger,+minturnnbr,<turn nbr>,,True if the current turn number is this turn nbr of greater.
+Events,Trigger,+ownsloc,<player> <terr nbr>,,True if player owns this terrain anywhere in the world
 Events,Trigger,+plane,<planenr>,,True if target square is on this plane. See table Plane Numbers. The special values -1 (all planes) and -2 (Elysium-near planes) can also be used.
-Events,Variable,setvar,<var> <value>,,var = 0-9999  sets a variable to a value
+Events,Trigger,+player,<player>,,True if current player has this player number
+Events,Trigger,+season,<0-3>,,0=summer 1=autumn 2=winter 3=spring
+Events,Trigger,+seasondelay,<1-3>,,3=early (guaranteed to only happen once per season 2=mid 1=late)
+Events,Trigger,+squarename,'square name',,True if square has this name. e.g. 'Crab Harbor' or 'The Old Tower'
+Events,Trigger,+squareowner,<player>,,True if target square is owned or occupied by this player
+Events,Trigger,+terrain,<terr nbr>,,True if target square is of this terrain
+Events,Trigger,+turnnbr,<turn nbr>,,True if the current turn number is this turn nbr.
+Events,Trigger,+varequal,<var> <value>,,var = 0-9999 true if variable equals value
+Events,Trigger,+vargreater,<var> <value>,,True if the variable is greater than value
+Events,Trigger,+varlesser,<var> <value>,,True if the variable is less than value
 Events,Variable,addvar,<var> <value>,,var = 0-9999  adds a value to a variable.
+Events,Variable,setvar,<var> <value>,,var = 0-9999  sets a variable to a value

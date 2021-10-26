@@ -1,8 +1,0 @@
-[
-{"Mirrors":"Mirrors","mirror":"mirrorammo","<value>":"<value>","field4":"","1=is small mirror 2=is large mirror 3=silver 4=gold":"default number of images for this type of mirror (def 20)"},
-{"Mirrors":"Mirrors","mirror":"phantasm","<value>":"<value>","field4":"","1=is small mirror 2=is large mirror 3=silver 4=gold":"1=phantasmal warrior 2=phantasmal animal etc."},
-{"Mirrors":"Mirrors","mirror":"releasephant","<value>":"<value>","field4":"","1=is small mirror 2=is large mirror 3=silver 4=gold":"mirror releases this type of phantasms (has phantasm = value)"},
-{"Mirrors":"Mirrors","mirror":"releaserate","<value>":"<value>","field4":"","1=is small mirror 2=is large mirror 3=silver 4=gold":"bonus to the number of phantasms released"},
-{"Mirrors":"Mirrors","mirror":"releasespell","<value>":"<value>","field4":"","1=is small mirror 2=is large mirror 3=silver 4=gold":"making an attack drains one mirror charge (fx_mirror)"},
-{"Mirrors":"Mirrors","mirror":"revertmirror","<value>":"<value>","field4":"","1=is small mirror 2=is large mirror 3=silver 4=gold":"revert to mirror when empty. 1=small mirror 2=large mirror 3=silver 4=gold"}
-]

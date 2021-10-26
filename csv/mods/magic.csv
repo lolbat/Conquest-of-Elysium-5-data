@@ -1,12 +1,16 @@
-Magic,Basic,name,item name,,Set the name of the magic item. Not necessary if you created a new one with newitem.
+Category,Type,Command,Hint,Default,Description
 Magic,Basic,descr,item description,,Not necessary as most magic items don’t have descriptions.
-Magic,Basic,spr,image file,,Sets the sprite for the magic item. It should be centered in a 32x32 or 64x64 pixel large image. The drawn item should not be larger than 40x40 pixels however so if put in a 64x64 image it should be surrounded by black.
+Magic,Basic,itemwep,weapon name,,Sets the weapon stats of the magic item to those of the weapon with this name. Only use this together with type 1 magic items.
+Magic,Basic,name,item name,,Set the name of the magic item. Not necessary if you created a new one with newitem.
 Magic,Basic,rarity,<rarity>,0,Sets how easy it should be to find this item. 0=common 1=rare 2=rare & unique 3=impossible to find as a random item. Default is 0.
+Magic,Basic,spr,image file,,Sets the sprite for the magic item. It should be centered in a 32x32 or 64x64 pixel large image. The drawn item should not be larger than 40x40 pixels however so if put in a 64x64 image it should be surrounded by black.
 Magic,Basic,type,<item type>,7,Sets the magic item type. Default is 7 = misc item. See table Magic Item Types
-Magic,Basic,armor,<value>,0,Armor value default 0.
-Magic,Basic,protection,<value>,0,Protection bonus default 0.
-Magic,Basic,hp,<value>,0,Hit Point bonus default 0.
 Magic,Copy/Clear,copyspr,item name,,Uses the sprite from this magic item.
 Magic,Copy/Clear,copystats,item name,,Copies all stats except the name from this magic item.
+Magic,Special,armor,<value>,0,Armor value default 0.
+Magic,Special,combatspell,"<mode> ""spell name""",,"Mode -1 = spell will be auto cast on the first round, 1 = unit can cast this spell (like a wand), 2 = spell will be auto cast each round. The spell name is simply the name of the combat spell to be cast, e.g. ""Fireball""."
+Magic,Special,combatsum,"<mode> ""summoning string""",,"Mode -1 = will summon on the first round of combat, 1 = will summon on all rounds of combat. Summoning string is very simlar to the summoning strings used for ritual summoning. E.g. ""2d4*Deer & 2*wolf"" would summon 2-8 deer and 2 wolves. Commanders cannot be summoned in battle."
+Magic,Special,hp,<value>,0,Hit Point bonus default 0.
+Magic,Special,protection,<value>,0,Protection bonus default 0.
 Magic,Start,newitem,item name,,This command creates a new magic item.
 Magic,Start,selectitem,item name,,Selects an existing magic item for modification.

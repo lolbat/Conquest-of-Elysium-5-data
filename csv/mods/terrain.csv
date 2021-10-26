@@ -1,3 +1,4 @@
+Category,Type,Command,Hint,Default,Description
 Terrain,Basic,apcost,<nbr>,,Action Point cost for moving through the terrain.
 Terrain,Basic,dead,<nbr>,,The location starts with <nbr> * d6 corpses in it.
 Terrain,Basic,fungus,<nbr>,,Fungus income for the terrain when owned.
