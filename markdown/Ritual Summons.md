@@ -4,9 +4,17 @@ This is a list of the type and number of creatures that are summoned by the vari
 
 Some creatures are marked with an (!). These creatures, typically familiars, can be summoned multiple times and get additional abilities each time applied to the original creature. For instance, the Priestess of Ba'al can get a Spider Familiar and each time it get selected in a summoning the original familiar gets additional abilities.
 
-Some creature options are prefixed by a numeric value. I have left those in even though I am not sure what they represent. I suspect that it indicates a creature that has a lower chance of being summoned. 
+Some creature options are prefixed by a numeric value. The negative values, which have been mostly replaced, are negative terrain types and indicate that the option becomes available when the ritual is cast on that terrain type. I am still working out the positive values and some of the negative values that don't appear on the Negative Terrain values table.
 
-If there are any rituals missing please post an issue or comment on the Steam Community forum and I will track the data down.
+If there are any rituals missing please post an issue or comment on the Steam Community forum and I will try to track the data down. 
+
+Do note that the following rituals do not appear to be listed as tables in the CoE5 executable.
+
+- Raise Dead
+- Summon Planar Being
+- Reanimate Animals
+- Minor Animal Summoning (Dryad Queen)
+- Major Animal Summoning (Dryad Queen)
 
 ### Druid
 
@@ -101,13 +109,6 @@ If there are any rituals missing please post an issue or comment on the Steam Co
 - 3d3 x Demon Knight
 - 3d6 x Demonic Locust
 
-**Summon Demon Lieutenant**
-- Succubus
-- Greater Demon
-- Greater Devil
-- Ice Devil
-- Heliophagus
- 
 **Summon Demon Lieutenant**
 - Succubus
 - Greater Demon
@@ -282,16 +283,18 @@ If there are any rituals missing please post an issue or comment on the Steam Co
 
 ### Scourge Lord
 
+Some of the Scourge Lord summons are only available when the commander is in specific terrain squares. CoE5 makes a distinction between desert-like terrain and desert terrain. So some of the summons are available only when the ritual is cast in desert.
+
 **Lesser Ceremony to Baal**
 - (!)Large Spider Familiar
 - 1d3+1 x Large Spider
 - 2d5 x Small Spider
 - 2d5 x Scorpion
 - 1d3+1 x Giant Scorpion
-- (-110)1d4+2 x Mazzik
-- (-110)Se'ir
-- (167)Anakite
-- (167)1d2+1 x Gibbor
+- 1d4+2 x Mazzik *possible in Desert-like terrain*
+- Se'ir *possible in Desert-like terrain*
+- Anakite *possible in Ziggurat*
+- 1d2+1 x Gibbor *possible in Ziggurat*
 
 **Lesser Blood Feast**
 - Anakite
@@ -301,11 +304,11 @@ If there are any rituals missing please post an issue or comment on the Steam Co
 - Lammashta
 - 2d4 x Giant Spider
 - 2d3 x Scorpion Beast
-- (117)2d3 x Se'ir
-- (117)1d2 x Shed
-- (117)3d6 x Mazzik
-- (117)1d3 x Lilot
-- (167)1d3+1 x Anakite
+- 2d3 x Se'ir *possible in desert*
+- 1d2 x Shed *possible in desert*
+- 3d6 x Mazzik *possible in desert*
+- 1d3 x Lilot *possible in desert*
+- 1d3+1 x Anakite *possible in Ziggurat*
 
 **Blood Feast**
 - Anakite Captain & 2d3 x Anakite
@@ -329,8 +332,8 @@ If there are any rituals missing please post an issue or comment on the Steam Co
 ### Troll King
 
 **Plant Giant Fungus**
-- (-101)1d3 x Snow Fungus
-- (-97)Giant Mushroom
+- 1d3 x Snow Fungus *snowy location*
+- Giant Mushroom *ancient forests and similar*
 - 1d3 x Blood Fungus
 - 1d3 x Devil Fungus
 - 1d3 x Giant Morel
@@ -374,18 +377,18 @@ If there are any rituals missing please post an issue or comment on the Steam Co
 **Greater Water Summoning**
 - 1d3+2 x Undine
 - 4d6 x Wave Warrior
-- (-42)2d4+1 x Winter Wolf
-- (-17)1d2+1 x Lake Troll
-- (-17)1d2 x Lake Troll Warrior
+- 2d4+1 x Winter Wolf *land locations*
+- 1d2+1 x Lake Troll *near water areas*
+- 1d2 x Lake Troll Warrior *near water areas*
 
 **Summon Yeti**
 - 1d3+2 x Yeti
 
 **Summon Champion of Water**
 - Champion of Waves
-- (-42) Frost Giant
-- (-43) Sea Giant
-- (-17) Lake Troll King
+- Frost Giant *land locations*
+- Sea Giant *underwater locations*
+- Lake Troll King *near water areas*
 
 **Summon Mist Warrior**
 - 3d4 x Mist Warrior
@@ -528,8 +531,8 @@ If there are any rituals missing please post an issue or comment on the Steam Co
 - Ziz
  
 **Ravenous Curse**
-- (70)6d6 x Little Ghoul
-- (-8)3d6 x Ghoul
+- 6d6 x Little Ghoul *possible in graveyards*
+- 3d6 x Ghoul *possible in villages and smaller human settlements*
 
 ### Senator
 
@@ -548,7 +551,7 @@ If there are any rituals missing please post an issue or comment on the Steam Co
 - Ancestral Archer
 
 **Summon Heroes of Old**
-- (4) Ancestor Guide
+- Ancestor Guide *possible in Ancient Forest*
 - Ancestral Hero
 - Ancestral Chief & 1d3+1 x Ancestral Lancer
 - 1d4+1 x Ancestral Warrior & 1d4+1 x Ancestral Archer
@@ -733,9 +736,9 @@ Minor and Major Animal Summoning do not appear to be listed as tables in the CoE
 - Pan
 - Harpy Queen
 - 2d4 x White Centaur
-- (237)2d3 x Grove Guard
-- (238)2d3 x Grove Guard
-- (238)2d3 x Dryad Hoplite
+- 2d3 x Grove Guard *possible in Grove of Gaia*
+- 2d3 x Grove Guard *possible in Primal Forest*
+- 2d3 x Dryad Hoplite
 
 **Blood Orgy**
 - 3d6 x Maenad
