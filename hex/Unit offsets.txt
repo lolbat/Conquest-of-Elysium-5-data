@@ -1,0 +1,8 @@
+48-49 4 byte identifies the bitmaps 
+52 - Armour
+54 - HP
+56 - Str
+58 - Morale
+60 - Rank
+62 - 
+66 - 

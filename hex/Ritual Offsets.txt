@@ -1,0 +1,4 @@
+Rituals
+
+First 48 bytes are name
+Next 16 are for hardcoded cost values
